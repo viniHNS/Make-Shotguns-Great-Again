@@ -8,10 +8,14 @@ This is a mod for [SPT-AKI](https://www.sp-tarkov.com "The main goal of the proj
 
 ## What does this mod do?
 
-Some shotguns like the Saiga12K and the Benelli M3 have some issues. This mod aims to fix them, such as:
+Adds some features to the shotguns in the game and new attachments for them:
 
-- The Saiga12K now has a Full Auto mode.
+- The Saiga12K now has a Full Auto mode. (be careful with the recoil ಠ_ಠ)
 - The semi-automatic mode of the Benelli M3 has been slightly adjusted, similar to other semi-automatic shotguns in the game, such as the MP-155 and MP-153.
+
+## New Attachments
+
+- KS-23M 23x75 6-shell magazine
 
 ## Installation
 
