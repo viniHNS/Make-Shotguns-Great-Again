@@ -9,7 +9,7 @@
 	"loadAfter": [],
 	"incompatibilities": [],
 	"contributors": [],
-	"isBundleMod": false,
+	"isBundleMod": true,
     "scripts": {
         "setup": "npm i",
         "build": "node ./build.mjs",
