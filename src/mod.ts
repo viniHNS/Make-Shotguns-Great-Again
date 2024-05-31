@@ -4,6 +4,10 @@ import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
 import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
 import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
 import { LogTextColor } from "@spt-aki/models/spt/logging/LogTextColor";
+import { JsonUtil } from "@spt-aki/utils/JsonUtil";
+import { VFS } from "@spt-aki/utils/VFS";
+import { ImporterUtil } from "@spt-aki/utils/ImporterUtil";
+import path from "path";
 
 class Mod implements IPostDBLoadMod, IPreAkiLoadMod
 {
@@ -28,18 +32,112 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
         // Find the Benelli M3 item by its Id
         const benelliM3 = tables.templates.items["6259b864ebedf17603599e88"];
 
-        // Find the Benelli M3 item by its Id
-        const express = tables.templates.items["5d6e67fba4b9361bc73bc779"];
+        const ks23 = tables.templates.items["5e848cc2988a8701445df1e8"];
 
         // Adds Full-Auto fire mode to the Saiga12K
         saiga12K._props.weapFireType.push("fullauto");
 
         // buff the rate of fire of the full auto Saiga12K
-        saiga12K._props.bFirerate = 500;
+        saiga12K._props.bFirerate = 450;
 
         // buff the rate of fire of the semi-auto Benelli M3
         benelliM3._props.SingleFireRate = 600;
         benelliM3._props.bFirerate = 100;
+
+        ks23._props.Slots[2]._props.filters[0].Filter.push("665a17431775fbd821da3298");
+
+        
+        // Thanks TRON <3
+        const logger = container.resolve<ILogger>("WinstonLogger");
+        const db = container.resolve<DatabaseServer>("DatabaseServer").getTables();
+        const ImporterUtil = container.resolve<ImporterUtil>("ImporterUtil");
+        const JsonUtil = container.resolve<JsonUtil>("JsonUtil");
+        const VFS = container.resolve<VFS>("VFS");
+        const locales = db.locales.global;
+        const items = db.templates.items;
+        const handbook = db.templates.handbook.Items;
+        const modPath = path.resolve(__dirname.toString()).split(path.sep).join("/")+"/";
+
+        const mydb = ImporterUtil.loadRecursive(`${modPath}../db/`);
+
+        const itemPath = `${modPath}../db/templates/items/`;
+        const handbookPath = `${modPath}../db/templates/handbook/`;
+
+        for(const itemFile in mydb.templates.items) {
+            const item = JsonUtil.deserialize(VFS.readFile(`${itemPath}${itemFile}.json`));
+            const hb = JsonUtil.deserialize(VFS.readFile(`${handbookPath}${itemFile}.json`));
+
+            const itemId = item._id;
+            //logger.info(itemId);
+
+            items[itemId] = item;
+            //logger.info(hb.ParentId);
+            //logger.info(hb.Price);
+            handbook.push({
+                "Id": itemId,
+                "ParentId": hb.ParentId,
+                "Price": hb.Price
+            });
+        }
+        for (const trader in mydb.traders.assort) {
+            const traderAssort = db.traders[trader].assort
+            
+            for (const item of mydb.traders.assort[trader].items) {
+                traderAssort.items.push(item);
+            }
+    
+            for (const bc in mydb.traders.assort[trader].barter_scheme) {
+                traderAssort.barter_scheme[bc] = mydb.traders.assort[trader].barter_scheme[bc];
+            }
+    
+            for (const level in mydb.traders.assort[trader].loyal_level_items) {
+                traderAssort.loyal_level_items[level] = mydb.traders.assort[trader].loyal_level_items[level];
+            }
+        }
+        //logger.info("Test");
+        // default localization
+        for (const localeID in locales)
+        {
+            for (const id in mydb.locales.en.templates) {
+                const item = mydb.locales.en.templates[id];
+                //logger.info(item);
+                for(const locale in item) {
+                    //logger.info(locale);
+                    //logger.info(item[locale]);
+                    //logger.info(`${id} ${locale}`);
+                    locales[localeID][`${id} ${locale}`] = item[locale];
+                }
+            }
+
+            for (const id in mydb.locales.en.preset) {
+                const item = mydb.locales.en.preset[id];
+                for(const locale in item) {
+                    //logger.info(`${id} ${locale}`);
+                    locales[localeID][`${id}`] = item[locale];
+                }
+            }
+        }
+
+        for (const localeID in mydb.locales)
+        {
+            for (const id in mydb.locales[localeID].templates) {
+                const item = mydb.locales[localeID].templates[id];
+                //logger.info(item);
+                for(const locale in item) {
+                    locales[localeID][`${id}`] = item[locale];
+                }
+            }
+
+            for (const id in mydb.locales[localeID].preset) {
+                const item = mydb.locales[localeID].preset[id];
+                for(const locale in item) {
+                    //logger.info(`${id} ${locale}`);
+                    locales[localeID][`${id} ${locale}`] = item[locale];
+                }
+                
+            }
+
+        }
 
     }
 }
