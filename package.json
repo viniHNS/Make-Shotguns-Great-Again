@@ -1,6 +1,6 @@
 {
-    "name": "makeVPO101GreatAgain",
-    "version": "1.1.0",
+    "name": "makeShotgunsGreatAgain",
+    "version": "1.0.0",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "viniHNS",
@@ -9,7 +9,7 @@
 	"loadAfter": [],
 	"incompatibilities": [],
 	"contributors": [],
-	"isBundleMod": false,
+	"isBundleMod": true,
     "scripts": {
         "setup": "npm i",
         "build": "node ./build.mjs",
