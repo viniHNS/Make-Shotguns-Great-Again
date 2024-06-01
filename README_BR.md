@@ -16,6 +16,7 @@ Adiciona algumas funcionalidades as escopetas do jogo e novos acessórios para e
 ## Novos Acessórios
 
 - Carregador de 6 cartuchos 23x75 para KS-23M
+- Carregador de 13 cartuchos para MP-153
 
 ## Instalação
 
