@@ -32,8 +32,18 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
         // Find the Benelli M3 item by its Id
         const benelliM3 = tables.templates.items["6259b864ebedf17603599e88"];
 
+        // Find the KS-23M item by its Id
         const ks23 = tables.templates.items["5e848cc2988a8701445df1e8"];
 
+        // Find the MP-153 item by its Id
+        const mp153 = tables.templates.items["56dee2bdd2720bc8328b4567"];
+        
+        // Find the MP-133 item by its Id
+        const mp133 = tables.templates.items["54491c4f4bdc2db1078b4568"];
+
+
+        // QOL --------------------------------------------------------------------------------
+        
         // Adds Full-Auto fire mode to the Saiga12K
         saiga12K._props.weapFireType.push("fullauto");
 
@@ -44,7 +54,19 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
         benelliM3._props.SingleFireRate = 600;
         benelliM3._props.bFirerate = 100;
 
+        // -----------------------------------------------------------------------------------
+
+
+        
+        // Custom bundles --------------------------------------------------------------------
+
+        //Add the 6 shell magazine to the KS-23M
         ks23._props.Slots[2]._props.filters[0].Filter.push("665a17431775fbd821da3298");
+
+        //Add the 13 shell magazine to the MP-153
+        mp153._props.Slots[2]._props.filters[0].Filter.push("665b2ce3a592acfa0e1749b6");
+
+        // -----------------------------------------------------------------------------------
 
         
         // Thanks TRON <3

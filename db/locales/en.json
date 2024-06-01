@@ -4,6 +4,11 @@
       "Name": "KS-23M 23x75 6-shell magazine",
       "ShortName": "KS-23Mx6",
       "Description": "A 6-shell KS-23M 23x75 magazine."
+    },
+    "665b2ce3a592acfa0e1749b6": {
+      "Name": "MP-153 12ga competition 13-shell magazine",
+      "ShortName": "MP153x6",
+      "Description": "A custom made carbon fiber 13-shell magazine for the MP-153 12ga shotgun."
     }
   }
 }
