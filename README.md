@@ -16,6 +16,7 @@ Adds some features to the shotguns in the game and new attachments for them:
 ## New Attachments
 
 - KS-23M 23x75 6-shell magazine
+- MP-153 competition 13-shell magazine
 
 ## Installation
 
