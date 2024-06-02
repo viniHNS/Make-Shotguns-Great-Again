@@ -12,11 +12,15 @@ Adds some features to the shotguns in the game and new attachments for them:
 
 - The Saiga12K now has a Full Auto mode. (be careful with the recoil ಠ_ಠ)
 - The semi-automatic mode of the Benelli M3 has been slightly adjusted, similar to other semi-automatic shotguns in the game, such as the MP-155 and MP-153.
+- Now you can put the Kiba Arms SPRM rail mount and the AK GP-25 accessory kit recoil pad
+
+in the KS-23M.
 
 ## New Attachments
 
 - KS-23M 23x75 6-shell magazine
 - MP-153 competition 13-shell magazine
+- Benelli M3 M-LOK handguard
 
 ## Installation
 
