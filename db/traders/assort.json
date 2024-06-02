@@ -37,6 +37,16 @@
           "UnlimitedCount": false,
           "StackObjectsCount": 56236
         }
+      },
+      {
+        "_id": "665cd7bf309e1f1a84d7a39b",
+        "_tpl": "665cd7bf309e1f1a84d7a39b",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 9856
+        }
       }
     ],
     "barter_scheme": {
@@ -47,10 +57,19 @@
             "_tpl": "5449016a4bdc2d6f028b456f"
           }
         ]
+      ],
+      "665cd7bf309e1f1a84d7a39b": [
+        [
+          {
+            "count": 4756,
+            "_tpl": "5449016a4bdc2d6f028b456f"
+          }
+        ]
       ]
     },
     "loyal_level_items": {
-      "665b2ce3a592acfa0e1749b6": 4
+      "665b2ce3a592acfa0e1749b6": 4,
+      "665cd7bf309e1f1a84d7a39b": 3
     }
   }
 }
