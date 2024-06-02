@@ -52,8 +52,8 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
         saiga12K._props.bFirerate = 450;
 
         // buff the rate of fire of the semi-auto Benelli M3
-        benelliM3._props.SingleFireRate = 600;
-        benelliM3._props.bFirerate = 100;
+        benelliM3._props.SingleFireRate = 850;
+        benelliM3._props.bFirerate = 200;
 
         // -----------------------------------------------------------------------------------
 
@@ -108,6 +108,9 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
 
         //Add the 13 shell magazine to the MP-153
         mp153._props.Slots[2]._props.filters[0].Filter.push("665b2ce3a592acfa0e1749b6");
+
+        // Add M-LOK handguard to the benelli M3
+        benelliM3._props.Slots[1]._props.filters[0].Filter.push("665cd7bf309e1f1a84d7a39b");
 
         // -----------------------------------------------------------------------------------
 

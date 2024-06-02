@@ -9,6 +9,11 @@
       "Name": "MP-153 12ga competition 13-shell magazine",
       "ShortName": "MP153x6",
       "Description": "A custom made carbon fiber 13-shell magazine for the MP-153 12ga shotgun."
+    },
+    "665cd7bf309e1f1a84d7a39b": {
+      "Name": "Benelli M3 M-LOK Handguard",
+      "ShortName": "M3 M-LOK",
+      "Description": "A M-LOK handguard for the Benelli M3 shotgun, manufactured by Toni System."
     }
   }
 }
