@@ -34,6 +34,7 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
 
         // Find the KS-23M item by its Id
         const ks23 = tables.templates.items["5e848cc2988a8701445df1e8"];
+        const ks23_wire_stock = tables.templates.items["5e848dc4e4dbc5266a4ec63d"];
 
         // Find the MP-153 item by its Id
         const mp153 = tables.templates.items["56dee2bdd2720bc8328b4567"];
@@ -62,6 +63,48 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
 
         //Add the 6 shell magazine to the KS-23M
         ks23._props.Slots[2]._props.filters[0].Filter.push("665a17431775fbd821da3298");
+        ks23._props.Slots.push(
+            {
+                "_name": "mod_mount",
+                "_id": "665c88a09a8a1cfbe59cd8d2",
+                "_parent": "5e848cc2988a8701445df1e8",
+                "_props": {
+                  "filters": [
+                    {
+                      "Shift": 0,
+                      "Filter": [
+                        "55d48a634bdc2d8b2f8b456a"
+                      ]
+                    }
+                  ]
+                },
+                "_required": false,
+                "_mergeSlotWithChildren": false,
+                "_proto": "55d30c4c4bdc2db4468b457e"
+              }
+        )
+
+        ks23_wire_stock._props.Prefab.path = "ks23stock.bundle";
+        ks23_wire_stock._props.Slots.push(
+            {
+                "_name": "mod_stock",
+                "_id": "665b5c811722cdfd0a6e6dd5",
+                "_parent": "5e848dc4e4dbc5266a4ec63d",
+                "_props": {
+                  "filters": [
+                    {
+                      "Shift": 0,
+                      "Filter": [
+                        "5a0c59791526d8dba737bba7"
+                      ]
+                    }
+                  ]
+                },
+                "_required": false,
+                "_mergeSlotWithChildren": false,
+                "_proto": "55d30c4c4bdc2db4468b457e"
+            }
+        );
 
         //Add the 13 shell magazine to the MP-153
         mp153._props.Slots[2]._props.filters[0].Filter.push("665b2ce3a592acfa0e1749b6");
