@@ -1,17 +1,17 @@
 import { DependencyContainer } from "tsyringe";
-import { IPostDBLoadMod } from "@spt-aki/models/external/IPostDBLoadMod";
-import { DatabaseServer } from "@spt-aki/servers/DatabaseServer";
-import { IPreAkiLoadMod } from "@spt-aki/models/external/IPreAkiLoadMod";
-import { ILogger } from "@spt-aki/models/spt/utils/ILogger";
-import { LogTextColor } from "@spt-aki/models/spt/logging/LogTextColor";
-import { JsonUtil } from "@spt-aki/utils/JsonUtil";
-import { VFS } from "@spt-aki/utils/VFS";
-import { ImporterUtil } from "@spt-aki/utils/ImporterUtil";
+import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
+import { DatabaseServer } from "@spt/servers/DatabaseServer";
+import { IPreSptLoadMod } from "@spt/models/external/IpreSptLoadMod";
+import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
+import { JsonUtil } from "@spt/utils/JsonUtil";
+import { VFS } from "@spt/utils/VFS";
+import { ImporterUtil } from "@spt/utils/ImporterUtil";
 import path from "path";
 
-class Mod implements IPostDBLoadMod, IPreAkiLoadMod
+class Mod implements IPostDBLoadMod, IPreSptLoadMod
 {
-    preAkiLoad(container: DependencyContainer): void 
+    preSptLoad(container: DependencyContainer): void 
     {
         // get the logger from the server container
         const logger = container.resolve<ILogger>("WinstonLogger");
@@ -207,7 +207,10 @@ class Mod implements IPostDBLoadMod, IPreAkiLoadMod
 
         }
 
+        logger.logWithColor("[Making the shotguns great again!] Database: Loading complete.", LogTextColor.GREEN);
+
     }
+
 }
 
 module.exports = { mod: new Mod() }
