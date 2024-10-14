@@ -4,7 +4,7 @@
 
 ## O que é isso? 
 
-Este é um mod para o [SPT-AKI](https://www.sp-tarkov.com "O principal objetivo do projeto é fornecer uma experiência singleplayer offline separada com progressão pronta para uso para o cliente oficial da BSG. Agora você pode jogar Escape From Tarkov enquanto espera que seus servidores voltem a ficar online, enquanto você está desconectado da Internet ou se precisar fazer uma pausa dos trapaceiros.") melhora as escopetas do jogo!
+Este é um mod para o [SPT](https://www.sp-tarkov.com "O principal objetivo do projeto é fornecer uma experiência singleplayer offline separada com progressão pronta para uso para o cliente oficial da BSG. Agora você pode jogar Escape From Tarkov enquanto espera que seus servidores voltem a ficar online, enquanto você está desconectado da Internet ou se precisar fazer uma pausa dos trapaceiros.") melhora as escopetas do jogo!
 
 ## O que este mod faz?
 

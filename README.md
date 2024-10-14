@@ -4,7 +4,7 @@
 
 ## What is this?
 
-This is a mod for [SPT-AKI](https://www.sp-tarkov.com "The main goal of the project is to provide a separate offline single-player experience with ready-to-use progression for the official BSG client. Now you can play Escape From Tarkov while waiting for their servers to come back online, while you're disconnected from the Internet, or if you need to take a break from cheaters.") that improves the shotguns in the game!
+This is a mod for [SPT](https://www.sp-tarkov.com "The main goal of the project is to provide a separate offline single-player experience with ready-to-use progression for the official BSG client. Now you can play Escape From Tarkov while waiting for their servers to come back online, while you're disconnected from the Internet, or if you need to take a break from cheaters.") that improves the shotguns in the game!
 
 ## What does this mod do?
 
