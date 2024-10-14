@@ -1,5 +1,6 @@
-import { Item } from "@spt-aki/models/eft/common/tables/IItem";
-import { ITraderServiceModel } from "@spt-aki/models/spt/services/ITraderServiceModel";
+import { Item } from "@spt/models/eft/common/tables/IItem";
+import { DogtagExchangeSide } from "@spt/models/enums/DogtagExchangeSide";
+import { ITraderServiceModel } from "@spt/models/spt/services/ITraderServiceModel";
 export interface ITrader {
     assort?: ITraderAssort;
     base: ITraderBase;
@@ -78,6 +79,8 @@ export interface IBarterScheme {
     _tpl: string;
     onlyFunctional?: boolean;
     sptQuestLocked?: boolean;
+    level?: number;
+    side?: DogtagExchangeSide;
 }
 export interface ISuit {
     _id: string;
