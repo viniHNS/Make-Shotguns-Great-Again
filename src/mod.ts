@@ -54,6 +54,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         // buff the rate of fire of the semi-auto Benelli M3
         benelliM3._props.SingleFireRate = 850;
         benelliM3._props.bFirerate = 200;
+        benelliM3._props.CanQueueSecondShot = true;
 
         // -----------------------------------------------------------------------------------
 
