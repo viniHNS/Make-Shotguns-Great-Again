@@ -1,5 +1,5 @@
 {
-  "templates":{
+  "templates": {
     "665a17431775fbd821da3298": {
       "Name": "KS-23M 23x75 6-shell magazine",
       "ShortName": "KS-23Mx6",
@@ -14,6 +14,11 @@
       "Name": "Benelli M3 M-LOK Handguard",
       "ShortName": "M3 M-LOK",
       "Description": "A M-LOK handguard for the Benelli M3 shotgun, manufactured by Toni System."
+    },
+    "576165642459773c7a400233": {
+      "Name": "Saiga-12K ver.10 12ga automatic shotgun",
+      "ShortName": "Saiga-12K",
+      "Description": "An automatic 12-gauge shotgun with a folding stock, equipped with a firing mechanism safety lock that only allows firing when the stock is extended. It features a short 430mm barrel."
     }
   }
 }
