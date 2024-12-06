@@ -13,6 +13,7 @@ Adiciona algumas funcionalidades as escopetas do jogo e novos acessórios para e
 - Agora a Saiga12K possui o modo Full Auto
 - O modo semi-automático da Benelli M3 foi levemente ajustado, semelhante as outras escopetas semi-automáticas do jogo, como a MP-155 e MP-153
 - Agora você pode colocar o trilho Kiba Arms SPRM e o kit de acessórios GP-25 de recuo na KS-23M
+- Agora a saiga-12k pode usar a maioria dos handguards de AKs
 
 ## Novos Acessórios
 
