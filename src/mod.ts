@@ -20,6 +20,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
 
     public postDBLoad(container: DependencyContainer): void 
     {
+
         // get database from server
         const databaseServer = container.resolve<DatabaseServer>("DatabaseServer");
 
@@ -46,11 +47,35 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         // QOL --------------------------------------------------------------------------------
         
         // Adds Full-Auto fire mode to the Saiga12K
-        saiga12K._props.weapFireType.push("fullauto");
+        saiga12K._props.weapFireType = ["single", "fullauto"];
 
         // buff the rate of fire of the full auto Saiga12K
-        saiga12K._props.bFirerate = 450;
+        saiga12K._props.bFirerate = 400;
 
+        const saiga12K_handguards_to_add = [
+            "5b800e9286f7747a8b04f3ff",
+            "5b80242286f77429445e0b47",
+            "647dd2b8a12ebf96c3031655",
+            "5c17664f2e2216398b5a7e3c",
+            "5d2c829448f0353a5c7d6674",
+            "5efaf417aeb21837e749c7f2"
+        ];
+
+        const saiga12k_dustcover_to_add = [
+            "5d2c772c48f0355d95672c25",
+            "5d2c770c48f0354b4a07c100",
+            "5d2c76ed48f03532f2136169",
+            "5649af884bdc2d1b2b8b4589"
+        ];
+
+        const saiga12k_rear_sight_to_add = [
+            "5649d9a14bdc2d79388b4580"
+        ];
+
+        saiga12K._props.Slots[1]._props.filters[0].Filter.push(...saiga12K_handguards_to_add);
+        saiga12K._props.Slots[4]._props.filters[0].Filter.push(...saiga12k_dustcover_to_add);
+        saiga12K._props.Slots[5]._props.filters[0].Filter.push(...saiga12k_rear_sight_to_add);
+   
         // buff the rate of fire of the semi-auto Benelli M3
         benelliM3._props.SingleFireRate = 850;
         benelliM3._props.bFirerate = 200;
