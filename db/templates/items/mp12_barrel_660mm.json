@@ -1,0 +1,133 @@
+{
+  "_id": "675399e08fd2a6c51b98e4e9",
+  "_name": "barrel_mp18_600mm_762x54r",
+  "_parent": "555ef6e44bdc2de9068b457e",
+  "_props": {
+    "Accuracy": 0,
+    "AnimationVariantsNumber": 0,
+    "BackgroundColor": "blue",
+    "BlocksCollapsible": false,
+    "BlocksFolding": false,
+    "CanPutIntoDuringTheRaid": true,
+    "CanRequireOnRagfair": false,
+    "CanSellOnRagfair": true,
+    "CantRemoveFromSlotsDuringRaid": [],
+    "CenterOfImpact": 0.09,
+    "ConflictingItems": [],
+    "CoolFactor": 0.94,
+    "Description": "Стандартный заводской ствол для ружья МР-133 длинной 660мм под патрон 12-го калибра, с широкой прицельной планкой.",
+    "DeviationCurve": 2.5,
+    "DeviationMax": 10,
+    "DiscardLimit": -1,
+    "DiscardingBlock": false,
+    "DoubleActionAccuracyPenaltyMult": 1,
+    "DropSoundType": "None",
+    "Durability": 100,
+    "DurabilityBurnModificator": 1,
+    "EffectiveDistance": 0,
+    "Ergonomics": -13,
+    "ExamineExperience": 6,
+    "ExamineTime": 1,
+    "ExaminedByDefault": true,
+    "ExtraSizeDown": 0,
+    "ExtraSizeForceAdd": false,
+    "ExtraSizeLeft": 2,
+    "ExtraSizeRight": 0,
+    "ExtraSizeUp": 0,
+    "ForbidMissingVitalParts": false,
+    "ForbidNonEmptyContainers": false,
+    "Grids": [],
+    "HasShoulderContact": false,
+    "HeatFactor": 0.9,
+    "Height": 1,
+    "HideEntrails": false,
+    "InsuranceDisabled": false,
+    "IsAlwaysAvailableForInsurance": false,
+    "IsAnimated": true,
+    "IsLockedafterEquip": false,
+    "IsSilencer": false,
+    "IsSpecialSlotOnly": false,
+    "IsUnbuyable": false,
+    "IsUndiscardable": false,
+    "IsUngivable": false,
+    "IsUnremovable": false,
+    "IsUnsaleable": false,
+    "ItemSound": "mod",
+    "LootExperience": 20,
+    "Loudness": 0,
+    "MergesWithChildren": true,
+    "Name": "Ствол 660мм для ружья МР-133 12к с прицельной планкой",
+    "NotShownInSlot": false,
+    "Prefab": {
+      "path": "assets/content/items/mods/barrels/barrel_mp18_600mm_762x54r.bundle",
+      "rcid": ""
+    },
+    "QuestItem": false,
+    "QuestStashMaxCount": 0,
+    "RagFairCommissionModifier": 1,
+    "RaidModdable": false,
+    "RarityPvE": "Not_exist",
+    "Recoil": -8,
+    "RepairCost": 0,
+    "RepairSpeed": 0,
+    "ShortName": "660мм МР-133 12к",
+    "ShotgunDispersion": 1.3,
+    "SightingRange": 0,
+    "Slots": [
+      {
+        "_id": "61f7b8e6618893307a6e01c1",
+        "_mergeSlotWithChildren": false,
+        "_name": "mod_handguard",
+        "_parent": "675399e08fd2a6c51b98e4e9",
+        "_props": {
+          "filters": [
+            {
+              "Filter": [
+                "61f8024263dc1250e26eb029",
+                "61f7b85367ddd414173fdb36"
+              ],
+              "Shift": 0
+            }
+          ]
+        },
+        "_proto": "55d30c4c4bdc2db4468b457e",
+        "_required": true
+      },
+      {
+        "_id": "61f8d29fd8304f1daf1c0534",
+        "_mergeSlotWithChildren": false,
+        "_name": "mod_scope",
+        "_parent": "675399e08fd2a6c51b98e4e9",
+        "_props": {
+          "filters": [
+            {
+              "Filter": [
+                "61f804acfcba9556ea304cb8",
+                "65f05b9d39dab9e9ec049cfd"
+              ],
+              "Shift": 0
+            }
+          ]
+        },
+        "_proto": "55d30c4c4bdc2db4468b457e",
+        "_required": false
+      }
+    ],
+    "StackMaxSize": 1,
+    "StackObjectsCount": 1,
+    "ToolModdable": true,
+    "UniqueAnimationModID": 0,
+    "Unlootable": false,
+    "UnlootableFromSide": [],
+    "UnlootableFromSlot": "FirstPrimaryWeapon",
+    "UsePrefab": {
+      "path": "",
+      "rcid": ""
+    },
+    "Velocity": 10.5,
+    "Weight": 1.35,
+    "Width": 4
+  },
+  "_proto": "55d449444bdc2d962f8b456d",
+  "_type": "Item"
+}
