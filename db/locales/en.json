@@ -19,6 +19,37 @@
       "Name": "Saiga-12K ver.10 12ga automatic shotgun",
       "ShortName": "Saiga-12K",
       "Description": "An automatic 12-gauge shotgun with a folding stock, equipped with a firing mechanism safety lock that only allows firing when the stock is extended. It features a short 430mm barrel."
+    },
+    "67547b3da7233eec99aff92c": {
+      "Name": "SOK-12 12/76 Alliance Armament 30-round magazine",
+      "ShortName": "Alliance",
+      "Description": "The Alliance Armament 30-round magazine for SOK-12 and compatible weapons, intended for use with 12/76 or 12/70 shells."
+    },
+    "6643eb62ef9aaed4947a9836": {
+      "Name": ".700 Nitro Express FMJ",
+      "ShortName": ".700 FMJ",
+      "Description": "The .700 Nitro Express (17.8×89mmR) is a big game rifle cartridge made by Holland & Holland, London, England. It was developed in 1988 by Jim Bell and William Feldstein and built by H&H. The recoil is substantial, and the rifle is only available from H&H as a bespoke item. The .700 Nitro Express is a straight rimmed cartridge designed for use in single-shot and double rifles. "
+    },
+    "6643edda4a05be2737da3134": {
+      "Name": "MP-700 .700 Nitro Express Double Rifle",
+      "ShortName": "MP-700 Rifle",
+      "Description": "The MP-700 is a double-barreled rifle chambered in .700 Nitro Express. It is a break-action rifle with two barrels. The rifle is equipped with open sights. The rifle is intended for hunting dangerous animals."
+    },
+    "6643ec7e9f7598f9f556b493": {
+      "Name": "MP-700 .700 Nitro Express Double Rifle Barrel",
+      "ShortName": "MP-700 Barrel",
+      "Description": "A 750mm long .700 Nitro Express barrel for MP-700 double-barreled rifle. Because of the pressure of the .700 Nitro Express cartridge, the barrel is extremely heavy. Manufactured by Holland & Holland."
+    },
+    "675399e08fd2a6c51b98e4e9": {
+      "Name": "MP-12 12g 600mm barrel",
+      "ShortName": "MP-12 600mm",
+      "Description": "A standard factory-produced 600mm barrel with a front sight for MP-12 12g hunting rifles."
+    },
+    "67537f2e72cb0015b8512669": {
+      "Name": "MP-12 12g single-shot rifle",
+      "ShortName": "MP-12",
+      "Description": "MP-12 is the legendary Soviet single-barreled rifle. This gun behaves perfectly in all weather conditions, no breakdowns or failures have ever been identified."
     }
+
   }
 }
