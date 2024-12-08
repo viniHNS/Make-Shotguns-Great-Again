@@ -3,6 +3,8 @@ import { IPostDBLoadMod } from "@spt/models/external/IPostDBLoadMod";
 import { DatabaseServer } from "@spt/servers/DatabaseServer";
 import { IPreSptLoadMod } from "@spt/models/external/IpreSptLoadMod";
 import { ILogger } from "@spt/models/spt/utils/ILogger";
+import { CustomItemService } from "@spt/services/mod/CustomItemService";
+import { NewItemFromCloneDetails } from "@spt/models/spt/mod/NewItemDetails";
 import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
 import { JsonUtil } from "@spt/utils/JsonUtil";
 import { VFS } from "@spt/utils/VFS";
@@ -24,6 +26,9 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         // get database from server
         const databaseServer = container.resolve<DatabaseServer>("DatabaseServer");
 
+        // Resolve the CustomItemService container
+        const CustomItem = container.resolve<CustomItemService>("CustomItemService");
+
         // Get all the in-memory json found in /assets/database
         const tables = databaseServer.getTables();
 
@@ -35,6 +40,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
 
         // Find the KS-23M item by its Id
         const ks23 = tables.templates.items["5e848cc2988a8701445df1e8"];
+
         const ks23_wire_stock = tables.templates.items["5e848dc4e4dbc5266a4ec63d"];
 
         // Find the MP-153 item by its Id
@@ -42,6 +48,11 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         
         // Find the MP-133 item by its Id
         const mp133 = tables.templates.items["54491c4f4bdc2db1078b4568"];
+
+
+        function createClonedItem(details: NewItemFromCloneDetails) {
+          CustomItem.createItemFromClone(details);
+        }
 
 
         // QOL --------------------------------------------------------------------------------
@@ -75,14 +86,22 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         saiga12K._props.Slots[1]._props.filters[0].Filter.push(...saiga12K_handguards_to_add);
         saiga12K._props.Slots[4]._props.filters[0].Filter.push(...saiga12k_dustcover_to_add);
         saiga12K._props.Slots[5]._props.filters[0].Filter.push(...saiga12k_rear_sight_to_add);
+
+        saiga12K._props.HeatFactorByShot = 4;
+        saiga12K._props.HeatFactor = 0.9;
    
         // buff the rate of fire of the semi-auto Benelli M3
         benelliM3._props.SingleFireRate = 850;
         benelliM3._props.bFirerate = 200;
         benelliM3._props.CanQueueSecondShot = true;
 
+       
+        // Adding MP-12 to the primary and secondary slots
+        tables.templates.items["55d7217a4bdc2d86028b456d"]._props.Slots[0]._props.filters[0].Filter.push("67537f2e72cb0015b8512669");
+        tables.templates.items["55d7217a4bdc2d86028b456d"]._props.Slots[1]._props.filters[0].Filter.push("67537f2e72cb0015b8512669");
+        
+        
         // -----------------------------------------------------------------------------------
-
 
         
         // Custom bundles --------------------------------------------------------------------
@@ -137,6 +156,9 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
 
         // Add M-LOK handguard to the benelli M3
         benelliM3._props.Slots[1]._props.filters[0].Filter.push("665cd7bf309e1f1a84d7a39b");
+
+        // Add the 30 shell magazine to the SAIGA-12K
+        saiga12K._props.Slots[7]._props.filters[0].Filter.push("67547b3da7233eec99aff92c");
 
         // -----------------------------------------------------------------------------------
 
