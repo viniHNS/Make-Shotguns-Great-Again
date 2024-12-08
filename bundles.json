@@ -32,6 +32,22 @@
 				"shaders",
 				"assets/commonassets/physics/physicsmaterials.bundle"
             ]
+        },
+        {
+            "key": "saiga12_30rounds.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "700NITRO_FMJ.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+				"shaders",
+				"assets/commonassets/physics/physicsmaterials.bundle"
+            ]
         }
 
     ]
