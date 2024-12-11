@@ -6,6 +6,7 @@ import { ILogger } from "@spt/models/spt/utils/ILogger";
 import { CustomItemService } from "@spt/services/mod/CustomItemService";
 import { NewItemFromCloneDetails } from "@spt/models/spt/mod/NewItemDetails";
 import { LogTextColor } from "@spt/models/spt/logging/LogTextColor";
+import { ItemHelper } from "@spt/helpers/ItemHelper";
 import { JsonUtil } from "@spt/utils/JsonUtil";
 import { VFS } from "@spt/utils/VFS";
 import { ImporterUtil } from "@spt/utils/ImporterUtil";
@@ -29,6 +30,8 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         // Resolve the CustomItemService container
         const CustomItem = container.resolve<CustomItemService>("CustomItemService");
 
+        const itemHelper = container.resolve<ItemHelper>("ItemHelper");
+
         // Get all the in-memory json found in /assets/database
         const tables = databaseServer.getTables();
 
@@ -48,6 +51,12 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
         
         // Find the MP-133 item by its Id
         const mp133 = tables.templates.items["54491c4f4bdc2db1078b4568"];
+
+        const mp12 = tables.templates.items["67537f2e72cb0015b8512669"];
+
+        const mp43 = tables.templates.items["5580223e4bdc2d1c128b457f"];
+
+        const mp43_sawed_off = tables.templates.items["64748cb8de82c85eaf0a273a"];
 
 
         function createClonedItem(details: NewItemFromCloneDetails) {
@@ -98,9 +107,31 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
        
         // Adding MP-12 to the primary and secondary slots
         tables.templates.items["55d7217a4bdc2d86028b456d"]._props.Slots[0]._props.filters[0].Filter.push("67537f2e72cb0015b8512669");
-        tables.templates.items["55d7217a4bdc2d86028b456d"]._props.Slots[1]._props.filters[0].Filter.push("67537f2e72cb0015b8512669");
-        
-        
+
+        // Adding new cartridges to the guns
+        const magazine_shotguns_to_add_new_cartidges = [
+            "60dc519adf4c47305f6d410d", "6259bdcabd28e4721447a2aa", "625ff2ccb8c587128c1a01dd", "625ff2eb9f5537057932257d", "625ff3046d721f05d93bf2ee",
+            "625ff31daaaa8c1130599f64", "55d484b44bdc2d1d4e8b456d", "55d485804bdc2d8c2f8b456b", "56deee15d2720bee328b4567", "56deeefcd2720bc8328b4568", "5882163224597757561aa920", "5882163824597757561aa922", "5882163e24597758206fee8c", "6076c87f232e5a31c233d50e", "5e87080c81c4ed43e83cefda", "5a7882dcc5856700177af662", "5a78830bc5856700137e4c90", "5a78832ec5856700155a6ca3", "57616a9e2459773c7a400234", "5a966f51a2750c00156aacf6", "5cf8f3b0d7f00c00217872ef"
+        ];
+
+        magazine_shotguns_to_add_new_cartidges.forEach(element => {
+            tables.templates.items[element]._props.Cartridges[0]._props.filters[0].Filter.push("6756378c3825f690a72789bf");
+            tables.templates.items[element]._props.Cartridges[0]._props.filters[0].Filter.push("675766d7a045de209488e750");
+            tables.templates.items[element]._props.Cartridges[0]._props.filters[0].Filter.push("67579112e55c9b7479e5d9ea");
+            tables.templates.items[element]._props.Cartridges[0]._props.filters[0].Filter.push("6758e4a30db075f8dc01bb17");
+        });
+
+        mp43._props.Chambers[0]._props.filters[0].Filter.push("6756378c3825f690a72789bf");
+        mp43._props.Chambers[0]._props.filters[0].Filter.push("675766d7a045de209488e750");
+        mp43._props.Chambers[0]._props.filters[0].Filter.push("67579112e55c9b7479e5d9ea");
+        mp43._props.Chambers[0]._props.filters[0].Filter.push("6758e4a30db075f8dc01bb17");
+
+        mp43_sawed_off._props.Chambers[0]._props.filters[0].Filter.push("6756378c3825f690a72789bf");
+        mp43_sawed_off._props.Chambers[0]._props.filters[0].Filter.push("675766d7a045de209488e750");
+        mp43_sawed_off._props.Chambers[0]._props.filters[0].Filter.push("67579112e55c9b7479e5d9ea");
+        mp43_sawed_off._props.Chambers[0]._props.filters[0].Filter.push("6758e4a30db075f8dc01bb17");
+
+       
         // -----------------------------------------------------------------------------------
 
         
@@ -254,6 +285,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod
             }
 
         }
+        // add the winchester 00 buckshot to the MP-12
 
         logger.logWithColor("[Making the shotguns great again!] Database: Loading complete.", LogTextColor.GREEN);
 
