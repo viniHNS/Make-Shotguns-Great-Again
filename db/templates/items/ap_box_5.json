@@ -1,0 +1,84 @@
+{
+  "_id": "675797978fe6f7d882e5a3c9",
+  "_name": "item_ammo_box_12g_25_AP",
+  "_parent": "543be5cb4bdc2deb348b4568",
+  "_props": {
+    "AnimationVariantsNumber": 0,
+    "BackgroundColor": "yellow",
+    "CanRequireOnRagfair": false,
+    "CanSellOnRagfair": false,
+    "ConflictingItems": [],
+    "Description": "ammo_box_556x45_xx_m193ball",
+    "DiscardLimit": -1,
+    "DiscardingBlock": false,
+    "DropSoundType": "None",
+    "ExamineExperience": 10,
+    "ExamineTime": 1,
+    "ExaminedByDefault": true,
+    "ExtraSizeDown": 0,
+    "ExtraSizeForceAdd": false,
+    "ExtraSizeLeft": 0,
+    "ExtraSizeRight": 0,
+    "ExtraSizeUp": 0,
+    "Height": 1,
+    "HideEntrails": true,
+    "InsuranceDisabled": false,
+    "IsAlwaysAvailableForInsurance": false,
+    "IsLockedafterEquip": false,
+    "IsSpecialSlotOnly": false,
+    "IsUnbuyable": false,
+    "IsUndiscardable": false,
+    "IsUngivable": false,
+    "IsUnremovable": false,
+    "IsUnsaleable": false,
+    "ItemSound": "ammo_pack_generic",
+    "LootExperience": 0,
+    "MergesWithChildren": false,
+    "Name": "ammo_box_556x45_xx_m193ball",
+    "NotShownInSlot": false,
+    "Prefab": {
+      "path": "ap_box_5.bundle",
+      "rcid": ""
+    },
+    "QuestItem": false,
+    "QuestStashMaxCount": 0,
+    "RagFairCommissionModifier": 1,
+    "RarityPvE": "Superrare",
+    "RepairCost": 0,
+    "RepairSpeed": 0,
+    "ShortName": "ammo_box_556x45_xx_m193ball",
+    "StackMaxRandom": 5,
+    "StackMaxSize": 1,
+    "StackMinRandom": 5,
+    "StackObjectsCount": 1,
+    "StackSlots": [
+      {
+        "_id": "6757979fb286de23036aee41",
+        "_max_count": 5,
+        "_name": "cartridges",
+        "_parent": "675797978fe6f7d882e5a3c9",
+        "_props": {
+          "filters": [
+            {
+              "Filter": [
+                "67579112e55c9b7479e5d9ea"
+              ]
+            }
+          ]
+        },
+        "_proto": "5748538b2459770af276a261"
+      }
+    ],
+    "Unlootable": false,
+    "UnlootableFromSide": [],
+    "UnlootableFromSlot": "FirstPrimaryWeapon",
+    "UsePrefab": {
+      "path": "",
+      "rcid": ""
+    },
+    "Weight": 0.5,
+    "Width": 1,
+    "ammoCaliber": "Caliber12g"
+  },
+  "_type": "Item"
+}
