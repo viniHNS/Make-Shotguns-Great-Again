@@ -49,7 +49,37 @@
       "Name": "MP-12 12g single-shot rifle",
       "ShortName": "MP-12",
       "Description": "MP-12 is the legendary Soviet single-barreled rifle. This gun behaves perfectly in all weather conditions, no breakdowns or failures have ever been identified."
+    },
+    "6756378c3825f690a72789bf":{
+      "Name": "12/70 Winchester Super-X 00 buckshot",
+      "ShortName": "12/70 00",
+      "Description": "A 12-gauge 00 buckshot shell by Winchester. The 00 buckshot is a 9-pellet shell, with each pellet being 8.4mm in diameter. The shell is designed for hunting and self-defense."
+    },
+    "675766d7a045de209488e750": {
+      "Name": "12/70 Flechette Kinghunter",
+      "ShortName": "12/70 Flechette",
+      "Description": "A 12-gauge Flechette Kinghunter shell made in USA. The shell contains 20 flechettes made of tungsten alloy. You definitely don't want to be on the receiving end of the weapon loaded with it."
+    },
+    "67576a8a58d3641fa095f6d4": {
+      "Name": "12/70 Flechette Kinghunter ammo pack (25 pcs)",
+      "ShortName": "12/70 Flechette pack",
+      "Description": "A box of 12/70 Flechette Kinghunter shells, 25 pieces."
+    },
+    "67579112e55c9b7479e5d9ea": {
+      "Name": "12/70 armor-piercing Slug “SVAROG” ",
+      "ShortName": "12/70 SVAROG",
+      "Description": "A 12-gauge armor-piercing Slug shell developed by SVAROG. The shell is designed to penetrate armor, stopping vehicles and penetrating targets behind cover."
+    },
+    "675797978fe6f7d882e5a3c9": {
+      "Name": "12/70 armor-piercing Slug “SVAROG” ammo pack (5 pcs)",
+      "ShortName": "12/70 SVAROG pack",
+      "Description": "A box of 12/70 armor-piercing Slug “SVAROG” shells, 5 pieces."
+    },
+    "6758e4a30db075f8dc01bb17": {
+      "Name": "12/70 Magnum Express Kinghunter",
+      "ShortName": "12/70 Magnum",
+      "Description": "A 12-gauge Magnum Express Kinghunter shell made in USA. The shell contains 9 pellets. The shell is designed for hunting and self-defense."
     }
-
+    
   }
 }
