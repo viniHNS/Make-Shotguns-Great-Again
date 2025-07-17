@@ -18,6 +18,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod {
   private readonly ITEM_IDS = {
     BEAR_LOWER: "55d7217a4bdc2d86028b456d",
     SAIGA_12K: "576165642459773c7a400233",
+    SAIGA_12K_FULL_AUTO: "674fe9a75e51f1c47c04ec23",
     BENELLI_M3: "6259b864ebedf17603599e88",
     KS23: "5e848cc2988a8701445df1e8",
     KS23_WIRE_STOCK: "5e848dc4e4dbc5266a4ec63d",
@@ -68,6 +69,7 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod {
     
     // Saiga-12K modifications
     this.modifySaiga12K(items[this.ITEM_IDS.SAIGA_12K]);
+    this.modifySaiga12K(items[this.ITEM_IDS.SAIGA_12K_FULL_AUTO]);
     
     // Benelli M3 modifications
     this.modifyBenelliM3(items[this.ITEM_IDS.BENELLI_M3]);
@@ -94,10 +96,6 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod {
     saiga12K._props.Slots[1]._props.filters[0].Filter.push(...modifications.handguards);
     saiga12K._props.Slots[4]._props.filters[0].Filter.push(...modifications.dustCovers);
     saiga12K._props.Slots[5]._props.filters[0].Filter.push(...modifications.rearSights);
-
-    // Heat modifications
-    saiga12K._props.HeatFactorByShot = 4;
-    saiga12K._props.HeatFactor = 0.9;
   }
 
   private modifyBenelliM3(benelliM3: any): void {
