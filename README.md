@@ -10,7 +10,7 @@ This is a mod for [SPT](https://www.sp-tarkov.com "The main goal of the project 
 
 Adds some features to the shotguns in the game and new attachments for them:
 
-- The Saiga12K now has a Full Auto mode. (be careful with the recoil ಠ_ಠ)
+- ~~The Saiga12K now has a Full Auto mode. (be careful with the recoil ಠ_ಠ)~~ Full auto version exists in the game now.
 - The semi-automatic mode of the Benelli M3 has been slightly adjusted, similar to other semi-automatic shotguns in the game, such as the MP-155 and MP-153.
 - Now you can put the Kiba Arms SPRM rail mount and the AK GP-25 accessory kit recoil pad
 in the KS-23M.
