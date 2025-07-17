@@ -269,6 +269,125 @@
       "y": 0.33,
       "z": 0.95
     },
+    "WeaponRecoilSettings": {
+      "Enable": true,
+      "Values": [
+        {
+          "Enable": true,
+          "Target": "HandsRotation",
+          "Process": {
+            "ComponentType": "Y",
+            "CurveTimeMultiply": 1.1,
+            "CurveValueMultiply": 1,
+            "CurveAimingValueMultiply": 1,
+            "TransformationCurve": {
+              "Keys": [
+                {
+                  "time": 0,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.1,
+                  "value": 2,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.3,
+                  "value": -0.75,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 1,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Enable": true,
+          "Target": "HandsPosition",
+          "Process": {
+            "ComponentType": "Y",
+            "CurveTimeMultiply": 3,
+            "CurveValueMultiply": 0.007,
+            "CurveAimingValueMultiply": 0,
+            "TransformationCurve": {
+              "Keys": [
+                {
+                  "time": 0,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.1,
+                  "value": 2,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.3,
+                  "value": -0.75,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 1,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Enable": true,
+          "Target": "CameraRotation",
+          "Process": {
+            "ComponentType": "Z",
+            "CurveTimeMultiply": 1,
+            "CurveValueMultiply": 0.5,
+            "CurveAimingValueMultiply": 0.4,
+            "TransformationCurve": {
+              "Keys": [
+                {
+                  "time": 0,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.1,
+                  "value": 2,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.3,
+                  "value": -0.75,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 1,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
     "Unlootable": false,
     "UnlootableFromSide": [],
     "UnlootableFromSlot": "FirstPrimaryWeapon",

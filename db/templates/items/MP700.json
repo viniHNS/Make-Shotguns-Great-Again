@@ -115,6 +115,17 @@
     "MinRepairKitDegradation": 0,
     "MustBoltBeOpennedForExternalReload": false,
     "MustBoltBeOpennedForInternalReload": false,
+    "MountCameraSnapMultiplier": 3,
+    "MountHorizontalRecoilMultiplier": 0.6,
+    "MountReturnSpeedHandMultiplier": 1,
+    "MountVerticalRecoilMultiplier": 0.85,
+    "MountingHorizontalOutOfBreathMultiplier": 0.4,
+    "MountingPosition": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "MountingVerticalOutOfBreathMultiplier": 0.8,
     "Name": "Двуствольное ружье МР43e",
     "NoFiremodeOnBoltcatch": false,
     "NotShownInSlot": false,
@@ -132,14 +143,14 @@
       "y": -0.31,
       "z": 0
     },
-    "RecoilForceBack": 420,
-    "RecoilForceUp": 850,
+    "RecoilForceBack": 455,
+    "RecoilForceUp": 890,
     "RecoilPosZMult": 1,
     "RecolDispersion": 30,
     "RecoilCategoryMultiplierHandRotation": 0.23,
     "RecoilReturnSpeedHandRotation": 2.2,
     "RecoilDampingHandRotation": 0.85,
-    "RecoilCamera": 0.095,
+    "RecoilCamera": 0.099,
     "RecoilStableIndexShot": 2,
     "RecoilReturnPathDampingHandRotation": 0.52,
     "RecoilReturnPathOffsetHandRotation": 0.015,
@@ -247,6 +258,125 @@
       "x": 0.95,
       "y": 0.33,
       "z": 0.95
+    },
+    "WeaponRecoilSettings": {
+      "Enable": true,
+      "Values": [
+        {
+          "Enable": true,
+          "Target": "HandsRotation",
+          "Process": {
+            "ComponentType": "Y",
+            "CurveTimeMultiply": 1,
+            "CurveValueMultiply": 3,
+            "CurveAimingValueMultiply": 2,
+            "TransformationCurve": {
+              "Keys": [
+                {
+                  "time": 0,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.1,
+                  "value": 2,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.3,
+                  "value": -0.75,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 1,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Enable": true,
+          "Target": "HandsPosition",
+          "Process": {
+            "ComponentType": "X",
+            "CurveTimeMultiply": 3,
+            "CurveValueMultiply": 0.004,
+            "CurveAimingValueMultiply": 0.002,
+            "TransformationCurve": {
+              "Keys": [
+                {
+                  "time": 0,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.1,
+                  "value": 2,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.3,
+                  "value": -0.75,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 1,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                }
+              ]
+            }
+          }
+        },
+        {
+          "Enable": true,
+          "Target": "CameraRotation",
+          "Process": {
+            "ComponentType": "Z",
+            "CurveTimeMultiply": 1,
+            "CurveValueMultiply": 0.5,
+            "CurveAimingValueMultiply": 0.2,
+            "TransformationCurve": {
+              "Keys": [
+                {
+                  "time": 0,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.1,
+                  "value": 2,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 0.3,
+                  "value": -0.75,
+                  "inTangent": 0,
+                  "outTangent": 0
+                },
+                {
+                  "time": 1,
+                  "value": 0,
+                  "inTangent": 0,
+                  "outTangent": 0
+                }
+              ]
+            }
+          }
+        }
+      ]
     },
     "Unlootable": false,
     "UnlootableFromSide": [],

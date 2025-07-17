@@ -30,7 +30,7 @@
       "y": 0,
       "z": 0
     },
-    "Damage": 13,
+    "Damage": 20,
     "Description": "12x70 Картечь",
     "Deterioration": 1,
     "DiscardLimit": -1,
@@ -86,7 +86,7 @@
     "NotShownInSlot": false,
     "PenetrationChanceObstacle": 0.3,
     "PenetrationDamageMod": 0.04,
-    "PenetrationPower": 25,
+    "PenetrationPower": 28,
     "PenetrationPowerDiviation": 1,
     "Prefab": {
       "path": "flechette_ammo.bundle",
@@ -130,7 +130,7 @@
     "ammoSfx": "standart",
     "ammoShiftChance": 0,
     "ammoType": "buckshot",
-    "buckshotBullets": 20,
+    "buckshotBullets": 9,
     "casingEjectPower": 0,
     "casingMass": 0,
     "casingName": "12x70 Картечь",

@@ -1,10 +1,10 @@
 {
     "name": "makeShotgunsGreatAgain",
-    "version": "1.5.2",
+    "version": "1.6.0",
     "main": "src/mod.js",
     "license": "MIT",
     "author": "viniHNS",
-    "sptVersion": "~3.10",
+    "sptVersion": "~3.11",
 	"loadBefore": [],
 	"loadAfter": [],
 	"incompatibilities": [],
