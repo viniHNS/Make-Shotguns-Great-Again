@@ -30,10 +30,20 @@
       "ShortName": "MP-700 Rifle",
       "Description": "The MP-700 is a double-barreled rifle chambered in .700 Nitro Express. It is a break-action rifle with two barrels. The rifle is equipped with open sights. The rifle is intended for hunting dangerous animals."
     },
+    "687e3a7e606386dda2e318f4": {
+      "Name": "MP-700 .700 Nitro Express Sawed-Off Double Rifle",
+      "ShortName": "MP-700 sawed-off",
+      "Description": "The MP-700 is a double-barreled rifle chambered in .700 Nitro Express. It is a break-action rifle with two barrels. The rifle is equipped with open sights. The rifle is intended for hunting dangerous animals. This is a sawed-off version of the MP-700, with a shorter barrel length."
+    },
     "6643ec7e9f7598f9f556b493": {
       "Name": "MP-700 .700 Nitro Express Double Rifle Barrel",
       "ShortName": "MP-700 Barrel",
       "Description": "A 750mm long .700 Nitro Express barrel for MP-700 double-barreled rifle. Because of the pressure of the .700 Nitro Express cartridge, the barrel is extremely heavy. Manufactured by Holland & Holland."
+    },
+    "687e3625c8017edc71aaacb8": {
+      "Name": "MP-700 .700 Nitro Express sawed-off 310mm barrel",
+      "ShortName": "MP-700 Sawed Barrel",
+      "Description": "A 310mm long .700 Nitro Express barrel for MP-700 double-barreled rifle. Because of the pressure of the .700 Nitro Express cartridge, the barrel is extremely heavy. Manufactured by an unknown scav."
     },
     "675399e08fd2a6c51b98e4e9": {
       "Name": "MP-12 12g 600mm barrel",

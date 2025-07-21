@@ -1,76 +1,18 @@
 {
-  "_id": "6643edda4a05be2737da3134",
-  "_name": "weapon_izhmeh_mr43e-1c_12g",
-  "_parent": "5447b6194bdc2d67278b4567",
+  "_id": "687e3a7e606386dda2e318f4",
+  "_name": "weapon_izhmeh_mr43_sawed_off_12g",
+  "_parent": "5447b6094bdc2dc3278b4567",
+  "_type": "Item",
   "_props": {
-    "AdjustCollimatorsToTrajectory": false,
-    "AimPlane": 0,
-    "AimSensitivity": 0.65,
-    "AllowFeed": false,
-    "AllowJam": false,
-    "AllowMisfire": true,
-    "AllowOverheat": true,
-    "AllowSlide": false,
     "AnimationVariantsNumber": 0,
     "BackgroundColor": "black",
-    "BaseMalfunctionChance": 0.21505,
-    "BoltAction": false,
-    "BurstShotsCount": 3,
-    "CameraRecoil": 0.1296,
-    "CameraSnap": 2.2,
-    "CanPutIntoDuringTheRaid": true,
-    "CanQueueSecondShot": true,
     "CanRequireOnRagfair": false,
     "CanSellOnRagfair": true,
-    "CantRemoveFromSlotsDuringRaid": [],
-    "CenterOfImpact": 0.01,
-    "Chambers": [
-      {
-        "_id": "56eaa954d2720b7c698b4571",
-        "_mergeSlotWithChildren": false,
-        "_name": "patron_in_weapon_000",
-        "_parent": "6643edda4a05be2737da3134",
-        "_props": {
-          "filters": [
-            {
-              "Filter": ["6643eb62ef9aaed4947a9836"]
-            }
-          ]
-        },
-        "_proto": "55d4af244bdc2d962f8b4571",
-        "_required": false
-      },
-      {
-        "_id": "56eaa95ed2720b69698b456e",
-        "_mergeSlotWithChildren": false,
-        "_name": "patron_in_weapon_001",
-        "_parent": "6643edda4a05be2737da3134",
-        "_props": {
-          "filters": [
-            {
-              "Filter": ["6643eb62ef9aaed4947a9836"]
-            }
-          ]
-        },
-        "_proto": "55d4af244bdc2d962f8b4571",
-        "_required": false
-      }
-    ],
-    "CompactHandling": false,
     "ConflictingItems": [],
-    "Convergence": 1.2,
-    "CoolFactorGun": 4.608,
-    "CoolFactorGunMods": 1.02,
     "Description": "Мечта охотника. Двустволка мать ее так!",
-    "DeviationCurve": 2.5,
-    "DeviationMax": 10,
     "DiscardLimit": -1,
     "DiscardingBlock": false,
-    "DoubleActionAccuracyPenalty": 1.5,
     "DropSoundType": "Rifle",
-    "Durability": 100,
-    "DurabilityBurnRatio": 1.15,
-    "Ergonomics": 44,
     "ExamineExperience": 6,
     "ExamineTime": 1,
     "ExaminedByDefault": true,
@@ -79,26 +21,13 @@
     "ExtraSizeLeft": 0,
     "ExtraSizeRight": 0,
     "ExtraSizeUp": 0,
-    "Foldable": false,
-    "FoldedSlot": "",
-    "Grids": [],
-    "HeatFactorByShot": 11.62,
-    "HeatFactorGun": 0.99,
     "Height": 1,
     "HideEntrails": false,
-    "HipAccuracyRestorationDelay": 0.2,
-    "HipAccuracyRestorationSpeed": 7,
-    "HipInnaccuracyGain": 0.16,
     "InsuranceDisabled": false,
-    "IronSightRange": 25,
     "IsAlwaysAvailableForInsurance": false,
-    "IsBeltMachineGun": false,
-    "IsFlareGun": false,
-    "IsGrenadeLauncher": false,
     "IsLockedafterEquip": false,
-    "IsOneoff": false,
+    "IsSecretExitRequirement": false,
     "IsSpecialSlotOnly": false,
-    "IsStationaryWeapon": false,
     "IsUnbuyable": false,
     "IsUndiscardable": false,
     "IsUngivable": false,
@@ -106,15 +35,141 @@
     "IsUnsaleable": false,
     "ItemSound": "weap_rifle",
     "LootExperience": 10,
+    "MergesWithChildren": true,
+    "Name": "Двуствольное ружье МР43e",
+    "NotShownInSlot": false,
+    "Prefab": {
+      "path": "assets/content/weapons/mr43/weapon_izhmeh_mr43_sawed_off_12g_container.bundle",
+      "rcid": ""
+    },
+    "QuestItem": false,
+    "QuestStashMaxCount": 0,
+    "RagFairCommissionModifier": 1,
+    "RarityPvE": "Rare",
+    "RepairCost": 60,
+    "RepairSpeed": 2,
+    "ShortName": "МР43e",
+    "StackMaxSize": 1,
+    "StackObjectsCount": 1,
+    "Unlootable": false,
+    "UnlootableFromSide": [],
+    "UnlootableFromSlot": "FirstPrimaryWeapon",
+    "UsePrefab": {
+      "path": "",
+      "rcid": ""
+    },
+    "Weight": 2.5,
+    "Width": 1,
+    "CanPutIntoDuringTheRaid": true,
+    "CantRemoveFromSlotsDuringRaid": [],
+    "ForbidMissingVitalParts": false,
+    "ForbidNonEmptyContainers": false,
+    "Grids": [],
+    "Slots": [
+      {
+        "_name": "mod_barrel",
+        "_id": "64748cb8de82c85eaf0a273b",
+        "_parent": "687e3625c8017edc71aaacb8",
+        "_props": {
+          "filters": [
+            {
+              "Filter": [
+                "687e3625c8017edc71aaacb8"
+              ],
+              "Shift": 0
+            }
+          ]
+        },
+        "_required": true,
+        "_mergeSlotWithChildren": false,
+        "_proto": "55d30c4c4bdc2db4468b457e"
+      }
+    ],
+    "AdjustCollimatorsToTrajectory": false,
+    "AimPlane": 0,
+    "AimSensitivity": 0.65,
+    "AllowFeed": false,
+    "AllowJam": false,
+    "AllowMisfire": true,
+    "AllowOverheat": true,
+    "AllowSlide": false,
+    "BaseMalfunctionChance": 0.21505,
+    "BoltAction": false,
+    "BurstShotsCount": 3,
+    "CameraSnap": 2.0,
+    "CameraToWeaponAngleSpeedRange": {
+      "x": 0.1,
+      "y": 0.2,
+      "z": 0
+    },
+    "CameraToWeaponAngleStep": 0.1,
+    "CanQueueSecondShot": true,
+    "CenterOfImpact": 0.01,
+    "Chambers": [
+      {
+        "_name": "patron_in_weapon_000",
+        "_id": "64748cb8de82c85eaf0a273d",
+        "_parent": "687e3625c8017edc71aaacb8",
+        "_props": {
+          "filters": [
+            {
+              "Filter": [
+                "6643eb62ef9aaed4947a9836"
+              ]
+            }
+          ]
+        },
+        "_required": false,
+        "_mergeSlotWithChildren": false,
+        "_proto": "55d4af244bdc2d962f8b4571"
+      },
+      {
+        "_name": "patron_in_weapon_001",
+        "_id": "64748cb8de82c85eaf0a273e",
+        "_parent": "687e3625c8017edc71aaacb8",
+        "_props": {
+          "filters": [
+            {
+              "Filter": [
+                "6643eb62ef9aaed4947a9836"
+              ]
+            }
+          ]
+        },
+        "_required": false,
+        "_mergeSlotWithChildren": false,
+        "_proto": "55d4af244bdc2d962f8b4571"
+      }
+    ],
+    "CompactHandling": false,
+    "CoolFactorGun": 4.608,
+    "CoolFactorGunMods": 1.02,
+    "DeviationCurve": 2.5,
+    "DeviationMax": 10,
+    "DoubleActionAccuracyPenalty": 1.5,
+    "Durability": 100,
+    "DurabilityBurnRatio": 1.5,
+    "Ergonomics": 40,
+    "Foldable": false,
+    "FoldedSlot": "",
+    "HeatFactorByShot": 11.62,
+    "HeatFactorGun": 0.99,
+    "HipAccuracyRestorationDelay": 0.2,
+    "HipAccuracyRestorationSpeed": 7,
+    "HipInnaccuracyGain": 0.16,
+    "IronSightRange": 25,
+    "IsBeltMachineGun": false,
+    "IsFlareGun": false,
+    "IsGrenadeLauncher": false,
+    "IsOneoff": false,
+    "IsStationaryWeapon": false,
     "ManualBoltCatch": false,
     "MaxDurability": 100,
     "MaxRepairDegradation": 0.04,
     "MaxRepairKitDegradation": 0.035,
-    "MergesWithChildren": true,
+    "MetascoreGroup": "Firepower",
     "MinRepairDegradation": 0,
     "MinRepairKitDegradation": 0,
-    "MustBoltBeOpennedForExternalReload": false,
-    "MustBoltBeOpennedForInternalReload": false,
     "MountCameraSnapMultiplier": 3,
     "MountHorizontalRecoilMultiplier": 0.6,
     "MountReturnSpeedHandMultiplier": 1,
@@ -126,38 +181,13 @@
       "z": 0
     },
     "MountingVerticalOutOfBreathMultiplier": 0.8,
-    "Name": "Двуствольное ружье МР43e",
+    "MustBoltBeOpennedForExternalReload": false,
+    "MustBoltBeOpennedForInternalReload": false,
     "NoFiremodeOnBoltcatch": false,
-    "NotShownInSlot": false,
     "OperatingResource": 10000,
-    "Prefab": {
-      "path": "assets/content/weapons/mr43/weapon_izhmeh_mr43_12g_container.bundle",
-      "rcid": ""
-    },
-    "QuestItem": false,
-    "QuestStashMaxCount": 0,
-    "RagFairCommissionModifier": 1,
-    "RecoilAngle": 90,
-    "RecoilCenter": {
-      "x": 0,
-      "y": -0.31,
-      "z": 0
-    },
-    "RecoilForceBack": 601,
-    "RecoilForceUp": 1299,
-    "RecoilPosZMult": 1,
-    "RecolDispersion": 30,
-    "RecoilCategoryMultiplierHandRotation": 0.23,
-    "RecoilReturnSpeedHandRotation": 2.2,
-    "RecoilDampingHandRotation": 0.85,
-    "RecoilCamera": 0.099,
-    "RecoilStableIndexShot": 2,
-    "RecoilReturnPathDampingHandRotation": 0.52,
-    "RecoilReturnPathOffsetHandRotation": 0.015,
-    "RecoilStableAngleIncreaseStep": 2.5,
-    "ProgressRecoilAngleOnStable": {
-      "x": 0,
-      "y": 30,
+    "PostRecoilHorizontalRangeHandRotation": {
+      "x": -2.5,
+      "y": 2.5,
       "z": 0
     },
     "PostRecoilVerticalRangeHandRotation": {
@@ -165,42 +195,31 @@
       "y": 0.1,
       "z": 0
     },
-    "PostRecoilHorizontalRangeHandRotation": {
-      "x": -2.5,
-      "y": 2.5,
+    "ProgressRecoilAngleOnStable": {
+      "x": 0,
+      "y": 30,
       "z": 0
     },
-    "ShotsGroupSettings": [
-      {
-        "StartShotIndex": 4,
-        "EndShotIndex": 99,
-        "ShotRecoilRotationStrength": {
-          "x": 0,
-          "y": 2,
-          "z": 0
-        },
-        "ShotRecoilPositionStrength": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "ShotRecoilRadianRange": {
-          "x": -20,
-          "y": 20,
-          "z": 0
-        }
-      }
-    ],
-    "CameraToWeaponAngleSpeedRange": {
-      "x": 0.1,
-      "y": 0.2,
+    "RecoilAngle": 90,
+    "RecoilCamera": 0.04,
+    "RecoilCategoryMultiplierHandRotation": 0.21,
+    "RecoilCenter": {
+      "x": 0,
+      "y": -0.31,
       "z": 0
     },
-    "CameraToWeaponAngleStep": 0.1,
+    "RecoilDampingHandRotation": 0.82,
+    "RecoilForceBack": 877,
+    "RecoilForceUp": 2559,
+    "RecoilPosZMult": 1,
+    "RecoilReturnPathDampingHandRotation": 0.52,
+    "RecoilReturnPathOffsetHandRotation": 0.015,
+    "RecoilReturnSpeedHandRotation": 3,
+    "RecoilStableAngleIncreaseStep": 2.5,
+    "RecoilStableIndexShot": 2,
+    "RecolDispersion": 23,
     "ReloadMode": "OnlyBarrel",
     "RepairComplexity": 0,
-    "RepairCost": 100,
-    "RepairSpeed": 2,
     "Retractable": false,
     "RotationCenter": {
       "x": 0,
@@ -212,53 +231,37 @@
       "y": 0,
       "z": 0
     },
-    "ShortName": "МР43e",
-    "ShotgunDispersion": 1,
+    "ShotsGroupSettings": [
+      {
+        "EndShotIndex": 99,
+        "ShotRecoilPositionStrength": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "ShotRecoilRadianRange": {
+          "x": -20,
+          "y": 20,
+          "z": 0
+        },
+        "ShotRecoilRotationStrength": {
+          "x": 0,
+          "y": 2,
+          "z": 0
+        },
+        "StartShotIndex": 4
+      }
+    ],
     "SightingRange": 100,
     "SingleFireRate": 450,
     "SizeReduceRight": 0,
-    "Slots": [
-      {
-        "_id": "55d5a27c4bdc2d8c2f8b456f",
-        "_mergeSlotWithChildren": false,
-        "_name": "mod_barrel",
-        "_parent": "6643edda4a05be2737da3134",
-        "_props": {
-          "filters": [
-            {
-              "Filter": ["6643ec7e9f7598f9f556b493"],
-              "Shift": 0
-            }
-          ]
-        },
-        "_proto": "55d30c4c4bdc2db4468b457e",
-        "_required": true
-      },
-      {
-        "_id": "611a35095b7ffe001b4649d3",
-        "_mergeSlotWithChildren": false,
-        "_name": "mod_stock",
-        "_parent": "6643edda4a05be2737da3134",
-        "_props": {
-          "filters": [
-            {
-              "Filter": ["611a31ce5b7ffe001b4649d1"],
-              "Shift": 0
-            }
-          ]
-        },
-        "_proto": "55d30c4c4bdc2db4468b457e",
-        "_required": false
-      }
-    ],
-    "StackMaxSize": 1,
-    "StackObjectsCount": 1,
     "TacticalReloadFixation": 0.95,
     "TacticalReloadStiffnes": {
       "x": 0.95,
       "y": 0.33,
       "z": 0.95
     },
+    "Velocity": 0,
     "WeaponRecoilSettings": {
       "Enable": true,
       "Values": [
@@ -268,8 +271,8 @@
           "Process": {
             "ComponentType": "Y",
             "CurveTimeMultiply": 1,
-            "CurveValueMultiply": 3,
-            "CurveAimingValueMultiply": 2,
+            "CurveValueMultiply": 3.1,
+            "CurveAimingValueMultiply": 2.4,
             "TransformationCurve": {
               "Keys": [
                 {
@@ -306,8 +309,8 @@
           "Process": {
             "ComponentType": "X",
             "CurveTimeMultiply": 3,
-            "CurveValueMultiply": 0.004,
-            "CurveAimingValueMultiply": 0.002,
+            "CurveValueMultiply": 0.005,
+            "CurveAimingValueMultiply": 0.003,
             "TransformationCurve": {
               "Keys": [
                 {
@@ -378,20 +381,12 @@
         }
       ]
     },
-    "Unlootable": false,
-    "UnlootableFromSide": [],
-    "UnlootableFromSlot": "FirstPrimaryWeapon",
-    "UsePrefab": {
-      "path": "",
-      "rcid": ""
-    },
-    "Velocity": 0,
-    "Weight": 2.5,
-    "Width": 2,
-    "ammoCaliber": "Caliber17.8×89",
+    "WithAnimatorAiming": false,
+    "ammoCaliber": "Caliber12g",
     "bEffDist": 100,
     "bFirerate": 900,
     "bHearDist": 80,
+    "blockLeftStance": false,
     "chamberAmmoCount": 1,
     "defAmmo": "6643eb62ef9aaed4947a9836",
     "defMagType": "5448bc234bdc2d3c308b4569",
@@ -401,9 +396,12 @@
     "isChamberLoad": true,
     "isFastReload": false,
     "shotgunDispersion": 0,
-    "weapClass": "marksmanRifle",
-    "weapFireType": ["single", "doublet"],
-    "weapUseType": "primary"
-  },
-  "_type": "Item"
+    "weapClass": "shotgun",
+    "weapFireType": [
+      "single",
+      "doublet"
+    ],
+    "weapUseType": "primary",
+    "ShotgunDispersion": 1
+  }
 }

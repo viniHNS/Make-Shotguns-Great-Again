@@ -28,7 +28,8 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod {
     MP43: "5580223e4bdc2d1c128b457f",
     MP43_SAWED_OFF: "64748cb8de82c85eaf0a273a",
     MTS_255_CYLINDER: "60dc519adf4c47305f6d410d",
-    STANDARD_12G_BUCK: "560d5e524bdc2d25448b4571"
+    STANDARD_12G_BUCK: "560d5e524bdc2d25448b4571",
+    MP700_SAWED_OFF: "687e3a7e606386dda2e318f4"
   };
 
   private readonly NEW_CARTRIDGE_IDS = [
@@ -37,6 +38,8 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod {
     "67579112e55c9b7479e5d9ea",
     "6758e4a30db075f8dc01bb17"
   ];
+
+  private readonly NITRO_EXPRESS_700_FMJ_ID = "6643eb62ef9aaed4947a9836";
 
   preSptLoad(container: DependencyContainer): void {
     const logger = container.resolve<ILogger>("WinstonLogger");
@@ -76,6 +79,9 @@ class Mod implements IPostDBLoadMod, IPreSptLoadMod {
     
     // Add MP-12 to primary and secondary slots
     this.addItemToSlots(items[this.ITEM_IDS.BEAR_LOWER], [0, 1], this.ITEM_IDS.MP12);
+
+    // Add MP-700 Sawed-Off to pistol slot
+    this.addItemToSlots(items[this.ITEM_IDS.BEAR_LOWER], [2], this.ITEM_IDS.MP700_SAWED_OFF);
   }
 
   private modifySaiga12K(saiga12K: any): void {
