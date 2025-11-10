@@ -58,6 +58,14 @@
             ]
         },
         {
+          "key": "12ga_brass.bundle",
+          "dependencyKeys": [
+            "cubemaps",
+            "shaders",
+            "assets/commonassets/physics/physicsmaterials.bundle"
+          ]
+        },
+        {
             "key": "flechette_ammo.bundle",
             "dependencyKeys": [
                 "cubemaps",

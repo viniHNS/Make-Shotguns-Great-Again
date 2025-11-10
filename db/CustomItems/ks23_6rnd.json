@@ -1,0 +1,73 @@
+﻿{
+  "6910ebc01b0a1cfdd5877581": {
+    "itemTplToClone": "5f647d9f8499b57dc40ddb93",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "6shellks23.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.5,
+      "MalfunctionChance": 0.3,
+      "Ergonomics": -10,
+      "Width": 2,
+      "Height": 1,
+      "Cartridges": [
+        {
+          "_id": "6910ec0e4b89f60fa45c2d03",
+          "_max_count": 6,
+          "_name": "cartridges",
+          "_parent": "6910ebc01b0a1cfdd5877581",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                    "5e85aa1a988a8701445df1f5",
+                    "5e85aac65505fa48730d8af2",
+                    "5e85a9a6eacf8c039e4e2ac1",
+                    "5f647f31b6238e5dd066e196",
+                    "5e85a9f4add9fe03027d9bf1",
+                    "5f647fd3f6e4ab66c82faed6"
+                ]
+              }
+            ]
+          },
+          "_proto": "6910ec1337fac26f6cfbfe31"
+        }
+      ]
+    },
+    
+    "locales": {
+      "en": {
+        "name": "KS-23M 23x75 6-shell magazine",
+        "shortName": "KS-23Mx6",
+        "description": "A 6-shell KS-23M 23x75 magazine."
+      }
+    },
+    
+    "fleaPriceRoubles": 4990,
+    "handbookPriceRoubles": 3300,
+    "addtoSecureFilters": true,
+    "addtoTraders": true,
+    
+    "traders": {
+      "MECHANIC": {
+        "6910ecc55904d6a42f6931b2": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": false,
+            "stackObjectsCount": 20
+          },
+          "barters": [
+            {
+              "count": 4600,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}

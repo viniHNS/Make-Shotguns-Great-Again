@@ -1,0 +1,55 @@
+﻿{
+  "69112e556c6d492d367d04aa": {
+    "itemTplToClone": "65702474bfc87b3a34093226",
+    "parentId": "543be5cb4bdc2deb348b4568",
+    "handbookParentId": "5b47574386f77428ca22b33c",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "flechette_box_25.bundle",
+        "rcid": ""
+      },
+      "StackSlots": 
+      [
+        {
+          "_id": "69112e769d16965a8f6002d9",
+          "_max_count": 25,
+          "_name": "cartridges",
+          "_parent": "69112e556c6d492d367d04aa",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "69111e8fab39296e6f0f310a"
+                ]
+              }
+            ]
+          },
+          "_proto": "69112e8779e6a4368a9eea94"
+        }
+      ]
+    },
+    
+    
+    "locales": {
+      "en": {
+        "name": "12/70 Flechette Kinghunter ammo pack (25 pcs)",
+        "shortName": "12/70 Flechette pack",
+        "description": "A box of 12/70 Flechette Kinghunter shells, 25 pieces."
+      }
+    },
+    
+    "addtoStaticLootContainers": true,
+    "StaticLootContainers": [
+      {
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "Probability": 5
+      }
+    ],
+    
+    "fleaPriceRoubles": 8564,
+    "handbookPriceRoubles": 6211,
+    "addtoSecureFilters": true
+    
+  }
+}

@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>makeshotgunsgreatagain</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Library</OutputType>
+    <Version>1.4.0</Version>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTarkov.Common" Version="4.0.3" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.3" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.3" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="db\CustomItems\*.json" />
+  </ItemGroup>
+
+  <Target Name="PackageModForDistribution" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+    <PropertyGroup>
+      <ModName>$(AssemblyName)</ModName>
+      <ModVersion>$(Version)</ModVersion>
+      <ZipFileName>$(ModName).zip</ZipFileName>
+      <TempPackageDir>$(ProjectDir)obj/Package</TempPackageDir>
+      <ModPackageDir>$(TempPackageDir)/SPT/user/mods/$(ModName)</ModPackageDir>
+    </PropertyGroup>
+
+    <Message Text="--- Iniciando empacotamento do Mod para distribuição ---" Importance="high" />
+
+    <RemoveDir Directories="$(TempPackageDir)" />
+    <MakeDir Directories="$(ModPackageDir)" />
+
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModPackageDir)" />
+    <Copy SourceFiles="$(ProjectDir)bundles.json" DestinationFolder="$(ModPackageDir)" />
+
+    <ItemGroup>
+      <BundleFiles Include="bundles\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(BundleFiles)" DestinationFolder="$(ModPackageDir)\bundles\%(RecursiveDir)" />
+
+    <ItemGroup>
+      <DbFiles Include="db\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(DbFiles)" DestinationFolder="$(ModPackageDir)\db\%(RecursiveDir)" />
+
+    <ZipDirectory
+                  SourceDirectory="$(TempPackageDir)"
+                  DestinationFile="$(ProjectDir)$(ZipFileName)"
+                  Overwrite="true" />
+
+    <RemoveDir Directories="$(TempPackageDir)" />
+
+    <Message Text="--- Mod empacotado com sucesso em: $(ProjectDir)$(ZipFileName) ---" Importance="high" />
+  </Target>
+
+</Project>

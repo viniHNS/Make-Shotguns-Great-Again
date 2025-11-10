@@ -1,0 +1,138 @@
+﻿{
+  "6910f8984a20c41289074652": {
+    "itemTplToClone": "6259c4347d6aab70bc23a190",
+    "parentId": "55818a104bdc2db9688b4569",
+    "handbookParentId": "5b5f75e486f77447ec5d7712",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "m3_handguard_custom.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.650,
+      "Ergonomics": 4,
+      "CoolFactor": 1.01,
+      "HeatFactor": 1,
+      "Recoil": -1,
+      "Slots": [
+        {
+          "_name": "mod_foregrip",
+          "_id": "6910fc5fe6abf295478dc833",
+          "_parent": "6910f8984a20c41289074652",
+          "_props": {
+            "filters": [
+              {
+                "Shift": 0,
+                "Filter": [
+                  "5c7fc87d2e221644f31c0298",
+                  "5cda9bcfd7f00c0c0b53e900",
+                  "59f8a37386f7747af3328f06",
+                  "619386379fb0c665d5490dbe",
+                  "5c87ca002e221600114cb150",
+                  "588226d124597767ad33f787",
+                  "588226dd24597767ad33f789",
+                  "588226e62459776e3e094af7",
+                  "588226ef24597767af46e39c",
+                  "59fc48e086f77463b1118392",
+                  "5fce0cf655375d18a253eff0",
+                  "5cf4fb76d7f00c065703d3ac",
+                  "5b057b4f5acfc4771e1bd3e9",
+                  "5c791e872e2216001219c40a",
+                  "558032614bdc2de7118b4585",
+                  "58c157be86f77403c74b2bb6",
+                  "58c157c886f774032749fb06",
+                  "5f6340d3ca442212f4047eb2",
+                  "591af28e86f77414a27a9e1d",
+                  "5c1cd46f2e22164bef5cfedb",
+                  "5c1bc4812e22164bef5cfde7",
+                  "5c1bc5612e221602b5429350",
+                  "5c1bc5af2e221602b412949b",
+                  "5c1bc5fb2e221602b1779b32",
+                  "5c1bc7432e221602b412949d",
+                  "5c1bc7752e221602b1779b34",
+                  "64806bdd26c80811d408d37a",
+                  "64807a29e5ffe165600abc97",
+                  "648067db042be0705c0b3009",
+                  "65169d5b30425317755f8e25",
+                  "655df24fdf80b12750626d0a",
+                  "655dccfdbdcc6b5df71382b6"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "6910fc7dc4609cfcbf2771ef"
+        },
+        {
+          "_name": "mod_mount_000",
+          "_id": "6910fc9895a20b1fb7c99e5e",
+          "_parent": "6910f8984a20c41289074652",
+          "_props": {
+            "filters": [
+              {
+                "Shift": 0,
+                "Filter": [
+                  "5b7be47f5acfc400170e2dd2",
+                  "6269220d70b6c02e665f2635",
+                  "6269545d0e57f218e4548ca2"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "6910fca73fbb9a4c55b5d929"
+        },
+        {
+          "_name": "mod_mount_001",
+          "_id": "6910fcaf85dccb40dd0cc9fe",
+          "_parent": "6910f8984a20c41289074652",
+          "_props": {
+            "filters": [
+              {
+                "Shift": 0,
+                "Filter": [
+                  "5b7be47f5acfc400170e2dd2",
+                  "6269220d70b6c02e665f2635",
+                  "6269545d0e57f218e4548ca2"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "6910fcb8e3231797461be9f9"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Benelli M3 M-LOK Handguard",
+        "shortName": "M3 M-LOK",
+        "description": "A M-LOK handguard for the Benelli M3 shotgun, manufactured by Toni System."
+      }
+    },
+    "fleaPriceRoubles": 8325,
+    "handbookPriceRoubles": 4232,
+    "addtoSecureFilters": true,
+    "addtoTraders": true,
+    "traders": {
+      "MECHANIC": {
+        "6910f949a82869d94aeb0925": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": false,
+            "stackObjectsCount": 63
+          },
+          "barters": [
+            {
+              "count": 8013,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

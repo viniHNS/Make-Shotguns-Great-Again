@@ -1,0 +1,127 @@
+﻿{
+  "6910e86bbcb9218635891ae2": {
+    "itemTplToClone": "5580223e4bdc2d1c128b457f",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "assets/content/weapons/mr43/weapon_izhmeh_mr43_12g_container.bundle",
+        "rcid": ""
+      },
+      "Weight": 3,
+      "RecoilForceBack": 1200,
+      "RecoilForceUp": 998,
+      "ammoCaliber":"Caliber17.8×89",
+      "Chambers": [
+        {
+          "_name": "patron_in_weapon_000",
+          "_id": "6910e80eeebaa23fbb02b4a0",
+          "_parent": "6910e86bbcb9218635891ae2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6910e1cbbd20f63a9791742e"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "6910e83d6666d7ac46afbf77"
+        },
+        {
+          "_name": "patron_in_weapon_001",
+          "_id": "6910e84d28c9d17e19dfd5f6",
+          "_parent": "6910e86bbcb9218635891ae2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6910e1cbbd20f63a9791742e"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "6910e8443a75bd30ab33760f"
+        }
+      ],
+      "Slots": [
+        {
+          "_id": "6910e85ed3c59899d17cff2d",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "6910e86bbcb9218635891ae2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6910e8d90b57259e9dd34f78"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "6910d825069499541588b1b1",
+          "_required": true
+        },
+        {
+          "_id": "6910e89912dcc3fb93aeb09d",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "6910e86bbcb9218635891ae2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "611a31ce5b7ffe001b4649d1"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "6910e89e942c2b10f17a40e4",
+          "_required": true
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "MP-700 .700 Nitro Express Double Rifle",
+        "shortName": "MP-700",
+        "description": "The MP-700 is a double-barreled rifle chambered in .700 Nitro Express. It is a break-action rifle with two barrels. The rifle is equipped with open sights. The rifle is intended for hunting dangerous animals."
+      }
+    },
+    
+    "fleaPriceRoubles": 130245,
+    "handbookPriceRoubles": 100325,
+    "addtoInventorySlots": ["FirstPrimaryWeapon", "SecondPrimaryWeapon"],
+    "addtoHallOfFame": true,
+    "hallOfFameSlots": [
+      "bigTrophies"
+    ],
+    "addtoSecureFilters": true,
+    
+    "addtoTraders": true,
+    "traders": {
+      "JAEGER": {
+        "6910e9e1396d833de5f37108": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 5
+          },
+          "barters": [
+            {
+              "count": 129564,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}

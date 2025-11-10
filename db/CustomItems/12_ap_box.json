@@ -1,0 +1,57 @@
+﻿{
+  "69112cd943a7f706bc66b491": {
+    "itemTplToClone": "64898838d5b4df6140000a20",
+    "parentId": "543be5cb4bdc2deb348b4568",
+    "handbookParentId": "5b47574386f77428ca22b33c",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "ap_box_5.bundle",
+        "rcid": ""
+      },
+      "StackSlots": 
+      [
+        {
+          "_id": "69112d228782e6ee139b244a",
+          "_max_count": 5,
+          "_name": "cartridges",
+          "_parent": "69112cd943a7f706bc66b491",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "69111d386d6226b577e619b1"
+                ]
+              }
+            ]
+          },
+          "_proto": "69112d3f31ca8e636abddecc"
+        }
+      ],
+      "StackMaxRandom": 5,
+      "StackMaxSize": 1,
+      "StackMinRandom":5
+    },
+    
+    
+    "locales": {
+      "en": {
+        "name": "12/70 armor-piercing Slug “SVAROG” ammo pack (5 pcs)",
+        "shortName": "12/70 SVAROG pack",
+        "description": "A box of 12/70 armor-piercing Slug “SVAROG” shells, 5 pieces."
+      }
+    },
+    
+    "addtoStaticLootContainers": true,
+    "StaticLootContainers": [
+      {
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "Probability": 2
+      }
+    ],
+    
+    "fleaPriceRoubles": 9630,
+    "handbookPriceRoubles": 7563,
+    "addtoSecureFilters": true
+  }
+}

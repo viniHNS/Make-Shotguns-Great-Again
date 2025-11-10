@@ -1,0 +1,70 @@
+﻿{
+  "PEACEKEEPER": {
+    "items": [
+      {
+        "_id": "6911338c38a37cd4c561a307",
+        "_tpl": "69112cd943a7f706bc66b491",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 32,
+          "BuyRestrictionMax": 0
+        },
+        "parentId": "hideout",
+        "slotId": "hideout"
+      },
+      {
+        "_id": "691133cd89aa8250e84fbc1a",
+        "_tpl": "69111d386d6226b577e619b1",
+        "slotId": "cartridges",
+        "parentId": "6911338c38a37cd4c561a307",
+        "upd": {
+          "StackObjectsCount": 5
+        }
+      },
+
+
+      {
+        "_id": "691135e6426a029d57314834",
+        "_tpl": "69112e556c6d492d367d04aa",
+        "upd": {
+          "UnlimitedCount": false,
+          "StackObjectsCount": 28,
+          "BuyRestrictionMax": 0
+        },
+        "parentId": "hideout",
+        "slotId": "hideout"
+      },
+      {
+        "_id": "691135fef1458a046aebf3c0",
+        "_tpl": "69111e8fab39296e6f0f310a",
+        "slotId": "cartridges",
+        "parentId": "691135e6426a029d57314834",
+        "upd": {
+          "StackObjectsCount": 25
+        }
+      }
+    ],
+    "barter_scheme": {
+      "6911338c38a37cd4c561a307": [
+        [
+          {
+            "count": 1,
+            "_tpl": "590c645c86f77412b01304d9"
+          }
+        ]
+      ],
+      "691135e6426a029d57314834": [
+        [
+          {
+            "count": 1,
+            "_tpl": "5af0561e86f7745f5f3ad6ac"
+          }
+        ]
+      ]
+    },
+    "loyal_level_items": {
+      "6911338c38a37cd4c561a307": 2,
+      "691135e6426a029d57314834": 2
+    }
+  }
+}

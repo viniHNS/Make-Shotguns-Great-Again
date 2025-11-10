@@ -1,0 +1,127 @@
+﻿{
+  "691098356f593043295f6ddc": {
+    "itemTplToClone": "61f7c9e189e6fb1a5e3ea78d",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "assets/content/weapons/mp18/weapon_izhmash_mp18_multi_container.bundle",
+        "rcid": ""
+      },
+      "Weight": 2,
+      "RecoilForceBack": 753,
+      "RecoilForceUp": 390,
+      "ammoCaliber":"Caliber12g",
+      "Chambers": [
+        {
+          "_name": "patron_in_weapon_000",
+          "_id": "6910d56bcce650a6a860eff3",
+          "_parent": "691098356f593043295f6ddc",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "6910d574cc7e7e13e6fb66e6"
+        }
+      ],
+      "Slots": [
+        {
+          "_id": "6910d8207bae622e2a10c273",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "691098356f593043295f6ddc",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6910d6c97e9a164e15f94d48"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "6910d825069499541588b1b1",
+          "_required": true
+        },
+        {
+          "_id": "6910db843b0a5b6949f677b0",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "691098356f593043295f6ddc",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61f803b8ced75b2e852e35f8",
+                  "61f7b234ea4ab34f2f59c3ec"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "6910db88acdbeaf4764e2bd4",
+          "_required": true
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "MP-12 12g single-shot rifle",
+        "shortName": "MP-12",
+        "description": "MP-12 is the legendary Soviet single-barreled rifle. This gun behaves perfectly in all weather conditions, no breakdowns or failures have ever been identified."
+      }
+    },
+    
+    "fleaPriceRoubles": 6324,
+    "handbookPriceRoubles": 4231,
+    "addtoInventorySlots": ["FirstPrimaryWeapon", "SecondPrimaryWeapon"],
+    "addtoHallOfFame": true,
+    "hallOfFameSlots": [
+      "bigTrophies"
+    ],
+    "addtoSecureFilters": true,
+    
+    "addtoTraders": true,
+    "traders": {
+      "PRAPOR": {
+        "69109c17c501950c5261e609": {
+          "barterSettings": {
+            "loyalLevel": 1,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999
+          },
+          "barters": [
+            {
+              "count": 6412,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+﻿{
+  "6910e8d90b57259e9dd34f78": {
+    "itemTplToClone": "55d447bb4bdc2d892f8b456f",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "assets/content/items/mods/barrels/barrel_mr43e-1c_725mm.bundle",
+        "rcid": ""
+      },
+      "Weight": 8,
+      "Ergonomics": -15
+    },
+    
+    "locales": {
+      "en": {
+        "name": "MP-700 .700 Nitro Express Double Rifle 725mm Barrel",
+        "shortName": "MP-700 725mm",
+        "description": "A 750mm long .700 Nitro Express barrel for MP-700 double-barreled rifle. Because of the pressure of the .700 Nitro Express cartridge, the barrel is extremely heavy. Manufactured by Holland & Holland."
+      }
+    },
+    
+    "fleaPriceRoubles": 30123,
+    "handbookPriceRoubles": 20321,
+    "addtoSecureFilters": true,
+    
+    "addtoTraders": true,
+    "traders": {
+      "JAEGER": {
+        "6910e9673c70d691b9262abe": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": false,
+            "stackObjectsCount": 6
+          },
+          "barters": [
+            {
+              "count": 29568,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}

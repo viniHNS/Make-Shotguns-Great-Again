@@ -1,0 +1,46 @@
+﻿{
+  "6910d6c97e9a164e15f94d48": {
+    "itemTplToClone": "61f4012adfc9f01a816adda1",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "assets/content/items/mods/barrels/barrel_mp18_600mm_762x54r.bundle",
+        "rcid": ""
+      },
+      "Weight": 1
+    },
+    
+    "locales": {
+      "en": {
+        "name": "MP-12 12ga 600mm barrel",
+        "shortName": "MP-12 600mm",
+        "description": "A standard factory-produced 600mm barrel with a front sight for MP-12 12ga hunting rifles."
+      }
+    },
+    
+    "fleaPriceRoubles": 2000,
+    "handbookPriceRoubles": 1245,
+    "addtoSecureFilters": true,
+    
+    "addtoTraders": true,
+    "traders": {
+      "PRAPOR": {
+        "6910d9c6961e05d8059edfbd": {
+          "barterSettings": {
+            "loyalLevel": 1,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999
+          },
+          "barters": [
+            {
+              "count": 2134,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}

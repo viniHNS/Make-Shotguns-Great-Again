@@ -1,0 +1,82 @@
+﻿{
+  "6910dd763afa5d8fab09b27c": {
+    "itemTplToClone": "5cf8f3b0d7f00c00217872ef",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "saiga12_30rounds.bundle",
+        "rcid": ""
+      },
+      "Weight": 2,
+      "MalfunctionChance": 0.3,
+      "Ergonomics": -30,
+      "Cartridges": [
+        {
+          "_id": "6910dea743d7e7e96671383b",
+          "_max_count": 30,
+          "_name": "cartridges",
+          "_parent": "6910dd763afa5d8fab09b27c",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "6910dea36ce7e337f7aa41d3"
+        }
+      ]
+    },
+    
+    "locales": {
+      "en": {
+        "name": "SOK-12 12/76 Alliance Armament 30-round magazine",
+        "shortName": "Alliance",
+        "description": "The Alliance Armament 30-round magazine for SOK-12 and compatible weapons, intended for use with 12/76 or 12/70 shells."
+      }
+    },
+    
+    "fleaPriceRoubles": 28456,
+    "handbookPriceRoubles": 25632,
+    "addtoSecureFilters": true,
+    "addtoTraders": true,
+    
+    "traders": {
+      "MECHANIC": {
+        "6910ddeef2c54fd1710170af": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": false,
+            "stackObjectsCount": 20
+          },
+          "barters": [
+            {
+              "count": 27996,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}
