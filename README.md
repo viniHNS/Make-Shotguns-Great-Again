@@ -20,7 +20,7 @@ in the KS-23M.
 
 - KS-23M 23x75 6-shell magazine
 - MP-153 competition 13-shell magazine
-- Benelli M3 M-LOK handguard
+- Benelli M3 'M-LOK' handguard
 
 ## "New" Guns
 - **MP-12 Single Shot Shotgun**:  
@@ -36,10 +36,14 @@ A beast of a weapon capable of taking down even the toughest adversaries. This d
 - 12/70 AP Slug SVAROG and box with 5 rounds
 - 12/70 Winchester Super-X 00 buckshot
 - .700 Nitro Express FMJ
+- 12/70 Brass Case
 
 ## Installation
 
-Just place the `user` folder in your game's `SPT` installation directory.
+1.  Download the `makeshotgunsgreatagain.zip`.
+2.  Drag and drop the `.zip` file directly into the root folder of your SPT installation.
+3.  Right-click the `.zip` file and select **"Extract Here"**.
+4.  The folders should merge automatically. If you get a prompt to overwrite files, say yes.
 
 ## License
 

@@ -19,7 +19,7 @@ Adiciona algumas melhorias às shotguns do jogo e novos acessórios para elas:
 
 - Carregador de 6 cartuchos 23x75 para KS-23M
 - Carregador de competição de 13 cartuchos para MP-153
-- Handguard M-LOK para Benelli M3
+- Handguard 'M-LOK' para Benelli M3
 
 ## "Novas" Armas
 
@@ -36,10 +36,14 @@ Uma arma capaz de derrubar até os adversários mais resistentes. Esta poderosa 
 - 12/70 AP Slug SVAROG e caixa com 5 cartuchos
 - 12/70 Winchester Super-X 00 buckshot
 - .700 Nitro Express FMJ
+- 12/70 Brass Case
 
 ## Instalação
 
-Basta colocar a pasta `user` no diretório de instalação do seu jogo `SPT`.
+1.  Baixe o arquivo `makeshotgunsgreatagain.zip`.
+2.  Arraste e solte o arquivo `.zip` diretamente na pasta raiz da sua instalação do SPT.
+3.  Clique com o botão direito no arquivo `.zip` e selecione **"Extrair aqui"**.
+4.  As pastas devem se mesclar automaticamente. Se você receber um prompt para sobrescrever arquivos, confirme.
 
 ## Licença
 
