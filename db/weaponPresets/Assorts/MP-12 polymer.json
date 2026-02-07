@@ -1,0 +1,55 @@
+{
+  "JAEGER": {
+    "items": [
+      {
+        "_id": "698530ba25d41819d0eee3aa",
+        "_tpl": "691098356f593043295f6ddc",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "StackObjectsCount": 1,
+          "UnlimitedCount": false,
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          },
+          "BuyRestrictionMax": 4
+        }
+      },
+      {
+        "_id": "6985309325d41819d0eee116",
+        "_tpl": "6910d6c97e9a164e15f94d48",
+        "parentId": "698530ba25d41819d0eee3aa",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "6985309325d41819d0eee117",
+        "_tpl": "61f803b8ced75b2e852e35f8",
+        "parentId": "698530ba25d41819d0eee3aa",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "6985309325d41819d0eee118",
+        "_tpl": "61f8024263dc1250e26eb029",
+        "parentId": "6985309325d41819d0eee116",
+        "slotId": "mod_handguard"
+      }
+    ],
+    "barter_scheme": {
+      "698530ba25d41819d0eee3aa": [
+        [
+          {
+            "count": 7103,
+            "_tpl": "5449016a4bdc2d6f028b456f"
+          }
+        ]
+      ]
+    },
+    "loyal_level_items": {
+      "698530ba25d41819d0eee3aa": 1
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "chances": {
+        "equipment": {
+            "FirstPrimaryWeapon": 100
+        },
+        "weaponMods": {
+            "mod_barrel": 100,
+            "mod_handguard": 100,
+            "mod_stock": 100
+        }
+    },
+    "inventory": {
+        "equipment": {
+            "FirstPrimaryWeapon": {
+                "691098356f593043295f6ddc": 1
+            }
+        },
+        "mods": {
+            "691098356f593043295f6ddc": {
+                "mod_barrel": [
+                    "6910d6c97e9a164e15f94d48"
+                ],
+                "mod_stock": [
+                    "61f803b8ced75b2e852e35f8",
+                    "61f7b234ea4ab34f2f59c3ec"
+                ]
+            },
+            "6910d6c97e9a164e15f94d48": {
+                "mod_handguard": [
+                    "61f8024263dc1250e26eb029",
+                    "61f7b85367ddd414173fdb36"
+                ]
+            }
+        },
+        "Ammo": {
+            "Caliber12g": {
+                "5c0d591486f7744c505b416f": 1
+            }
+        }
+    }
+}
