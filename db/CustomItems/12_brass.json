@@ -12,13 +12,12 @@
       "PenetrationPower": 2,
       "ArmorDamage": 22,
       "BulletDiameterMilimeters": 7,
-      "ammoAccr": -2,
-      "buckshotBullets": 10,
+      "ammoAccr": -1,
+      "Damage": 41,
+      "ProjectileCount": 10,
       "HeatFactor": 1.9,
       "MalfMisfireChance": 0.18
     },
-    
-    
     "locales": {
       "en": {
         "name": "12/70 7mm Buckshot Brass Case",
@@ -29,19 +28,16 @@
     "addCaliberToAllCloneLocations": true,
     "addtoStaticAmmo": true,
     "staticAmmoProbability": 4,
-    
     "addtoStaticLootContainers": true,
     "StaticLootContainers": [
       {
-        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV",
         "Probability": 30
       }
     ],
-    
     "fleaPriceRoubles": 50,
     "handbookPriceRoubles": 24,
     "addtoSecureFilters": true,
-    
     "addtoTraders": true,
     "traders": {
       "JAEGER": {
@@ -54,7 +50,7 @@
           "barters": [
             {
               "count": 44,
-              "_tpl": "MONEY_ROUBLES" 
+              "_tpl": "MONEY_ROUBLES"
             }
           ]
         }

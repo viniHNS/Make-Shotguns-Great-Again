@@ -14,11 +14,10 @@
       "BulletDiameterMilimeters": 8.5,
       "ammoAccr": -18,
       "AmmoRec": 135,
-      "buckshotBullets": 9,
+      "Damage": 54,
+      "ProjectileCount": 9,
       "HeatFactor": 2.3
     },
-    
-    
     "locales": {
       "en": {
         "name": "12/70 Magnum Express Kinghunter",
@@ -29,19 +28,16 @@
     "addCaliberToAllCloneLocations": true,
     "addtoStaticAmmo": true,
     "staticAmmoProbability": 3,
-    
     "addtoStaticLootContainers": true,
     "StaticLootContainers": [
       {
-        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV",
         "Probability": 6
       }
     ],
-    
     "fleaPriceRoubles": 120,
     "handbookPriceRoubles": 50,
     "addtoSecureFilters": true,
-    
     "addtoTraders": true,
     "traders": {
       "PEACEKEEPER": {
@@ -54,7 +50,7 @@
           "barters": [
             {
               "count": 2,
-              "_tpl": "MONEY_DOLLARS" 
+              "_tpl": "MONEY_DOLLARS"
             }
           ]
         }

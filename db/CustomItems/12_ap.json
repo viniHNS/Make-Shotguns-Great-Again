@@ -18,8 +18,6 @@
       "AmmoRec": 70,
       "HeatFactor": 2.5
     },
-    
-    
     "locales": {
       "en": {
         "name": "12/70 armor-piercing Slug “SVAROG”",
@@ -30,19 +28,16 @@
     "addCaliberToAllCloneLocations": true,
     "addtoStaticAmmo": true,
     "staticAmmoProbability": 1,
-    
     "addtoStaticLootContainers": true,
     "StaticLootContainers": [
       {
-        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV",
         "Probability": 1
       }
     ],
-    
     "fleaPriceRoubles": 1000,
     "handbookPriceRoubles": 800,
     "addtoSecureFilters": true,
-    
     "addtoTraders": true,
     "traders": {
       "PEACEKEEPER": {
@@ -55,7 +50,7 @@
           "barters": [
             {
               "count": 5,
-              "_tpl": "MONEY_DOLLARS" 
+              "_tpl": "MONEY_DOLLARS"
             }
           ]
         }

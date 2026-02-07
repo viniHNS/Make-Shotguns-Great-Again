@@ -10,9 +10,9 @@
         "rcid": ""
       },
       "Weight": 2,
-      "RecoilForceBack": 753,
-      "RecoilForceUp": 390,
-      "ammoCaliber":"Caliber12g",
+      "RecoilForceBack": 760,
+      "RecoilForceUp": 410,
+      "ammoCaliber": "Caliber12g",
       "Chambers": [
         {
           "_name": "patron_in_weapon_000",
@@ -95,16 +95,17 @@
         "description": "MP-12 is the legendary Soviet single-barreled rifle. This gun behaves perfectly in all weather conditions, no breakdowns or failures have ever been identified."
       }
     },
-    
     "fleaPriceRoubles": 6324,
     "handbookPriceRoubles": 4231,
-    "addtoInventorySlots": ["FirstPrimaryWeapon", "SecondPrimaryWeapon"],
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
     "addtoHallOfFame": true,
     "hallOfFameSlots": [
       "bigTrophies"
     ],
     "addtoSecureFilters": true,
-    
     "addtoTraders": true,
     "traders": {
       "PRAPOR": {
@@ -117,7 +118,7 @@
           "barters": [
             {
               "count": 6412,
-              "_tpl": "MONEY_ROUBLES" 
+              "_tpl": "MONEY_ROUBLES"
             }
           ]
         }

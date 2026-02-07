@@ -14,11 +14,9 @@
       "BulletDiameterMilimeters": 8.5,
       "ammoAccr": -1,
       "AmmoRec": 20,
-      "buckshotBullets": 6,
+      "ProjectileCount": 6,
       "HeatFactor": 2.1
     },
-    
-    
     "locales": {
       "en": {
         "name": "12/70 Winchester Super-X 00 buckshot",
@@ -29,19 +27,16 @@
     "addCaliberToAllCloneLocations": true,
     "addtoStaticAmmo": true,
     "staticAmmoProbability": 5,
-    
     "addtoStaticLootContainers": true,
     "StaticLootContainers": [
       {
-        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV",
         "Probability": 10
       }
     ],
-    
     "fleaPriceRoubles": 100,
     "handbookPriceRoubles": 40,
     "addtoSecureFilters": true,
-    
     "addtoTraders": true,
     "traders": {
       "JAEGER": {
@@ -54,7 +49,7 @@
           "barters": [
             {
               "count": 76,
-              "_tpl": "MONEY_ROUBLES" 
+              "_tpl": "MONEY_ROUBLES"
             }
           ]
         }
