@@ -26,7 +26,8 @@ public record ModMetadata : AbstractModMetadata
     
     public override Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
-        { "com.wtt.commonlib", new Range("~2.0.0") }
+        { "com.wtt.commonlib", new Range("2.0.15") }
+        
     };
     
     public override string? Url { get; init; }
@@ -69,7 +70,8 @@ public class Mod(
     {
         var assembly = Assembly.GetExecutingAssembly();
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
-        await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly);
+        await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly, "db/weaponPresets/Assorts");
+        await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
         
         ModifyExistingShotguns();
         AddNewCartridgesToShotguns();
