@@ -12,7 +12,8 @@
     "inventory": {
         "equipment": {
             "FirstPrimaryWeapon": {
-                "691098356f593043295f6ddc": 1
+                "691098356f593043295f6ddc": 1,
+                "6910e86bbcb9218635891ae2": 1
             }
         },
         "mods": {
@@ -30,11 +31,22 @@
                     "61f8024263dc1250e26eb029",
                     "61f7b85367ddd414173fdb36"
                 ]
+            },
+            "6910e86bbcb9218635891ae2": {
+                "mod_barrel": [
+                    "6910e8d90b57259e9dd34f78"
+                ],
+                "mod_stock": [
+                    "611a31ce5b7ffe001b4649d1"
+                ]
             }
         },
         "Ammo": {
             "Caliber12g": {
                 "5c0d591486f7744c505b416f": 1
+            },
+            "Caliber17.8×89": {
+                "6910e1cbbd20f63a9791742e": 1
             }
         }
     }
