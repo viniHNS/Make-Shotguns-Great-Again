@@ -51,21 +51,101 @@ public class Mod(
     private const string KS23_WIRE_STOCK_TPL = "5e848dc4e4dbc5266a4ec63d";
     private const string MP153_TPL = "56dee2bdd2720bc8328b4567";
     
+
+    private const string MP155_ULTIMA_HANDGUARD_TPL = "606ee5c81246154cad35d65e";
+    private const string SPRM_RAIL_MOUNT_TPL = "55d48a634bdc2d8b2f8b456a";
+    private const string ETMI_019_RAIL_TPL = "5dfe14f30b92095fd441edaf";
+    
     // IDs for special case weapons
     private const string MP43_TPL = "5d5d85c286f77427997c0883";
     private const string MP43_SAWED_OFF_TPL = "5d5d870186f7742798498584";
     private const string MTS_255_CYLINDER_TPL = "6107328513316926220e3345";
+    private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
     
     private static readonly List<string> NEW_CARTRIDGE_IDS =
     [
         "6911031c1e9fa1008ce6e1aa", "69111bf76c4be2b06bd0745c", "69111d386d6226b577e619b1", "69111e8fab39296e6f0f310a", "6911202ab8757755a4d62f3c"
+    ];
+
+    private static readonly List<string> SIGHTS_TO_ADD_IDS =[
+      "57ac965c24597706be5f975c",
+      "57aca93d2459771f2c7e26db",
+      "544a3f024bdc2d1d388b4568",
+      "544a3a774bdc2d3a388b4567",
+      "5d2dc3e548f035404a1a4798",
+      "57adff4f24597737f373b6e6",
+      "5c0517910db83400232ffee5",
+      "591c4efa86f7741030027726",
+      "570fd79bd2720bc7458b4583",
+      "570fd6c2d2720bc6458b457f",
+      "558022b54bdc2dac148b458d",
+      "5c07dd120db834001c39092d",
+      "5c0a2cec0db834001b7ce47d",
+      "58491f3324597764bc48fa02",
+      "584924ec24597768f12ae244",
+      "5b30b0dc5acfc400153b7124",
+      "6165ac8c290d254f5e6b2f6c",
+      "60a23797a37c940de7062d02",
+      "5d2da1e948f035477b1ce2ba",
+      "5c0505e00db834001b735073",
+      "609a63b6e2ff132951242d09",
+      "584984812459776a704a82a6",
+      "59f9d81586f7744c7506ee62",
+      "570fd721d2720bc5458b4596",
+      "57ae0171245977343c27bfcf",
+      "5dfe6104585a0c3e995c7b82",
+      "544a3d0a4bdc2d1b388b4567",
+      "5d1b5e94d7ad1a2b865a96b0",
+      "609bab8b455afd752b2e6138",
+      "58d39d3d86f77445bb794ae7",
+      "616554fe50224f204c1da2aa",
+      "5c7d55f52e221644f31bff6a",
+      "616584766ef05c2ce828ef57",
+      "5b3b6dc75acfc47a8773fb1e",
+      "615d8d878004cc50514c3233",
+      "5b2389515acfc4771e1be0c0",
+      "577d128124597739d65d0e56",
+      "618b9643526131765025ab35",
+      "618bab21526131765025ab3f",
+      "5c86592b2e2216000e69e77c",
+      "5a37ca54c4a282000d72296a",
+      "5d0a29fed7ad1a002769ad08",
+      "5c064c400db834001d23f468",
+      "58d2664f86f7747fec5834f6",
+      "57c69dd424597774c03b7bbc",
+      "5b3b99265acfc4704b4a1afb",
+      "5aa66a9be5b5b0214e506e89",
+      "5aa66c72e5b5b00016327c93",
+      "5c1cdd302e221602b3137250",
+      "61714b2467085e45ef140b2c",
+      "6171407e50224f204c1da3c5",
+      "61713cc4d8e3106d9806c109",
+      "5b31163c5acfc400153b71cb",
+      "5a33b652c4a28232996e407c",
+      "5a33b2c9c4a282000c5a9511",
+      "59db7eed86f77461f8380365",
+      "5a1ead28fcdbcb001912fa9f",
+      "5dff77c759400025ea5150cf",
+      "626bb8532c923541184624b4",
+      "62811f461d5df4475f46a332",
+      "63fc449f5bd61c6cf3784a88",
+      "6477772ea8a38bb2050ed4db",
+      "6478641c19d732620e045e17",
+      "64785e7c19d732620e045e15",
+      "65392f611406374f82152ba5",
+      "653931da5db71d30ab1d6296",
+      "655f13e0a246670fb0373245",
+      "6567e751a715f85433025998",
+      "6761759e7ee06333f108bf86",
+      "67641a851b2899700609901a"
     ];
     
     private const string STANDARD_12G_BUCK = "560d5e524bdc2d25448b4571";
     
     private const string SHOTGUN_BASE_CLASS = "5447b6094bdc2dc3278b4567";
     private const string MAGAZINE_BASE_CLASS = "5448bc234bdc2d3c308b4569";
-    
+
+
     public async Task OnLoad()
     {
         var assembly = Assembly.GetExecutingAssembly();
@@ -75,6 +155,7 @@ public class Mod(
         
         ModifyExistingShotguns();
         AddNewCartridgesToShotguns();
+        ModifyRails();
     }
 
     /// <summary>
@@ -84,6 +165,16 @@ public class Mod(
     {
         
         var items = databaseService.GetItems();
+
+        // --- Modify MTs-255 ---
+        if (items.TryGetValue(MTS_255_TPL, out var mts255))
+        {
+            ModifyMts255(mts255);
+        }
+        else
+        {
+            logger.Warning($"Could not find MTs-255 ({MTS_255_TPL}) to modify.");
+        }
 
         // --- Modify Saiga-12K ---
         if (items.TryGetValue(SAIGA_12K_TPL, out var saiga12k))
@@ -131,6 +222,47 @@ public class Mod(
         else
         {
             logger.Warning($"Could not find KS-23 ({KS23_TPL}) or its wire stock ({KS23_WIRE_STOCK_TPL}) to modify.");
+        }
+    }
+    
+    private void ModifyRails()
+    {
+        var items = databaseService.GetItems();
+        
+        if (items.TryGetValue(ETMI_019_RAIL_TPL, out var etmiRail))
+        {
+            var filter = etmiRail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
+            
+            if (filter != null)
+            {
+                filter.Clear();
+                foreach (var id in SIGHTS_TO_ADD_IDS)
+                {
+                    filter.Add(new MongoId(id));
+                }
+            }
+        }
+        else
+        {
+            logger.Warning($"Could not find ETMI rail ({ETMI_019_RAIL_TPL}) to modify.");
+        }
+
+        if (items.TryGetValue(SPRM_RAIL_MOUNT_TPL, out var sprmRail))
+        {
+            var filter = sprmRail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
+            
+            if (filter != null)
+            {
+                filter.Clear();
+                foreach (var id in SIGHTS_TO_ADD_IDS)
+                {
+                    filter.Add(new MongoId(id));
+                }
+            }
+        }
+        else
+        {
+            logger.Warning($"Could not find SPRM rail mount ({SPRM_RAIL_MOUNT_TPL}) to modify.");
         }
     }
     
@@ -253,6 +385,12 @@ public class Mod(
         {
             magazineFilter.Add(new MongoId("6910ffd279b844c344ce9cdf"));
         }
+
+        var handguardFilter = mp153.Properties.Slots.ElementAtOrDefault(1)?.Properties?.Filters?.FirstOrDefault()?.Filter;
+        if (handguardFilter != null)
+        {
+            handguardFilter.Add(new MongoId(MP155_ULTIMA_HANDGUARD_TPL));
+        }
     }
 
     private void ModifySaiga12K(TemplateItem saiga12k)
@@ -297,6 +435,25 @@ public class Mod(
 
     }
     
+    private void ModifyMts255(TemplateItem mts255)
+    {
+        if (mts255.Properties != null)
+        {
+            
+            mts255.Properties.DoubleActionAccuracyPenalty = 0.5f;
+            
+            if (mts255.Properties.Slots == null)
+            {
+                logger.Error("MTs-255 has no slots. Skipping modification.");
+                return;
+            }
+            
+            var mtsSlots = mts255.Properties.Slots.ToList();
+            mtsSlots.Add(CreateSlot("mod_mount", "67041a851b2899700609901b", mts255.Id, [SPRM_RAIL_MOUNT_TPL, ETMI_019_RAIL_TPL]));
+            mts255.Properties.Slots = mtsSlots;
+        }
+    }
+
     private void ModifyKS23(TemplateItem ks23, TemplateItem ks23WireStock)
     {
         if (ks23.Properties?.Slots == null || ks23WireStock.Properties?.Slots == null)
