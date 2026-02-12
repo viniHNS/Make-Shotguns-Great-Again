@@ -11,6 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="makeshotgunsgreatagain-client\**" />
+    <EmbeddedResource Remove="makeshotgunsgreatagain-client\**" />
+    <None Remove="makeshotgunsgreatagain-client\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="SPTarkov.Common" Version="4.0.3" />
     <PackageReference Include="SPTarkov.DI" Version="4.0.3" />
     <PackageReference Include="SPTarkov.Server.Core" Version="4.0.3" />

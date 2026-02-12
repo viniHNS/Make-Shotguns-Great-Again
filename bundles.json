@@ -1,111 +1,108 @@
 {
-    "manifest":
-    [
-		{
+    "manifest": [
+        {
             "key": "6shellks23.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "mp153_13shell.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "ks23stock.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "m3_handguard_custom.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "saiga12_30rounds.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "700NITRO_FMJ.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "winchester12.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
-          "key": "12ga_brass.bundle",
-          "dependencyKeys": [
-            "cubemaps",
-            "shaders",
-            "assets/commonassets/physics/physicsmaterials.bundle"
-          ]
+            "key": "12ga_brass.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
         },
         {
             "key": "flechette_ammo.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "flechette_box_25.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "ap.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "ap_box_5.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         },
         {
             "key": "magnum_express.bundle",
             "dependencyKeys": [
                 "cubemaps",
-				"shaders",
-				"assets/commonassets/physics/physicsmaterials.bundle"
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
             ]
         }
-        
-
     ]
 }

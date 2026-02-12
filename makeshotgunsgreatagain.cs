@@ -64,7 +64,7 @@ public class Mod(
     
     private static readonly List<string> NEW_CARTRIDGE_IDS =
     [
-        "6911031c1e9fa1008ce6e1aa", "69111bf76c4be2b06bd0745c", "69111d386d6226b577e619b1", "69111e8fab39296e6f0f310a", "6911202ab8757755a4d62f3c"
+        "6911031c1e9fa1008ce6e1aa", "69111bf76c4be2b06bd0745c", "69111d386d6226b577e619b1", "69111e8fab39296e6f0f310a", "6911202ab8757755a4d62f3c", "698924bf6dcd41ac313f5921"
     ];
 
     private static readonly List<string> SIGHTS_TO_ADD_IDS =[
