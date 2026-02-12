@@ -7,20 +7,13 @@ using UnityEngine;
 
 namespace makeshotgunsgreatagain.Patches
 {
-    /// <summary>
-    /// Patch 1: Hooks InitiateShot to detect Dragon Breath ammo.
-    /// Sets a flag that DragonBreathMuzzlePatch reads to spawn the effect.
-    /// Also contains all shared effect logic (SpawnEffect, BuildPrefab, texture generation).
-    /// </summary>
+
     internal class DragonBreathPatch : ModulePatch
     {
         private const string DragonBreathAmmoId = "698924bf6dcd41ac313f5921";
         internal static bool DebugMode = true;
-
-        // Flag set when Dragon Breath ammo is fired — read by DragonBreathMuzzlePatch
         internal static bool IsDragonBreathShot = false;
 
-        // Cached Prefab & Material
         private static GameObject _cachedPrefab;
         private static Material _particleMaterial;
 
@@ -32,6 +25,7 @@ namespace makeshotgunsgreatagain.Patches
             );
         }
 
+        // Prefix: flag must be set before InitiateShot calls MuzzleManager.Shot
         [PatchPrefix]
         private static void Prefix(Player.FirearmController __instance, AmmoItemClass ammo)
         {
@@ -41,7 +35,6 @@ namespace makeshotgunsgreatagain.Patches
 
                 if (DebugMode) Plugin.LogSource.LogInfo($"[DB] Shot fired. Ammo: {ammo.TemplateId}");
 
-                // Set flag BEFORE InitiateShot body runs — it calls MuzzleManager.Shot internally
                 IsDragonBreathShot = (ammo.TemplateId == DragonBreathAmmoId);
             }
             catch (Exception ex)
@@ -50,9 +43,6 @@ namespace makeshotgunsgreatagain.Patches
             }
         }
 
-        // ==================== SHARED EFFECT LOGIC ====================
-        // Called by DragonBreathMuzzlePatch with the correct muzzle transform
-
         internal static void SpawnEffect(Transform muzzle)
         {
             try
@@ -60,21 +50,18 @@ namespace makeshotgunsgreatagain.Patches
                 if (_cachedPrefab == null) BuildPrefab();
                 if (_cachedPrefab == null) return;
 
-                // Debug: log barrel direction
                 if (DebugMode)
                     Plugin.LogSource.LogInfo($"[DB] Muzzle axes — forward={muzzle.forward} | -up={-muzzle.up}");
 
-                // Direction: -up is barrel forward (Tarkov convention, confirmed by HollywoodFX)
+                // Barrel direction is -up on Tarkov fireport transforms
                 Vector3 dir = -muzzle.up;
                 if (dir.sqrMagnitude < 0.01f) dir = muzzle.forward;
                 Quaternion rot = Quaternion.LookRotation(dir);
 
-                // fireport IS the exact muzzle position — no offset needed
                 GameObject fx = GameObject.Instantiate(_cachedPrefab, muzzle.position, rot);
                 if (fx != null)
                 {
                     fx.SetActive(true);
-                    // Force play — playOnAwake can fail on first shot when prefab is built same frame
                     var ps = fx.GetComponent<ParticleSystem>();
                     if (ps != null) ps.Play(true);
                     GameObject.Destroy(fx, 4.0f);
@@ -86,15 +73,12 @@ namespace makeshotgunsgreatagain.Patches
             }
         }
 
-        // ==================== BUILD PREFAB ====================
-
         private static void BuildPrefab()
         {
             try
             {
                 if (_cachedPrefab != null) return;
 
-                // --- Material (Try every known particle shader) ---
                 if (_particleMaterial == null)
                 {
                     string[] shaderNames = new string[]
@@ -120,7 +104,7 @@ namespace makeshotgunsgreatagain.Patches
 
                     if (shader == null)
                     {
-                        Plugin.LogSource.LogError("[DB] CRITICAL: No shader found at all!");
+                        Plugin.LogSource.LogError("[DB] CRITICAL: No shader found!");
                         return;
                     }
 
@@ -133,7 +117,6 @@ namespace makeshotgunsgreatagain.Patches
                         _particleMaterial.SetColor("_Color", new Color(1f, 0.7f, 0.3f, 1f));
                 }
 
-                // --- GameObject ---
                 GameObject go = new GameObject("DragonBreath_FX");
                 GameObject.DontDestroyOnLoad(go);
                 go.SetActive(false);
@@ -141,19 +124,19 @@ namespace makeshotgunsgreatagain.Patches
                 ParticleSystem ps = go.AddComponent<ParticleSystem>();
                 ParticleSystemRenderer psr = go.GetComponent<ParticleSystemRenderer>();
 
-                // ===== MAIN =====
+                // Main
                 var main = ps.main;
                 main.duration = 0.5f;
                 main.loop = false;
                 main.playOnAwake = true;
                 main.startLifetime = new ParticleSystem.MinMaxCurve(0.6f, 1.2f);
                 main.startSpeed = new ParticleSystem.MinMaxCurve(150f, 250f);
-                main.startSize = new ParticleSystem.MinMaxCurve(0.08f, 0.2f);  // Maior para Billboard ser visível
+                main.startSize = new ParticleSystem.MinMaxCurve(0.08f, 0.2f);
                 main.gravityModifier = 0.6f;
                 main.simulationSpace = ParticleSystemSimulationSpace.World;
                 main.maxParticles = 400;
 
-                // Color: white-hot → orange → ember
+                // Color: white-hot -> orange -> ember
                 var colorGrad = new Gradient();
                 colorGrad.SetKeys(
                     new GradientColorKey[]
@@ -165,24 +148,23 @@ namespace makeshotgunsgreatagain.Patches
                     },
                     new GradientAlphaKey[]
                     {
-                        new GradientAlphaKey(0f, 0f),      // INVISÍVEL no spawn
-                        new GradientAlphaKey(1f, 0.03f),   // Aparece rápido — 3% da vida (já saiu do cano)
+                        new GradientAlphaKey(0f, 0f),
+                        new GradientAlphaKey(1f, 0.03f),
                         new GradientAlphaKey(0.6f, 0.8f),
                         new GradientAlphaKey(0f, 1f)
                     }
                 );
 
-                // ===== COLOR OVER LIFETIME =====
                 var col = ps.colorOverLifetime;
                 col.enabled = true;
                 col.color = new ParticleSystem.MinMaxGradient(colorGrad);
 
-                // ===== SIZE OVER LIFETIME (Shrink) =====
+                // Size over lifetime (shrink)
                 var sol = ps.sizeOverLifetime;
                 sol.enabled = true;
                 sol.size = new ParticleSystem.MinMaxCurve(1f, AnimationCurve.Linear(0f, 1f, 1f, 0.1f));
 
-                // ===== EMISSION =====
+                // Emission
                 var emission = ps.emission;
                 emission.enabled = true;
                 emission.rateOverTime = 0;
@@ -192,16 +174,15 @@ namespace makeshotgunsgreatagain.Patches
                     new ParticleSystem.Burst(0.05f, 30, 50)
                 });
 
-                // ===== SHAPE (CONE DE DISPARO) =====
-                // >>> AJUSTE O CONE AQUI <<<
+                // Shape (cone)
                 var shape = ps.shape;
                 shape.enabled = true;
                 shape.shapeType = ParticleSystemShapeType.Cone;
-                shape.angle = 3f;       // <<< CONE ANGLE: 0=reta, 3=estreito, 6=médio, 15=bem aberto
-                shape.radius = 0.01f;   // <<< CONE RADIUS: base do cone (menor = mais junto)
-                shape.position = new Vector3(0f, 0f, 0.25f); // Empurra emissão 25cm para frente
+                shape.angle = 3f;
+                shape.radius = 0.01f;
+                shape.position = new Vector3(0f, 0f, 0.25f);
 
-                // ===== NOISE (Chaotic spark wobble) =====
+                // Noise
                 var noise = ps.noise;
                 noise.enabled = true;
                 noise.strength = 1.2f;
@@ -209,13 +190,13 @@ namespace makeshotgunsgreatagain.Patches
                 noise.scrollSpeed = 3f;
                 noise.quality = ParticleSystemNoiseQuality.Medium;
 
-                // ===== VELOCITY LIMIT (Air Drag) =====
+                // Velocity limit (air drag)
                 var limitVel = ps.limitVelocityOverLifetime;
                 limitVel.enabled = true;
                 limitVel.dampen = 0.09f;
                 limitVel.limit = 45f;
 
-                // ===== COLLISION (Weak Ricochet) =====
+                // Collision
                 var collision = ps.collision;
                 collision.enabled = true;
                 collision.type = ParticleSystemCollisionType.World;
@@ -224,18 +205,17 @@ namespace makeshotgunsgreatagain.Patches
                 collision.lifetimeLoss = 0.3f;
                 collision.quality = ParticleSystemCollisionQuality.Medium;
 
-                // ===== TRAILS (Burning Streaks) =====
-                // Curtos + inheritParticleColor: como alpha=0 no spawn, trail perto do cano é invisível
+                // Trails
                 var trails = ps.trails;
                 trails.enabled = true;
                 trails.ratio = 1.0f;
-                trails.lifetime = new ParticleSystem.MinMaxCurve(0.04f, 0.08f);  // Bem curtos (4-8cm de rastro por frame)
+                trails.lifetime = new ParticleSystem.MinMaxCurve(0.04f, 0.08f);
                 trails.minVertexDistance = 0.1f;
                 trails.widthOverTrail = new ParticleSystem.MinMaxCurve(1f, AnimationCurve.Linear(0f, 1f, 1f, 0f));
-                trails.inheritParticleColor = true;   // Herda alpha=0 perto do cano!
+                trails.inheritParticleColor = true;
                 trails.dieWithParticles = true;
 
-                // ===== LIGHTS (Follow Sparks) =====
+                // Lights
                 var lights = ps.lights;
                 lights.enabled = true;
                 lights.ratio = 0.2f;
@@ -246,7 +226,6 @@ namespace makeshotgunsgreatagain.Patches
                 lights.sizeAffectsRange = false;
                 lights.alphaAffectsIntensity = true;
 
-                // Light Template — range e intensity REAIS (o módulo usa como base!)
                 GameObject lightGO = new GameObject("SparkLightTemplate");
                 lightGO.transform.SetParent(go.transform);
                 Light lt = lightGO.AddComponent<Light>();
@@ -255,14 +234,11 @@ namespace makeshotgunsgreatagain.Patches
                 lt.range = 3f;
                 lt.intensity = 1f;
                 lt.shadows = LightShadows.None;
-                lt.enabled = false;    // Template fica desligado — só o módulo cria as luzes
+                lt.enabled = false;
                 lights.light = lt;
 
-                // ===== RENDERER =====
-                // Billboard: cada partícula é um ponto na posição real — NADA vai para trás
-                // (Stretch esticava centrado na posição, metade ia para trás)
+                // Renderer
                 psr.renderMode = ParticleSystemRenderMode.Billboard;
-
                 psr.material = _particleMaterial;
                 psr.trailMaterial = _particleMaterial;
 
@@ -275,8 +251,6 @@ namespace makeshotgunsgreatagain.Patches
                 Plugin.LogSource.LogError($"[DB] BuildPrefab Error: {ex}");
             }
         }
-
-        // ==================== SPARK TEXTURE ====================
 
         private static Texture2D GenerateSparkTexture()
         {
