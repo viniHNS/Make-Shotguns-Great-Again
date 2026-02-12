@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This is the client-side BepInEx plugin for [Make Shotguns Great Again](https://github.com/viniHNS/Make-Shotguns-Great-Again), a mod for [SPT](https://www.sp-tarkov.com "The main goal of the project is to provide a separate offline single-player experience with ready-to-use progression for the official BSG client.") that improves shotguns in the game.
+This is the client-side BepInEx plugin for [Make Shotguns Great Again](https://github.com/viniHNS/Make-Shotguns-Great-Again), a mod for [SPT](https://sp-tarkov.com/ "The main goal of the project is to provide a separate offline single-player experience with ready-to-use progression for the official BSG client.") that improves shotguns in the game.
 
 ## What does this plugin do?
 
@@ -10,8 +10,6 @@ This plugin handles the client-side patches that require runtime code modificati
 
 ### Dragon Breath Visual Effect
 - Spawns a procedural incendiary spark effect when firing **12/70 Dragon Breath** rounds.
-- Sparks are positioned at the actual muzzle (fireport) using `MuzzleManager`.
-- Includes particle lights that illuminate dark environments.
 
 ### Malfunction Improvements
 - **Skip Inspection**: Allows clearing weapon malfunctions without inspecting the weapon first. *(Configurable)*
