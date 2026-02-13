@@ -12,9 +12,20 @@ Adds some features to the shotguns in the game and new attachments for them:
 
 - ~~The Saiga12K now has a Full Auto mode. (be careful with the recoil ಠ_ಠ)~~ Full auto version exists in the game now.
 - The semi-automatic mode of the Benelli M3 has been slightly adjusted, similar to other semi-automatic shotguns in the game, such as the MP-155 and MP-153.
+- The ETMI-019 and Kiba Arms SPRM rail mounts are now compatible with more optics and mounts.
 - Now you can put the Kiba Arms SPRM rail mount and the AK GP-25 accessory kit recoil pad
 in the KS-23M.
+- The ETMI-019 and Kiba Arms SPRM rail mounts can now be equipped on the MTs-255
 - Now the saiga-12k can use most of the AKs handguards.
+
+Malfunction Overhaul:
+* **Skip Inspection Before Clearing**
+    * Allows players to clear a weapon malfunction immediately using the clear keybind, bypassing the requirement to visually inspect the weapon first.
+
+* **Remove Boss Forced Malfunctions**
+    * Prevents bosses (such as Kollontay) from triggering scripted, forced weapon malfunctions on the player's active firearm. This ensures that jams are only caused by weapon condition or ammunition stats.
+
+These can be adjusted in the BepInEx config (F12)
 
 ## New Attachments
 
@@ -36,6 +47,7 @@ A beast of a weapon capable of taking down even the toughest adversaries. This d
 - 12/70 AP Slug SVAROG and box with 5 rounds
 - 12/70 Winchester Super-X 00 buckshot
 - .700 Nitro Express FMJ
+- 12/70 'Hellfire' hybrid buckshot
 - 12/70 Brass Case
 
 ## Installation
