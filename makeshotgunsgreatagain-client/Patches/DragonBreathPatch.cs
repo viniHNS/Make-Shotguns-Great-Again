@@ -11,7 +11,7 @@ namespace makeshotgunsgreatagain.Patches
     internal class DragonBreathPatch : ModulePatch
     {
         private const string DragonBreathAmmoId = "698924bf6dcd41ac313f5921";
-        internal static bool DebugMode = true;
+        internal static bool DebugMode = false;
         internal static bool IsDragonBreathShot = false;
 
         private static GameObject _cachedPrefab;
