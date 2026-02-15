@@ -36,12 +36,18 @@
       <ZipFileName>$(ModName).zip</ZipFileName>
       <TempPackageDir>$(ProjectDir)obj/Package</TempPackageDir>
       <ModPackageDir>$(TempPackageDir)/SPT/user/mods/$(ModName)</ModPackageDir>
+      <BepInExPluginsDir>$(TempPackageDir)/BepInEx/plugins</BepInExPluginsDir>
     </PropertyGroup>
 
     <Message Text="--- Iniciando empacotamento do Mod para distribuição ---" Importance="high" />
 
     <RemoveDir Directories="$(TempPackageDir)" />
     <MakeDir Directories="$(ModPackageDir)" />
+    <MakeDir Directories="$(BepInExPluginsDir)" />
+
+    <MSBuild Projects="$(ProjectDir)makeshotgunsgreatagain-client\makeshotgunsgreatagain.csproj" Properties="Configuration=Release;Platform=AnyCPU" Targets="Build" />
+
+    <Copy SourceFiles="$(ProjectDir)makeshotg unsgreatagain-client\bin\Release\netstandard2.1\makeshotgunsgreatagain.dll" DestinationFolder="$(BepInExPluginsDir)" />
 
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModPackageDir)" />
     <Copy SourceFiles="$(ProjectDir)bundles.json" DestinationFolder="$(ModPackageDir)" />
