@@ -23,13 +23,13 @@ public record ModMetadata : AbstractModMetadata
     public override Range SptVersion { get; init; } = new("~4.0.0");
     public override string? License { get; init; } = "MIT";
     public override bool? IsBundleMod { get; init; } = true;
-    
+
     public override Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
         { "com.wtt.commonlib", new Range("2.0.15") }
-        
+
     };
-    
+
     public override string? Url { get; init; }
     public override List<string>? Contributors { get; init; }
     public override List<string>? Incompatibilities { get; init; }
@@ -39,7 +39,7 @@ public record ModMetadata : AbstractModMetadata
 public class Mod(
     WTTServerCommonLib.WTTServerCommonLib wttCommon,
     DatabaseService databaseService,
-    ItemHelper itemHelper, 
+    ItemHelper itemHelper,
     ISptLogger<Mod> logger
 ) : IOnLoad
 {
@@ -50,24 +50,24 @@ public class Mod(
     private const string KS23_TPL = "5e848cc2988a8701445df1e8";
     private const string KS23_WIRE_STOCK_TPL = "5e848dc4e4dbc5266a4ec63d";
     private const string MP153_TPL = "56dee2bdd2720bc8328b4567";
-    
+
 
     private const string MP155_ULTIMA_HANDGUARD_TPL = "606ee5c81246154cad35d65e";
     private const string SPRM_RAIL_MOUNT_TPL = "55d48a634bdc2d8b2f8b456a";
     private const string ETMI_019_RAIL_TPL = "5dfe14f30b92095fd441edaf";
-    
+
     // IDs for special case weapons
     private const string MP43_TPL = "5d5d85c286f77427997c0883";
     private const string MP43_SAWED_OFF_TPL = "5d5d870186f7742798498584";
     private const string MTS_255_CYLINDER_TPL = "6107328513316926220e3345";
     private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
-    
+
     private static readonly List<string> NEW_CARTRIDGE_IDS =
     [
         "6911031c1e9fa1008ce6e1aa", "69111bf76c4be2b06bd0745c", "69111d386d6226b577e619b1", "69111e8fab39296e6f0f310a", "6911202ab8757755a4d62f3c", "698924bf6dcd41ac313f5921"
     ];
 
-    private static readonly List<string> SIGHTS_TO_ADD_IDS =[
+    private static readonly List<string> SIGHTS_TO_ADD_IDS = [
       "57ac965c24597706be5f975c",
       "57aca93d2459771f2c7e26db",
       "544a3f024bdc2d1d388b4568",
@@ -139,20 +139,20 @@ public class Mod(
       "6761759e7ee06333f108bf86",
       "67641a851b2899700609901a"
     ];
-    
+
     private const string STANDARD_12G_BUCK = "560d5e524bdc2d25448b4571";
-    
+
     private const string SHOTGUN_BASE_CLASS = "5447b6094bdc2dc3278b4567";
     private const string MAGAZINE_BASE_CLASS = "5448bc234bdc2d3c308b4569";
 
-
+    
     public async Task OnLoad()
     {
         var assembly = Assembly.GetExecutingAssembly();
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly, "db/weaponPresets/Assorts");
         await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
-        
+
         ModifyExistingShotguns();
         AddNewCartridgesToShotguns();
         ModifyRails();
@@ -163,7 +163,7 @@ public class Mod(
     /// </summary>
     private void ModifyExistingShotguns()
     {
-        
+
         var items = databaseService.GetItems();
 
         // --- Modify MTs-255 ---
@@ -209,11 +209,12 @@ public class Mod(
         if (items.TryGetValue(MP153_TPL, out var mp153))
         {
             ModifyMp153(mp153);
-        } else 
+        }
+        else
         {
             logger.Warning($"Could not find MP-153 ({MP153_TPL}) to modify.");
         }
-        
+
         // --- Modify KS-23 ---
         if (items.TryGetValue(KS23_TPL, out var ks23) && items.TryGetValue(KS23_WIRE_STOCK_TPL, out var ks23WireStock))
         {
@@ -224,15 +225,15 @@ public class Mod(
             logger.Warning($"Could not find KS-23 ({KS23_TPL}) or its wire stock ({KS23_WIRE_STOCK_TPL}) to modify.");
         }
     }
-    
+
     private void ModifyRails()
     {
         var items = databaseService.GetItems();
-        
+
         if (items.TryGetValue(ETMI_019_RAIL_TPL, out var etmiRail))
         {
             var filter = etmiRail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
-            
+
             if (filter != null)
             {
                 filter.Clear();
@@ -250,7 +251,7 @@ public class Mod(
         if (items.TryGetValue(SPRM_RAIL_MOUNT_TPL, out var sprmRail))
         {
             var filter = sprmRail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
-            
+
             if (filter != null)
             {
                 filter.Clear();
@@ -265,7 +266,7 @@ public class Mod(
             logger.Warning($"Could not find SPRM rail mount ({SPRM_RAIL_MOUNT_TPL}) to modify.");
         }
     }
-    
+
     private void AddNewCartridgesToShotguns()
     {
         if (NEW_CARTRIDGE_IDS.Count == 0)
@@ -273,19 +274,19 @@ public class Mod(
             logger.Warning("No new cartridge IDs were defined. Skipping cartridge addition.");
             return;
         }
-        
+
         var allItems = databaseService.GetItems();
         var allItemsList = allItems.Values.ToList();
 
         var shotgunMagazines = FindCompatibleMagazines(allItemsList);
         var shotguns = FindCompatibleShotguns(allItemsList);
-        
+
         // Add cartridges to magazines
         AddCartridgesToItems(allItems, shotgunMagazines, "Cartridges");
-    
+
         // Add cartridges to shotguns
         AddCartridgesToItems(allItems, shotguns, "Chambers");
-    
+
         // Special cases
         AddCartridgesToSpecialWeapons(allItems);
     }
@@ -293,10 +294,10 @@ public class Mod(
     private List<string> FindCompatibleMagazines(List<TemplateItem> items)
     {
         var referenceCartridgeId = new MongoId(STANDARD_12G_BUCK);
-        
+
         return items
             .Where(item => itemHelper.IsOfBaseclass(item.Id, MAGAZINE_BASE_CLASS))
-            .Where(magazine => 
+            .Where(magazine =>
                 magazine.Properties?.Cartridges?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter?.Contains(referenceCartridgeId) == true
             )
             .Select(magazine => magazine.Id.ToString())
@@ -309,7 +310,7 @@ public class Mod(
 
         return items
             .Where(item => itemHelper.IsOfBaseclass(item.Id, SHOTGUN_BASE_CLASS))
-            .Where(shotgun => 
+            .Where(shotgun =>
                 shotgun.Properties?.Chambers?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter?.Contains(referenceCartridgeId) == true
             )
             .Select(shotgun => shotgun.Id.ToString())
@@ -323,7 +324,7 @@ public class Mod(
         foreach (var itemId in itemIds)
         {
             if (!itemsDb.TryGetValue(new MongoId(itemId), out var item)) continue;
-            
+
             var container = (containerType == "Chambers" ? item.Properties?.Chambers : item.Properties?.Cartridges)?.FirstOrDefault();
             var filter = container?.Properties?.Filters?.FirstOrDefault()?.Filter;
 
@@ -340,13 +341,13 @@ public class Mod(
     private void AddCartridgesToSpecialWeapons(IReadOnlyDictionary<MongoId, TemplateItem> itemsDb)
     {
         var newCartridgeMongoIds = NEW_CARTRIDGE_IDS.Select(id => new MongoId(id));
-        
+
         // MP43 variants (double barrel)
         var mp43Ids = new[] { MP43_TPL, MP43_SAWED_OFF_TPL };
         foreach (var weaponId in mp43Ids)
         {
             if (!itemsDb.TryGetValue(new MongoId(weaponId), out var weapon)) continue;
-            
+
             // Iterate through both chambers (0 and 1)
             foreach (var chamber in weapon.Properties?.Chambers ?? Enumerable.Empty<Slot>())
             {
@@ -377,7 +378,7 @@ public class Mod(
             }
         }
     }
-    
+
     private void ModifyMp153(TemplateItem mp153)
     {
         var magazineFilter = mp153.Properties.Slots.ElementAtOrDefault(2)?.Properties?.Filters?.FirstOrDefault()?.Filter;
@@ -398,7 +399,7 @@ public class Mod(
         void AddItemsToSlotFilter(int slotIndex, List<string> itemIds)
         {
             var filter = saiga12k.Properties?.Slots?.ElementAtOrDefault(slotIndex)?.Properties?.Filters?.FirstOrDefault()?.Filter;
-            
+
             if (filter != null)
             {
                 foreach (var id in itemIds)
@@ -423,7 +424,7 @@ public class Mod(
         if (benelliM3.Properties != null)
         {
             benelliM3.Properties.SingleFireRate = 850;
-            benelliM3.Properties.BFirerate = 200; 
+            benelliM3.Properties.BFirerate = 200;
             benelliM3.Properties.CanQueueSecondShot = true;
         }
 
@@ -434,20 +435,20 @@ public class Mod(
         }
 
     }
-    
+
     private void ModifyMts255(TemplateItem mts255)
     {
         if (mts255.Properties != null)
         {
-            
+
             mts255.Properties.DoubleActionAccuracyPenalty = 0.5f;
-            
+
             if (mts255.Properties.Slots == null)
             {
                 logger.Error("MTs-255 has no slots. Skipping modification.");
                 return;
             }
-            
+
             var mtsSlots = mts255.Properties.Slots.ToList();
             mtsSlots.Add(CreateSlot("mod_mount", "67041a851b2899700609901b", mts255.Id, [SPRM_RAIL_MOUNT_TPL, ETMI_019_RAIL_TPL]));
             mts255.Properties.Slots = mtsSlots;
@@ -468,7 +469,7 @@ public class Mod(
         {
             magazineFilter.Add(new MongoId("6910ebc01b0a1cfdd5877581"));
         }
-        
+
         // Create a new list from the existing slots
         var ks23Slots = ks23.Properties.Slots.ToList();
         // Add the new slot to the new list
@@ -476,14 +477,14 @@ public class Mod(
             ["55d48a634bdc2d8b2f8b456a"]));
         // Assign the updated list back to the properties
         ks23.Properties.Slots = ks23Slots;
-        
+
         if (ks23WireStock.Properties.Prefab != null)
         {
             ks23WireStock.Properties.Prefab.Path = "ks23stock.bundle";
         }
-        
+
         var wireStockSlots = ks23WireStock.Properties.Slots.ToList();
-        wireStockSlots.Add(CreateSlot("mod_stock", "665b5c811722cdfd0a6e6dd5", ks23WireStock.Id, 
+        wireStockSlots.Add(CreateSlot("mod_stock", "665b5c811722cdfd0a6e6dd5", ks23WireStock.Id,
             ["5a0c59791526d8dba737bba7"]));
         // Assign the updated list back to the properties
         ks23WireStock.Properties.Slots = wireStockSlots;
@@ -518,7 +519,7 @@ public class Mod(
             },
             Required = false,
             MergeSlotWithChildren = false,
-            Prototype = new MongoId() 
+            Prototype = new MongoId()
         };
     }
 }
