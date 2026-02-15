@@ -47,7 +47,7 @@
 
     <MSBuild Projects="$(ProjectDir)makeshotgunsgreatagain-client\makeshotgunsgreatagain.csproj" Properties="Configuration=Release;Platform=AnyCPU" Targets="Build" />
 
-    <Copy SourceFiles="$(ProjectDir)makeshotg unsgreatagain-client\bin\Release\netstandard2.1\makeshotgunsgreatagain.dll" DestinationFolder="$(BepInExPluginsDir)" />
+    <Copy SourceFiles="$(ProjectDir)makeshotgunsgreatagain-client\bin\Release\netstandard2.1\makeshotgunsgreatagain.dll" DestinationFolder="$(BepInExPluginsDir)" />
 
     <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModPackageDir)" />
     <Copy SourceFiles="$(ProjectDir)bundles.json" DestinationFolder="$(ModPackageDir)" />
