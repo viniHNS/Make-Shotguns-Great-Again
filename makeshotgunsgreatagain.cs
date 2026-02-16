@@ -50,6 +50,9 @@ public class Mod(
     private const string KS23_WIRE_STOCK_TPL = "5e848dc4e4dbc5266a4ec63d";
     private const string MP153_TPL = "56dee2bdd2720bc8328b4567";
 
+    private const string AA12_GEN1_TPL = "66ffa9b66e19cc902401c5e8";
+    private const string AA12_GEN2_TPL = "67124dcfa3541f2a1f0e788b";
+
 
     private const string MP155_ULTIMA_HANDGUARD_TPL = "606ee5c81246154cad35d65e";
     private const string SPRM_RAIL_MOUNT_TPL = "55d48a634bdc2d8b2f8b456a";
@@ -151,6 +154,7 @@ public class Mod(
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly, "db/weaponPresets/Assorts");
         await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
+        await wttCommon.CustomHideoutRecipeService.CreateHideoutRecipes(assembly);
 
         ModifyExistingShotguns();
         AddNewCartridgesToShotguns();
@@ -164,6 +168,25 @@ public class Mod(
     {
 
         var items = databaseService.GetItems();
+
+        // --- Modify AA-12 ---
+        if (items.TryGetValue(AA12_GEN1_TPL, out var aa12gen1))
+        {
+            ModifyAa12(aa12gen1);
+        }
+        else
+        {
+            logger.Warning($"Could not find AA-12 GEN1 ({AA12_GEN1_TPL}) to modify.");
+        }
+
+        if (items.TryGetValue(AA12_GEN2_TPL, out var aa12gen2))
+        {
+            ModifyAa12(aa12gen2);
+        }
+        else
+        {
+            logger.Warning($"Could not find AA-12 GEN2 ({AA12_GEN2_TPL}) to modify.");
+        }
 
         // --- Modify MTs-255 ---
         if (items.TryGetValue(MTS_255_TPL, out var mts255))
@@ -393,6 +416,11 @@ public class Mod(
         }
     }
 
+    private void ModifyAa12(TemplateItem aa12)
+    {
+        aa12.Properties.BFirerate = 550;
+    }
+
     private void ModifySaiga12K(TemplateItem saiga12k)
     {
         void AddItemsToSlotFilter(int slotIndex, List<string> itemIds)
@@ -428,9 +456,9 @@ public class Mod(
         }
 
         var handguardFilter = benelliM3.Properties.Slots.ElementAtOrDefault(1)?.Properties?.Filters?.FirstOrDefault()?.Filter;
-        if (handguardFilter != null)
-        {
-            handguardFilter.Add(new MongoId("6910f8984a20c41289074652"));
+                 if (handguardFilter != null)
+                 {
+                     handguardFilter.Add(new MongoId("6910f8984a20c41289074652"));
         }
 
     }
