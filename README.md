@@ -17,6 +17,7 @@ Adds some features to the shotguns in the game and new attachments for them:
 in the KS-23M.
 - The ETMI-019 and Kiba Arms SPRM rail mounts can now be equipped on the MTs-255
 - Now the saiga-12k can use most of the AKs handguards.
+- Increased AA-12 Rate of Fire..
 
 Malfunction Overhaul:
 * **Skip Inspection Before Clearing**
@@ -40,7 +41,7 @@ A compact shotgun designed for precision. Perfect for those who like to keep thi
 - **MP-700 .700 Nitro Express Double Rifle**:  
 A beast of a weapon capable of taking down even the toughest adversaries. This double-barreled powerhouse chambers the **new .700 Nitro Express FMJ**, ensuring you make every shot count.
 
-## New Ammunition
+## New Ammunition and Hideout Production Recipes
 
 - 12/70 Magnum Express Kinghunter
 - 12/70 Flechette Kinghunter and box with 25 rounds
@@ -48,6 +49,7 @@ A beast of a weapon capable of taking down even the toughest adversaries. This d
 - 12/70 Winchester Super-X 00 buckshot
 - .700 Nitro Express FMJ
 - 12/70 'Hellfire' hybrid buckshot
+- 12/70 FRAG-12 HE
 - 12/70 Brass Case
 
 ## Installation

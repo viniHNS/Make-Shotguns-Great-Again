@@ -10,10 +10,21 @@ Este é um mod para [SPT](https://www.sp-tarkov.com "O objetivo principal do pro
 
 Adiciona algumas melhorias às shotguns do jogo e novos acessórios para elas:
 
-- A Saiga12K agora possui um modo Full Auto. (cuidado com o recuo ಠ_ಠ)
+- ~~A Saiga12K agora possui um modo Full Auto. (cuidado com o recuo ಠ_ಠ)~~ Agora existe uma versão full auto no jogo.
 - O modo semiautomático da Benelli M3 foi levemente ajustado, similar a outras shotguns semiautomáticas do jogo, como a MP-155 e MP-153.
 - Agora você pode usar o suporte de trilho Kiba Arms SPRM e o kit de acessório AK GP-25 recoil pad na KS-23M.
+- O suporte de trilho ETMI-019 e Kiba Arms SPRM agora podem ser equipados na MTs-255
 - Agora a Saiga-12K pode usar a maioria dos handguards das AKs.
+- Aumento na cadência de tiro da AA-12.
+
+Reformulação de Malfuncionamento:
+* **Pular Inspeção Antes de Limpar**
+    * Permite que os jogadores limpem um malfuncionamento da arma imediatamente usando a tecla de atalho de limpar, ignorando a exigência de inspecionar visualmente a arma primeiro.
+
+* **Remover Malfuncionamentos Forçados de Chefes**
+    * Impede que chefes (como Kollontay) acionem malfuncionamentos de arma forçados e roteirizados na arma ativa do jogador. Isso garante que os travamentos sejam causados apenas pela condição da arma ou estatísticas da munição.
+
+Essas opções podem ser ajustadas na configuração do BepInEx (F12)
 
 ## Novos Acessórios
 
@@ -29,13 +40,15 @@ Uma shotgun compacta projetada para precisão. Perfeita para aqueles que gostam 
 - **MP-700 .700 Nitro Express Double Rifle**:  
 Uma arma capaz de derrubar até os adversários mais resistentes. Esta poderosa arma de cano duplo utiliza a **nova munição .700 Nitro Express FMJ**, garantindo que cada tiro seja letal.
 
-## Novas Munições
+## Novas Munições e Receitas de Produção do Esconderijo
 
 - 12/70 Magnum Express Kinghunter
 - 12/70 Flechette Kinghunter e caixa com 25 cartuchos
 - 12/70 AP Slug SVAROG e caixa com 5 cartuchos
 - 12/70 Winchester Super-X 00 buckshot
 - .700 Nitro Express FMJ
+- 12/70 'Hellfire' hybrid buckshot
+- 12/70 FRAG-12 HE
 - 12/70 Brass Case
 
 ## Instalação
