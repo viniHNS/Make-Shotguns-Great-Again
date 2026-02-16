@@ -418,7 +418,7 @@ public class Mod(
 
     private void ModifyAa12(TemplateItem aa12)
     {
-        aa12.Properties.BFirerate = 550;
+        aa12.Properties.BFirerate = 450;
     }
 
     private void ModifySaiga12K(TemplateItem saiga12k)
