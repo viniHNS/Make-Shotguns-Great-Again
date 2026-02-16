@@ -43,7 +43,6 @@ public class Mod(
     ISptLogger<Mod> logger
 ) : IOnLoad
 {
-    // IDs of the weapons we are going to modify
     private const string SAIGA_12K_TPL = "576165642459773c7a400233";
     private const string SAIGA_12K_FULLATO_TPL = "674fe9a75e51f1c47c04ec23";
     private const string BENELLI_M3_TPL = "6259b864ebedf17603599e88";
@@ -513,7 +512,7 @@ public class Mod(
                     {
                         Shift = 0, 
                         // Convert the list of string IDs to a HashSet of MongoId objects
-                        Filter = filterItems.Select(itemId => new MongoId(itemId)).ToHashSet() // <-- CORRECTED
+                        Filter = filterItems.Select(itemId => new MongoId(itemId)).ToHashSet()
                     }
                 ]
             },
