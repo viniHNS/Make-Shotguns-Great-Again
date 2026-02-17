@@ -9,6 +9,22 @@
             ]
         },
         {
+            "key": "12ga_dragon.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "12ga_frag12.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
             "key": "mp153_13shell.bundle",
             "dependencyKeys": [
                 "cubemaps",

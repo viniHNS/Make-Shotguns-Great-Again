@@ -5,6 +5,10 @@
     "handbookParentId": "5b47574386f77428ca22b33b",
     "overrideProperties": {
       "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "12ga_dragon.bundle",
+        "rcid": ""
+      },
       "PenetrationPower": 3,
       "ArmorDamage": 6,
       "BulletDiameterMilimeters": 7,
