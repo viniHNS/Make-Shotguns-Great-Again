@@ -472,8 +472,6 @@ public class Mod(
 
             mts255.Properties.DoubleActionAccuracyPenalty = 0;
 
-            mts255.Properties.BFirerate = 450;
-
             if (mts255.Properties.Slots == null)
             {
                 logger.Error("MTs-255 has no slots. Skipping modification.");
