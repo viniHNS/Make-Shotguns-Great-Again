@@ -419,6 +419,8 @@ public class Mod(
     private void ModifyAa12(TemplateItem aa12)
     {
         aa12.Properties.BFirerate = 450;
+        aa12.Properties.RecoilForceUp -= 30;
+        aa12.Properties.RecoilForceBack -= 30;
     }
 
     private void ModifySaiga12K(TemplateItem saiga12k)
@@ -468,7 +470,9 @@ public class Mod(
         if (mts255.Properties != null)
         {
 
-            mts255.Properties.DoubleActionAccuracyPenalty = 0.5f;
+            mts255.Properties.DoubleActionAccuracyPenalty = 0;
+
+            mts255.Properties.BFirerate = 450;
 
             if (mts255.Properties.Slots == null)
             {
