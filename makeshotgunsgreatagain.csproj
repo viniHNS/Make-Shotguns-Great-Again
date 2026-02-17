@@ -8,7 +8,7 @@
     <Authors>ViniHNS</Authors>
     <Copyright>© ViniHNS</Copyright>
     <OutputType>Library</OutputType>
-    <Version>1.11.1</Version>
+    <Version>1.12.0</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
