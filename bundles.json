@@ -25,6 +25,14 @@
             ]
         },
         {
+            "key": "545rat.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
             "key": "mp153_13shell.bundle",
             "dependencyKeys": [
                 "cubemaps",

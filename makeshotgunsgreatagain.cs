@@ -64,10 +64,18 @@ public class Mod(
     private const string MTS_255_CYLINDER_TPL = "6107328513316926220e3345";
     private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
 
+    
+
     private static readonly List<string> NEW_CARTRIDGE_IDS =
     [
         "6911031c1e9fa1008ce6e1aa", "69111bf76c4be2b06bd0745c", "69111d386d6226b577e619b1", "69111e8fab39296e6f0f310a", "6911202ab8757755a4d62f3c", "698924bf6dcd41ac313f5921"
     ];
+
+    private static readonly List<string> NEW_545_BUCK_AMMO_IDS =
+    [
+        "6995e5f38ebb130aec79e509"
+    ];
+
 
     private static readonly List<string> SIGHTS_TO_ADD_IDS = [
       "57ac965c24597706be5f975c",
@@ -141,11 +149,13 @@ public class Mod(
       "6761759e7ee06333f108bf86",
       "67641a851b2899700609901a"
     ];
-
     private const string STANDARD_12G_BUCK = "560d5e524bdc2d25448b4571";
+    private const string STANDARD_545_AMMO = "56dff3afd2720bba668b4567";
 
     private const string SHOTGUN_BASE_CLASS = "5447b6094bdc2dc3278b4567";
     private const string MAGAZINE_BASE_CLASS = "5448bc234bdc2d3c308b4569";
+    private const string ASSAULTRIFLE_BASE_CLASS = "5447b5f14bdc2d61278b4567";
+
 
     
     public async Task OnLoad()
@@ -155,9 +165,9 @@ public class Mod(
         await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly, "db/weaponPresets/Assorts");
         await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
         await wttCommon.CustomHideoutRecipeService.CreateHideoutRecipes(assembly);
-
         ModifyExistingShotguns();
         AddNewCartridgesToShotguns();
+        AddNew545CartridgesToAssaultRifles();
         ModifyRails();
     }
 
@@ -298,24 +308,40 @@ public class Mod(
         }
 
         var allItems = databaseService.GetItems();
-        var allItemsList = allItems.Values.ToList();
-
-        var shotgunMagazines = FindCompatibleMagazines(allItemsList);
-        var shotguns = FindCompatibleShotguns(allItemsList);
+        var allItemsList = allItems.Values.ToList();        var shotgunMagazines = FindCompatibleMagazines(allItemsList, STANDARD_12G_BUCK);
+        var shotguns = FindCompatibleWeapons(allItemsList, STANDARD_12G_BUCK, SHOTGUN_BASE_CLASS);
 
         // Add cartridges to magazines
-        AddCartridgesToItems(allItems, shotgunMagazines, "Cartridges");
+        AddCartridgesToItems(allItems, shotgunMagazines, "Cartridges", NEW_CARTRIDGE_IDS);
 
         // Add cartridges to shotguns
-        AddCartridgesToItems(allItems, shotguns, "Chambers");
+        AddCartridgesToItems(allItems, shotguns, "Chambers", NEW_CARTRIDGE_IDS);
 
         // Special cases
         AddCartridgesToSpecialWeapons(allItems);
     }
 
-    private List<string> FindCompatibleMagazines(List<TemplateItem> items)
+    private void AddNew545CartridgesToAssaultRifles()
     {
-        var referenceCartridgeId = new MongoId(STANDARD_12G_BUCK);
+        if (NEW_545_BUCK_AMMO_IDS.Count == 0)
+        {
+            logger.Warning("No new 5.45 cartridge IDs were defined. Skipping addition.");
+            return;
+        }
+
+        var allItems = databaseService.GetItems();
+        var allItemsList = allItems.Values.ToList();
+
+        var assaultMagazines = FindCompatibleMagazines(allItemsList, STANDARD_545_AMMO);
+        var assaultRifles = FindCompatibleWeapons(allItemsList, STANDARD_545_AMMO, ASSAULTRIFLE_BASE_CLASS);
+
+        AddCartridgesToItems(allItems, assaultMagazines, "Cartridges", NEW_545_BUCK_AMMO_IDS);
+        AddCartridgesToItems(allItems, assaultRifles, "Chambers", NEW_545_BUCK_AMMO_IDS);
+    }
+
+    private List<string> FindCompatibleMagazines(List<TemplateItem> items, string standardAmmoId)
+    {
+        var referenceCartridgeId = new MongoId(standardAmmoId);
 
         return items
             .Where(item => itemHelper.IsOfBaseclass(item.Id, MAGAZINE_BASE_CLASS))
@@ -326,22 +352,22 @@ public class Mod(
             .ToList();
     }
 
-    private List<string> FindCompatibleShotguns(List<TemplateItem> items)
+    private List<string> FindCompatibleWeapons(List<TemplateItem> items, string standardAmmoId, string weaponBaseClass)
     {
-        var referenceCartridgeId = new MongoId(STANDARD_12G_BUCK);
+        var referenceCartridgeId = new MongoId(standardAmmoId);
 
         return items
-            .Where(item => itemHelper.IsOfBaseclass(item.Id, SHOTGUN_BASE_CLASS))
-            .Where(shotgun =>
-                shotgun.Properties?.Chambers?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter?.Contains(referenceCartridgeId) == true
+            .Where(item => itemHelper.IsOfBaseclass(item.Id, weaponBaseClass))
+            .Where(weapon =>
+                weapon.Properties?.Chambers?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter?.Contains(referenceCartridgeId) == true
             )
-            .Select(shotgun => shotgun.Id.ToString())
+            .Select(weapon => weapon.Id.ToString())
             .ToList();
     }
 
-    private void AddCartridgesToItems(IReadOnlyDictionary<MongoId, TemplateItem> itemsDb, List<string> itemIds, string containerType)
+    private void AddCartridgesToItems(IReadOnlyDictionary<MongoId, TemplateItem> itemsDb, List<string> itemIds, string containerType, List<string> newCartridgeIds)
     {
-        var newCartridgeMongoIds = NEW_CARTRIDGE_IDS.Select(id => new MongoId(id));
+        var newCartridgeMongoIds = newCartridgeIds.Select(id => new MongoId(id));
 
         foreach (var itemId in itemIds)
         {

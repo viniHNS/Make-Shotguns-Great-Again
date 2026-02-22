@@ -1,0 +1,60 @@
+﻿{
+  "6995e5f38ebb130aec79e509": {
+    "itemTplToClone": "560d5e524bdc2d25448b4571",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "545rat.bundle",
+        "rcid": ""
+      },
+      "Weight": 0.09,
+      "Caliber": "Caliber545x39",
+      "PenetrationPower": 3,
+      "ProjectileCount": 5,
+      "buckshotBullets": 5,
+      "LightBleedingDelta": 0.66,
+      "BulletDiameterMilimeters": 8,
+      "ArmorDamage": 20,
+      "Damage": 45,
+      "ammoAccr": -40,
+      "MalfFeedChance": 150,
+      "MalfMisfireChance": 150,
+      "MisfireChance": 60,
+      "InitialSpeed": 300,
+      "BallisticCoeficient": 0.013,
+      "SpeedRetardation": 0.00013,
+      "FragmentationChance": 0,
+      "RicochetChance": 0,
+      "ammoType": "buckshot",
+      "DurabilityBurnModificator": 3
+    },
+    
+    
+    "locales": {
+      "en": {
+        "name": "5.45x39mm 'Svalka' Anti-Drone Buckshot",
+        "shortName": "5.45 AD",
+        "description": "A field-expedient 5.45x39mm cartridge, handcrafted by frontline troops to counter small UAVs. The standard projectile has been replaced with a crimped plastic container holding lead buckshot. While effective against fragile electronics at point-blank range, it generates insufficient gas pressure to reliably cycle the bolt and rapidly fouls the barrel. High malfunction risk."
+      }
+    },
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": true,
+    "staticAmmoProbability": 1,
+    
+    "addtoStaticLootContainers": true,
+    "StaticLootContainers": [
+      {
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "Probability": 20
+      }
+    ],
+    
+    "fleaPriceRoubles": 321,
+    "handbookPriceRoubles": 214,
+    "addtoSecureFilters": true,
+    
+    "addtoTraders": false
+  }
+}
