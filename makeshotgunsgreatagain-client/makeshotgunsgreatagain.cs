@@ -153,6 +153,7 @@ namespace makeshotgunsgreatagain
             new DragonBreathMuzzlePatch().Enable();
             new CanResolveMalfunctionsWithoutInspectionPatch().Enable();
             new RemoveBossMalfunctionsPatch().Enable();
+            new BuckshotDispersionPatch().Enable();
 
             LogSource.LogInfo("plugin loaded!");
         }

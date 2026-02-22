@@ -16,6 +16,9 @@
     <Compile Remove="makeshotgunsgreatagain-client\**" />
     <EmbeddedResource Remove="makeshotgunsgreatagain-client\**" />
     <None Remove="makeshotgunsgreatagain-client\**" />
+    <Compile Remove="SPT4.0decompile\**" />
+    <EmbeddedResource Remove="SPT4.0decompile\**" />
+    <None Remove="SPT4.0decompile\**" />
   </ItemGroup>
 
   <ItemGroup>

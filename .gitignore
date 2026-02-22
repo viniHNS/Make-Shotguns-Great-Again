@@ -45,8 +45,8 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-
 3d/
+SPT4.0decompile/
 
 # Dependency directories
 node_modules/
