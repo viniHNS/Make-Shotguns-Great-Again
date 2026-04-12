@@ -2,6 +2,8 @@
 
 #### [EN](README.md) | [PT_BR](README_BR.md)
 
+![fire](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTZiZzdxeXJ0eTBxNWNtbHVxdzBweWkxbjhiNnJoc2ZiOTh4a3VzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1aUNE2xRmk3xUaSAJ/giphy.gif)
+
 ## What is this?
 
 This is a mod for [SPT](https://www.sp-tarkov.com "The main goal of the project is to provide a separate offline single-player experience with ready-to-use progression for the official BSG client. Now you can play Escape From Tarkov while waiting for their servers to come back online, while you're disconnected from the Internet, or if you need to take a break from cheaters.") that improves the shotguns in the game and adds new attachments, guns, and ammunition.
