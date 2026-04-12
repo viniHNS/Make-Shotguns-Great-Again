@@ -19,14 +19,14 @@ public record ModMetadata : AbstractModMetadata
     public override string ModGuid { get; init; } = "com.vinihns.makeshotgunsgreatagain";
     public override string Name { get; init; } = "Make Shotguns Great Again";
     public override string Author { get; init; } = "ViniHNS";
-    public override SemanticVersioning.Version Version { get; init; } = new("1.13.0");
+    public override SemanticVersioning.Version Version { get; init; } = new("1.13.1");
     public override Range SptVersion { get; init; } = new("~4.0.0");
     public override string? License { get; init; } = "MIT";
     public override bool? IsBundleMod { get; init; } = true;
 
     public override Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
-        { "com.wtt.commonlib", new Range("2.0.15") }
+        { "com.wtt.commonlib", new Range("~2.0.15") }
 
     };
 
