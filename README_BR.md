@@ -14,6 +14,7 @@ Adiciona algumas melhorias às shotguns do jogo e novos acessórios para elas:
 - O modo semiautomático da Benelli M3 foi levemente ajustado, similar a outras shotguns semiautomáticas do jogo, como a MP-155 e MP-153.
 - Agora você pode usar o suporte de trilho Kiba Arms SPRM e o kit de acessório AK GP-25 recoil pad na KS-23M.
 - O suporte de trilho ETMI-019 e Kiba Arms SPRM agora podem ser equipados na MTs-255
+- Aumentada a precisão do slug Barrikada para ficar em linha com os outros slugs 12ga do mod, fechando seu agrupamento.
 - Agora a Saiga-12K pode usar a maioria dos handguards das AKs.
 - Aumento na cadência de tiro da AA-12.
 
@@ -26,11 +27,17 @@ Reformulação de Malfuncionamento:
 
 Essas opções podem ser ajustadas na configuração do BepInEx (F12)
 
+## Correções
+
+* **Zeragem de Ópticas da KS-23:** Corrigido ópticas montadas no trilho da KS-23 atirando fora do retículo, independente da mira usada. Os tiros agora acertam onde o retículo aponta.
+
+
 ## Novos Acessórios
 
 - Carregador de 6 cartuchos 23x75 para KS-23M
 - Carregador de competição de 13 cartuchos para MP-153
 - Handguard 'M-LOK' para Benelli M3
+- Carregador de 30 cartuchos Alliance Armament para Saiga-12K
 
 ## "Novas" Armas
 
@@ -50,6 +57,7 @@ Uma arma capaz de derrubar até os adversários mais resistentes. Esta poderosa 
 - 12/70 'Hellfire' hybrid buckshot
 - 12/70 FRAG-12 HE
 - 12/70 Brass Case
+- 5.45x39mm Svalka (munição buckshot anti-drone)
 
 ## Instalação
 

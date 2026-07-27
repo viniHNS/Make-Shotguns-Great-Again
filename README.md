@@ -18,6 +18,7 @@ Adds some features to the shotguns in the game and new attachments for them:
 - Now you can put the Kiba Arms SPRM rail mount and the AK GP-25 accessory kit recoil pad
 in the KS-23M.
 - The ETMI-019 and Kiba Arms SPRM rail mounts can now be equipped on the MTs-255
+- Raised the Barrikada slug's accuracy stat to match the mod's other 12ga slugs, tightening its group.
 - Now the saiga-12k can use most of the AKs handguards.
 - Increased AA-12 Rate of Fire..
 
@@ -30,11 +31,17 @@ Malfunction Overhaul:
 
 These can be adjusted in the BepInEx config (F12)
 
+## Fixes
+
+* **KS-23 Optics Zeroing:** Fixed optics mounted on the KS-23's rail shooting off-reticle regardless of the sight used. Shots now land where the reticle points.
+
+
 ## New Attachments
 
 - KS-23M 23x75 6-shell magazine
 - MP-153 competition 13-shell magazine
 - Benelli M3 'M-LOK' handguard
+- Saiga-12k Alliance Armament 30-round magazine
 
 ## "New" Guns
 - **MP-12 Single Shot Shotgun**:  
@@ -53,6 +60,7 @@ A beast of a weapon capable of taking down even the toughest adversaries. This d
 - 12/70 'Hellfire' hybrid buckshot
 - 12/70 FRAG-12 HE
 - 12/70 Brass Case
+- 5.45x39mm Svalka (buckshot anti-drone round)
 
 ## Installation
 
