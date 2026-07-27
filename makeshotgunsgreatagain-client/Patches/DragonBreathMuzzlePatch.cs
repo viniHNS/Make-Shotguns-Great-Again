@@ -6,6 +6,10 @@ using UnityEngine;
 
 namespace makeshotgunsgreatagain.Patches
 {
+    /// <summary>
+    /// Spawns the Dragon Breath spark effect at the weapon's muzzle
+    /// whenever DragonBreathPatch flags the shot just fired as Dragon Breath.
+    /// </summary>
     internal class DragonBreathMuzzlePatch : ModulePatch
     {
         private static Transform _cachedFireport;

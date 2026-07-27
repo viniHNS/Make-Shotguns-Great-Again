@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using SPTarkov.DI.Annotations;
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Helpers;
@@ -19,14 +16,14 @@ public record ModMetadata : AbstractModMetadata
     public override string ModGuid { get; init; } = "com.vinihns.makeshotgunsgreatagain";
     public override string Name { get; init; } = "Make Shotguns Great Again";
     public override string Author { get; init; } = "ViniHNS";
-    public override SemanticVersioning.Version Version { get; init; } = new("1.13.1");
+    public override SemanticVersioning.Version Version { get; init; } = new("1.13.2");
     public override Range SptVersion { get; init; } = new("~4.0.0");
     public override string? License { get; init; } = "MIT";
     public override bool? IsBundleMod { get; init; } = true;
 
     public override Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
-        { "com.wtt.commonlib", new Range("~2.0.15") }
+        { "com.wtt.commonlib", new Range("~2.0.23") }
 
     };
 
@@ -49,6 +46,7 @@ public class Mod(
     private const string KS23_TPL = "5e848cc2988a8701445df1e8";
     private const string KS23_WIRE_STOCK_TPL = "5e848dc4e4dbc5266a4ec63d";
     private const string MP153_TPL = "56dee2bdd2720bc8328b4567";
+    private const string BARRIKADA_SLUG_TPL = "5e85aa1a988a8701445df1f5";
 
     private const string AA12_GEN1_TPL = "66ffa9b66e19cc902401c5e8";
     private const string AA12_GEN2_TPL = "67124dcfa3541f2a1f0e788b";
@@ -64,7 +62,7 @@ public class Mod(
     private const string MTS_255_CYLINDER_TPL = "6107328513316926220e3345";
     private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
 
-    
+
 
     private static readonly List<string> NEW_CARTRIDGE_IDS =
     [
@@ -166,6 +164,7 @@ public class Mod(
         await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
         await wttCommon.CustomHideoutRecipeService.CreateHideoutRecipes(assembly);
         ModifyExistingShotguns();
+        ModifyBarrikadaSlug();
         AddNewCartridgesToShotguns();
         AddNew545CartridgesToAssaultRifles();
         ModifyRails();
@@ -255,6 +254,23 @@ public class Mod(
         else
         {
             logger.Warning($"Could not find KS-23 ({KS23_TPL}) or its wire stock ({KS23_WIRE_STOCK_TPL}) to modify.");
+        }
+    }
+
+    /// <summary>
+    /// Raises the Barrikada slug accuracy so it behaves like the mod's 12ga slugs
+    /// </summary>
+    private void ModifyBarrikadaSlug()
+    {
+        var items = databaseService.GetItems();
+
+        if (items.TryGetValue(BARRIKADA_SLUG_TPL, out var barrikada) && barrikada.Properties != null)
+        {
+            barrikada.Properties.AmmoAccr = 135;
+        }
+        else
+        {
+            logger.Warning($"Could not find Barrikada slug ({BARRIKADA_SLUG_TPL}) to modify.");
         }
     }
 

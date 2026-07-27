@@ -8,7 +8,7 @@
     <Authors>ViniHNS</Authors>
     <Copyright>© ViniHNS</Copyright>
     <OutputType>Library</OutputType>
-    <Version>1.13.1</Version>
+    <Version>1.13.2</Version>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
@@ -22,10 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SPTarkov.Common" Version="4.0.3" />
-    <PackageReference Include="SPTarkov.DI" Version="4.0.3" />
-    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.3" />
-    <PackageReference Include="WTT-ServerCommonLib" Version="2.0.15" />
+    <PackageReference Include="SPTarkov.Common" Version="4.0.13" />
+    <PackageReference Include="SPTarkov.DI" Version="4.0.13" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.13" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="2.0.23" />
   </ItemGroup>
 
   <ItemGroup>
@@ -65,10 +65,7 @@
     </ItemGroup>
     <Copy SourceFiles="@(DbFiles)" DestinationFolder="$(ModPackageDir)\db\%(RecursiveDir)" />
 
-    <ZipDirectory
-                  SourceDirectory="$(TempPackageDir)"
-                  DestinationFile="$(ProjectDir)$(ZipFileName)"
-                  Overwrite="true" />
+    <ZipDirectory SourceDirectory="$(TempPackageDir)" DestinationFile="$(ProjectDir)$(ZipFileName)" Overwrite="true" />
 
     <RemoveDir Directories="$(TempPackageDir)" />
 

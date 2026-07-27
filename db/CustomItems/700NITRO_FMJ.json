@@ -49,8 +49,9 @@
         "6910e2256e1cf9e86548e61f": {
           "barterSettings": {
             "loyalLevel": 3,
-            "unlimitedCount": false,
-            "stackObjectsCount": 96
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 96
           },
           "barters": [
             {

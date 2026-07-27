@@ -7,8 +7,8 @@
         "parentId": "hideout",
         "slotId": "hideout",
         "upd": {
-          "StackObjectsCount": 1,
-          "UnlimitedCount": false,
+          "StackObjectsCount": 999999,
+          "UnlimitedCount": true,
           "Repairable": {
             "Durability": 100,
             "MaxDurability": 100

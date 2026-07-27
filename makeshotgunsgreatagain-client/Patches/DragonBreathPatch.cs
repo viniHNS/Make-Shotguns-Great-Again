@@ -7,7 +7,10 @@ using UnityEngine;
 
 namespace makeshotgunsgreatagain.Patches
 {
-
+    /// <summary>
+    /// Detects Dragon Breath ammo on shot and builds/caches the spark
+    /// particle effect prefab used by DragonBreathMuzzlePatch.
+    /// </summary>
     internal class DragonBreathPatch : ModulePatch
     {
         private const string DragonBreathAmmoId = "698924bf6dcd41ac313f5921";

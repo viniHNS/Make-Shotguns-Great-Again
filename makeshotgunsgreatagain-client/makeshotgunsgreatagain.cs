@@ -5,7 +5,7 @@ using makeshotgunsgreatagain.Patches;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.13.1")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.13.2")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
@@ -20,6 +20,12 @@ namespace makeshotgunsgreatagain
         public static ConfigEntry<bool> DB_TrailsEnabled;
         public static ConfigEntry<bool> DB_CollisionEnabled;
         public static ConfigEntry<bool> DB_LightsEnabled;
+
+        // KS-23 mount calibration configs
+        public static ConfigEntry<bool> KS23_MountFixEnabled;
+        public static ConfigEntry<float> KS23_MountPitch;
+        public static ConfigEntry<float> KS23_MountYaw;
+        public static ConfigEntry<bool> KS23_MountDebug;
 
         public static ConfigEntry<float> DB_SpreadAngle;
         public static ConfigEntry<float> DB_NoiseStrength;
@@ -137,6 +143,38 @@ namespace makeshotgunsgreatagain
                new AcceptableValueRange<float>(0f, 1f),
                new ConfigurationManagerAttributes { Order = 83 }));
 
+            KS23_MountFixEnabled = Config.Bind(
+                "KS-23 Mount Calibration",
+                "Enable Mount Alignment Fix",
+                true,
+                new ConfigDescription("Apply a rotation offset to the KS-23 rail mount so optics zero matches the barrel.",
+                null,
+                new ConfigurationManagerAttributes { Order = 100 }));
+
+            KS23_MountPitch = Config.Bind(
+                "KS-23 Mount Calibration",
+                "Shot Pitch Correction",
+                0.311f,
+                new ConfigDescription("Vertical shot correction in degrees while aiming the KS-23. Adjust at the shooting range until impacts match the reticle height. Applied per shot, changes take effect immediately.",
+                new AcceptableValueRange<float>(-5f, 5f),
+                new ConfigurationManagerAttributes { Order = 99 }));
+
+            KS23_MountYaw = Config.Bind(
+                "KS-23 Mount Calibration",
+                "Shot Yaw Correction",
+                0.31f,
+                new ConfigDescription("Horizontal shot correction in degrees while aiming the KS-23. Adjust at the shooting range until impacts match the reticle horizontally. Applied per shot, changes take effect immediately.",
+                new AcceptableValueRange<float>(-5f, 5f),
+                new ConfigurationManagerAttributes { Order = 98 }));
+
+            KS23_MountDebug = Config.Bind(
+                "KS-23 Mount Calibration",
+                "Debug Logging",
+                false,
+                new ConfigDescription("Log each applied shot correction to the BepInEx console.",
+                null,
+                new ConfigurationManagerAttributes { Order = 97 }));
+
             // Rebuild prefab when any config changes
             DB_MaxParticles.SettingChanged += (_, __) => DragonBreathPatch.InvalidatePrefab();
             DB_ParticleCount.SettingChanged += (_, __) => DragonBreathPatch.InvalidatePrefab();
@@ -154,6 +192,7 @@ namespace makeshotgunsgreatagain
             new CanResolveMalfunctionsWithoutInspectionPatch().Enable();
             new RemoveBossMalfunctionsPatch().Enable();
             new BuckshotDispersionPatch().Enable();
+            new KS23MountAlignmentPatch().Enable();
 
             LogSource.LogInfo("plugin loaded!");
         }
