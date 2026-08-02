@@ -5,7 +5,7 @@ using makeshotgunsgreatagain.Patches;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.13.2")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.14.0")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
