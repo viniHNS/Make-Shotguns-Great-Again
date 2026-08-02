@@ -14,6 +14,7 @@ Adiciona algumas melhorias às shotguns do jogo e novos acessórios para elas:
 - O modo semiautomático da Benelli M3 foi levemente ajustado, similar a outras shotguns semiautomáticas do jogo, como a MP-155 e MP-153.
 - Agora você pode usar o suporte de trilho Kiba Arms SPRM e o kit de acessório AK GP-25 recoil pad na KS-23M.
 - O suporte de trilho ETMI-019 e Kiba Arms SPRM agora podem ser equipados na MTs-255
+- O suporte de trilho Kiba Arms SPRM agora pode ser equipado na Mossberg 590A1.
 - Aumentada a precisão do slug Barrikada para ficar em linha com os outros slugs 12ga do mod, fechando seu agrupamento.
 - Agora a Saiga-12K pode usar a maioria dos handguards das AKs.
 - Aumento na cadência de tiro da AA-12.
@@ -27,6 +28,18 @@ Reformulação de Malfuncionamento:
 
 Essas opções podem ser ajustadas na configuração do BepInEx (F12)
 
+## Configuração
+
+O arquivo `config/config.json` permite escolher se os bots podem usar as munições FRAG-12 e Dragon's Breath do mod. Ambas vêm habilitadas por padrão.
+
+```json
+{
+  "enableBotsUseFrag12": true,
+  "enableBotsUseDragonBreath": true,
+  "enableDebugLogs": false
+}
+```
+
 ## Correções
 
 * **Zeragem de Ópticas da KS-23:** Corrigido ópticas montadas no trilho da KS-23 atirando fora do retículo, independente da mira usada. Os tiros agora acertam onde o retículo aponta.
@@ -38,6 +51,7 @@ Essas opções podem ser ajustadas na configuração do BepInEx (F12)
 - Carregador de competição de 13 cartuchos para MP-153
 - Handguard 'M-LOK' para Benelli M3
 - Carregador de 30 cartuchos Alliance Armament para Saiga-12K
+- **Cano rosqueado 508mm 12ga para Mossberg 590A1** — a 590A1 original não tem como montar nenhum muzzle device. Este cano é rosqueado na ponta, permitindo finalmente usar um choke ou supressor. Aceita os mesmos muzzle devices da MP-153.
 
 ## "Novas" Armas
 
@@ -46,6 +60,12 @@ Uma shotgun compacta projetada para precisão. Perfeita para aqueles que gostam 
 
 - **MP-700 .700 Nitro Express Double Rifle**:  
 Uma arma capaz de derrubar até os adversários mais resistentes. Esta poderosa arma de cano duplo utiliza a **nova munição .700 Nitro Express FMJ**, garantindo que cada tiro seja letal.
+
+- **MP-700 Shorty .700 Nitro Express Double Rifle**:  
+Uma versão serrada da MP-700. Abrir mão da coronha e da maior parte do cano troca precisão por um canhão de mão absurdamente ocultável. O recuo, como era de se esperar, é brutal.
+
+- **ZiD SP-81 23x75 pistol**:  
+Uma versão modificada da pistola de sinalização SP-81, recalibrada e reforçada para disparar munição 23x75mm. Incompatível com sinalizadores e outras munições de sinalização.
 
 ## Novas Munições e Receitas de Produção do Esconderijo
 

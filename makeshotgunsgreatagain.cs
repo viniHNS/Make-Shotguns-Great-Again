@@ -45,8 +45,6 @@ public class Mod(
     private const string DRAGON_BREATH_TPL = "698924bf6dcd41ac313f5921";
 
     private const string MOSSBERG_590A1_TPL = "5e870397991fd70db46995c8";
-    // Custom item from db/CustomItems/MOSSBERG_handguard.json
-    private const string MOSSBERG_MOE_HANDGUARD_TPL = "6a7f4b02d938c1e57a406b19";
 
     private const string SAIGA_12K_TPL = "576165642459773c7a400233";
     private const string SAIGA_12K_FULLATO_TPL = "674fe9a75e51f1c47c04ec23";
@@ -535,16 +533,6 @@ public class Mod(
         else
         {
             logger.Warning($"Could not find mod_mount filter on Mossberg 590A1 ({MOSSBERG_590A1_TPL}).");
-        }
-
-        var handguardFilter = mossberg590A1.Properties?.Slots?.FirstOrDefault(slot => slot.Name == "mod_handguard")?.Properties?.Filters?.FirstOrDefault()?.Filter;
-        if (handguardFilter != null)
-        {
-            handguardFilter.Add(new MongoId(MOSSBERG_MOE_HANDGUARD_TPL));
-        }
-        else
-        {
-            logger.Warning($"Could not find mod_handguard filter on Mossberg 590A1 ({MOSSBERG_590A1_TPL}).");
         }
     }
 

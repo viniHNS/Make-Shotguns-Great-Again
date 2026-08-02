@@ -18,6 +18,7 @@ Adds some features to the shotguns in the game and new attachments for them:
 - Now you can put the Kiba Arms SPRM rail mount and the AK GP-25 accessory kit recoil pad
 in the KS-23M.
 - The ETMI-019 and Kiba Arms SPRM rail mounts can now be equipped on the MTs-255
+- The Kiba Arms SPRM rail mount can now be equipped on the Mossberg 590A1.
 - Raised the Barrikada slug's accuracy stat to match the mod's other 12ga slugs, tightening its group.
 - Now the saiga-12k can use most of the AKs handguards.
 - Increased AA-12 Rate of Fire..
@@ -31,6 +32,18 @@ Malfunction Overhaul:
 
 These can be adjusted in the BepInEx config (F12)
 
+## Configuration
+
+A `config/config.json` file lets you decide whether bots are allowed to use the mod's FRAG-12 and Dragon's Breath ammunition. Both are enabled by default.
+
+```json
+{
+  "enableBotsUseFrag12": true,
+  "enableBotsUseDragonBreath": true,
+  "enableDebugLogs": false
+}
+```
+
 ## Fixes
 
 * **KS-23 Optics Zeroing:** Fixed optics mounted on the KS-23's rail shooting off-reticle regardless of the sight used. Shots now land where the reticle points.
@@ -42,6 +55,7 @@ These can be adjusted in the BepInEx config (F12)
 - MP-153 competition 13-shell magazine
 - Benelli M3 'M-LOK' handguard
 - Saiga-12k Alliance Armament 30-round magazine
+- **Mossberg 590A1 12ga 508mm threaded barrel** — the vanilla 590A1 has no way to mount a muzzle device at all. This barrel is threaded at the front, so the shotgun can finally run a choke or a suppressor. Takes the same muzzle devices as the MP-153.
 
 ## "New" Guns
 - **MP-12 Single Shot Shotgun**:  
@@ -49,6 +63,12 @@ A compact shotgun designed for precision. Perfect for those who like to keep thi
 
 - **MP-700 .700 Nitro Express Double Rifle**:  
 A beast of a weapon capable of taking down even the toughest adversaries. This double-barreled powerhouse chambers the **new .700 Nitro Express FMJ**, ensuring you make every shot count.
+
+- **MP-700 Shorty .700 Nitro Express Double Rifle**:  
+A sawed-off variant of the MP-700. Losing the stock and most of the barrel length trades accuracy for a devastatingly concealable hand cannon. Recoil is, unsurprisingly, brutal.
+
+- **ZiD SP-81 23x75 pistol**:  
+A modified SP-81 signal pistol, re-chambered and reinforced to fire 23x75mm rounds. Incompatible with flares and other signal ammunition.
 
 ## New Ammunition and Hideout Production Recipes
 
