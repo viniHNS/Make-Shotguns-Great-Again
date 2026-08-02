@@ -1,0 +1,110 @@
+{
+  "6a8103d9e2f14c7b9a5d3e01": {
+    "itemTplToClone": "64748cb8de82c85eaf0a273a",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "assets/content/weapons/mr43/weapon_izhmeh_mr43_sawed_off_12g_container.bundle",
+        "rcid": ""
+      },
+      "Weight": 2.1,
+      "RecoilForceBack": 1200,
+      "RecoilForceUp": 2200,
+      "ammoCaliber": "Caliber17.8x89",
+      "Chambers": [
+        {
+          "_name": "patron_in_weapon_000",
+          "_id": "6a8103e1a4b74d8fae2c9f02",
+          "_parent": "6a8103d9e2f14c7b9a5d3e01",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6910e1cbbd20f63a9791742e"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "55d4af244bdc2d962f8b4572"
+        },
+        {
+          "_name": "patron_in_weapon_001",
+          "_id": "6a8103e8c5d64e91b7f4a103",
+          "_parent": "6a8103d9e2f14c7b9a5d3e01",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6910e1cbbd20f63a9791742e"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "55d4af244bdc2d962f8b4572"
+        }
+      ],
+      "Slots": [
+        {
+          "_id": "6a8103f7b3c25e6a9d8f4205",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "6a8103d9e2f14c7b9a5d3e01",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6a8103f0d6a84f2c8b6e5104"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "6910d825069499541588b1b1",
+          "_required": true
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "MP-700 Shorty .700 Nitro Express Double Rifle",
+        "shortName": "MP-700 Shorty",
+        "description": "A sawed-off variant of the MP-700 double-barreled rifle, re-chambered for .700 Nitro Express. Losing the stock and most of the barrel length trades accuracy for a devastatingly concealable hand cannon. Recoil is, unsurprisingly, brutal."
+      }
+    },
+
+    "fleaPriceRoubles": 145000,
+    "handbookPriceRoubles": 60000,
+    "addtoInventorySlots": ["Holster", "FirstPrimaryWeapon", "SecondPrimaryWeapon"],
+    "addtoHallOfFame": true,
+    "hallOfFameSlots": [
+      "bigTrophies"
+    ],
+    "addtoSecureFilters": true,
+
+    "addtoTraders": true,
+    "traders": {
+      "JAEGER": {
+        "6a8104020e7b4f3d8c9a5306": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 5
+          },
+          "barters": [
+            {
+              "count": 145000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

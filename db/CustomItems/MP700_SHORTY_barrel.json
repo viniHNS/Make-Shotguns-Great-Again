@@ -1,0 +1,48 @@
+{
+  "6a8103f0d6a84f2c8b6e5104": {
+    "itemTplToClone": "64748d02d1c009260702b526",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "assets/content/items/mods/barrels/barrel_mr43_sawed_off_310mm_12g.bundle",
+        "rcid": ""
+      },
+      "Weight": 4,
+      "Ergonomics": -8
+    },
+
+    "locales": {
+      "en": {
+        "name": "MP-700 Shorty .700 Nitro Express 310mm Barrel",
+        "shortName": "MP-700 Shorty 310mm",
+        "description": "A stubby 310mm .700 Nitro Express barrel for the sawed-off MP-700. Reinforced to survive the pressure of the massive cartridge, at the cost of even more weight up front. Manufactured by Holland & Holland."
+      }
+    },
+
+    "fleaPriceRoubles": 32000,
+    "handbookPriceRoubles": 21000,
+    "addtoSecureFilters": true,
+
+    "addtoTraders": true,
+    "traders": {
+      "JAEGER": {
+        "6a8104090f8c5e4d9b0a5407": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 5
+          },
+          "barters": [
+            {
+              "count": 31000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

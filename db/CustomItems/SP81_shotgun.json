@@ -1,0 +1,80 @@
+﻿{
+  "6a67d15e807645163d053cb0": {
+    "itemTplToClone": "620109578d82e67e7911abf2",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "IsFlareGun": false,
+      "Prefab": {
+        "path": "assets/content/weapons/sp81/weapon_zid_sp81_26x75_container.bundle",
+        "rcid": ""
+      },
+      "Weight": 3,
+      "RecoilForceBack": 800,
+      "RecoilForceUp": 800,
+      "defAmmo": "5e85aa1a988a8701445df1f5",
+      "defMagType": "5448bc234bdc2d3c308b4569",
+      "ammoCaliber": "Caliber23x75",
+      "Chambers": [
+        {
+          "_name": "patron_in_weapon",
+          "_id": "6a67d28b3624317f899b572c",
+          "_parent": "6a67d15e807645163d053cb0",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e85aa1a988a8701445df1f5",
+                  "5e85aac65505fa48730d8af2",
+                  "5e85a9a6eacf8c039e4e2ac1",
+                  "5f647f31b6238e5dd066e196",
+                  "5e85a9f4add9fe03027d9bf1",
+                  "5f647fd3f6e4ab66c82faed6"
+                ]
+              }
+            ]
+          },
+          "_required": false,
+          "_mergeSlotWithChildren": false,
+          "_proto": "55d4af244bdc2d962f8b4572"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "ZiD SP-81 23x75 pistol",
+        "shortName": "SP-81 DIY",
+        "description": "A modified version of the SP-81 signal pistol, re-chambered and reinforced to fire 23x75mm rounds. Originally designed by the V.A. Degtyarev Plant. Incompatible with flares and other signal ammunition."
+      }
+    },
+    
+    "fleaPriceRoubles": 110160,
+    "handbookPriceRoubles": 45000,
+    "addtoInventorySlots": ["Holster"],
+    "addtoHallOfFame": true,
+    "hallOfFameSlots": [
+      "bigTrophies"
+    ],
+    "addtoSecureFilters": true,
+    
+    "addtoTraders": true,
+    "traders": {
+      "MECHANIC": {
+        "6a67d55816a27fdbecfe273f": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 2
+          },
+          "barters": [
+            {
+              "count": 65321,
+              "_tpl": "MONEY_ROUBLES" 
+            }
+          ]
+        }
+      }
+    }
+  }
+}

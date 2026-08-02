@@ -37,9 +37,17 @@ public class Mod(
     WTTServerCommonLib.WTTServerCommonLib wttCommon,
     DatabaseService databaseService,
     ItemHelper itemHelper,
+    ModHelper modHelper,
     ISptLogger<Mod> logger
 ) : IOnLoad
 {
+    private const string FRAG12_TPL = "699358094978fa2d65f4dcf3";
+    private const string DRAGON_BREATH_TPL = "698924bf6dcd41ac313f5921";
+
+    private const string MOSSBERG_590A1_TPL = "5e870397991fd70db46995c8";
+    // Custom item from db/CustomItems/MOSSBERG_handguard.json
+    private const string MOSSBERG_MOE_HANDGUARD_TPL = "6a7f4b02d938c1e57a406b19";
+
     private const string SAIGA_12K_TPL = "576165642459773c7a400233";
     private const string SAIGA_12K_FULLATO_TPL = "674fe9a75e51f1c47c04ec23";
     private const string BENELLI_M3_TPL = "6259b864ebedf17603599e88";
@@ -57,8 +65,9 @@ public class Mod(
     private const string ETMI_019_RAIL_TPL = "5dfe14f30b92095fd441edaf";
 
     // IDs for special case weapons
-    private const string MP43_TPL = "5d5d85c286f77427997c0883";
-    private const string MP43_SAWED_OFF_TPL = "5d5d870186f7742798498584";
+    private const string MP43_TPL = "5580223e4bdc2d1c128b457f";
+    private const string MP43_SAWED_OFF_TPL = "64748cb8de82c85eaf0a273a";
+    private const string MP43_SAWED_OFF_BARREL_TPL = "64748d02d1c009260702b526";
     private const string MTS_255_CYLINDER_TPL = "6107328513316926220e3345";
     private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
 
@@ -159,6 +168,8 @@ public class Mod(
     public async Task OnLoad()
     {
         var assembly = Assembly.GetExecutingAssembly();
+        var config = LoadModConfig(assembly);
+
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly, "db/weaponPresets/Assorts");
         await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
@@ -168,6 +179,67 @@ public class Mod(
         AddNewCartridgesToShotguns();
         AddNew545CartridgesToAssaultRifles();
         ModifyRails();
+        ApplyBotAmmoConfig(config);
+    }
+
+    /// <summary>
+    /// Reads config/config.json from the mod's install folder. Falls back to
+    /// defaults (everything enabled) if the file is missing or malformed.
+    /// </summary>
+    private ModConfig LoadModConfig(Assembly assembly)
+    {
+        try
+        {
+            var pathToMod = modHelper.GetAbsolutePathToModFolder(assembly);
+            return modHelper.GetJsonDataFromFile<ModConfig>(pathToMod, "config/config.json");
+        }
+        catch (Exception ex)
+        {
+            logger.Warning($"Could not read config/config.json, using default settings. {ex.Message}");
+            return new ModConfig();
+        }
+    }
+
+    /// <summary>
+    /// Removes FRAG-12/Dragon's Breath from every bot type's ammo pool when
+    /// disabled in config.json.
+    /// </summary>
+    private void ApplyBotAmmoConfig(ModConfig config)
+    {
+        if (config.EnableDebugLogs)
+        {
+            logger.Info($"[MSGA] Bot ammo config: FRAG-12={config.EnableBotsUseFrag12}, DragonBreath={config.EnableBotsUseDragonBreath}");
+        }
+
+        if (config.EnableBotsUseFrag12 && config.EnableBotsUseDragonBreath) return;
+
+        var frag12Id = new MongoId(FRAG12_TPL);
+        var dragonBreathId = new MongoId(DRAGON_BREATH_TPL);
+        int frag12Removed = 0;
+        int dragonBreathRemoved = 0;
+
+        foreach (var botType in databaseService.GetBots().Types.Values)
+        {
+            var ammoByCaliber = botType?.BotInventory?.Ammo;
+            if (ammoByCaliber == null) continue;
+
+            foreach (var caliberAmmo in ammoByCaliber.Values)
+            {
+                if (!config.EnableBotsUseFrag12 && caliberAmmo.Remove(frag12Id))
+                {
+                    frag12Removed++;
+                }
+                if (!config.EnableBotsUseDragonBreath && caliberAmmo.Remove(dragonBreathId))
+                {
+                    dragonBreathRemoved++;
+                }
+            }
+        }
+
+        if (config.EnableDebugLogs)
+        {
+            logger.Info($"[MSGA] Bot ammo config applied: removed FRAG-12 from {frag12Removed} caliber pool(s), Dragon's Breath from {dragonBreathRemoved} caliber pool(s).");
+        }
     }
 
     /// <summary>
@@ -234,6 +306,16 @@ public class Mod(
         else
         {
             logger.Warning($"Could not find Benelli M3 ({BENELLI_M3_TPL}) to modify.");
+        }
+
+        // --- Modify Mossberg 590A1 ---
+        if (items.TryGetValue(MOSSBERG_590A1_TPL, out var mossberg590A1))
+        {
+            ModifyMossberg590A1(mossberg590A1);
+        }
+        else
+        {
+            logger.Warning($"Could not find Mossberg 590A1 ({MOSSBERG_590A1_TPL}) to modify.");
         }
 
         // --- Modify MP-153 ---
@@ -440,6 +522,29 @@ public class Mod(
                     }
                 }
             }
+        }
+    }
+
+    private void ModifyMossberg590A1(TemplateItem mossberg590A1)
+    {
+        var mountFilter = mossberg590A1.Properties?.Slots?.FirstOrDefault(slot => slot.Name == "mod_mount")?.Properties?.Filters?.FirstOrDefault()?.Filter;
+        if (mountFilter != null)
+        {
+            mountFilter.Add(new MongoId(SPRM_RAIL_MOUNT_TPL));
+        }
+        else
+        {
+            logger.Warning($"Could not find mod_mount filter on Mossberg 590A1 ({MOSSBERG_590A1_TPL}).");
+        }
+
+        var handguardFilter = mossberg590A1.Properties?.Slots?.FirstOrDefault(slot => slot.Name == "mod_handguard")?.Properties?.Filters?.FirstOrDefault()?.Filter;
+        if (handguardFilter != null)
+        {
+            handguardFilter.Add(new MongoId(MOSSBERG_MOE_HANDGUARD_TPL));
+        }
+        else
+        {
+            logger.Warning($"Could not find mod_handguard filter on Mossberg 590A1 ({MOSSBERG_590A1_TPL}).");
         }
     }
 

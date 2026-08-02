@@ -1,0 +1,89 @@
+{
+  "6a7f3e0dc4a15b8e2d97401a": {
+    "itemTplToClone": "5e87071478f43e51ca2de5e1",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "barrel_mossberg_tactical.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "6a7f3e14f8b26d3c1e05502b",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_sight_front",
+          "_parent": "6a7f3e0dc4a15b8e2d97401a",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e8708d4ae379e67d22e0102"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6a7f3e21b0c945f1d8a2b6c4",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_muzzle",
+          "_parent": "6a7f3e0dc4a15b8e2d97401a",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5c0111ab0db834001966914d",
+                  "560838c94bdc2d77798b4569",
+                  "5b363dea5acfc4771e1c5e7e"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ]
+    },
+
+    "locales": {
+      "en": {
+        "name": "Mossberg 590A1 12ga 508mm threaded barrel",
+        "shortName": "590A1 508mm thr.",
+        "description": "A 20 inch (508mm) barrel for Mossberg 590A1 12 gauge pump-action shotgun, machined with muzzle threading at the front."
+      }
+    },
+
+    "fleaPriceRoubles": 14000,
+    "handbookPriceRoubles": 11000,
+    "addtoSecureFilters": true,
+
+    "addtoModSlots": true,
+    "modSlot": ["mod_barrel"],
+
+    "addtoTraders": true,
+    "traders": {
+      "MECHANIC": {
+        "6a7f3e2ad71e8c04b95f7013": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 5
+          },
+          "barters": [
+            {
+              "count": 15500,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

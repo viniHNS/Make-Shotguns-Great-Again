@@ -10,9 +10,9 @@
         "rcid": ""
       },
       "Weight": 3,
-      "RecoilForceBack": 1200,
-      "RecoilForceUp": 998,
-      "ammoCaliber":"Caliber17.8×89",
+      "RecoilForceBack": 1000,
+      "RecoilForceUp": 2000,
+      "ammoCaliber":"Caliber17.8x89",
       "Chambers": [
         {
           "_name": "patron_in_weapon_000",

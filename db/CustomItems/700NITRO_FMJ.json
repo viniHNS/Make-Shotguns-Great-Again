@@ -10,16 +10,33 @@
         "rcid": ""
       },
       "Weight": 0.13,
-      "Caliber": "Caliber17.8×89",
-      "PenetrationPower": 38,
-      "MaxFragmentsCount": 4,
-      "LightBleedingDelta": 0.66,
-      "BulletMassGram": 16,
-      "BulletDiameterMilimeters": 8.58,
-      "ArmorDamage": 300
+      "Caliber": "Caliber178x89",
+
+      "InitialSpeed": 605,
+      "BallisticCoeficient": 0.28,
+      "SpeedRetardation": 0.00009,
+      "BulletMassGram": 64.8,
+      "BulletDiameterMilimeters": 18.03,
+
+      "Damage": 280,
+      "ArmorDamage": 903,
+      "PenetrationPower": 19,
+      "PenetrationPowerDiviation": 1,
+      "PenetrationChanceObstacle": 0.7,
+      "PenetrationDamageMod": 0.25,
+
+      "FragmentationChance": 0.02,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 1,
+
+      "RicochetChance": 0.05,
+      "HeavyBleedingDelta": 0.55,
+      "LightBleedingDelta": 0.75,
+
+      "casingMass": 40,
+      "casingName": "17.8x89"
     },
-    
-    
+
     "locales": {
       "en": {
         "name": ".700 Nitro Express FMJ",
@@ -30,19 +47,19 @@
     "addCaliberToAllCloneLocations": true,
     "addtoStaticAmmo": true,
     "staticAmmoProbability": 1,
-    
+
     "addtoStaticLootContainers": true,
     "StaticLootContainers": [
       {
-        "ContainerName": "LOOTCONTAINER_DEAD_SCAV", 
+        "ContainerName": "LOOTCONTAINER_DEAD_SCAV",
         "Probability": 2
       }
     ],
-    
+
     "fleaPriceRoubles": 2900,
     "handbookPriceRoubles": 1710,
     "addtoSecureFilters": true,
-    
+
     "addtoTraders": true,
     "traders": {
       "JAEGER": {
@@ -56,7 +73,7 @@
           "barters": [
             {
               "count": 1930,
-              "_tpl": "MONEY_ROUBLES" 
+              "_tpl": "MONEY_ROUBLES"
             }
           ]
         }

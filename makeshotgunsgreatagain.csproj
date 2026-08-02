@@ -56,7 +56,8 @@
     <Copy SourceFiles="$(ProjectDir)bundles.json" DestinationFolder="$(ModPackageDir)" />
 
     <ItemGroup>
-      <BundleFiles Include="bundles\**\*" />
+      <!-- 'teste' guarda assets ripados usados no Unity/SDK, nao entra na release -->
+      <BundleFiles Include="bundles\**\*" Exclude="bundles\teste\**\*" />
     </ItemGroup>
     <Copy SourceFiles="@(BundleFiles)" DestinationFolder="$(ModPackageDir)\bundles\%(RecursiveDir)" />
 
@@ -64,6 +65,11 @@
       <DbFiles Include="db\**\*" />
     </ItemGroup>
     <Copy SourceFiles="@(DbFiles)" DestinationFolder="$(ModPackageDir)\db\%(RecursiveDir)" />
+
+    <ItemGroup>
+      <ConfigFiles Include="config\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ConfigFiles)" DestinationFolder="$(ModPackageDir)\config\%(RecursiveDir)" />
 
     <ZipDirectory SourceDirectory="$(TempPackageDir)" DestinationFile="$(ProjectDir)$(ZipFileName)" Overwrite="true" />
 

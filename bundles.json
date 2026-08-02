@@ -1,6 +1,14 @@
 {
     "manifest": [
         {
+            "key": "barrel_mossberg_tactical.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
             "key": "6shellks23.bundle",
             "dependencyKeys": [
                 "cubemaps",
