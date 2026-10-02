@@ -11,11 +11,14 @@ lerna-debug.log*
 .vscode/
 bin/
 obj/
-makeshotgunsgreatagain.zip
+.vs/
+*.user
+*.suo
+*.zip
 makeshotgunsgreatagain.sln.DotSettings.user
 
 # Assets ripados do jogo, usados so no Unity/EFT-SDK
-bundles/teste/
+Server/bundles/teste/
 
 
 # Diagnostic reports (https://nodejs.org/api/report.html)

@@ -1,0 +1,84 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AssemblyName>makeshotgunsgreatagain</AssemblyName>
+    <RootNamespace>makeshotgunsgreatagain</RootNamespace>
+    <Version>1.15.0</Version>
+    <Authors>ViniHNS</Authors>
+    <Company>viniHNS</Company>
+    <Product>Make-Shotguns-Great-Again</Product>
+    <Description>Improves shotguns in SPT and adds new shotguns, attachments and ammunition.</Description>
+    <Copyright>© ViniHNS</Copyright>
+    <RepositoryUrl>https://github.com/viniHNS/Make-Shotguns-Great-Again</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SPTushonka.Common" Version="4.1.6" />
+    <PackageReference Include="SPTushonka.DI" Version="4.1.6" />
+    <PackageReference Include="SPTushonka.Server.Core" Version="4.1.6" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="3.0.6" />
+  </ItemGroup>
+
+  <!-- Builds the client first so its DLL is ready for the distribution zip. -->
+  <ItemGroup>
+    <ProjectReference Include="..\Client\makeshotgunsgreatagain.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <!--
+    Mod data files. WTT-CommonLib reads db/... relative to the mod folder, the SPT server reads
+    bundles.json + bundles/, and the mod reads config/config.json. They are copied to the output,
+    deployed and zipped keeping the folder layout.
+    The Web SDK already treats *.json as Content, so those use Update; *.bundle files are None.
+    'bundles/teste' holds ripped assets used only in Unity/EFT-SDK and never ships.
+  -->
+  <ItemGroup>
+    <Content Update="config\**\*.json;db\**\*.json;bundles.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="bundles\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <None Remove="bundles\teste\**" />
+    <Content Remove="bundles\teste\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ModDataFiles Include="bundles.json;config\**\*;db\**\*;bundles\**\*" Exclude="bundles\teste\**" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <SptModsDir>D:\Jogos\SPT4.1\SPT_Runtime\user\mods</SptModsDir>
+  </PropertyGroup>
+
+  <!-- Deploy to the local SPT install for testing. Overwrites the installed config/config.json. -->
+  <Target Name="DeployToSpt" AfterTargets="Build" Condition="Exists('$(SptModsDir)')">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SptModsDir)\$(AssemblyName)" />
+    <Copy SourceFiles="@(ModDataFiles)" DestinationFiles="@(ModDataFiles->'$(SptModsDir)\$(AssemblyName)\%(RelativeDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+    <Message Text="--- Deployed server mod to $(SptModsDir)\$(AssemblyName) ---" Importance="high" />
+  </Target>
+
+  <!-- Release only: the zip carries ~50 MB of bundles. -->
+  <Target Name="PackageModForDistribution" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <ModName>$(AssemblyName)</ModName>
+      <ZipFileName>$(ModName).zip</ZipFileName>
+      <TempPackageDir>$(ProjectDir)obj\Package</TempPackageDir>
+      <ModPackageDir>$(TempPackageDir)\SPT_Runtime\user\mods\$(ModName)</ModPackageDir>
+    </PropertyGroup>
+    <Message Text="--- Starting Mod packaging for distribution ---" Importance="high" />
+    <RemoveDir Directories="$(TempPackageDir)" />
+    <MakeDir Directories="$(ModPackageDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModPackageDir)" />
+    <Copy SourceFiles="@(ModDataFiles)" DestinationFiles="@(ModDataFiles->'$(ModPackageDir)\%(RelativeDir)%(Filename)%(Extension)')" />
+
+    <MakeDir Directories="$(TempPackageDir)\BepInEx\plugins" />
+    <Copy SourceFiles="$(ProjectDir)..\Client\bin\$(Configuration)\netstandard2.1\$(AssemblyName).dll" DestinationFolder="$(TempPackageDir)\BepInEx\plugins" />
+    <ZipDirectory SourceDirectory="$(TempPackageDir)" DestinationFile="$(ProjectDir)..\$(ZipFileName)" Overwrite="true" />
+
+    <RemoveDir Directories="$(TempPackageDir)" />
+    <Message Text="--- Mod successfully packaged at: $(ProjectDir)..\$(ZipFileName) ---" Importance="high" />
+  </Target>
+
+</Project>
