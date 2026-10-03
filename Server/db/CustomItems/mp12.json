@@ -106,23 +106,6 @@
       "bigTrophies"
     ],
     "addtoSecureFilters": true,
-    "addtoTraders": true,
-    "traders": {
-      "PRAPOR": {
-        "69109c17c501950c5261e609": {
-          "barterSettings": {
-            "loyalLevel": 1,
-            "unlimitedCount": true,
-            "stackObjectsCount": 999
-          },
-          "barters": [
-            {
-              "count": 6412,
-              "_tpl": "MONEY_ROUBLES"
-            }
-          ]
-        }
-      }
-    }
+    "addtoTraders": false
   }
 }

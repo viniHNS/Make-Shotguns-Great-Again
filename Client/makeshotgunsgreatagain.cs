@@ -5,7 +5,7 @@ using makeshotgunsgreatagain.Patches;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.15.0")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.16.0")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
@@ -147,7 +147,7 @@ namespace makeshotgunsgreatagain
                 "KS-23 Mount Calibration",
                 "Enable Mount Alignment Fix",
                 true,
-                new ConfigDescription("Apply a rotation offset to the KS-23 rail mount so optics zero matches the barrel.",
+                new ConfigDescription("Correct the KS-23 shot direction while aiming so optics on the rail mount hit where the reticle points.",
                 null,
                 new ConfigurationManagerAttributes { Order = 100 }));
 
@@ -193,6 +193,7 @@ namespace makeshotgunsgreatagain
             new RemoveBossMalfunctionsPatch().Enable();
             new BuckshotDispersionPatch().Enable();
             new KS23MountAlignmentPatch().Enable();
+            new MP18SilencedSoundPatch().Enable();
 
             LogSource.LogInfo("plugin loaded!");
         }

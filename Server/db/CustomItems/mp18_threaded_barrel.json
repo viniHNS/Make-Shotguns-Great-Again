@@ -1,0 +1,134 @@
+{
+  "6ac0247305055ccd3b93f729": {
+    "itemTplToClone": "61f4012adfc9f01a816adda1",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Weight": 1.45,
+      "Ergonomics": -15,
+      "Prefab": {
+        "path": "barrel_mp18_threaded_762x54r.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "6ac02474caec40985d197b00",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_handguard",
+          "_parent": "6ac0247305055ccd3b93f729",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61f8024263dc1250e26eb029",
+                  "61f7b85367ddd414173fdb36"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "6ac02475ef9472174a2cdb3f",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_scope",
+          "_parent": "6ac0247305055ccd3b93f729",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61f804acfcba9556ea304cb8",
+                  "65f05b9d39dab9e9ec049cfd"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac024766d663b89fc39ff3a",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_muzzle",
+          "_parent": "6ac0247305055ccd3b93f729",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560e620e4bdc2d724b8b456b",
+                  "5c4ee3d62e2216152006f302",
+                  "5c4eec9b2e2216398b5aaba2",
+                  "612e0d3767085e45ef14057f",
+                  "5b7d693d5acfc43bca706a3d",
+                  "6065c6e7132d4d12c81fd8e1",
+                  "5d1f819086f7744b355c219b",
+                  "5dcbe965e4ed22586443a79d",
+                  "5d026791d7ad1a04a067ea63",
+                  "5dfa3cd1b33c0951220c079b",
+                  "6130c43c67085e45ef1405a1",
+                  "5cdd7685d7f00c000f260ed2",
+                  "5c878e9d2e2216000f201903",
+                  "5d02677ad7ad1a04a15c0f95",
+                  "5bbdb8bdd4351e4502011460",
+                  "5cdd7693d7f00c0010373aa5",
+                  "607ffb988900dc2d9a55b6e4",
+                  "615d8eb350224f204c1da1cf",
+                  "612e0e3c290d254f5e6b291d",
+                  "5d443f8fa4b93678dd4a01aa",
+                  "5c7954d52e221600106f4cc7",
+                  "59bffc1f86f77435b128b872",
+                  "5cf78496d7f00c065703d6ca",
+                  "628a66b41d5e41750e314f34",
+                  "618178aa1cb55961fa0fdc80",
+                  "6642f63667f5cb56a00662eb",
+                  "5fbc22ccf24b94483f726483",
+                  "5fbe7618d6fa9c00c571bb6c"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "MP-18 7.62x54R 600mm threaded barrel",
+        "shortName": "MP-18 600mm thr.",
+        "description": "A 600mm barrel for the MP-18 7.62x54R single-shot rifle, machined with muzzle threading at the front. Takes the SV-98 muzzle devices and the modern 7.62x51 direct-thread muzzle devices."
+      }
+    },
+    "fleaPriceRoubles": 12000,
+    "handbookPriceRoubles": 9000,
+    "addtoSecureFilters": true,
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_barrel"
+    ],
+    "addtoTraders": true,
+    "traders": {
+      "MECHANIC": {
+        "6ac0247797aaa95ee3525852": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 5
+          },
+          "barters": [
+            {
+              "count": 12500,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -135,6 +135,17 @@
                 "shaders",
                 "assets/commonassets/physics/physicsmaterials.bundle"
             ]
+        },
+        {
+            "key": "barrel_mp18_threaded_762x54r.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/weapons/mp18/client_assets.bundle",
+                "assets/content/weapons/mp18/textures/client_assets.bundle",
+                "assets/systems/effects/smoke.bundle"
+            ]
         }
     ]
 }

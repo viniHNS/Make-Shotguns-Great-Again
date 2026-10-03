@@ -4,7 +4,7 @@
 
 Shotguns do jeito certo no SPT 4.1.6: shotguns do jogo melhoradas, armas, acessórios e munições novas, faíscas de Dragon's Breath e uma reformulação das panes de arma.
 
-![Version](https://img.shields.io/badge/version-1.15.0-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.16.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -22,13 +22,14 @@ Shotguns do jeito certo no SPT 4.1.6: shotguns do jogo melhoradas, armas, acess�
 
 ## Funcionalidades
 
-**Shotguns do jogo**
+**Armas do jogo**
 
 - **Benelli M3**: modo semiautomático ajustado para ficar igual às outras semiautomáticas (MP-153, MP-155).
 - **Saiga-12K**: aceita a maioria dos handguards de AK.
 - **KS-23M**: aceita o suporte de trilho Kiba Arms SPRM e o recoil pad do AK GP-25.
 - **MTs-255**: aceita os suportes de trilho ETMI-019 e Kiba Arms SPRM.
 - **Mossberg 590A1**: aceita o suporte de trilho Kiba Arms SPRM e um [cano rosqueado](#acessórios-novos) novo, para choke e supressor.
+- **MP-18 (7.62x54R)**: aceita um [cano rosqueado](#acessórios-novos) novo, para freio de boca e supressor.
 - **ETMI-019 e Kiba Arms SPRM**: aceitam mais miras e suportes.
 - **AA-12**: cadência de tiro maior.
 - **Slug Barrikada**: precisão aumentada para ficar igual aos outros slugs 12ga.
@@ -39,12 +40,13 @@ Shotguns do jeito certo no SPT 4.1.6: shotguns do jogo melhoradas, armas, acess�
 - **Sem pane forçada por chefes**: chefes como o Kollontay não conseguem forçar pane na sua arma. Panes só vêm da condição da arma e da munição.
 - **Efeito de Dragon's Breath**: atirar 12/70 'Hellfire' solta faíscas incendiárias no cano.
 - **Correção das miras da KS-23**: miras no trilho da KS-23 agora acertam onde o retículo aponta.
+- **Som da MP-18 com supressor**: a MP-18 com supressor agora soa abafada. O jogo tinha o som no lugar errado da arma.
 - **Chumbo em qualquer arma**: chumbo disparado de armas que não são shotgun (como a 5.45x39 Svalka num AK) espalha os balins em vez de acertar um ponto só.
 
 **Conteúdo novo**
 
-- 4 [armas](#armas-novas), 8 [acessórios](#acessórios-novos) e 11 [itens de munição](#munições-novas), vendidos pelos traders e fabricáveis na Workbench.
-- Scavs podem aparecer com a MP-12 e a MP-700 e usar munição FRAG-12, Hellfire e .700 Nitro. A Tagilla pode usar Hellfire.
+- 4 [armas](#armas-novas), 9 [acessórios](#acessórios-novos) e 11 [itens de munição](#munições-novas), vendidos pelos traders e fabricáveis na Workbench.
+- Scavs podem aparecer com a MP-12 e a MP-700 e usar munição FRAG-12, Hellfire e .700 Nitro. O Tagilla pode usar Hellfire.
 
 ---
 
@@ -73,12 +75,14 @@ As duas partes são necessárias: o server adiciona os itens e o client cuida do
 
 | Arma | Calibre | Vendida por |
 |---|---|---|
-| MP-12 12g single-shot rifle | 12/70 | Prapor LL1 (6.412 ₽). O Jaeger LL1 vende as versões montadas **wood** (6.875 ₽) e **polymer** (7.103 ₽) |
+| MP-12 12g single-shot rifle | 12/70 | O Jaeger LL1 vende as versões montadas **wood** (6.875 ₽) e **polymer** (7.103 ₽) |
 | MP-700 .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (129.564 ₽). Montada no Jaeger LL2 (195.632 ₽) |
 | MP-700 Shorty .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (145.000 ₽). Montada no Jaeger LL3 (215.746 ₽) |
 | ZiD SP-81 23x75 pistol | 23x75 | Mechanic LL2 (65.321 ₽). Pistola de sinalização refeita para 23x75; não dispara sinalizador |
 
 A MP-700 Shorty é uma MP-700 serrada: sem coronha, cano curto e recuo brutal.
+
+O Mechanic LL2 também vende a versão **MP-18 Tactical**: uma MP-18 com o cano rosqueado, supressor SIG Sauer SRD762Ti e luneta Burris FullField TAC30 1-4x24, por 4 Weapon parts e 2 Gunpowder "Eagle".
 
 ### Acessórios novos
 
@@ -89,11 +93,14 @@ A MP-700 Shorty é uma MP-700 serrada: sem coronha, cano curto e recuo brutal.
 | Benelli M3 Keymod Handguard | Mechanic LL2 (8.013 ₽) |
 | MP-153 12ga competition 13-shell magazine | Mechanic LL3 (6.003 ₽) |
 | SOK-12 12/76 Alliance Armament 30-round magazine | Mechanic LL3 (27.996 ₽) |
-| MP-12 12ga 600mm barrel | Prapor LL1 (2.134 ₽) |
+| MP-12 12ga 600mm barrel | Jaeger LL1 (2.134 ₽) |
+| MP-18 7.62x54R 600mm threaded barrel | Mechanic LL2 (12.500 ₽) |
 | MP-700 .700 Nitro Express Double Rifle 725mm Barrel | Jaeger LL3 (29.568 ₽) |
 | MP-700 Shorty .700 Nitro Express 310mm Barrel | Jaeger LL3 (31.000 ₽) |
 
 O cano rosqueado da 590A1 aceita os mesmos muzzle devices da MP-153.
+
+O cano rosqueado da MP-18 pesa 1,45 kg (ergonomia -15) e aceita os muzzle devices do SV-98 (o thread adapter leva o supressor do SV-98) e os muzzle devices e supressores 7.62x51 de rosca direta do AR-10, SR-25 e SCAR-H.
 
 ---
 
@@ -192,11 +199,11 @@ Make-Shotguns-Great-Again/
 │       ├── CustomItems/                armas, acessórios e munições novas
 │       ├── CustomAssortSchemes/        trocas das caixas de munição no Peacekeeper
 │       ├── CustomHideoutRecipes/       crafts da Workbench
-│       ├── CustomLocales/              nomes das versões da MP-12
+│       ├── CustomLocales/              nomes das versões montadas
 │       └── weaponPresets/
-│           ├── Assorts/                armas montadas vendidas pelo Jaeger
+│           ├── Assorts/                armas montadas vendidas pelo Jaeger e pelo Mechanic
 │           ├── BotLoadouts/            armas e munições novas para os bots
-│           └── GlobalPresets/          versões padrão e polymer da MP-12
+│           └── GlobalPresets/          versões da MP-12 e MP-18 Tactical
 └── Client/                             plugin BepInEx (netstandard2.1)
     ├── makeshotgunsgreatagain.cs       opções do F12
     └── Patches/
@@ -205,6 +212,7 @@ Make-Shotguns-Great-Again/
         ├── DragonBreathMuzzlePatch.cs                     faíscas do Dragon's Breath
         ├── DragonBreathPatch.cs
         ├── KS23MountAlignmentPatch.cs                     correção das miras da KS-23
+        ├── MP18SilencedSoundPatch.cs                      som da MP-18 com supressor
         └── RemoveBossMalfunctionsPatch.cs
 ```
 

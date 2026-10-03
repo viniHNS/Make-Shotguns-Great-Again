@@ -1,0 +1,66 @@
+{
+  "6ac0401462fa165f3cb99540": {
+    "_id": "6ac0401462fa165f3cb99540",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "MP-18 Tactical",
+    "_parent": "6ac0401462fa165f3cb99541",
+    "_items": [
+      {
+        "_id": "6ac0401462fa165f3cb99541",
+        "_tpl": "61f7c9e189e6fb1a5e3ea78d",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99542",
+        "_tpl": "6ac0247305055ccd3b93f729",
+        "parentId": "6ac0401462fa165f3cb99541",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99543",
+        "_tpl": "61f803b8ced75b2e852e35f8",
+        "parentId": "6ac0401462fa165f3cb99541",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99544",
+        "_tpl": "61f8024263dc1250e26eb029",
+        "parentId": "6ac0401462fa165f3cb99542",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99545",
+        "_tpl": "61f804acfcba9556ea304cb8",
+        "parentId": "6ac0401462fa165f3cb99542",
+        "slotId": "mod_scope"
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99546",
+        "_tpl": "5fbe7618d6fa9c00c571bb6c",
+        "parentId": "6ac0401462fa165f3cb99542",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99547",
+        "_tpl": "5b2389515acfc4771e1be0c0",
+        "parentId": "6ac0401462fa165f3cb99545",
+        "slotId": "mod_scope"
+      },
+      {
+        "_id": "6ac0401462fa165f3cb99548",
+        "_tpl": "5b2388675acfc4771e1be0be",
+        "parentId": "6ac0401462fa165f3cb99547",
+        "slotId": "mod_scope_000"
+      }
+    ]
+  }
+}

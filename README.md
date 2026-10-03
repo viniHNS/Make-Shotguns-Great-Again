@@ -4,7 +4,7 @@
 
 Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachments and ammo, Dragon's Breath sparks, and a malfunction overhaul.
 
-![Version](https://img.shields.io/badge/version-1.15.0-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.16.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -22,13 +22,14 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 
 ## Features
 
-**Vanilla shotguns**
+**Vanilla guns**
 
 - **Benelli M3**: semi-auto mode tuned to match the other semi-auto shotguns (MP-153, MP-155).
 - **Saiga-12K**: takes most AK handguards.
 - **KS-23M**: takes the Kiba Arms SPRM rail mount and the AK GP-25 recoil pad.
 - **MTs-255**: takes the ETMI-019 and Kiba Arms SPRM rail mounts.
 - **Mossberg 590A1**: takes the Kiba Arms SPRM rail mount and a new [threaded barrel](#new-attachments) for chokes and suppressors.
+- **MP-18 (7.62x54R)**: takes a new [threaded barrel](#new-attachments) for muzzle brakes and suppressors.
 - **ETMI-019 and Kiba Arms SPRM**: fit more optics and mounts.
 - **AA-12**: higher rate of fire.
 - **Barrikada slug**: accuracy raised to match the other 12ga slugs.
@@ -39,11 +40,12 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 - **No forced boss malfunctions**: bosses like Kollontay can't force a jam on your weapon. Jams only come from weapon condition and ammo.
 - **Dragon's Breath effect**: firing 12/70 'Hellfire' spawns incendiary sparks at the muzzle.
 - **KS-23 optics fix**: optics on the KS-23 rail now hit where the reticle points.
+- **MP-18 suppressed sound**: a suppressed MP-18 now sounds suppressed. The game had the sound in the wrong slot of the weapon.
 - **Buckshot from any gun**: buckshot fired from non-shotguns (like the 5.45x39 Svalka from an AK) spreads its pellets instead of hitting a single point.
 
 **New content**
 
-- 4 [guns](#new-guns), 8 [attachments](#new-attachments) and 11 [ammo items](#new-ammo), sold by traders and craftable in the Workbench.
+- 4 [guns](#new-guns), 9 [attachments](#new-attachments) and 11 [ammo items](#new-ammo), sold by traders and craftable in the Workbench.
 - Scavs can spawn with the MP-12 and MP-700 and load FRAG-12, Hellfire and .700 Nitro rounds. Tagilla can load Hellfire.
 
 ---
@@ -73,12 +75,14 @@ Both parts are required: the server adds the items and the client handles the ef
 
 | Gun | Caliber | Sold by |
 |---|---|---|
-| MP-12 12g single-shot rifle | 12/70 | Prapor LL1 (6,412 ₽). Jaeger LL1 sells the **wood** (6,875 ₽) and **polymer** (7,103 ₽) builds |
+| MP-12 12g single-shot rifle | 12/70 | Jaeger LL1 sells the **wood** (6,875 ₽) and **polymer** (7,103 ₽) builds |
 | MP-700 .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (129,564 ₽). Full build at Jaeger LL2 (195,632 ₽) |
 | MP-700 Shorty .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (145,000 ₽). Full build at Jaeger LL3 (215,746 ₽) |
 | ZiD SP-81 23x75 pistol | 23x75 | Mechanic LL2 (65,321 ₽). A signal pistol rebuilt for 23x75 rounds; it can't fire flares |
 
 The MP-700 Shorty is a sawed-off MP-700: no stock, short barrel, brutal recoil.
+
+Mechanic LL2 also sells the **MP-18 Tactical** build: an MP-18 with the threaded barrel, a SIG Sauer SRD762Ti suppressor and a Burris FullField TAC30 1-4x24 scope, for 4 Weapon parts and 2 Gunpowder "Eagle".
 
 ### New Attachments
 
@@ -89,11 +93,14 @@ The MP-700 Shorty is a sawed-off MP-700: no stock, short barrel, brutal recoil.
 | Benelli M3 Keymod Handguard | Mechanic LL2 (8,013 ₽) |
 | MP-153 12ga competition 13-shell magazine | Mechanic LL3 (6,003 ₽) |
 | SOK-12 12/76 Alliance Armament 30-round magazine | Mechanic LL3 (27,996 ₽) |
-| MP-12 12ga 600mm barrel | Prapor LL1 (2,134 ₽) |
+| MP-12 12ga 600mm barrel | Jaeger LL1 (2,134 ₽) |
+| MP-18 7.62x54R 600mm threaded barrel | Mechanic LL2 (12,500 ₽) |
 | MP-700 .700 Nitro Express Double Rifle 725mm Barrel | Jaeger LL3 (29,568 ₽) |
 | MP-700 Shorty .700 Nitro Express 310mm Barrel | Jaeger LL3 (31,000 ₽) |
 
 The 590A1 threaded barrel takes the same muzzle devices as the MP-153.
+
+The MP-18 threaded barrel weighs 1.45 kg (ergonomics -15) and takes the SV-98 muzzle devices (the thread adapter takes the SV-98 suppressor) and the 7.62x51 direct-thread muzzle devices and suppressors of the AR-10, SR-25 and SCAR-H.
 
 ---
 
@@ -192,11 +199,11 @@ Make-Shotguns-Great-Again/
 │       ├── CustomItems/                new guns, attachments and ammo
 │       ├── CustomAssortSchemes/        Peacekeeper ammo pack barters
 │       ├── CustomHideoutRecipes/       Workbench crafts
-│       ├── CustomLocales/              names of the MP-12 builds
+│       ├── CustomLocales/              names of the weapon builds
 │       └── weaponPresets/
-│           ├── Assorts/                full builds sold by Jaeger
+│           ├── Assorts/                full builds sold by Jaeger and Mechanic
 │           ├── BotLoadouts/            new guns and ammo for bots
-│           └── GlobalPresets/          MP-12 default and polymer builds
+│           └── GlobalPresets/          MP-12 and MP-18 Tactical builds
 └── Client/                             BepInEx plugin (netstandard2.1)
     ├── makeshotgunsgreatagain.cs       F12 settings
     └── Patches/
@@ -205,6 +212,7 @@ Make-Shotguns-Great-Again/
         ├── DragonBreathMuzzlePatch.cs                     Dragon's Breath sparks
         ├── DragonBreathPatch.cs
         ├── KS23MountAlignmentPatch.cs                     KS-23 optics fix
+        ├── MP18SilencedSoundPatch.cs                      MP-18 suppressed sound
         └── RemoveBossMalfunctionsPatch.cs
 ```
 

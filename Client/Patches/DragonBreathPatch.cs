@@ -54,6 +54,17 @@ namespace makeshotgunsgreatagain.Patches
             }
         }
 
+        /// <summary>
+        /// InitiateShot plays the muzzle effects synchronously, so the flag is only
+        /// needed while it runs. Clearing it here stops a later MuzzleManager.Shot
+        /// from another source (sniper imitator, map triggers) from picking it up.
+        /// </summary>
+        [PatchPostfix]
+        private static void Postfix()
+        {
+            IsDragonBreathShot = false;
+        }
+
         internal static void SpawnEffect(Transform muzzle)
         {
             try

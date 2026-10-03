@@ -17,7 +17,7 @@ public record ModMetadata : IModMetadata
     public string ModGuid { get; init; } = "com.vinihns.makeshotgunsgreatagain";
     public string Name { get; init; } = "Make Shotguns Great Again";
     public string Author { get; init; } = "ViniHNS";
-    public SemanticVersioning.Version Version { get; init; } = new("1.15.0");
+    public SemanticVersioning.Version Version { get; init; } = new("1.16.0");
     public Range SptVersion { get; init; } = new("~4.1.6");
     public string License { get; init; } = "MIT";
     public bool HasPrepatcher { get; init; } = false;
@@ -71,7 +71,7 @@ public class Mod(
     private const string MP43_TPL = "5580223e4bdc2d1c128b457f";
     private const string MP43_SAWED_OFF_TPL = "64748cb8de82c85eaf0a273a";
     private const string MP43_SAWED_OFF_BARREL_TPL = "64748d02d1c009260702b526";
-    private const string MTS_255_CYLINDER_TPL = "6107328513316926220e3345";
+    private const string MTS_255_CYLINDER_TPL = "60dc519adf4c47305f6d410d";
     private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
 
 
@@ -361,22 +361,17 @@ public class Mod(
         }
     }
 
+    /// <summary>
+    /// Adds the sight list to the ETMI-019 and SPRM rails, keeping whatever
+    /// they already accept (tactical devices, sights added by BSG later).
+    /// </summary>
     private void ModifyRails()
     {
         var items = templateTable.Items;
 
         if (items.TryGetValue(ETMI_019_RAIL_TPL, out var etmiRail))
         {
-            var filter = etmiRail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
-
-            if (filter != null)
-            {
-                filter.Clear();
-                foreach (var id in SIGHTS_TO_ADD_IDS)
-                {
-                    filter.Add(new MongoId(id));
-                }
-            }
+            AddSightsToRail(etmiRail);
         }
         else
         {
@@ -385,20 +380,26 @@ public class Mod(
 
         if (items.TryGetValue(SPRM_RAIL_MOUNT_TPL, out var sprmRail))
         {
-            var filter = sprmRail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
-
-            if (filter != null)
-            {
-                filter.Clear();
-                foreach (var id in SIGHTS_TO_ADD_IDS)
-                {
-                    filter.Add(new MongoId(id));
-                }
-            }
+            AddSightsToRail(sprmRail);
         }
         else
         {
             logger.Warning($"Could not find SPRM rail mount ({SPRM_RAIL_MOUNT_TPL}) to modify.");
+        }
+    }
+
+    private void AddSightsToRail(TemplateItem rail)
+    {
+        var filter = rail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
+        if (filter == null)
+        {
+            logger.Warning($"Could not find the scope filter on rail {rail.Id}.");
+            return;
+        }
+
+        foreach (var id in SIGHTS_TO_ADD_IDS)
+        {
+            filter.Add(new MongoId(id));
         }
     }
 
@@ -557,6 +558,12 @@ public class Mod(
 
     private void ModifyMp153(TemplateItem mp153)
     {
+        if (mp153.Properties?.Slots == null)
+        {
+            logger.Warning($"MP-153 ({MP153_TPL}) has no slots. Skipping modification.");
+            return;
+        }
+
         var magazineFilter = mp153.Properties.Slots.ElementAtOrDefault(2)?.Properties?.Filters?.FirstOrDefault()?.Filter;
         if (magazineFilter != null)
         {
@@ -572,6 +579,12 @@ public class Mod(
 
     private void ModifyAa12(TemplateItem aa12)
     {
+        if (aa12.Properties == null)
+        {
+            logger.Warning($"AA-12 ({aa12.Id}) has no properties. Skipping modification.");
+            return;
+        }
+
         aa12.Properties.BFirerate = 450;
         aa12.Properties.RecoilForceUp -= 30;
         aa12.Properties.RecoilForceBack -= 30;
@@ -604,19 +617,21 @@ public class Mod(
 
     private void ModifyBenelliM3(TemplateItem benelliM3)
     {
-        if (benelliM3.Properties != null)
+        if (benelliM3.Properties == null)
         {
-            benelliM3.Properties.SingleFireRate = 850;
-            benelliM3.Properties.BFirerate = 200;
-            benelliM3.Properties.CanQueueSecondShot = true;
+            logger.Warning($"Benelli M3 ({BENELLI_M3_TPL}) has no properties. Skipping modification.");
+            return;
         }
 
-        var handguardFilter = benelliM3.Properties.Slots.ElementAtOrDefault(1)?.Properties?.Filters?.FirstOrDefault()?.Filter;
-                 if (handguardFilter != null)
-                 {
-                     handguardFilter.Add(new MongoId("6910f8984a20c41289074652"));
-        }
+        benelliM3.Properties.SingleFireRate = 850;
+        benelliM3.Properties.BFirerate = 200;
+        benelliM3.Properties.CanQueueSecondShot = true;
 
+        var handguardFilter = benelliM3.Properties.Slots?.ElementAtOrDefault(1)?.Properties?.Filters?.FirstOrDefault()?.Filter;
+        if (handguardFilter != null)
+        {
+            handguardFilter.Add(new MongoId("6910f8984a20c41289074652"));
+        }
     }
 
     private void ModifyMts255(TemplateItem mts255)
