@@ -22,7 +22,10 @@
             "filters": [
               {
                 "Filter": [
-                  "6910e1cbbd20f63a9791742e"
+                  "6910e1cbbd20f63a9791742e",
+                  "25c870f3b572c2f2db00bfb8",
+                  "2469576cb545e234792b3d35",
+                  "dcbc76154efbfbc64506f30e"
                 ]
               }
             ]
@@ -39,7 +42,10 @@
             "filters": [
               {
                 "Filter": [
-                  "6910e1cbbd20f63a9791742e"
+                  "6910e1cbbd20f63a9791742e",
+                  "25c870f3b572c2f2db00bfb8",
+                  "2469576cb545e234792b3d35",
+                  "dcbc76154efbfbc64506f30e"
                 ]
               }
             ]
@@ -77,16 +83,18 @@
         "description": "A sawed-off variant of the MP-700 double-barreled rifle, re-chambered for .700 Nitro Express. Losing the stock and most of the barrel length trades accuracy for a devastatingly concealable hand cannon. Recoil is, unsurprisingly, brutal."
       }
     },
-
     "fleaPriceRoubles": 145000,
     "handbookPriceRoubles": 60000,
-    "addtoInventorySlots": ["Holster", "FirstPrimaryWeapon", "SecondPrimaryWeapon"],
+    "addtoInventorySlots": [
+      "Holster",
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
     "addtoHallOfFame": true,
     "hallOfFameSlots": [
       "bigTrophies"
     ],
     "addtoSecureFilters": true,
-
     "addtoTraders": true,
     "traders": {
       "JAEGER": {

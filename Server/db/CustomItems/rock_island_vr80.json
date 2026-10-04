@@ -1,0 +1,681 @@
+{
+  "6ac0f1e2277937dd42ac8774": {
+    "itemTplToClone": "576165642459773c7a400233",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "weapon_ria_vr80_12g_container.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "6ac0f1e2277937dd42ac877a",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "6ac0f1e2277937dd42ac8774",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": -1,
+                "Filter": [
+                  "6ac0f1e2277937dd42ac8775",
+                  "6ac0f1e2277937dd42ac8776"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac877b",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "6ac0f1e2277937dd42ac8774",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6ac0f1e2277937dd42ac8777"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac877c",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "6ac0f1e2277937dd42ac8774",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6ac0f1e2277937dd42ac8778",
+                  "6ac179398c908bb02fb9a036"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac877d",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_handguard",
+          "_parent": "6ac0f1e2277937dd42ac8774",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6ac0f1e2277937dd42ac8779"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac877e",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_scope",
+          "_parent": "6ac0f1e2277937dd42ac8774",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "57ac965c24597706be5f975c",
+                  "57aca93d2459771f2c7e26db",
+                  "544a3f024bdc2d1d388b4568",
+                  "544a3a774bdc2d3a388b4567",
+                  "5d2dc3e548f035404a1a4798",
+                  "57adff4f24597737f373b6e6",
+                  "5c0517910db83400232ffee5",
+                  "591c4efa86f7741030027726",
+                  "570fd79bd2720bc7458b4583",
+                  "570fd6c2d2720bc6458b457f",
+                  "558022b54bdc2dac148b458d",
+                  "5c07dd120db834001c39092d",
+                  "5c0a2cec0db834001b7ce47d",
+                  "58491f3324597764bc48fa02",
+                  "584924ec24597768f12ae244",
+                  "5b30b0dc5acfc400153b7124",
+                  "6165ac8c290d254f5e6b2f6c",
+                  "60a23797a37c940de7062d02",
+                  "5d2da1e948f035477b1ce2ba",
+                  "5c0505e00db834001b735073",
+                  "609a63b6e2ff132951242d09",
+                  "584984812459776a704a82a6",
+                  "59f9d81586f7744c7506ee62",
+                  "570fd721d2720bc5458b4596",
+                  "57ae0171245977343c27bfcf",
+                  "5dfe6104585a0c3e995c7b82",
+                  "544a3d0a4bdc2d1b388b4567",
+                  "5d1b5e94d7ad1a2b865a96b0",
+                  "609bab8b455afd752b2e6138",
+                  "58d39d3d86f77445bb794ae7",
+                  "616554fe50224f204c1da2aa",
+                  "5c7d55f52e221644f31bff6a",
+                  "616584766ef05c2ce828ef57",
+                  "5b3b6dc75acfc47a8773fb1e",
+                  "615d8d878004cc50514c3233",
+                  "5b2389515acfc4771e1be0c0",
+                  "577d128124597739d65d0e56",
+                  "618b9643526131765025ab35",
+                  "618bab21526131765025ab3f",
+                  "5c86592b2e2216000e69e77c",
+                  "5a37ca54c4a282000d72296a",
+                  "5d0a29fed7ad1a002769ad08",
+                  "5c064c400db834001d23f468",
+                  "58d2664f86f7747fec5834f6",
+                  "57c69dd424597774c03b7bbc",
+                  "5b3b99265acfc4704b4a1afb",
+                  "5aa66a9be5b5b0214e506e89",
+                  "5aa66c72e5b5b00016327c93",
+                  "5c1cdd302e221602b3137250",
+                  "61714b2467085e45ef140b2c",
+                  "6171407e50224f204c1da3c5",
+                  "61713cc4d8e3106d9806c109",
+                  "5b31163c5acfc400153b71cb",
+                  "5a33b652c4a28232996e407c",
+                  "5a33b2c9c4a282000c5a9511",
+                  "59db7eed86f77461f8380365",
+                  "5a1ead28fcdbcb001912fa9f",
+                  "5dff77c759400025ea5150cf",
+                  "626bb8532c923541184624b4",
+                  "62811f461d5df4475f46a332",
+                  "63fc449f5bd61c6cf3784a88",
+                  "6477772ea8a38bb2050ed4db",
+                  "6478641c19d732620e045e17",
+                  "64785e7c19d732620e045e15",
+                  "65392f611406374f82152ba5",
+                  "653931da5db71d30ab1d6296",
+                  "655f13e0a246670fb0373245",
+                  "6567e751a715f85433025998",
+                  "6761759e7ee06333f108bf86",
+                  "67641a851b2899700609901a",
+                  "68a5ab09c44fa287ba0a97b5"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "isBoltCatch": true,
+      "weapFireType": [
+        "single"
+      ],
+      "Foldable": false,
+      "FoldedSlot": "",
+      "defMagType": "6ac0f1e2277937dd42ac8775",
+      "ReloadMode": "ExternalMagazine",
+      "Weight": 1.245,
+      "Ergonomics": 47,
+      "RecoilReturnSpeedHandRotation": 2.4,
+      "CameraSnap": 3.2,
+      "RecoilCamera": 0.05,
+      "RecolDispersion": 10,
+      "RecoilCategoryMultiplierHandRotation": 0.2
+    },
+    "locales": {
+      "en": {
+        "name": "Rock Island Armory VR80 12ga semi-automatic shotgun",
+        "shortName": "VR80",
+        "description": "The VR80 is a gas-operated, magazine-fed 12 gauge semi-automatic shotgun marketed by Rock Island Armory. Its AR-style layout brings familiar controls and a flat-top optics rail to a shotgun platform. Detachable box magazines keep reloads straightforward, while the M-LOK handguard provides mounting points for accessories. This factory configuration uses a 508mm barrel and a stock with an integrated pistol grip."
+      },
+      "po": {
+        "name": "Escopeta semi-automática Rock Island Armory VR80 12ga",
+        "shortName": "VR80",
+        "description": "A VR80 é uma escopeta semiautomática calibre 12, operada a gás e alimentada por carregadores, comercializada pela Rock Island Armory. O formato inspirado no AR combina comandos familiares com um trilho superior para miras. Os carregadores destacáveis facilitam as recargas, enquanto o guarda-mão M-LOK permite instalar acessórios. Esta configuração de fábrica utiliza um cano de 508 mm e uma coronha com punho integrado."
+      }
+    },
+    "fleaPriceRoubles": 60000,
+    "handbookPriceRoubles": 48000,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  },
+  "6ac0f1e2277937dd42ac8775": {
+    "itemTplToClone": "57616a9e2459773c7a400234",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "mag_vr80_12g_5.bundle",
+        "rcid": ""
+      },
+      "magAnimationIndex": 0,
+      "Weight": 0.19
+    },
+    "locales": {
+      "en": {
+        "name": "VR80 12ga 5-round magazine",
+        "shortName": "VR80 5",
+        "description": "A detachable 5-round box magazine for the Rock Island Armory VR80 12ga shotgun. The factory-capacity magazine keeps the weapon relatively compact and accepts 12/70 ammunition."
+      },
+      "po": {
+        "name": "Carregador de 5 munições VR80 12ga",
+        "shortName": "VR80 5",
+        "description": "Carregador destacável de 5 cartuchos para a escopeta Rock Island Armory VR80 calibre 12. A capacidade padrão de fábrica mantém a arma relativamente compacta. Aceita munição 12/70."
+      }
+    },
+    "fleaPriceRoubles": 6000,
+    "handbookPriceRoubles": 4500,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "SKIER": {
+        "6ac0f1e2277937dd42ac877f": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 10
+          },
+          "barters": [
+            {
+              "count": 6000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "6ac0f1e2277937dd42ac8776": {
+    "itemTplToClone": "5a966f51a2750c00156aacf6",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "mag_vr80_12g_10.bundle",
+        "rcid": ""
+      },
+      "magAnimationIndex": 4,
+      "Weight": 0.32
+    },
+    "locales": {
+      "en": {
+        "name": "VR80 12ga 10-round magazine",
+        "shortName": "VR80 10",
+        "description": "An extended 10-round box magazine for the Rock Island Armory VR80 12ga shotgun. It doubles the capacity of the factory 5-round magazine at the cost of a longer magazine body."
+      },
+      "po": {
+        "name": "Carregador de 10 munições VR80 12ga",
+        "shortName": "VR80 10",
+        "description": "Carregador estendido de 10 cartuchos para a escopeta Rock Island Armory VR80 calibre 12. Oferece o dobro da capacidade do carregador padrão de 5 cartuchos, com um corpo mais comprido."
+      }
+    },
+    "fleaPriceRoubles": 9000,
+    "handbookPriceRoubles": 7000,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "SKIER": {
+        "6ac0f1e2277937dd42ac8780": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 10
+          },
+          "barters": [
+            {
+              "count": 9000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "6ac0f1e2277937dd42ac8777": {
+    "itemTplToClone": "55d4ae6c4bdc2d8b2f8b456e",
+    "parentId": "55818a594bdc2db9688b456a",
+    "handbookParentId": "5b5f757486f774093e6cb507",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "stock_vr80_std.bundle",
+        "rcid": ""
+      },
+      "Slots": [],
+      "ConflictingItems": [],
+      "Weight": 0.695,
+      "Ergonomics": 10
+    },
+    "locales": {
+      "en": {
+        "name": "VR80 stock with pistol grip",
+        "shortName": "VR80",
+        "description": "The factory polymer stock assembly for the Rock Island Armory VR80 shotgun. The stock and pistol grip form a single unit, with a rubber buttpad at the shoulder."
+      },
+      "po": {
+        "name": "Coronha VR80 com punho",
+        "shortName": "VR80",
+        "description": "Conjunto de coronha de polímero original da escopeta Rock Island Armory VR80. A coronha e o punho formam uma peça única, com uma soleira de borracha para apoio no ombro."
+      }
+    },
+    "fleaPriceRoubles": 9000,
+    "handbookPriceRoubles": 7000,
+    "addtoTraders": true,
+    "traders": {
+      "SKIER": {
+        "7685bde5e6825be00b376803": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999
+          },
+          "barters": [
+            {
+              "count": 8000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "6ac0f1e2277937dd42ac8778": {
+    "itemTplToClone": "6259c2c1d714855d182bad85",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "barrel_vr80_508mm_12g.bundle",
+        "rcid": ""
+      },
+      "Slots": [],
+      "ConflictingItems": [],
+      "Weight": 0.8
+    },
+    "locales": {
+      "en": {
+        "name": "VR80 12ga 508mm barrel",
+        "shortName": "VR80 508mm",
+        "description": "A 508mm (20 inch) factory-profile barrel for the Rock Island Armory VR80 12ga semi-automatic shotgun."
+      },
+      "po": {
+        "name": "Cano 508mm para VR80 12ga",
+        "shortName": "VR80 508mm",
+        "description": "Cano de 508 mm (20 polegadas), com perfil de fábrica, para a escopeta semiautomática Rock Island Armory VR80 calibre 12."
+      }
+    },
+    "fleaPriceRoubles": 15000,
+    "handbookPriceRoubles": 12000,
+    "addtoTraders": true,
+    "traders": {
+      "SKIER": {
+        "e109920d08e8fd7d6cc6f1b1": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999
+          },
+          "barters": [
+            {
+              "count": 14000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "6ac179398c908bb02fb9a036": {
+    "itemTplToClone": "6259c2c1d714855d182bad85",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "barrel_vr80_508mm_12g.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "6ac17939d67c775de6655a9d",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_muzzle",
+          "_parent": "6ac179398c908bb02fb9a036",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5c0111ab0db834001966914d",
+                  "560838c94bdc2d77798b4569",
+                  "5b363dea5acfc4771e1c5e7e"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "ConflictingItems": [],
+      "Weight": 0.9,
+      "Ergonomics": -10
+    },
+    "locales": {
+      "en": {
+        "name": "VR80 12ga 508mm threaded barrel",
+        "shortName": "VR80 508mm thr.",
+        "description": "A 508mm (20 inch) factory-profile barrel for the Rock Island Armory VR80 12ga semi-automatic shotgun, with an internal thread at the muzzle for choke tubes and muzzle adapters."
+      },
+      "po": {
+        "name": "Cano 508mm rosqueado para VR80 12ga",
+        "shortName": "VR80 508mm ros.",
+        "description": "Cano de 508 mm (20 polegadas), com perfil de fábrica, para a escopeta semiautomática Rock Island Armory VR80 calibre 12, com rosca interna na boca para chokes e adaptadores de bocal."
+      }
+    },
+    "fleaPriceRoubles": 16600,
+    "handbookPriceRoubles": 13300,
+    "addtoTraders": true,
+    "traders": {
+      "MECHANIC": {
+        "6ac179391d36ab01d57ea09e": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 5
+          },
+          "barters": [
+            {
+              "count": 15500,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "6ac0f1e2277937dd42ac8779": {
+    "itemTplToClone": "5ea16ada09aa976f2e7a51be",
+    "parentId": "55818a104bdc2db9688b4569",
+    "handbookParentId": "5b5f75e486f77447ec5d7712",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "handguard_vr80_mlok.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "6ac0f1e2277937dd42ac8781",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_000",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5b7be47f5acfc400170e2dd2",
+                  "6269220d70b6c02e665f2635",
+                  "6269545d0e57f218e4548ca2",
+                  "669a6a4a525be1d2d004b8eb"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac8782",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_001",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5b7be47f5acfc400170e2dd2",
+                  "6269220d70b6c02e665f2635",
+                  "6269545d0e57f218e4548ca2",
+                  "669a6a4a525be1d2d004b8eb"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac8783",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_002",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5b7be47f5acfc400170e2dd2",
+                  "6269220d70b6c02e665f2635",
+                  "6269545d0e57f218e4548ca2",
+                  "669a6a4a525be1d2d004b8eb",
+                  "671126b049e181972e0681fa"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac8784",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_tactical_000",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "57fd23e32459772d0805bcf1",
+                  "544909bb4bdc2d6f028b4577",
+                  "5d10b49bd7ad1a1a560708b0",
+                  "5c06595c0db834001a66af6c",
+                  "5a7b483fe899ef0016170d15",
+                  "61605d88ffa6e502ac5e7eeb",
+                  "5c5952732e2216398b5abda2",
+                  "644a3df63b0b6f03e101e065"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac8785",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_scope",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5649a2464bdc2d91118b45a8"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac8786",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_foregrip",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "57cffb66245977632f391a99",
+                  "57cffcd624597763133760c5",
+                  "57cffcdd24597763f5110006",
+                  "57cffce524597763b31685d8",
+                  "5b7be4895acfc400170e2dd5",
+                  "651a8bf3a8520e48047bf708",
+                  "651a8e529829226ceb67c319",
+                  "665d5d9e338229cfd6078da1",
+                  "665edce564fb556f940ab32a"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "6ac0f1e2277937dd42ac8787",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_sight_front",
+          "_parent": "6ac0f1e2277937dd42ac8779",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5ba26b01d4351e0085325a51",
+                  "5dfa3d950dee1b22f862eae0",
+                  "5c17804b2e2216152006c02f",
+                  "5fb6567747ce63734e3fa1dc",
+                  "5bc09a30d4351e00367fb7c8",
+                  "5c18b90d2e2216152142466b",
+                  "5fc0fa362770a0045c59c677",
+                  "5894a73486f77426d259076c",
+                  "55d4af3a4bdc2d972f8b456f"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "ConflictingItems": [],
+      "Weight": 0.42
+    },
+    "locales": {
+      "en": {
+        "name": "VR80 M-LOK handguard",
+        "shortName": "VR80 M-LOK",
+        "description": "The factory aluminum M-LOK handguard for the Rock Island Armory VR80 shotgun. Its top rail accommodates sights, while M-LOK mounting points accept compatible grips and accessory mounts."
+      },
+      "po": {
+        "name": "Guarda-mão VR80 M-LOK",
+        "shortName": "VR80 M-LOK",
+        "description": "Guarda-mão de alumínio M-LOK original da escopeta Rock Island Armory VR80. O trilho superior permite instalar miras, e os encaixes M-LOK aceitam punhos e suportes de acessórios compatíveis."
+      }
+    },
+    "fleaPriceRoubles": 12000,
+    "handbookPriceRoubles": 9000,
+    "addtoTraders": true,
+    "traders": {
+      "SKIER": {
+        "a178e97354e921a75e4d7f6c": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999
+          },
+          "barters": [
+            {
+              "count": 11000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-﻿{
+{
   "6910e86bbcb9218635891ae2": {
     "itemTplToClone": "5580223e4bdc2d1c128b457f",
     "parentId": "5447b6094bdc2dc3278b4567",
@@ -12,7 +12,7 @@
       "Weight": 3,
       "RecoilForceBack": 1000,
       "RecoilForceUp": 2000,
-      "ammoCaliber":"Caliber17.8x89",
+      "ammoCaliber": "Caliber17.8x89",
       "Chambers": [
         {
           "_name": "patron_in_weapon_000",
@@ -22,7 +22,10 @@
             "filters": [
               {
                 "Filter": [
-                  "6910e1cbbd20f63a9791742e"
+                  "6910e1cbbd20f63a9791742e",
+                  "25c870f3b572c2f2db00bfb8",
+                  "2469576cb545e234792b3d35",
+                  "dcbc76154efbfbc64506f30e"
                 ]
               }
             ]
@@ -39,7 +42,10 @@
             "filters": [
               {
                 "Filter": [
-                  "6910e1cbbd20f63a9791742e"
+                  "6910e1cbbd20f63a9791742e",
+                  "25c870f3b572c2f2db00bfb8",
+                  "2469576cb545e234792b3d35",
+                  "dcbc76154efbfbc64506f30e"
                 ]
               }
             ]
@@ -95,16 +101,17 @@
         "description": "The MP-700 is a double-barreled rifle chambered in .700 Nitro Express. It is a break-action rifle with two barrels. The rifle is equipped with open sights. The rifle is intended for hunting dangerous animals."
       }
     },
-    
     "fleaPriceRoubles": 130245,
     "handbookPriceRoubles": 100325,
-    "addtoInventorySlots": ["FirstPrimaryWeapon", "SecondPrimaryWeapon"],
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
     "addtoHallOfFame": true,
     "hallOfFameSlots": [
       "bigTrophies"
     ],
     "addtoSecureFilters": true,
-    
     "addtoTraders": true,
     "traders": {
       "JAEGER": {
@@ -117,7 +124,7 @@
           "barters": [
             {
               "count": 129564,
-              "_tpl": "MONEY_ROUBLES" 
+              "_tpl": "MONEY_ROUBLES"
             }
           ]
         }

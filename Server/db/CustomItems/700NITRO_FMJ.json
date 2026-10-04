@@ -19,7 +19,7 @@
       "BulletDiameterMilimeters": 18.03,
 
       "Damage": 280,
-      "ArmorDamage": 903,
+      "ArmorDamage": 600,
       "PenetrationPower": 19,
       "PenetrationPowerDiviation": 1,
       "PenetrationChanceObstacle": 0.7,
@@ -32,6 +32,7 @@
       "RicochetChance": 0.05,
       "HeavyBleedingDelta": 0.55,
       "LightBleedingDelta": 0.75,
+      "ammoRec": 20,
 
       "casingMass": 40,
       "casingName": "17.8x89"

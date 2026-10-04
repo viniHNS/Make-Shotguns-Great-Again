@@ -17,7 +17,7 @@ public record ModMetadata : IModMetadata
     public string ModGuid { get; init; } = "com.vinihns.makeshotgunsgreatagain";
     public string Name { get; init; } = "Make Shotguns Great Again";
     public string Author { get; init; } = "ViniHNS";
-    public SemanticVersioning.Version Version { get; init; } = new("1.16.0");
+    public SemanticVersioning.Version Version { get; init; } = new("1.17.0");
     public Range SptVersion { get; init; } = new("~4.1.6");
     public string License { get; init; } = "MIT";
     public bool HasPrepatcher { get; init; } = false;

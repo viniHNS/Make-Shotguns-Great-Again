@@ -8,7 +8,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AssemblyName>makeshotgunsgreatagain</AssemblyName>
     <RootNamespace>makeshotgunsgreatagain</RootNamespace>
-    <Version>1.16.0</Version>
+    <Version>1.17.0</Version>
     <Authors>ViniHNS</Authors>
     <Company>viniHNS</Company>
     <Product>Make-Shotguns-Great-Again</Product>

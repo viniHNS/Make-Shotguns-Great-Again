@@ -1,0 +1,751 @@
+[
+  {
+    "newQuest": {
+      "QuestName": "Hunter's Dream - Part 1",
+      "_id": "fc669d6e8d3ccdbc735fff53",
+      "acceptPlayerMessage": "fc669d6e8d3ccdbc735fff53 acceptPlayerMessage",
+      "acceptanceAndFinishingSource": "eft",
+      "arenaLocations": [],
+      "canShowNotificationsInGame": true,
+      "changeQuestMessageText": "fc669d6e8d3ccdbc735fff53 changeQuestMessageText",
+      "completePlayerMessage": "fc669d6e8d3ccdbc735fff53 completePlayerMessage",
+      "conditions": {
+        "AvailableForFinish": [
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": ">=",
+                    "value": 40
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "5bf69dc766db1fce76f72f61",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [],
+                  "target": "Savage",
+                  "value": 1,
+                  "weapon": [
+                    "6910e86bbcb9218635891ae2",
+                    "6a8103d9e2f14c7b9a5d3e01"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": []
+                },
+                {
+                  "conditionType": "Location",
+                  "dynamicLocale": false,
+                  "id": "f131763de641ec37aa880944",
+                  "target": [
+                    "Woods"
+                  ]
+                }
+              ],
+              "id": "c216ba55d3fa5ab23089e747"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "e2cdfba3a26ea4697ce6ac8b",
+            "index": 0,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 15,
+            "visibilityConditions": []
+          }
+        ],
+        "AvailableForStart": [
+          {
+            "compareMethod": ">=",
+            "conditionType": "Level",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "1931c57f0eab4dacf74c07cd",
+            "index": 0,
+            "parentId": "",
+            "value": 30,
+            "visibilityConditions": []
+          },
+          {
+            "availableAfter": 0,
+            "conditionType": "Quest",
+            "dispersion": 0,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "3de5fd05c4271cd427aad2fc",
+            "index": 1,
+            "parentId": "",
+            "status": [
+              4
+            ],
+            "target": "5d24b81486f77439c92d6ba8",
+            "visibilityConditions": []
+          }
+        ],
+        "Fail": []
+      },
+      "declinePlayerMessage": "fc669d6e8d3ccdbc735fff53 declinePlayerMessage",
+      "description": "fc669d6e8d3ccdbc735fff53 description",
+      "failMessageText": "fc669d6e8d3ccdbc735fff53 failMessageText",
+      "gameModes": [],
+      "image": "/files/quest/icon/5bc9fab686f7742a90020769.jpg",
+      "instantComplete": false,
+      "isKey": false,
+      "location": "5704e3c2d2720bac5b8b4567",
+      "name": "fc669d6e8d3ccdbc735fff53 name",
+      "note": "fc669d6e8d3ccdbc735fff53 note",
+      "progressSource": "eft",
+      "rankingModes": [],
+      "restartable": false,
+      "rewards": {
+        "Fail": [],
+        "Started": [],
+        "Success": [
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "ee73879960c45258bef8239f",
+            "isHidden": false,
+            "type": "Experience",
+            "unknown": false,
+            "value": 12000
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "db50d7f0d6c6ba7184aa56fd",
+            "isHidden": false,
+            "type": "TraderStanding",
+            "unknown": false,
+            "target": "5c0647fdd443bc2504c2d371",
+            "value": 0.02
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "56be59e0a3dc9cec958b37d5",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "c15e128cf578cc05b1305c1e",
+            "value": 75000,
+            "findInRaid": false,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "c15e128cf578cc05b1305c1e",
+                "_tpl": "5449016a4bdc2d6f028b456f",
+                "upd": {
+                  "StackObjectsCount": 75000
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "9539135fa5dd28cdf26f54f4",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "c8d06c6d7a619a9b0d9c3913",
+            "value": 16,
+            "findInRaid": true,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "c8d06c6d7a619a9b0d9c3913",
+                "_tpl": "25c870f3b572c2f2db00bfb8",
+                "upd": {
+                  "StackObjectsCount": 16,
+                  "SpawnedInSession": true
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "b21f8961ca21df50fab6ef28",
+            "isHidden": false,
+            "type": "AssortmentUnlock",
+            "unknown": false,
+            "target": "c048ee2278bc00f2e44ce811",
+            "traderId": "5c0647fdd443bc2504c2d371",
+            "loyaltyLevel": 3,
+            "items": [
+              {
+                "_id": "c048ee2278bc00f2e44ce811",
+                "_tpl": "25c870f3b572c2f2db00bfb8"
+              }
+            ]
+          }
+        ]
+      },
+      "secretQuest": false,
+      "side": "Pmc",
+      "startedMessageText": "fc669d6e8d3ccdbc735fff53 startedMessageText",
+      "status": 0,
+      "successMessageText": "fc669d6e8d3ccdbc735fff53 successMessageText",
+      "traderId": "5c0647fdd443bc2504c2d371",
+      "type": "Elimination"
+    },
+    "locales": {
+      "en": {
+        "fc669d6e8d3ccdbc735fff53 acceptPlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 changeQuestMessageText": "",
+        "fc669d6e8d3ccdbc735fff53 completePlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 declinePlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 failMessageText": "",
+        "fc669d6e8d3ccdbc735fff53 note": "",
+        "fc669d6e8d3ccdbc735fff53 name": "Hunter's Dream - Part 1",
+        "fc669d6e8d3ccdbc735fff53 description": "Come in, kid. Before all this, I used to keep hunting magazines and dream about taking a double rifle somewhere far away, where the animals were bigger than a car. Two barrels, two cartridges, and no room for carelessness. Never made that trip. Now the trouble is here, in my own woods. Take your .700 out there and deal with the looters from a proper distance. I want to see whether you can handle that rifle, or just like the noise it makes. A contact of Mechanic's helped me put together a soft-point load. Show me you know what you're doing, and I'll set some aside for you.",
+        "fc669d6e8d3ccdbc735fff53 startedMessageText": "Woods, kid. Keep your distance and make those two shots count. The MP-700 or its Shorty version will do. I'll be waiting.",
+        "fc669d6e8d3ccdbc735fff53 successMessageText": "The noise doesn't make the hunter. Looks like you understand that. Here's the Mammoth: an exposed lead nose, meant for targets without armor. Choose your shot carefully. I'll keep it in stock for you.",
+        "e2cdfba3a26ea4697ce6ac8b": "Eliminate Scavs on Woods from at least 40 meters away using an MP-700 or MP-700 Shorty"
+      },
+      "po": {
+        "fc669d6e8d3ccdbc735fff53 acceptPlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 changeQuestMessageText": "",
+        "fc669d6e8d3ccdbc735fff53 completePlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 declinePlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 failMessageText": "",
+        "fc669d6e8d3ccdbc735fff53 note": "",
+        "fc669d6e8d3ccdbc735fff53 name": "Hunter's Dream - Part 1",
+        "fc669d6e8d3ccdbc735fff53 description": "Entre, garoto. Antes de tudo isso, eu guardava revistas de caça e sonhava em levar um rifle duplo para algum lugar distante, onde os animais fossem maiores que um carro. Dois canos, dois cartuchos, e nenhum espaço para descuido. Nunca fiz aquela viagem. Agora o perigo está aqui, no meu bosque. Leve sua .700 e cuide dos saqueadores de uma distância segura. Quero ver se você sabe usar essa arma ou se só gosta do barulho que ela faz. Um contato do Mechanic me ajudou a preparar uma carga de ponta macia. Mostre que sabe o que está fazendo e eu separo algumas para você.",
+        "fc669d6e8d3ccdbc735fff53 startedMessageText": "Woods, garoto. Mantenha distância e faça esses dois tiros valerem. A MP-700 ou a versão Shorty servem. Vou esperar notícias.",
+        "fc669d6e8d3ccdbc735fff53 successMessageText": "O estrondo não faz o caçador. Parece que você entende isso. Aqui está a Mammoth: ponta de chumbo exposta, feita para alvos sem blindagem. Escolha bem onde atirar. Vou manter algumas no estoque para você.",
+        "e2cdfba3a26ea4697ce6ac8b": "Elimine Scavs em Woods a pelo menos 40 metros usando uma MP-700 ou MP-700 Shorty"
+      }
+    }
+  },
+  {
+    "newQuest": {
+      "QuestName": "Hunter's Dream - Part 2",
+      "_id": "93fca392a75ac1e0b05cfd10",
+      "acceptPlayerMessage": "93fca392a75ac1e0b05cfd10 acceptPlayerMessage",
+      "acceptanceAndFinishingSource": "eft",
+      "arenaLocations": [],
+      "canShowNotificationsInGame": true,
+      "changeQuestMessageText": "93fca392a75ac1e0b05cfd10 changeQuestMessageText",
+      "completePlayerMessage": "93fca392a75ac1e0b05cfd10 completePlayerMessage",
+      "conditions": {
+        "AvailableForFinish": [
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": "<=",
+                    "value": 30
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "e564742dc3fb4c2303c6a867",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [],
+                  "target": "AnyPmc",
+                  "value": 1,
+                  "weapon": [
+                    "6910e86bbcb9218635891ae2",
+                    "6a8103d9e2f14c7b9a5d3e01"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": []
+                }
+              ],
+              "id": "748918bd0657c13044fe2657"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "8e9ceed846121ff2897c9d00",
+            "index": 0,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 8,
+            "visibilityConditions": []
+          }
+        ],
+        "AvailableForStart": [
+          {
+            "compareMethod": ">=",
+            "conditionType": "Level",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "0e8bbb668801b020ff90d2ad",
+            "index": 0,
+            "parentId": "",
+            "value": 30,
+            "visibilityConditions": []
+          },
+          {
+            "availableAfter": 0,
+            "conditionType": "Quest",
+            "dispersion": 0,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "4e29603c4de96407d0970626",
+            "index": 1,
+            "parentId": "",
+            "status": [
+              4
+            ],
+            "target": "fc669d6e8d3ccdbc735fff53",
+            "visibilityConditions": []
+          }
+        ],
+        "Fail": []
+      },
+      "declinePlayerMessage": "93fca392a75ac1e0b05cfd10 declinePlayerMessage",
+      "description": "93fca392a75ac1e0b05cfd10 description",
+      "failMessageText": "93fca392a75ac1e0b05cfd10 failMessageText",
+      "gameModes": [],
+      "image": "/files/quest/icon/5bc481ec86f7740c8649a4f1.jpg",
+      "instantComplete": false,
+      "isKey": false,
+      "location": "any",
+      "name": "93fca392a75ac1e0b05cfd10 name",
+      "note": "93fca392a75ac1e0b05cfd10 note",
+      "progressSource": "eft",
+      "rankingModes": [],
+      "restartable": false,
+      "rewards": {
+        "Fail": [],
+        "Started": [],
+        "Success": [
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "8d9ad4bb1cceef931d3ffa61",
+            "isHidden": false,
+            "type": "Experience",
+            "unknown": false,
+            "value": 16000
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "8222bdbd3647f105bab0c2e5",
+            "isHidden": false,
+            "type": "TraderStanding",
+            "unknown": false,
+            "target": "5c0647fdd443bc2504c2d371",
+            "value": 0.02
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "968fab269b7b71352b348201",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "2670fa776a75277ab8a78dfd",
+            "value": 100000,
+            "findInRaid": false,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "2670fa776a75277ab8a78dfd",
+                "_tpl": "5449016a4bdc2d6f028b456f",
+                "upd": {
+                  "StackObjectsCount": 100000
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "43e006fa0fc28c8b7da74fb1",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "b19e6086d7d72ed48af62a8e",
+            "value": 16,
+            "findInRaid": true,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "b19e6086d7d72ed48af62a8e",
+                "_tpl": "dcbc76154efbfbc64506f30e",
+                "upd": {
+                  "StackObjectsCount": 16,
+                  "SpawnedInSession": true
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "0829687bc9e4d78f93af9945",
+            "isHidden": false,
+            "type": "AssortmentUnlock",
+            "unknown": false,
+            "target": "323929c97632e28d580871f2",
+            "traderId": "5c0647fdd443bc2504c2d371",
+            "loyaltyLevel": 3,
+            "items": [
+              {
+                "_id": "323929c97632e28d580871f2",
+                "_tpl": "dcbc76154efbfbc64506f30e"
+              }
+            ]
+          }
+        ]
+      },
+      "secretQuest": false,
+      "side": "Pmc",
+      "startedMessageText": "93fca392a75ac1e0b05cfd10 startedMessageText",
+      "status": 0,
+      "successMessageText": "93fca392a75ac1e0b05cfd10 successMessageText",
+      "traderId": "5c0647fdd443bc2504c2d371",
+      "type": "Elimination"
+    },
+    "locales": {
+      "en": {
+        "93fca392a75ac1e0b05cfd10 acceptPlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 changeQuestMessageText": "",
+        "93fca392a75ac1e0b05cfd10 completePlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 declinePlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 failMessageText": "",
+        "93fca392a75ac1e0b05cfd10 note": "",
+        "93fca392a75ac1e0b05cfd10 name": "Hunter's Dream - Part 2",
+        "93fca392a75ac1e0b05cfd10 description": "In the woods, you can choose where to watch from. Between walls, the man coming after you might choose the distance. I've seen people get killed because a powerful rifle gave them more confidence than sense. Take your .700 and deal with the mercenaries up close. Learn when to move and when to find cover to reload. Remember, there are only two shots before you have to open those barrels. I've prepared another load, eight heavy pellets instead of a single bullet. Called it Cerberus. A fitting name for something meant to guard a passage, don't you think?",
+        "93fca392a75ac1e0b05cfd10 startedMessageText": "Don't let the mercenaries keep you at arm's length. Get close, pick your moment, and leave yourself somewhere to reload.",
+        "93fca392a75ac1e0b05cfd10 successMessageText": "You came back. That matters more than any story about bravery. I'll set aside the Cerberus for you. Keep it for close work, and don't expect those pellets to solve the problem of an armor plate.",
+        "8e9ceed846121ff2897c9d00": "Eliminate PMCs from no more than 30 meters away using an MP-700 or MP-700 Shorty"
+      },
+      "po": {
+        "93fca392a75ac1e0b05cfd10 acceptPlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 changeQuestMessageText": "",
+        "93fca392a75ac1e0b05cfd10 completePlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 declinePlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 failMessageText": "",
+        "93fca392a75ac1e0b05cfd10 note": "",
+        "93fca392a75ac1e0b05cfd10 name": "Hunter's Dream - Part 2",
+        "93fca392a75ac1e0b05cfd10 description": "No bosque, você escolhe de onde observar. Entre paredes, o homem que vem atrás de você pode escolher a distância. Já vi gente morrer porque uma arma poderosa deu mais confiança do que juízo. Leve sua .700 e enfrente os mercenários de perto. Aprenda quando avançar e quando procurar cobertura para recarregar. Lembre que só tem dois tiros antes de precisar abrir os canos. Preparei outra carga: oito esferas pesadas no lugar de uma bala só. Chamei de Cerberus. Um nome apropriado para algo feito para guardar uma passagem, não acha?",
+        "93fca392a75ac1e0b05cfd10 startedMessageText": "Não deixe os mercenários manterem você à distância. Chegue perto, escolha o momento e tenha um lugar para recarregar.",
+        "93fca392a75ac1e0b05cfd10 successMessageText": "Você voltou. Isso vale mais que qualquer história de bravura. Vou separar a Cerberus para você. Guarde para distâncias curtas e não espere que as esferas resolvam o problema de uma placa de blindagem.",
+        "8e9ceed846121ff2897c9d00": "Elimine PMCs a no máximo 30 metros usando uma MP-700 ou MP-700 Shorty"
+      }
+    }
+  },
+  {
+    "newQuest": {
+      "QuestName": "Hunter's Dream - Part 3",
+      "_id": "8bf7e85422290ecae416b1d8",
+      "acceptPlayerMessage": "8bf7e85422290ecae416b1d8 acceptPlayerMessage",
+      "acceptanceAndFinishingSource": "eft",
+      "arenaLocations": [],
+      "canShowNotificationsInGame": true,
+      "changeQuestMessageText": "8bf7e85422290ecae416b1d8 changeQuestMessageText",
+      "completePlayerMessage": "8bf7e85422290ecae416b1d8 completePlayerMessage",
+      "conditions": {
+        "AvailableForFinish": [
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": ">=",
+                    "value": 0
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "401398a2e043af13bf1ef88d",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [
+                    "bossTagilla",
+                    "followerTagilla"
+                  ],
+                  "target": "Savage",
+                  "value": 1,
+                  "weapon": [
+                    "6910e86bbcb9218635891ae2",
+                    "6a8103d9e2f14c7b9a5d3e01"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": []
+                },
+                {
+                  "conditionType": "Location",
+                  "dynamicLocale": false,
+                  "id": "c598cc1bad55efd741d5a3a0",
+                  "target": [
+                    "factory4_day",
+                    "factory4_night"
+                  ]
+                }
+              ],
+              "id": "e71d1b7f7e15fc1c13afdbf6"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "ca79c8d5854e28b3a3235f73",
+            "index": 0,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 1,
+            "visibilityConditions": []
+          }
+        ],
+        "AvailableForStart": [
+          {
+            "compareMethod": ">=",
+            "conditionType": "Level",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "5aa1059d344f97fb775baa74",
+            "index": 0,
+            "parentId": "",
+            "value": 30,
+            "visibilityConditions": []
+          },
+          {
+            "availableAfter": 0,
+            "conditionType": "Quest",
+            "dispersion": 0,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "d45dac326a9e21a9f16b5b44",
+            "index": 1,
+            "parentId": "",
+            "status": [
+              4
+            ],
+            "target": "93fca392a75ac1e0b05cfd10",
+            "visibilityConditions": []
+          }
+        ],
+        "Fail": []
+      },
+      "declinePlayerMessage": "8bf7e85422290ecae416b1d8 declinePlayerMessage",
+      "description": "8bf7e85422290ecae416b1d8 description",
+      "failMessageText": "8bf7e85422290ecae416b1d8 failMessageText",
+      "gameModes": [],
+      "image": "/files/quest/icon/60cb3814f09d61072d6cf211.jpg",
+      "instantComplete": false,
+      "isKey": false,
+      "location": "55f2d3fd4bdc2d5f408b4567",
+      "name": "8bf7e85422290ecae416b1d8 name",
+      "note": "8bf7e85422290ecae416b1d8 note",
+      "progressSource": "eft",
+      "rankingModes": [],
+      "restartable": false,
+      "rewards": {
+        "Fail": [],
+        "Started": [],
+        "Success": [
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "aa4e712e891314051d24b236",
+            "isHidden": false,
+            "type": "Experience",
+            "unknown": false,
+            "value": 24000
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "d1d8f32e43f745c92558863b",
+            "isHidden": false,
+            "type": "TraderStanding",
+            "unknown": false,
+            "target": "5c0647fdd443bc2504c2d371",
+            "value": 0.03
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "22ec0be47118c7e0605830a2",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "51ef0daf8d2a89b32db4f134",
+            "value": 150000,
+            "findInRaid": false,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "51ef0daf8d2a89b32db4f134",
+                "_tpl": "5449016a4bdc2d6f028b456f",
+                "upd": {
+                  "StackObjectsCount": 150000
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "82ebcaa8421edc7d9ba788da",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "64c7122e602f6af6dfa18a40",
+            "value": 8,
+            "findInRaid": true,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "64c7122e602f6af6dfa18a40",
+                "_tpl": "2469576cb545e234792b3d35",
+                "upd": {
+                  "StackObjectsCount": 8,
+                  "SpawnedInSession": true
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "024d941f4c88a44ea431f14b",
+            "isHidden": false,
+            "type": "AssortmentUnlock",
+            "unknown": false,
+            "target": "05e4b6124003b75ba1801e4a",
+            "traderId": "5c0647fdd443bc2504c2d371",
+            "loyaltyLevel": 4,
+            "items": [
+              {
+                "_id": "05e4b6124003b75ba1801e4a",
+                "_tpl": "2469576cb545e234792b3d35"
+              }
+            ]
+          }
+        ]
+      },
+      "secretQuest": false,
+      "side": "Pmc",
+      "startedMessageText": "8bf7e85422290ecae416b1d8 startedMessageText",
+      "status": 0,
+      "successMessageText": "8bf7e85422290ecae416b1d8 successMessageText",
+      "traderId": "5c0647fdd443bc2504c2d371",
+      "type": "Elimination"
+    },
+    "locales": {
+      "en": {
+        "8bf7e85422290ecae416b1d8 acceptPlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 changeQuestMessageText": "",
+        "8bf7e85422290ecae416b1d8 completePlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 declinePlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 failMessageText": "",
+        "8bf7e85422290ecae416b1d8 note": "",
+        "8bf7e85422290ecae416b1d8 name": "Hunter's Dream - Part 3",
+        "8bf7e85422290ecae416b1d8 description": "I worked security at that factory before everything went to hell. Now some bastard in a mask, carrying a hammer, has decided the place belongs to him. Tagilla. He puts on steel and treats people like prey. That's where your last test is. Take the .700 and bring him down with the loads you already have. Mechanic's contact has put together a hardened penetrator held in a four-piece polymer sabot. I called it Goliath. It's expensive, and I won't hand it over to someone who thinks power is a substitute for judgment. You know the rifle by now. Show me you know its limits, too.",
+        "8bf7e85422290ecae416b1d8 startedMessageText": "Tagilla, at the factory. Take the MP-700 or the Shorty. Armor has its weaknesses, kid. Use your head before you use those two cartridges.",
+        "8bf7e85422290ecae416b1d8 successMessageText": "When I dreamed of that trip, I never thought the worst beasts would be right here. You can handle the rifle, and you know what it can and can't do. Here are a few Goliath cartridges. Once we've done enough business, I'll supply you with more. I hope they help someone get home.",
+        "ca79c8d5854e28b3a3235f73": "Eliminate Tagilla on Factory using an MP-700 or MP-700 Shorty"
+      },
+      "po": {
+        "8bf7e85422290ecae416b1d8 acceptPlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 changeQuestMessageText": "",
+        "8bf7e85422290ecae416b1d8 completePlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 declinePlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 failMessageText": "",
+        "8bf7e85422290ecae416b1d8 note": "",
+        "8bf7e85422290ecae416b1d8 name": "Hunter's Dream - Part 3",
+        "8bf7e85422290ecae416b1d8 description": "Eu trabalhava na segurança daquela fábrica antes de tudo ir para o inferno. Agora um desgraçado de máscara e martelo decidiu que o lugar pertence a ele. Tagilla. Veste aço e trata as pessoas como presas. É lá que está sua última prova. Leve a .700 e derrube esse homem com as cargas que já tem. O contato do Mechanic preparou um penetrador endurecido, sustentado por um sabot de polímero dividido em quatro partes. Chamei de Goliath. É caro, e não vou entregar a alguém que acredita que força substitui juízo. Você já conhece a arma. Mostre que conhece seus limites também.",
+        "8bf7e85422290ecae416b1d8 startedMessageText": "Tagilla, na fábrica. Leve a MP-700 ou a Shorty. Blindagem tem suas fraquezas, garoto. Use a cabeça antes de usar esses dois cartuchos.",
+        "8bf7e85422290ecae416b1d8 successMessageText": "Quando sonhava com aquela viagem, nunca imaginei que as piores feras estariam aqui. Você sabe usar a arma e conhece seus limites. Aqui estão alguns cartuchos Goliath. Quando tivermos feito negócios suficientes, vou fornecer mais. Espero que ajudem alguém a voltar para casa.",
+        "ca79c8d5854e28b3a3235f73": "Elimine Tagilla na Factory usando uma MP-700 ou MP-700 Shorty"
+      }
+    }
+  }
+]

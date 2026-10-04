@@ -4,7 +4,7 @@
 
 Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachments and ammo, Dragon's Breath sparks, and a malfunction overhaul.
 
-![Version](https://img.shields.io/badge/version-1.16.0-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.17.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -45,7 +45,8 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 
 **New content**
 
-- 4 [guns](#new-guns), 9 [attachments](#new-attachments) and 11 [ammo items](#new-ammo), sold by traders and craftable in the Workbench.
+- 5 [guns](#new-guns), 15 [attachments](#new-attachments) and 14 [ammo items](#new-ammo), available through traders and Workbench crafts.
+- Six quests: three Skier jobs unlock the VR80 builds, and Jaeger's Hunter's Dream unlocks the new .700 Nitro loads.
 - Scavs can spawn with the MP-12 and MP-700 and load FRAG-12, Hellfire and .700 Nitro rounds. Tagilla can load Hellfire.
 
 ---
@@ -79,8 +80,21 @@ Both parts are required: the server adds the items and the client handles the ef
 | MP-700 .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (129,564 ₽). Full build at Jaeger LL2 (195,632 ₽) |
 | MP-700 Shorty .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (145,000 ₽). Full build at Jaeger LL3 (215,746 ₽) |
 | ZiD SP-81 23x75 pistol | 23x75 | Mechanic LL2 (65,321 ₽). A signal pistol rebuilt for 23x75 rounds; it can't fire flares |
+| Rock Island Armory VR80 12ga semi-automatic shotgun | 12/70 | Skier LL1 barter after Foreign Stock; LL2 purchase (110,000 ₽) after Repeat Business. Factory build with a 5-round magazine |
 
 The MP-700 Shorty is a sawed-off MP-700: no stock, short barrel, brutal recoil.
+
+The VR80 is a gas-operated semi-automatic shotgun with AR-style controls, a 508mm barrel and detachable 5- and 10-round box magazines. Its factory M-LOK handguard accepts compatible grips and accessory mounts; the top rail accepts optics. The factory stock includes the pistol grip. The factory build weighs 3.35 kg with an empty 5-round magazine.
+
+After **Foreign Stock**, Skier LL1 trades the factory VR80 for one Dan Jackiel whiskey, one Tarkovskaya vodka and two Wilston cigarettes (one weapon per restock). Complete **Repeat Business** at Skier LL2 to unlock the 110,000 ₽ cash purchase.
+
+Skier LL2 also trades the **VR80 Silent** build after the independent quest **Quiet Arrangement** (one per restock): the threaded barrel with a SilencerCo Salvo 12 suppressor, an EOTech XPS3-2 sight, a Magpul AFG grip and the 10-round magazine, for a Roler Submariner, a Wooden clock, a Golden neck chain and one Horse figurine.
+
+| Skier quest | Requirements and objectives | Unlock |
+| --- | --- | --- |
+| Foreign Stock | LL1; eliminate 5 Scavs on Customs with any 12ga shotgun and hand over 2 Wilston cigarettes found in raid | Factory VR80 barter at LL1 |
+| Repeat Business | LL2 and Foreign Stock completed; eliminate 10 Scavs on Customs with the VR80 | Factory VR80 cash purchase at LL2 |
+| Quiet Arrangement | LL2, independent of the other two; eliminate 8 Scavs on Customs and 3 PMCs anywhere with any suppressed 12ga shotgun | VR80 Silent barter at LL2 |
 
 Mechanic LL2 also sells the **MP-18 Tactical** build: an MP-18 with the threaded barrel, a SIG Sauer SRD762Ti suppressor and a Burris FullField TAC30 1-4x24 scope, for 4 Weapon parts and 2 Gunpowder "Eagle".
 
@@ -97,8 +111,18 @@ Mechanic LL2 also sells the **MP-18 Tactical** build: an MP-18 with the threaded
 | MP-18 7.62x54R 600mm threaded barrel | Mechanic LL2 (12,500 ₽) |
 | MP-700 .700 Nitro Express Double Rifle 725mm Barrel | Jaeger LL3 (29,568 ₽) |
 | MP-700 Shorty .700 Nitro Express 310mm Barrel | Jaeger LL3 (31,000 ₽) |
+| VR80 12ga 5-round magazine | Skier LL2 (6,000 ₽) |
+| VR80 12ga 10-round magazine | Skier LL2 (9,000 ₽) |
+| VR80 stock with pistol grip | Skier LL2 (8,000 ₽) |
+| VR80 12ga 508mm barrel | Skier LL2 (14,000 ₽) |
+| VR80 12ga 508mm threaded barrel | Mechanic LL2 (15,500 ₽) |
+| VR80 M-LOK handguard | Skier LL2 (11,000 ₽) |
 
 The 590A1 threaded barrel takes the same muzzle devices as the MP-153.
+
+The Saiga's Alliance Armament 30-round magazine has new UVs and worn anodized-aluminum textures.
+
+The VR80 threaded barrel weighs 0.9 kg (ergonomics -10) and takes the same muzzle devices as the MP-153.
 
 The MP-18 threaded barrel weighs 1.45 kg (ergonomics -15) and takes the SV-98 muzzle devices (the thread adapter takes the SV-98 suppressor) and the 7.62x51 direct-thread muzzle devices and suppressors of the AR-10, SR-25 and SCAR-H.
 
@@ -116,7 +140,24 @@ The MP-18 threaded barrel weighs 1.45 kg (ergonomics -15) and takes the SV-98 mu
 | 12/70 Winchester Super-X 00 buckshot | Jaeger LL2 (76 ₽) | Level 2 |
 | 12/70 7mm Buckshot Brass Case | Jaeger LL2 (44 ₽) | Level 1 |
 | .700 Nitro Express FMJ | Jaeger LL3 (1,930 ₽) | Level 3 |
+| .700 Nitro Express SP "Mammoth" | Jaeger LL3 (2,800 ₽), after Hunter's Dream - Part 1 | — |
+| .700 Nitro Express AP "Goliath" | Jaeger LL4 (8,000 ₽), after Hunter's Dream - Part 3 | — |
+| .700 Nitro Express buckshot "Cerberus" | Jaeger LL3 (3,600 ₽), after Hunter's Dream - Part 2 | — |
 | 5.45x39mm 'Svalka' Anti-Drone Buckshot | — | Level 1 |
+
+The MP-700 and MP-700 Shorty also take three custom .700 Nitro Express loads: **Mammoth** soft-point (430 damage, 15 penetration), **Goliath** armor-piercing (220 damage, 60 penetration), and **Cerberus** buckshot (8 pellets with 65 damage and 8 penetration each). These are custom additions for the mod, with fictional experimental loads. The FMJ does not penetrate plates, but it wrecks their durability. Each has a distinct projectile shape and identification markings.
+
+### Hunter's Dream
+
+Jaeger's three-part questline starts at level 30 after **Acquaintance**. Each part requires completion of the previous one. Use either the **MP-700** or **MP-700 Shorty**, with any compatible ammunition; progress carries over between raids.
+
+| Quest | Objective | Purchase unlock |
+|---|---|---|
+| Hunter's Dream - Part 1 | Eliminate 15 Scavs on Woods from at least 40 meters away | Mammoth SP, Jaeger LL3 |
+| Hunter's Dream - Part 2 | Eliminate 8 PMCs from no more than 30 meters away, on any map | Cerberus, Jaeger LL3 |
+| Hunter's Dream - Part 3 | Eliminate Tagilla on Factory, day or night | Goliath AP, Jaeger LL4 |
+
+Completing a quest unlocks its purchase offer; the trader loyalty requirement still applies. Goliath purchases require LL4 (minimum player level 33), even if Part 3 is completed earlier. Each quest also awards experience, roubles, Jaeger reputation and a small supply of the unlocked ammunition. The published FMJ purchase and craft remain available as before.
 
 ### Workbench Crafts
 
@@ -200,10 +241,11 @@ Make-Shotguns-Great-Again/
 │       ├── CustomAssortSchemes/        Peacekeeper ammo pack barters
 │       ├── CustomHideoutRecipes/       Workbench crafts
 │       ├── CustomLocales/              names of the weapon builds
+│       ├── Quests/                     Skier VR80 quests and Hunter's Dream
 │       └── weaponPresets/
-│           ├── Assorts/                full builds sold by Jaeger and Mechanic
+│           ├── Assorts/                full builds sold by Jaeger, Mechanic and Skier
 │           ├── BotLoadouts/            new guns and ammo for bots
-│           └── GlobalPresets/          MP-12 and MP-18 Tactical builds
+│           └── GlobalPresets/          default weapon builds
 └── Client/                             BepInEx plugin (netstandard2.1)
     ├── makeshotgunsgreatagain.cs       F12 settings
     └── Patches/
@@ -220,6 +262,7 @@ Make-Shotguns-Great-Again/
 
 ## Credits
 
+- Rock Island Armory VR80 shotgun and parts: adapted from [White-Horse's model](https://skfb.ly/6WP7G), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The model was split into modular parts and adapted to the game's materials and weapon rig. These assets retain their CC BY 4.0 attribution; the mod's MIT license covers the code.
 - 12/70 Winchester Super-X 00 buckshot model: [Guy in a Poncho](https://sketchfab.com/ponchoguy)
 - 12/70 AP Slug SVAROG, Flechette Kinghunter and Magnum Express Kinghunter models: [Deadcomrade](https://sketchfab.com/deadcomrade)
 - Dragon's Breath particle effect: based on **jankytheclown**'s work in [HollywoodFX](https://github.com/SleepingPills/HollywoodFX)

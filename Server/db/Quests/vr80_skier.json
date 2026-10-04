@@ -1,0 +1,933 @@
+[
+  {
+    "newQuest": {
+      "QuestName": "Foreign Stock",
+      "_id": "fd1b683d79e097d49bacc63b",
+      "acceptPlayerMessage": "fd1b683d79e097d49bacc63b acceptPlayerMessage",
+      "acceptanceAndFinishingSource": "eft",
+      "arenaLocations": [],
+      "canShowNotificationsInGame": true,
+      "changeQuestMessageText": "fd1b683d79e097d49bacc63b changeQuestMessageText",
+      "completePlayerMessage": "fd1b683d79e097d49bacc63b completePlayerMessage",
+      "conditions": {
+        "AvailableForStart": [
+          {
+            "conditionType": "Level",
+            "compareMethod": ">=",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "784e015ef95d6bc9191c32ed",
+            "index": 0,
+            "parentId": "",
+            "value": 1,
+            "visibilityConditions": []
+          },
+          {
+            "conditionType": "TraderLoyalty",
+            "compareMethod": ">=",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "c09a10cd5c1dabe57bdc9d2a",
+            "index": 1,
+            "parentId": "",
+            "target": "58330581ace78e27b8b10cee",
+            "value": 1,
+            "visibilityConditions": []
+          }
+        ],
+        "AvailableForFinish": [
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": ">=",
+                    "value": 0
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "6f0896cc4ab9daa5154d1a0c",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [],
+                  "target": "Savage",
+                  "value": 1,
+                  "weapon": [
+                    "54491c4f4bdc2db1078b4568",
+                    "5580223e4bdc2d1c128b457f",
+                    "56dee2bdd2720bc8328b4567",
+                    "576165642459773c7a400233",
+                    "5a7828548dc32e5a9c28b516",
+                    "5e870397991fd70db46995c8",
+                    "606dae0ab0e443224b421bb7",
+                    "60db29ce99594040e04c4a27",
+                    "6259b864ebedf17603599e88",
+                    "64748cb8de82c85eaf0a273a",
+                    "66ffa9b66e19cc902401c5e8",
+                    "67124dcfa3541f2a1f0e788b",
+                    "674fe9a75e51f1c47c04ec23",
+                    "6ac0f1e2277937dd42ac8774"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": []
+                },
+                {
+                  "conditionType": "Location",
+                  "dynamicLocale": false,
+                  "id": "9e0a576cdbf1ca00a1bb37b5",
+                  "target": [
+                    "bigmap"
+                  ]
+                }
+              ],
+              "id": "2306a391c625c2fa7337683d"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "feccff94081e678bc3cfaaa4",
+            "index": 0,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 5,
+            "visibilityConditions": []
+          },
+          {
+            "conditionType": "HandoverItem",
+            "dogtagLevel": 0,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "ba9a4e20e62ba12ae40a791b",
+            "index": 1,
+            "isEncoded": false,
+            "maxDurability": 100,
+            "minDurability": 0,
+            "onlyFoundInRaid": true,
+            "parentId": "",
+            "target": [
+              "573476f124597737e04bf328"
+            ],
+            "value": 2,
+            "visibilityConditions": []
+          }
+        ],
+        "Fail": []
+      },
+      "declinePlayerMessage": "fd1b683d79e097d49bacc63b declinePlayerMessage",
+      "description": "fd1b683d79e097d49bacc63b description",
+      "failMessageText": "fd1b683d79e097d49bacc63b failMessageText",
+      "gameModes": [],
+      "image": "/files/quest/icon/5ae326a086f77444fd36f5d8.jpg",
+      "instantComplete": false,
+      "isKey": false,
+      "location": "56f40101d2720b2a4d8b45d6",
+      "name": "fd1b683d79e097d49bacc63b name",
+      "note": "fd1b683d79e097d49bacc63b note",
+      "progressSource": "eft",
+      "rankingModes": [],
+      "restartable": false,
+      "rewards": {
+        "Started": [],
+        "Fail": [],
+        "Success": [
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "8465cb6eaed3a9e5f8a24ec2",
+            "isHidden": false,
+            "type": "Experience",
+            "unknown": false,
+            "value": 2000
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "bec9e5ac6a7bfe1639e9b1d4",
+            "isHidden": false,
+            "type": "TraderStanding",
+            "unknown": false,
+            "target": "58330581ace78e27b8b10cee",
+            "value": 0.02
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "fb9958659509b8bbedadf86b",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "fee545e92251d214a63e383f",
+            "value": 20000,
+            "findInRaid": false,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "fee545e92251d214a63e383f",
+                "_tpl": "5449016a4bdc2d6f028b456f",
+                "upd": {
+                  "StackObjectsCount": 20000
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "165eb8836df1cd9178dbb3f4",
+            "isHidden": false,
+            "type": "AssortmentUnlock",
+            "unknown": false,
+            "target": "ead7cc97f9a4cb7d4c24b574",
+            "traderId": "58330581ace78e27b8b10cee",
+            "loyaltyLevel": 1,
+            "items": [
+              {
+                "_id": "ead7cc97f9a4cb7d4c24b574",
+                "_tpl": "6ac0f1e2277937dd42ac8774",
+                "upd": {
+                  "FireMode": {
+                    "FireMode": "single"
+                  },
+                  "Repairable": {
+                    "Durability": 100,
+                    "MaxDurability": 100
+                  },
+                  "StackObjectsCount": 1
+                }
+              },
+              {
+                "_id": "526738943afa0db4cd25ea44",
+                "_tpl": "6ac0f1e2277937dd42ac8775",
+                "parentId": "ead7cc97f9a4cb7d4c24b574",
+                "slotId": "mod_magazine"
+              },
+              {
+                "_id": "5c61c78d884c02ccf21f3ebb",
+                "_tpl": "6ac0f1e2277937dd42ac8777",
+                "parentId": "ead7cc97f9a4cb7d4c24b574",
+                "slotId": "mod_stock"
+              },
+              {
+                "_id": "3f7fd00eae5ee1c6ee6dd632",
+                "_tpl": "6ac0f1e2277937dd42ac8778",
+                "parentId": "ead7cc97f9a4cb7d4c24b574",
+                "slotId": "mod_barrel"
+              },
+              {
+                "_id": "a26b8777dc0ca0ee368898b5",
+                "_tpl": "6ac0f1e2277937dd42ac8779",
+                "parentId": "ead7cc97f9a4cb7d4c24b574",
+                "slotId": "mod_handguard"
+              }
+            ]
+          }
+        ]
+      },
+      "secretQuest": false,
+      "side": "Pmc",
+      "startedMessageText": "fd1b683d79e097d49bacc63b startedMessageText",
+      "status": 0,
+      "successMessageText": "fd1b683d79e097d49bacc63b successMessageText",
+      "traderId": "58330581ace78e27b8b10cee",
+      "type": "Elimination"
+    },
+    "locales": {
+      "en": {
+        "fd1b683d79e097d49bacc63b acceptPlayerMessage": "",
+        "fd1b683d79e097d49bacc63b changeQuestMessageText": "",
+        "fd1b683d79e097d49bacc63b completePlayerMessage": "",
+        "fd1b683d79e097d49bacc63b declinePlayerMessage": "",
+        "fd1b683d79e097d49bacc63b failMessageText": "",
+        "fd1b683d79e097d49bacc63b note": "",
+        "fd1b683d79e097d49bacc63b name": "Foreign Stock",
+        "fd1b683d79e097d49bacc63b description": "Hey, merc. Got a little shipment nobody was expecting. VR80, Rock Island Armory. American name on the box, made in Turkey. Looks familiar enough to you operators, but it eats twelve-gauge shells. Before the blockade, stuff like this was meant for shooting clubs. Now it can earn its keep around here. A few idiots at Customs have been making trouble for my boys. Clear them out with a twelve-gauge, and bring me a couple packs of fresh Wilston you find out there. I'll let you trade for one of these imports. Bottles and cigarettes still move, even when the banks don't. Fair business, right?",
+        "fd1b683d79e097d49bacc63b startedMessageText": "Five troublemakers at Customs, with a twelve-gauge. And two packs of Wilston from a raid. Come back when it's done and we'll talk about that shipment.",
+        "fd1b683d79e097d49bacc63b successMessageText": "My boys say the road's a bit quieter. And the smokes are fresh. Good. Bring a bottle of Dan Jackiel, one Tarkovskaya, and two packs of Wilston, and you can take a VR80 with the five-round mag. One per shipment. Don't go telling everyone what a generous bastard I am.",
+        "feccff94081e678bc3cfaaa4": "Eliminate Scavs on Customs using any 12ga shotgun",
+        "ba9a4e20e62ba12ae40a791b": "Hand over Wilston cigarettes found in raid"
+      },
+      "po": {
+        "fd1b683d79e097d49bacc63b acceptPlayerMessage": "",
+        "fd1b683d79e097d49bacc63b changeQuestMessageText": "",
+        "fd1b683d79e097d49bacc63b completePlayerMessage": "",
+        "fd1b683d79e097d49bacc63b declinePlayerMessage": "",
+        "fd1b683d79e097d49bacc63b failMessageText": "",
+        "fd1b683d79e097d49bacc63b note": "",
+        "fd1b683d79e097d49bacc63b name": "Mercadoria de fora",
+        "fd1b683d79e097d49bacc63b description": "E aí, mercenário. Chegou um pequeno lote que ninguém estava esperando. VR80, Rock Island Armory. Nome americano na caixa, fabricação turca. Tem uma cara familiar para vocês operadores, mas se alimenta de calibre 12. Antes do bloqueio, uma dessas ia parar num clube de tiro. Agora pode dar lucro por aqui. Tem uns idiotas na Customs atrapalhando meus rapazes. Dê um jeito neles com uma calibre 12 e me traga dois maços novos de Wilston que encontrar por lá. Aí deixo você trocar por uma dessas importadas. Bebida e cigarro ainda circulam, mesmo quando os bancos não funcionam. Negócio justo, não acha?",
+        "fd1b683d79e097d49bacc63b startedMessageText": "Cinco encrenqueiros na Customs, com uma calibre 12. E dois maços de Wilston encontrados em raid. Volte quando terminar e conversamos sobre o lote.",
+        "fd1b683d79e097d49bacc63b successMessageText": "Meus rapazes disseram que a estrada ficou mais tranquila. E os cigarros estão novos. Bom. Traga uma garrafa de Dan Jackiel, uma de Tarkovskaya e dois maços de Wilston, e pode levar uma VR80 com o carregador de cinco. Uma por remessa. Não saia contando por aí que sou um desgraçado generoso.",
+        "feccff94081e678bc3cfaaa4": "Elimine Scavs na Customs usando qualquer escopeta calibre 12",
+        "ba9a4e20e62ba12ae40a791b": "Entregue cigarros Wilston encontrados em raid"
+      }
+    }
+  },
+  {
+    "newQuest": {
+      "QuestName": "Repeat Business",
+      "_id": "35e933725dd8e5e778e3ad71",
+      "acceptPlayerMessage": "35e933725dd8e5e778e3ad71 acceptPlayerMessage",
+      "acceptanceAndFinishingSource": "eft",
+      "arenaLocations": [],
+      "canShowNotificationsInGame": true,
+      "changeQuestMessageText": "35e933725dd8e5e778e3ad71 changeQuestMessageText",
+      "completePlayerMessage": "35e933725dd8e5e778e3ad71 completePlayerMessage",
+      "conditions": {
+        "AvailableForStart": [
+          {
+            "conditionType": "Level",
+            "compareMethod": ">=",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "df39158dc5b62d5abe26d01c",
+            "index": 0,
+            "parentId": "",
+            "value": 15,
+            "visibilityConditions": []
+          },
+          {
+            "conditionType": "TraderLoyalty",
+            "compareMethod": ">=",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "caa9bab03bc46fe6f8b104ae",
+            "index": 1,
+            "parentId": "",
+            "target": "58330581ace78e27b8b10cee",
+            "value": 2,
+            "visibilityConditions": []
+          },
+          {
+            "conditionType": "Quest",
+            "availableAfter": 0,
+            "dispersion": 0,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "1d9a998f51fe94ef8a58e5ef",
+            "index": 2,
+            "parentId": "",
+            "status": [
+              4
+            ],
+            "target": "fd1b683d79e097d49bacc63b",
+            "visibilityConditions": []
+          }
+        ],
+        "AvailableForFinish": [
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": ">=",
+                    "value": 0
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "fe032e08f6a92fa7baaccc5b",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [],
+                  "target": "Savage",
+                  "value": 1,
+                  "weapon": [
+                    "6ac0f1e2277937dd42ac8774"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": []
+                },
+                {
+                  "conditionType": "Location",
+                  "dynamicLocale": false,
+                  "id": "a3944ad585ea2c78ca60b683",
+                  "target": [
+                    "bigmap"
+                  ]
+                }
+              ],
+              "id": "8bcb483fe80b91c8771da1ab"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "2204eb7e747aa1600e8f0f60",
+            "index": 0,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 10,
+            "visibilityConditions": []
+          }
+        ],
+        "Fail": []
+      },
+      "declinePlayerMessage": "35e933725dd8e5e778e3ad71 declinePlayerMessage",
+      "description": "35e933725dd8e5e778e3ad71 description",
+      "failMessageText": "35e933725dd8e5e778e3ad71 failMessageText",
+      "gameModes": [],
+      "image": "/files/quest/icon/5ae326a086f77444fd36f5d8.jpg",
+      "instantComplete": false,
+      "isKey": false,
+      "location": "56f40101d2720b2a4d8b45d6",
+      "name": "35e933725dd8e5e778e3ad71 name",
+      "note": "35e933725dd8e5e778e3ad71 note",
+      "progressSource": "eft",
+      "rankingModes": [],
+      "restartable": false,
+      "rewards": {
+        "Started": [],
+        "Fail": [],
+        "Success": [
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "91cbbaa63fb1866cb2a091f1",
+            "isHidden": false,
+            "type": "Experience",
+            "unknown": false,
+            "value": 4500
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "d69b084465ec5750a5e2769d",
+            "isHidden": false,
+            "type": "TraderStanding",
+            "unknown": false,
+            "target": "58330581ace78e27b8b10cee",
+            "value": 0.02
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "95cb2d57b4668ec2969daa20",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "2307a7c4daced3c8e5fa4be0",
+            "value": 35000,
+            "findInRaid": false,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "2307a7c4daced3c8e5fa4be0",
+                "_tpl": "5449016a4bdc2d6f028b456f",
+                "upd": {
+                  "StackObjectsCount": 35000
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "35a93be3cf146bfb5aebf4a7",
+            "isHidden": false,
+            "type": "AssortmentUnlock",
+            "unknown": false,
+            "target": "6ac0f1e2277937dd42ac878e",
+            "traderId": "58330581ace78e27b8b10cee",
+            "loyaltyLevel": 2,
+            "items": [
+              {
+                "_id": "6ac0f1e2277937dd42ac878e",
+                "_tpl": "6ac0f1e2277937dd42ac8774",
+                "upd": {
+                  "FireMode": {
+                    "FireMode": "single"
+                  },
+                  "Repairable": {
+                    "Durability": 100,
+                    "MaxDurability": 100
+                  },
+                  "StackObjectsCount": 1
+                }
+              },
+              {
+                "_id": "6ac0f1e2277937dd42ac878f",
+                "_tpl": "6ac0f1e2277937dd42ac8775",
+                "parentId": "6ac0f1e2277937dd42ac878e",
+                "slotId": "mod_magazine"
+              },
+              {
+                "_id": "6ac0f1e2277937dd42ac8790",
+                "_tpl": "6ac0f1e2277937dd42ac8777",
+                "parentId": "6ac0f1e2277937dd42ac878e",
+                "slotId": "mod_stock"
+              },
+              {
+                "_id": "6ac0f1e2277937dd42ac8791",
+                "_tpl": "6ac0f1e2277937dd42ac8778",
+                "parentId": "6ac0f1e2277937dd42ac878e",
+                "slotId": "mod_barrel"
+              },
+              {
+                "_id": "6ac0f1e2277937dd42ac8792",
+                "_tpl": "6ac0f1e2277937dd42ac8779",
+                "parentId": "6ac0f1e2277937dd42ac878e",
+                "slotId": "mod_handguard"
+              }
+            ]
+          }
+        ]
+      },
+      "secretQuest": false,
+      "side": "Pmc",
+      "startedMessageText": "35e933725dd8e5e778e3ad71 startedMessageText",
+      "status": 0,
+      "successMessageText": "35e933725dd8e5e778e3ad71 successMessageText",
+      "traderId": "58330581ace78e27b8b10cee",
+      "type": "Elimination"
+    },
+    "locales": {
+      "en": {
+        "35e933725dd8e5e778e3ad71 acceptPlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 changeQuestMessageText": "",
+        "35e933725dd8e5e778e3ad71 completePlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 declinePlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 failMessageText": "",
+        "35e933725dd8e5e778e3ad71 note": "",
+        "35e933725dd8e5e778e3ad71 name": "Repeat Business",
+        "35e933725dd8e5e778e3ad71 description": "There you are. Remember those VR80s? A couple of regular customers have their eye on them. Nice shape, detachable mags, all that. But I sell guns that work, not pretty boxes. Take one to Customs and put it through some real work. There are still bastards shaking down people who do business with me. Ten of them should get the message across. If the shotgun holds up and you come back with results, I'll keep a few assembled for you. No need to chase bottles every time. Roubles will do. That's how a regular customer gets treated.",
+        "35e933725dd8e5e778e3ad71 startedMessageText": "Ten Scavs at Customs, with the VR80. Any load or attachments you like. Let's see what that import does outside a shooting range.",
+        "35e933725dd8e5e778e3ad71 successMessageText": "Word got around. Looks like the import can work for a living. I'll keep the factory build on the counter for you: five-round mag, everything fitted, a hundred and ten thousand. The bottle deal stays on the table too. You keep doing your part, I'll keep doing mine.",
+        "2204eb7e747aa1600e8f0f60": "Eliminate Scavs on Customs using a Rock Island Armory VR80"
+      },
+      "po": {
+        "35e933725dd8e5e778e3ad71 acceptPlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 changeQuestMessageText": "",
+        "35e933725dd8e5e778e3ad71 completePlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 declinePlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 failMessageText": "",
+        "35e933725dd8e5e778e3ad71 note": "",
+        "35e933725dd8e5e778e3ad71 name": "Cliente habitual",
+        "35e933725dd8e5e778e3ad71 description": "Olha quem apareceu. Lembra das VR80? Uns clientes antigos ficaram de olho nelas. Formato bonito, carregador destacável, essas coisas. Mas eu vendo arma que funciona, não caixa bonita. Leve uma para a Customs e coloque para trabalhar de verdade. Ainda tem uns desgraçados extorquindo quem faz negócio comigo. Dez deles devem entender o recado. Se a escopeta aguentar e você voltar com resultado, mantenho algumas montadas para você. Sem precisar correr atrás de bebida toda vez. Rublos resolvem. É assim que trato um cliente habitual.",
+        "35e933725dd8e5e778e3ad71 startedMessageText": "Dez Scavs na Customs, com a VR80. Use a munição e os acessórios que quiser. Vamos ver o que essa importada faz fora do estande de tiro.",
+        "35e933725dd8e5e778e3ad71 successMessageText": "A notícia correu. Parece que a importada sabe trabalhar. Vou deixar a configuração de fábrica no balcão para você: carregador de cinco, tudo montado, cento e dez mil. A troca pelas bebidas também continua de pé. Você faz sua parte, eu faço a minha.",
+        "2204eb7e747aa1600e8f0f60": "Elimine Scavs na Customs usando uma Rock Island Armory VR80"
+      }
+    }
+  },
+  {
+    "newQuest": {
+      "QuestName": "Quiet Arrangement",
+      "_id": "dd5168501c5131632cca3e2a",
+      "acceptPlayerMessage": "dd5168501c5131632cca3e2a acceptPlayerMessage",
+      "acceptanceAndFinishingSource": "eft",
+      "arenaLocations": [],
+      "canShowNotificationsInGame": true,
+      "changeQuestMessageText": "dd5168501c5131632cca3e2a changeQuestMessageText",
+      "completePlayerMessage": "dd5168501c5131632cca3e2a completePlayerMessage",
+      "conditions": {
+        "AvailableForStart": [
+          {
+            "conditionType": "Level",
+            "compareMethod": ">=",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "52f60622de2b7478db4da6c6",
+            "index": 0,
+            "parentId": "",
+            "value": 15,
+            "visibilityConditions": []
+          },
+          {
+            "conditionType": "TraderLoyalty",
+            "compareMethod": ">=",
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "4c45046a5144dcd8f662ada1",
+            "index": 1,
+            "parentId": "",
+            "target": "58330581ace78e27b8b10cee",
+            "value": 2,
+            "visibilityConditions": []
+          }
+        ],
+        "AvailableForFinish": [
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": ">=",
+                    "value": 0
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "de542169ce2c19ed832c3810",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [],
+                  "target": "Savage",
+                  "value": 1,
+                  "weapon": [
+                    "54491c4f4bdc2db1078b4568",
+                    "5580223e4bdc2d1c128b457f",
+                    "56dee2bdd2720bc8328b4567",
+                    "576165642459773c7a400233",
+                    "5a7828548dc32e5a9c28b516",
+                    "5e870397991fd70db46995c8",
+                    "606dae0ab0e443224b421bb7",
+                    "60db29ce99594040e04c4a27",
+                    "6259b864ebedf17603599e88",
+                    "64748cb8de82c85eaf0a273a",
+                    "66ffa9b66e19cc902401c5e8",
+                    "67124dcfa3541f2a1f0e788b",
+                    "674fe9a75e51f1c47c04ec23",
+                    "6ac0f1e2277937dd42ac8774"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": [
+                    [
+                      "5b363dd25acfc4001a598fd2"
+                    ],
+                    [
+                      "59c0ec5b86f77435b128bfca"
+                    ]
+                  ]
+                },
+                {
+                  "conditionType": "Location",
+                  "dynamicLocale": false,
+                  "id": "d14fea8889c9689866343001",
+                  "target": [
+                    "bigmap"
+                  ]
+                }
+              ],
+              "id": "2ab3621abc565736fb99911c"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "da796281fbc359177d438d0e",
+            "index": 0,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 8,
+            "visibilityConditions": []
+          },
+          {
+            "completeInSeconds": 0,
+            "conditionType": "CounterCreator",
+            "counter": {
+              "conditions": [
+                {
+                  "bodyPart": [],
+                  "compareMethod": ">=",
+                  "conditionType": "Kills",
+                  "daytime": {
+                    "from": 0,
+                    "to": 0
+                  },
+                  "distance": {
+                    "compareMethod": ">=",
+                    "value": 0
+                  },
+                  "dynamicLocale": false,
+                  "enemyEquipmentExclusive": [],
+                  "enemyEquipmentInclusive": [],
+                  "enemyHealthEffects": [],
+                  "id": "9e27d264a03a055941a5f81f",
+                  "resetOnSessionEnd": false,
+                  "savageRole": [],
+                  "target": "AnyPmc",
+                  "value": 1,
+                  "weapon": [
+                    "54491c4f4bdc2db1078b4568",
+                    "5580223e4bdc2d1c128b457f",
+                    "56dee2bdd2720bc8328b4567",
+                    "576165642459773c7a400233",
+                    "5a7828548dc32e5a9c28b516",
+                    "5e870397991fd70db46995c8",
+                    "606dae0ab0e443224b421bb7",
+                    "60db29ce99594040e04c4a27",
+                    "6259b864ebedf17603599e88",
+                    "64748cb8de82c85eaf0a273a",
+                    "66ffa9b66e19cc902401c5e8",
+                    "67124dcfa3541f2a1f0e788b",
+                    "674fe9a75e51f1c47c04ec23",
+                    "6ac0f1e2277937dd42ac8774"
+                  ],
+                  "weaponCaliber": [],
+                  "weaponModsExclusive": [],
+                  "weaponModsInclusive": [
+                    [
+                      "5b363dd25acfc4001a598fd2"
+                    ],
+                    [
+                      "59c0ec5b86f77435b128bfca"
+                    ]
+                  ]
+                }
+              ],
+              "id": "5053429907a71a59ccd5741c"
+            },
+            "doNotResetIfCounterCompleted": false,
+            "dynamicLocale": false,
+            "globalQuestCounterId": "",
+            "id": "27be1893a93f03116800fddc",
+            "index": 1,
+            "isNecessary": false,
+            "isResetOnConditionFailed": false,
+            "oneSessionOnly": false,
+            "parentId": "",
+            "type": "Elimination",
+            "value": 3,
+            "visibilityConditions": []
+          }
+        ],
+        "Fail": []
+      },
+      "declinePlayerMessage": "dd5168501c5131632cca3e2a declinePlayerMessage",
+      "description": "dd5168501c5131632cca3e2a description",
+      "failMessageText": "dd5168501c5131632cca3e2a failMessageText",
+      "gameModes": [],
+      "image": "/files/quest/icon/5ae326a086f77444fd36f5d8.jpg",
+      "instantComplete": false,
+      "isKey": false,
+      "location": "any",
+      "name": "dd5168501c5131632cca3e2a name",
+      "note": "dd5168501c5131632cca3e2a note",
+      "progressSource": "eft",
+      "rankingModes": [],
+      "restartable": false,
+      "rewards": {
+        "Started": [],
+        "Fail": [],
+        "Success": [
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "105f6725b4628f3c9f76ee5e",
+            "isHidden": false,
+            "type": "Experience",
+            "unknown": false,
+            "value": 6500
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "8beddf9f56494178dcc00390",
+            "isHidden": false,
+            "type": "TraderStanding",
+            "unknown": false,
+            "target": "58330581ace78e27b8b10cee",
+            "value": 0.03
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "60e37e5ab62709c09c1e06ed",
+            "isHidden": false,
+            "type": "Item",
+            "unknown": false,
+            "target": "0c22d175665c8d98f214627e",
+            "value": 45000,
+            "findInRaid": false,
+            "isEncoded": false,
+            "items": [
+              {
+                "_id": "0c22d175665c8d98f214627e",
+                "_tpl": "5449016a4bdc2d6f028b456f",
+                "upd": {
+                  "StackObjectsCount": 45000
+                }
+              }
+            ]
+          },
+          {
+            "availableInGameEditions": [],
+            "gameMode": [
+              "regular",
+              "pve"
+            ],
+            "id": "3021b3c93eb1d50eae2230db",
+            "isHidden": false,
+            "type": "AssortmentUnlock",
+            "unknown": false,
+            "target": "ced5acae4f7f2152eae0a47b",
+            "traderId": "58330581ace78e27b8b10cee",
+            "loyaltyLevel": 2,
+            "items": [
+              {
+                "_id": "ced5acae4f7f2152eae0a47b",
+                "_tpl": "6ac0f1e2277937dd42ac8774",
+                "upd": {
+                  "FireMode": {
+                    "FireMode": "single"
+                  },
+                  "Repairable": {
+                    "Durability": 100,
+                    "MaxDurability": 100
+                  },
+                  "StackObjectsCount": 1
+                }
+              },
+              {
+                "_id": "086cd4ce7153d4a38f1d6af5",
+                "_tpl": "6ac0f1e2277937dd42ac8779",
+                "parentId": "ced5acae4f7f2152eae0a47b",
+                "slotId": "mod_handguard"
+              },
+              {
+                "_id": "09b3dcaaa9a445bf65612633",
+                "_tpl": "57cffb66245977632f391a99",
+                "parentId": "086cd4ce7153d4a38f1d6af5",
+                "slotId": "mod_foregrip"
+              },
+              {
+                "_id": "6915eb189be2451aa6118b5e",
+                "_tpl": "6ac0f1e2277937dd42ac8777",
+                "parentId": "ced5acae4f7f2152eae0a47b",
+                "slotId": "mod_stock"
+              },
+              {
+                "_id": "a56aacf9a550a010776374a0",
+                "_tpl": "6ac0f1e2277937dd42ac8776",
+                "parentId": "ced5acae4f7f2152eae0a47b",
+                "slotId": "mod_magazine"
+              },
+              {
+                "_id": "6ed2317125e788305e4c8189",
+                "_tpl": "584924ec24597768f12ae244",
+                "parentId": "ced5acae4f7f2152eae0a47b",
+                "slotId": "mod_scope"
+              },
+              {
+                "_id": "7dbd68979bdbe5b7dd995ea8",
+                "_tpl": "6ac179398c908bb02fb9a036",
+                "parentId": "ced5acae4f7f2152eae0a47b",
+                "slotId": "mod_barrel"
+              },
+              {
+                "_id": "d510e41afffd865142db41fc",
+                "_tpl": "5b363dea5acfc4771e1c5e7e",
+                "parentId": "7dbd68979bdbe5b7dd995ea8",
+                "slotId": "mod_muzzle"
+              },
+              {
+                "_id": "7c981b23c81dc4384b26767d",
+                "_tpl": "5b363dd25acfc4001a598fd2",
+                "parentId": "d510e41afffd865142db41fc",
+                "slotId": "mod_muzzle"
+              }
+            ]
+          }
+        ]
+      },
+      "secretQuest": false,
+      "side": "Pmc",
+      "startedMessageText": "dd5168501c5131632cca3e2a startedMessageText",
+      "status": 0,
+      "successMessageText": "dd5168501c5131632cca3e2a successMessageText",
+      "traderId": "58330581ace78e27b8b10cee",
+      "type": "Elimination"
+    },
+    "locales": {
+      "en": {
+        "dd5168501c5131632cca3e2a acceptPlayerMessage": "",
+        "dd5168501c5131632cca3e2a changeQuestMessageText": "",
+        "dd5168501c5131632cca3e2a completePlayerMessage": "",
+        "dd5168501c5131632cca3e2a declinePlayerMessage": "",
+        "dd5168501c5131632cca3e2a failMessageText": "",
+        "dd5168501c5131632cca3e2a note": "",
+        "dd5168501c5131632cca3e2a name": "Quiet Arrangement",
+        "dd5168501c5131632cca3e2a description": "Got something else for you. Separate business, don't worry about the other jobs. Some people at Customs need to stop asking questions, and a few of your mercenary friends have been getting too interested in my affairs. I want it handled without turning the whole place into a firing range. Take a twelve-gauge with a suppressor. Eight Scavs at Customs and three operators, wherever you catch them. Any shotgun that fits the bill will do. Meanwhile, I'm having a VR80 put together with a Salvo, an EOTech, and a bigger mag. A little arrangement for customers who know how to keep their mouths shut. Bring me some valuables afterwards and it's yours.",
+        "dd5168501c5131632cca3e2a startedMessageText": "Eight Scavs at Customs, three PMCs wherever you find them. Twelve-gauge, suppressor fitted. This job has its own terms.",
+        "dd5168501c5131632cca3e2a successMessageText": "No crowd at my door asking what happened. I like that. Your VR80 Silent is ready: Salvo 12, EOTech, AFG, ten-round mag. One Roler, a wooden clock, a gold chain, and a horse figurine. One build per shipment. The price includes me keeping your name out of the conversation.",
+        "da796281fbc359177d438d0e": "Eliminate Scavs on Customs using any 12ga shotgun with a suppressor",
+        "27be1893a93f03116800fddc": "Eliminate PMCs using any 12ga shotgun with a suppressor"
+      },
+      "po": {
+        "dd5168501c5131632cca3e2a acceptPlayerMessage": "",
+        "dd5168501c5131632cca3e2a changeQuestMessageText": "",
+        "dd5168501c5131632cca3e2a completePlayerMessage": "",
+        "dd5168501c5131632cca3e2a declinePlayerMessage": "",
+        "dd5168501c5131632cca3e2a failMessageText": "",
+        "dd5168501c5131632cca3e2a note": "",
+        "dd5168501c5131632cca3e2a name": "Acordo discreto",
+        "dd5168501c5131632cca3e2a description": "Tenho outro serviço para você. Negócio separado, não se preocupe com os outros trabalhos. Tem gente na Customs que precisa parar de fazer perguntas, e uns colegas mercenários seus estão interessados demais nos meus assuntos. Quero resolver isso sem transformar o lugar inteiro num estande de tiro. Leve uma calibre 12 com supressor. Oito Scavs na Customs e três operadores, onde encontrar. Qualquer escopeta que sirva para o trabalho está valendo. Enquanto isso, estou montando uma VR80 com Salvo, EOTech e carregador maior. Um pequeno acordo para clientes que sabem ficar de boca fechada. Depois me traga umas peças de valor e ela é sua.",
+        "dd5168501c5131632cca3e2a startedMessageText": "Oito Scavs na Customs, três PMCs onde encontrar. Calibre 12 com supressor montado. Este serviço tem seus próprios termos.",
+        "dd5168501c5131632cca3e2a successMessageText": "Ninguém apareceu na minha porta perguntando o que aconteceu. Gostei disso. Sua VR80 Silenciosa está pronta: Salvo 12, EOTech, AFG, carregador de dez. Um Roler, um relógio de madeira, uma corrente de ouro e uma estatueta de cavalo. Uma montagem por remessa. O preço inclui deixar seu nome fora da conversa.",
+        "da796281fbc359177d438d0e": "Elimine Scavs na Customs usando qualquer escopeta calibre 12 com supressor",
+        "27be1893a93f03116800fddc": "Elimine PMCs usando qualquer escopeta calibre 12 com supressor"
+      }
+    }
+  }
+]

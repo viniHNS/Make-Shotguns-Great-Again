@@ -4,7 +4,7 @@
 
 Shotguns do jeito certo no SPT 4.1.6: shotguns do jogo melhoradas, armas, acessórios e munições novas, faíscas de Dragon's Breath e uma reformulação das panes de arma.
 
-![Version](https://img.shields.io/badge/version-1.16.0-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.17.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -45,7 +45,8 @@ Shotguns do jeito certo no SPT 4.1.6: shotguns do jogo melhoradas, armas, acess�
 
 **Conteúdo novo**
 
-- 4 [armas](#armas-novas), 9 [acessórios](#acessórios-novos) e 11 [itens de munição](#munições-novas), vendidos pelos traders e fabricáveis na Workbench.
+- 5 [armas](#armas-novas), 15 [acessórios](#acessórios-novos) e 14 [itens de munição](#munições-novas), disponíveis nos traders e em receitas da Workbench.
+- Seis quests: três serviços do Skier desbloqueiam as configurações da VR80, e Hunter's Dream do Jaeger desbloqueia as novas cargas .700 Nitro.
 - Scavs podem aparecer com a MP-12 e a MP-700 e usar munição FRAG-12, Hellfire e .700 Nitro. O Tagilla pode usar Hellfire.
 
 ---
@@ -79,8 +80,21 @@ As duas partes são necessárias: o server adiciona os itens e o client cuida do
 | MP-700 .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (129.564 ₽). Montada no Jaeger LL2 (195.632 ₽) |
 | MP-700 Shorty .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (145.000 ₽). Montada no Jaeger LL3 (215.746 ₽) |
 | ZiD SP-81 23x75 pistol | 23x75 | Mechanic LL2 (65.321 ₽). Pistola de sinalização refeita para 23x75; não dispara sinalizador |
+| Escopeta semi-automática Rock Island Armory VR80 12ga | 12/70 | Troca no Skier LL1 após Mercadoria de fora; compra no LL2 (110.000 ₽) após Cliente habitual. Configuração de fábrica com carregador de 5 cartuchos |
 
 A MP-700 Shorty é uma MP-700 serrada: sem coronha, cano curto e recuo brutal.
+
+A VR80 é uma escopeta semiautomática operada a gás, com comandos no estilo AR, cano de 508 mm e carregadores destacáveis de 5 e 10 cartuchos. O guarda-mão M-LOK de fábrica aceita punhos e suportes de acessórios compatíveis; o trilho superior aceita miras. A coronha original inclui o punho. A configuração de fábrica pesa 3,35 kg com o carregador de 5 vazio.
+
+Após **Mercadoria de fora**, o Skier LL1 troca a VR80 de fábrica por um whiskey Dan Jackiel, uma vodka Tarkovskaya e dois maços de Wilston (uma arma por reposição). Complete **Cliente habitual** no Skier LL2 para liberar a compra por 110.000 ₽.
+
+O Skier LL2 também troca a versão **VR80 Silenciosa** após a quest independente **Acordo discreto** (uma por reposição): cano rosqueado com supressor SilencerCo Salvo 12, mira EOTech XPS3-2, empunhadura Magpul AFG e carregador de 10, por um Roler Submariner, um relógio de madeira, uma corrente de ouro e uma estatueta de cavalo.
+
+| Quest do Skier | Requisitos e objetivos | Desbloqueio |
+| --- | --- | --- |
+| Mercadoria de fora | LL1; elimine 5 Scavs na Customs com qualquer escopeta calibre 12 e entregue 2 Wilston encontrados em raid | Troca da VR80 de fábrica no LL1 |
+| Cliente habitual | LL2 e Mercadoria de fora concluída; elimine 10 Scavs na Customs com a VR80 | Compra da VR80 de fábrica por dinheiro no LL2 |
+| Acordo discreto | LL2, independente das outras duas; elimine 8 Scavs na Customs e 3 PMCs em qualquer mapa com qualquer escopeta calibre 12 com supressor | Troca da VR80 Silenciosa no LL2 |
 
 O Mechanic LL2 também vende a versão **MP-18 Tactical**: uma MP-18 com o cano rosqueado, supressor SIG Sauer SRD762Ti e luneta Burris FullField TAC30 1-4x24, por 4 Weapon parts e 2 Gunpowder "Eagle".
 
@@ -97,8 +111,18 @@ O Mechanic LL2 também vende a versão **MP-18 Tactical**: uma MP-18 com o cano 
 | MP-18 7.62x54R 600mm threaded barrel | Mechanic LL2 (12.500 ₽) |
 | MP-700 .700 Nitro Express Double Rifle 725mm Barrel | Jaeger LL3 (29.568 ₽) |
 | MP-700 Shorty .700 Nitro Express 310mm Barrel | Jaeger LL3 (31.000 ₽) |
+| VR80 12ga 5-round magazine | Skier LL2 (6.000 ₽) |
+| VR80 12ga 10-round magazine | Skier LL2 (9.000 ₽) |
+| VR80 stock with pistol grip | Skier LL2 (8.000 ₽) |
+| VR80 12ga 508mm barrel | Skier LL2 (14.000 ₽) |
+| VR80 12ga 508mm threaded barrel | Mechanic LL2 (15.500 ₽) |
+| VR80 M-LOK handguard | Skier LL2 (11.000 ₽) |
 
 O cano rosqueado da 590A1 aceita os mesmos muzzle devices da MP-153.
+
+O carregador Alliance Armament de 30 cartuchos da Saiga recebeu UVs novos e texturas de alumínio anodizado com desgaste.
+
+O cano rosqueado da VR80 pesa 0,9 kg (ergonomia -10) e aceita os mesmos muzzle devices da MP-153.
 
 O cano rosqueado da MP-18 pesa 1,45 kg (ergonomia -15) e aceita os muzzle devices do SV-98 (o thread adapter leva o supressor do SV-98) e os muzzle devices e supressores 7.62x51 de rosca direta do AR-10, SR-25 e SCAR-H.
 
@@ -116,7 +140,24 @@ O cano rosqueado da MP-18 pesa 1,45 kg (ergonomia -15) e aceita os muzzle device
 | 12/70 Winchester Super-X 00 buckshot | Jaeger LL2 (76 ₽) | Nível 2 |
 | 12/70 7mm Buckshot Brass Case | Jaeger LL2 (44 ₽) | Nível 1 |
 | .700 Nitro Express FMJ | Jaeger LL3 (1.930 ₽) | Nível 3 |
+| .700 Nitro Express SP "Mammoth" | Jaeger LL3 (2.800 ₽), após Hunter's Dream - Part 1 | — |
+| .700 Nitro Express AP "Goliath" | Jaeger LL4 (8.000 ₽), após Hunter's Dream - Part 3 | — |
+| .700 Nitro Express chumbo grosso "Cerberus" | Jaeger LL3 (3.600 ₽), após Hunter's Dream - Part 2 | — |
 | 5.45x39mm 'Svalka' Anti-Drone Buckshot | — | Nível 1 |
+
+A MP-700 e a MP-700 Shorty também aceitam três cargas especiais .700 Nitro Express: **Mammoth** expansiva (430 de dano, 15 de penetração), **Goliath** perfurante (220 de dano, 60 de penetração) e **Cerberus** de chumbo grosso (8 projéteis com 65 de dano e 8 de penetração cada). São variantes criadas para o mod, incluindo cargas experimentais ficcionais. A FMJ não atravessa placas, mas acaba com a durabilidade delas. Cada uma tem uma ponta e marcas de identificação próprias.
+
+### Hunter's Dream
+
+A questline de três partes do Jaeger começa no nível 30, após **Acquaintance**. Cada parte exige a conclusão da anterior. Use a **MP-700** ou a **MP-700 Shorty**, com qualquer munição compatível; o progresso acumula entre raids.
+
+| Quest | Objetivo | Compra desbloqueada |
+|---|---|---|
+| Hunter's Dream - Part 1 | Eliminar 15 Scavs em Woods a pelo menos 40 metros | Mammoth SP, Jaeger LL3 |
+| Hunter's Dream - Part 2 | Eliminar 8 PMCs a no máximo 30 metros, em qualquer mapa | Cerberus, Jaeger LL3 |
+| Hunter's Dream - Part 3 | Eliminar Tagilla na Factory, de dia ou de noite | Goliath AP, Jaeger LL4 |
+
+Concluir uma quest desbloqueia sua oferta de compra; o nível de lealdade do trader continua obrigatório. A compra da Goliath exige LL4 (nível de jogador mínimo 33), mesmo concluindo a Part 3 antes disso. Cada quest também entrega experiência, rublos, reputação com o Jaeger e uma pequena quantidade da munição desbloqueada. A compra e o craft da FMJ publicada continuam disponíveis como antes.
 
 ### Crafts da Workbench
 
@@ -200,10 +241,11 @@ Make-Shotguns-Great-Again/
 │       ├── CustomAssortSchemes/        trocas das caixas de munição no Peacekeeper
 │       ├── CustomHideoutRecipes/       crafts da Workbench
 │       ├── CustomLocales/              nomes das versões montadas
+│       ├── Quests/                     quests da VR80 no Skier e Hunter's Dream
 │       └── weaponPresets/
-│           ├── Assorts/                armas montadas vendidas pelo Jaeger e pelo Mechanic
+│           ├── Assorts/                armas montadas vendidas pelo Jaeger, Mechanic e Skier
 │           ├── BotLoadouts/            armas e munições novas para os bots
-│           └── GlobalPresets/          versões da MP-12 e MP-18 Tactical
+│           └── GlobalPresets/          configurações padrão das armas
 └── Client/                             plugin BepInEx (netstandard2.1)
     ├── makeshotgunsgreatagain.cs       opções do F12
     └── Patches/
@@ -220,6 +262,7 @@ Make-Shotguns-Great-Again/
 
 ## Créditos
 
+- Escopeta Rock Island Armory VR80 e suas peças: adaptadas do [modelo de White-Horse](https://skfb.ly/6WP7G), licenciado sob [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). O modelo foi separado em peças modulares e adaptado aos materiais e ao esqueleto de arma do jogo. Esses assets mantêm a atribuição CC BY 4.0; a licença MIT do mod cobre o código.
 - Modelo da 12/70 Winchester Super-X 00 buckshot: [Guy in a Poncho](https://sketchfab.com/ponchoguy)
 - Modelos da 12/70 AP Slug SVAROG, Flechette Kinghunter e Magnum Express Kinghunter: [Deadcomrade](https://sketchfab.com/deadcomrade)
 - Efeito de partículas do Dragon's Breath: baseado no trabalho de **jankytheclown** no [HollywoodFX](https://github.com/SleepingPills/HollywoodFX)

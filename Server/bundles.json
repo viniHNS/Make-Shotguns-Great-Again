@@ -146,6 +146,116 @@
                 "assets/content/weapons/mp18/textures/client_assets.bundle",
                 "assets/systems/effects/smoke.bundle"
             ]
+        },
+        {
+            "key": "vr80_textures.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "vr80_assets.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "weapon_ria_vr80_12g_container.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/audio/weapons/saiga12.bundle",
+                "assets/content/audio/banks/m4a1.bundle",
+                "assets/content/audio/blendoptions/assets.bundle",
+                "assets/content/audio/weapons/ak74.bundle",
+                "assets/content/audio/weapons/generic",
+                "assets/content/audio/weapons/m4a1.bundle",
+                "assets/content/weapons/additional_hands/client_assets.bundle",
+                "assets/content/weapons/animations/simple_animations.bundle",
+                "assets/content/weapons/animations/spirit_animations.bundle",
+                "assets/content/weapons/m4a1/client_assets.bundle",
+                "assets/content/weapons/m4a1/textures/client_assets.bundle",
+                "assets/content/weapons/weapon_root_anim_fix.bundle",
+                "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+                "assets/systems/effects/heathaze/defaultheathaze.bundle",
+                "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders",
+                "assets/content/weapons/m4a1/weapon_colt_m4a1_556x45_container.bundle",
+                "vr80_assets.bundle",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "mag_vr80_12g_5.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "mag_vr80_12g_10.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "stock_vr80_std.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/items/mods/stocks/stock_ar15_high_standart_m4ss_lod0_textures.bundle",
+                "cubemaps",
+                "shaders",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "barrel_vr80_508mm_12g.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "handguard_vr80_mlok.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders",
+                "vr80_textures.bundle"
+            ]
+        },
+        {
+            "key": "700NITRO_SP_MAMMOTH.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "700NITRO_AP_GOLIATH.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
+        },
+        {
+            "key": "700NITRO_CERBERUS.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "assets/commonassets/physics/physicsmaterials.bundle"
+            ]
         }
     ]
 }

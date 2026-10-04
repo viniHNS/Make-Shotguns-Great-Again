@@ -1,0 +1,119 @@
+{
+  "6ac0f1e2277937dd42ac8788": {
+    "_id": "6ac0f1e2277937dd42ac8788",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Rock Island VR80 default",
+    "_parent": "6ac0f1e2277937dd42ac8789",
+    "_items": [
+      {
+        "_id": "6ac0f1e2277937dd42ac8789",
+        "_tpl": "6ac0f1e2277937dd42ac8774",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "6ac0f1e2277937dd42ac878a",
+        "_tpl": "6ac0f1e2277937dd42ac8775",
+        "parentId": "6ac0f1e2277937dd42ac8789",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "6ac0f1e2277937dd42ac878b",
+        "_tpl": "6ac0f1e2277937dd42ac8777",
+        "parentId": "6ac0f1e2277937dd42ac8789",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "6ac0f1e2277937dd42ac878c",
+        "_tpl": "6ac0f1e2277937dd42ac8778",
+        "parentId": "6ac0f1e2277937dd42ac8789",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "6ac0f1e2277937dd42ac878d",
+        "_tpl": "6ac0f1e2277937dd42ac8779",
+        "parentId": "6ac0f1e2277937dd42ac8789",
+        "slotId": "mod_handguard"
+      }
+    ],
+    "_encyclopedia": "6ac0f1e2277937dd42ac8774"
+  },
+  "29519b832b727b9a1610e491": {
+    "_id": "29519b832b727b9a1610e491",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "Rock Island VR80 Silent",
+    "_parent": "f953f40557e3724e0da6fba7",
+    "_items": [
+      {
+        "_id": "f953f40557e3724e0da6fba7",
+        "_tpl": "6ac0f1e2277937dd42ac8774",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "230b2dbb13a9fae5b891b7f6",
+        "_tpl": "6ac0f1e2277937dd42ac8779",
+        "parentId": "f953f40557e3724e0da6fba7",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "ef7d5f00c6fff8e0c671ffda",
+        "_tpl": "57cffb66245977632f391a99",
+        "parentId": "230b2dbb13a9fae5b891b7f6",
+        "slotId": "mod_foregrip"
+      },
+      {
+        "_id": "158de5210fafe9f56522fc3b",
+        "_tpl": "6ac0f1e2277937dd42ac8777",
+        "parentId": "f953f40557e3724e0da6fba7",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "6f7f7696ec88d574d2572590",
+        "_tpl": "6ac0f1e2277937dd42ac8776",
+        "parentId": "f953f40557e3724e0da6fba7",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "86c8b10f766017438ec2b8c9",
+        "_tpl": "584924ec24597768f12ae244",
+        "parentId": "f953f40557e3724e0da6fba7",
+        "slotId": "mod_scope"
+      },
+      {
+        "_id": "9fb805b32956954249653159",
+        "_tpl": "6ac179398c908bb02fb9a036",
+        "parentId": "f953f40557e3724e0da6fba7",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "b8e894ded19703c1cb2414f5",
+        "_tpl": "5b363dea5acfc4771e1c5e7e",
+        "parentId": "9fb805b32956954249653159",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "42bea472b100ccd963abd617",
+        "_tpl": "5b363dd25acfc4001a598fd2",
+        "parentId": "b8e894ded19703c1cb2414f5",
+        "slotId": "mod_muzzle"
+      }
+    ]
+  }
+}
