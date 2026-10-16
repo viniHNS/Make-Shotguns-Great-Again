@@ -1,0 +1,332 @@
+{
+  "a885d565511eb39be5d9ee7e": {
+    "itemTplToClone": "5e870397991fd70db46995c8",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "weapon_monolith_p12_12g_container.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 2.4,
+      "Ergonomics": 70,
+      "RecoilForceUp": 284,
+      "RecoilForceBack": 351,
+      "Width": 4,
+      "Height": 2,
+      "CompactHandling": false,
+      "RotationCenter": {
+        "x": 0,
+        "y": -0.13,
+        "z": 0
+      },
+      "RotationCenterNoStock": {
+        "x": 0,
+        "y": -0.38,
+        "z": -0.11
+      },
+      "RecoilCenter": {
+        "x": 0,
+        "y": -0.32,
+        "z": -0.02
+      },
+      "AimPlane": 0.25,
+      "ReloadMode": "ExternalMagazine",
+      "isFastReload": true,
+      "isBoltCatch": false,
+      "defMagType": "404cd6ac317b73172b0fda02",
+      "Slots": [
+        {
+          "_id": "272e079b1033e622f367e55a",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "a885d565511eb39be5d9ee7e",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": -1,
+                "Filter": [
+                  "404cd6ac317b73172b0fda02"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": false
+        },
+        {
+          "_id": "ecd8f6c2f4bee4ea7ac8a9d5",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "a885d565511eb39be5d9ee7e",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "665ae38202c6064011c73a4a"
+                ],
+                "Shift": 0,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "989fd5f4ac8d004ab5d94ca7",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_scope",
+          "_parent": "a885d565511eb39be5d9ee7e",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "57ac965c24597706be5f975c",
+                  "57aca93d2459771f2c7e26db",
+                  "544a3f024bdc2d1d388b4568",
+                  "544a3a774bdc2d3a388b4567",
+                  "5d2dc3e548f035404a1a4798",
+                  "57adff4f24597737f373b6e6",
+                  "5c0517910db83400232ffee5",
+                  "591c4efa86f7741030027726",
+                  "570fd79bd2720bc7458b4583",
+                  "570fd6c2d2720bc6458b457f",
+                  "558022b54bdc2dac148b458d",
+                  "5c07dd120db834001c39092d",
+                  "5c0a2cec0db834001b7ce47d",
+                  "58491f3324597764bc48fa02",
+                  "584924ec24597768f12ae244",
+                  "5b30b0dc5acfc400153b7124",
+                  "6165ac8c290d254f5e6b2f6c",
+                  "60a23797a37c940de7062d02",
+                  "5d2da1e948f035477b1ce2ba",
+                  "5c0505e00db834001b735073",
+                  "609a63b6e2ff132951242d09",
+                  "584984812459776a704a82a6",
+                  "59f9d81586f7744c7506ee62",
+                  "570fd721d2720bc5458b4596",
+                  "57ae0171245977343c27bfcf",
+                  "5dfe6104585a0c3e995c7b82",
+                  "5d1b5e94d7ad1a2b865a96b0",
+                  "609bab8b455afd752b2e6138",
+                  "58d39d3d86f77445bb794ae7",
+                  "616554fe50224f204c1da2aa",
+                  "5c7d55f52e221644f31bff6a",
+                  "616584766ef05c2ce828ef57",
+                  "5b3b6dc75acfc47a8773fb1e",
+                  "615d8d878004cc50514c3233",
+                  "577d128124597739d65d0e56",
+                  "58d2664f86f7747fec5834f6",
+                  "5c1cdd302e221602b3137250",
+                  "61714b2467085e45ef140b2c",
+                  "5b31163c5acfc400153b71cb",
+                  "5a33b652c4a28232996e407c",
+                  "5a33b2c9c4a282000c5a9511",
+                  "59db7eed86f77461f8380365",
+                  "5a1ead28fcdbcb001912fa9f",
+                  "626bb8532c923541184624b4",
+                  "63fc449f5bd61c6cf3784a88",
+                  "6477772ea8a38bb2050ed4db",
+                  "6478641c19d732620e045e17",
+                  "64785e7c19d732620e045e15",
+                  "65392f611406374f82152ba5",
+                  "653931da5db71d30ab1d6296",
+                  "655f13e0a246670fb0373245",
+                  "67641a851b2899700609901a",
+                  "68a5ab09c44fa287ba0a97b5"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "c80bf6d05ce7cc47035552b7",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "a885d565511eb39be5d9ee7e",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Monolith Arms P-12 12ga pump-action shotgun",
+        "shortName": "P-12",
+        "description": "An American 12ga bullpup pump-action shotgun designed around 2005 by Brian F. Abbott of Monolith Arms. It feeds from a 20-round detachable magazine that lies flat on top of the receiver, in the manner of the FN P90, and is cycled by a pump with an integrated vertical foregrip. According to its designer, the prototype combined 3D-printed parts with off-the-shelf components to make repairs easier, and was meant to have an adjustable trigger pull. It was revealed in a 2008 promotional video that never showed it firing, and never reached production: the only prototype is said to have been sold to a manufacturer that chose not to produce it."
+      },
+      "po": {
+        "name": "Escopeta de ação por bombeamento Monolith Arms P-12 12ga",
+        "shortName": "P-12",
+        "description": "Escopeta bullpup americana de ação por bombeamento 12ga, projetada por volta de 2005 por Brian F. Abbott, da Monolith Arms. É alimentada por um carregador destacável de 20 munições deitado sobre o receptor, à maneira da FN P90, e acionada por um pump com punho vertical integrado. Segundo o projetista, o protótipo misturava peças impressas em 3D com componentes comprados prontos, para facilitar os reparos, e teria peso de gatilho ajustável. Foi apresentada em 2008 num vídeo promocional que nunca a mostrou atirando e não chegou à produção: o único protótipo teria sido vendido a um fabricante que desistiu de produzi-la."
+      }
+    },
+    "fleaPriceRoubles": 127000,
+    "handbookPriceRoubles": 101815,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  },
+  "665ae38202c6064011c73a4a": {
+    "itemTplToClone": "5a787f25c5856700186c4ab9",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_monolith_p12_445mm_12g.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.72,
+      "Ergonomics": -6,
+      "Recoil": -5,
+      "Velocity": 4.0,
+      "CenterOfImpact": 0.55,
+      "ShotgunDispersion": 1.42,
+      "DurabilityBurnModificator": 0.94,
+      "HeatFactor": 0.94,
+      "CoolFactor": 0.98,
+      "Width": 3,
+      "Height": 1,
+      "ConflictingItems": []
+    },
+    "locales": {
+      "en": {
+        "name": "Monolith Arms P-12 12ga 445mm barrel",
+        "shortName": "P-12 445mm",
+        "description": "The 445mm smoothbore barrel of the Monolith Arms P-12, with no muzzle thread. It is fixed to the weapon."
+      },
+      "po": {
+        "name": "Cano de 445 mm 12ga da Monolith Arms P-12",
+        "shortName": "P-12 445mm",
+        "description": "Cano liso de 445 mm da Monolith Arms P-12, sem rosca na boca. É fixo na arma."
+      }
+    },
+    "fleaPriceRoubles": 26000,
+    "handbookPriceRoubles": 21000,
+    "addtoTraders": false
+  },
+  "404cd6ac317b73172b0fda02": {
+    "itemTplToClone": "5cc70093e4a949033c734312",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "mag_monolith_p12_12g_20.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.55,
+      "Ergonomics": -8,
+      "Width": 3,
+      "Height": 1,
+      "magAnimationIndex": 5,
+      "LoadUnloadModifier": 30,
+      "MalfunctionChance": 0.08,
+      "VisibleAmmoRangesString": "1-20",
+      "Cartridges": [
+        {
+          "_id": "c2566b74c7166ccfba40042f",
+          "_max_count": 20,
+          "_name": "cartridges",
+          "_parent": "404cd6ac317b73172b0fda02",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Monolith Arms P-12 12ga 20-round magazine",
+        "shortName": "P-12 20",
+        "description": "A 20-round translucent polymer magazine for the Monolith Arms P-12. It sits flat on top of the receiver and holds the shells crosswise in a staggered double row; the top shell turns in line with the bore as it feeds."
+      },
+      "po": {
+        "name": "Carregador de 20 munições Monolith Arms P-12 12ga",
+        "shortName": "P-12 20",
+        "description": "Carregador de polímero translúcido com 20 munições para a Monolith Arms P-12. Fica deitado sobre o receptor e guarda os cartuchos na transversal, em fila dupla escalonada; o de cima gira para o alinhamento do cano ao alimentar."
+      }
+    },
+    "fleaPriceRoubles": 13000,
+    "handbookPriceRoubles": 10285,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "PEACEKEEPER": {
+        "e7377af0a05beccd90c2c40c": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 10
+          },
+          "barters": [
+            {
+              "count": 85,
+              "_tpl": "MONEY_DOLLARS"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

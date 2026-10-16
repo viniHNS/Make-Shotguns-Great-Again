@@ -1,0 +1,22 @@
+{
+  "48786fcda35d49488f3ab59f": {
+    "_id": "48786fcda35d49488f3ab59f",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Taurus Raging Judge default",
+    "_parent": "65c4a1b9e0b84d72a927a28d",
+    "_items": [
+      {
+        "_id": "65c4a1b9e0b84d72a927a28d",
+        "_tpl": "c5fa8b1bf60b412e8347d3c2"
+      },
+      {
+        "_id": "3b7722ea798f4c7da8d186c0",
+        "_tpl": "09780e809ecc4a3897fc87b2",
+        "parentId": "65c4a1b9e0b84d72a927a28d",
+        "slotId": "mod_magazine"
+      }
+    ],
+    "_encyclopedia": "c5fa8b1bf60b412e8347d3c2"
+  }
+}

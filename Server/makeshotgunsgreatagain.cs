@@ -17,13 +17,11 @@ public record ModMetadata : IModMetadata
     public string ModGuid { get; init; } = "com.vinihns.makeshotgunsgreatagain";
     public string Name { get; init; } = "Make Shotguns Great Again";
     public string Author { get; init; } = "ViniHNS";
-    public SemanticVersioning.Version Version { get; init; } = new("1.17.0");
+    public SemanticVersioning.Version Version { get; init; } = new("1.18.0");
     public Range SptVersion { get; init; } = new("~4.1.6");
     public string License { get; init; } = "MIT";
     public bool HasPrepatcher { get; init; } = false;
 
-    // Built against WTT-ServerCommonLib 3.0.6. The DLL references that assembly version,
-    // so an older installed lib (e.g. 3.0.2) can't satisfy it at runtime.
     public Dictionary<string, Range>? ModDependencies { get; init; } = new()
     {
         { "com.wtt.commonlib", new Range("~3.0.6") }
@@ -172,11 +170,14 @@ public class Mod(
     {
         var assembly = Assembly.GetExecutingAssembly();
         var config = LoadModConfig(assembly);
+        _config = config;
+        ModConfig.Current = config;
 
         await wttCommon.CustomItemServiceExtended.CreateCustomItems(assembly);
         await wttCommon.CustomWeaponPresetService.CreateCustomWeaponPresets(assembly, "db/weaponPresets/GlobalPresets");
         await wttCommon.CustomLocaleService.CreateCustomLocales(assembly);
         await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly, "db/weaponPresets/Assorts");
+        await wttCommon.CustomAssortSchemeService.CreateCustomAssortSchemes(assembly);
         await wttCommon.CustomBotLoadoutService.CreateCustomBotLoadouts(assembly, "db/weaponPresets/BotLoadouts");
         await wttCommon.CustomHideoutRecipeService.CreateHideoutRecipes(assembly);
         ModifyExistingShotguns();
@@ -185,6 +186,19 @@ public class Mod(
         AddNew545CartridgesToAssaultRifles();
         ModifyRails();
         ApplyBotAmmoConfig(config);
+    }
+
+    private ModConfig _config = new();
+
+    /// <summary>
+    /// Server log only when config.json has enableDebugLogs; errors are always logged.
+    /// </summary>
+    private void LogDebug(string message)
+    {
+        if (_config.EnableDebugLogs)
+        {
+            logger.Info(message);
+        }
     }
 
     /// <summary>
@@ -196,11 +210,11 @@ public class Mod(
         try
         {
             var pathToMod = modHelper.GetAbsolutePathToModFolder(assembly);
-            return modHelper.GetJsonDataFromFile<ModConfig>(pathToMod, "config/config.json");
+            return modHelper.GetJsonDataFromFile<ModConfig>(pathToMod, "config/config.json") ?? new ModConfig();
         }
         catch (Exception ex)
         {
-            logger.Warning($"Could not read config/config.json, using default settings. {ex.Message}");
+            logger.Error($"Could not read config/config.json, using default settings. {ex.Message}");
             return new ModConfig();
         }
     }
@@ -211,10 +225,7 @@ public class Mod(
     /// </summary>
     private void ApplyBotAmmoConfig(ModConfig config)
     {
-        if (config.EnableDebugLogs)
-        {
-            logger.Info($"[MSGA] Bot ammo config: FRAG-12={config.EnableBotsUseFrag12}, DragonBreath={config.EnableBotsUseDragonBreath}");
-        }
+        LogDebug($"[MSGA] Bot ammo config: FRAG-12={config.EnableBotsUseFrag12}, DragonBreath={config.EnableBotsUseDragonBreath}");
 
         if (config.EnableBotsUseFrag12 && config.EnableBotsUseDragonBreath) return;
 
@@ -241,10 +252,7 @@ public class Mod(
             }
         }
 
-        if (config.EnableDebugLogs)
-        {
-            logger.Info($"[MSGA] Bot ammo config applied: removed FRAG-12 from {frag12Removed} caliber pool(s), Dragon's Breath from {dragonBreathRemoved} caliber pool(s).");
-        }
+        LogDebug($"[MSGA] Bot ammo config applied: removed FRAG-12 from {frag12Removed} caliber pool(s), Dragon's Breath from {dragonBreathRemoved} caliber pool(s).");
     }
 
     /// <summary>
@@ -262,7 +270,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find AA-12 GEN1 ({AA12_GEN1_TPL}) to modify.");
+            LogDebug($"Could not find AA-12 GEN1 ({AA12_GEN1_TPL}) to modify.");
         }
 
         if (items.TryGetValue(AA12_GEN2_TPL, out var aa12gen2))
@@ -271,7 +279,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find AA-12 GEN2 ({AA12_GEN2_TPL}) to modify.");
+            LogDebug($"Could not find AA-12 GEN2 ({AA12_GEN2_TPL}) to modify.");
         }
 
         // --- Modify MTs-255 ---
@@ -281,7 +289,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find MTs-255 ({MTS_255_TPL}) to modify.");
+            LogDebug($"Could not find MTs-255 ({MTS_255_TPL}) to modify.");
         }
 
         // --- Modify Saiga-12K ---
@@ -291,7 +299,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find Saiga-12K ({SAIGA_12K_TPL}) to modify.");
+            LogDebug($"Could not find Saiga-12K ({SAIGA_12K_TPL}) to modify.");
         }
 
         if (items.TryGetValue(SAIGA_12K_FULLATO_TPL, out var saiga12kfullato))
@@ -300,7 +308,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find Saiga-12K Full-Auto ({SAIGA_12K_FULLATO_TPL}) to modify.");
+            LogDebug($"Could not find Saiga-12K Full-Auto ({SAIGA_12K_FULLATO_TPL}) to modify.");
         }
 
         // --- Modify Benelli M3 ---
@@ -310,7 +318,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find Benelli M3 ({BENELLI_M3_TPL}) to modify.");
+            LogDebug($"Could not find Benelli M3 ({BENELLI_M3_TPL}) to modify.");
         }
 
         // --- Modify Mossberg 590A1 ---
@@ -320,7 +328,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find Mossberg 590A1 ({MOSSBERG_590A1_TPL}) to modify.");
+            LogDebug($"Could not find Mossberg 590A1 ({MOSSBERG_590A1_TPL}) to modify.");
         }
 
         // --- Modify MP-153 ---
@@ -330,7 +338,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find MP-153 ({MP153_TPL}) to modify.");
+            LogDebug($"Could not find MP-153 ({MP153_TPL}) to modify.");
         }
 
         // --- Modify KS-23 ---
@@ -340,7 +348,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find KS-23 ({KS23_TPL}) or its wire stock ({KS23_WIRE_STOCK_TPL}) to modify.");
+            LogDebug($"Could not find KS-23 ({KS23_TPL}) or its wire stock ({KS23_WIRE_STOCK_TPL}) to modify.");
         }
     }
 
@@ -357,7 +365,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find Barrikada slug ({BARRIKADA_SLUG_TPL}) to modify.");
+            LogDebug($"Could not find Barrikada slug ({BARRIKADA_SLUG_TPL}) to modify.");
         }
     }
 
@@ -375,7 +383,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find ETMI rail ({ETMI_019_RAIL_TPL}) to modify.");
+            LogDebug($"Could not find ETMI rail ({ETMI_019_RAIL_TPL}) to modify.");
         }
 
         if (items.TryGetValue(SPRM_RAIL_MOUNT_TPL, out var sprmRail))
@@ -384,7 +392,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find SPRM rail mount ({SPRM_RAIL_MOUNT_TPL}) to modify.");
+            LogDebug($"Could not find SPRM rail mount ({SPRM_RAIL_MOUNT_TPL}) to modify.");
         }
     }
 
@@ -393,7 +401,7 @@ public class Mod(
         var filter = rail.Properties?.Slots?.FirstOrDefault()?.Properties?.Filters?.FirstOrDefault()?.Filter;
         if (filter == null)
         {
-            logger.Warning($"Could not find the scope filter on rail {rail.Id}.");
+            LogDebug($"Could not find the scope filter on rail {rail.Id}.");
             return;
         }
 
@@ -407,7 +415,7 @@ public class Mod(
     {
         if (NEW_CARTRIDGE_IDS.Count == 0)
         {
-            logger.Warning("No new cartridge IDs were defined. Skipping cartridge addition.");
+            LogDebug("No new cartridge IDs were defined. Skipping cartridge addition.");
             return;
         }
 
@@ -429,7 +437,7 @@ public class Mod(
     {
         if (NEW_545_BUCK_AMMO_IDS.Count == 0)
         {
-            logger.Warning("No new 5.45 cartridge IDs were defined. Skipping addition.");
+            LogDebug("No new 5.45 cartridge IDs were defined. Skipping addition.");
             return;
         }
 
@@ -552,7 +560,7 @@ public class Mod(
         }
         else
         {
-            logger.Warning($"Could not find mod_mount filter on Mossberg 590A1 ({MOSSBERG_590A1_TPL}).");
+            LogDebug($"Could not find mod_mount filter on Mossberg 590A1 ({MOSSBERG_590A1_TPL}).");
         }
     }
 
@@ -560,7 +568,7 @@ public class Mod(
     {
         if (mp153.Properties?.Slots == null)
         {
-            logger.Warning($"MP-153 ({MP153_TPL}) has no slots. Skipping modification.");
+            LogDebug($"MP-153 ({MP153_TPL}) has no slots. Skipping modification.");
             return;
         }
 
@@ -581,7 +589,7 @@ public class Mod(
     {
         if (aa12.Properties == null)
         {
-            logger.Warning($"AA-12 ({aa12.Id}) has no properties. Skipping modification.");
+            LogDebug($"AA-12 ({aa12.Id}) has no properties. Skipping modification.");
             return;
         }
 
@@ -605,7 +613,7 @@ public class Mod(
             }
             else
             {
-                logger.Warning($"Could not find filter for slot index {slotIndex} on {saiga12k.Id}.");
+                LogDebug($"Could not find filter for slot index {slotIndex} on {saiga12k.Id}.");
             }
         }
 
@@ -619,7 +627,7 @@ public class Mod(
     {
         if (benelliM3.Properties == null)
         {
-            logger.Warning($"Benelli M3 ({BENELLI_M3_TPL}) has no properties. Skipping modification.");
+            LogDebug($"Benelli M3 ({BENELLI_M3_TPL}) has no properties. Skipping modification.");
             return;
         }
 

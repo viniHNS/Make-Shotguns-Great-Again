@@ -1,0 +1,22 @@
+{
+  "15adebd8749ee6289855584f": {
+    "_id": "15adebd8749ee6289855584f",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Bailiff 410 default",
+    "_parent": "942d4e44bef7cc9f847d6ceb",
+    "_items": [
+      {
+        "_id": "942d4e44bef7cc9f847d6ceb",
+        "_tpl": "6e3dfcf763fec3ef30a9e954"
+      },
+      {
+        "_id": "f96c50737f82852108444d0c",
+        "_tpl": "f214da7cd7c34d27f8086a1d",
+        "parentId": "942d4e44bef7cc9f847d6ceb",
+        "slotId": "mod_magazine"
+      }
+    ],
+    "_encyclopedia": "6e3dfcf763fec3ef30a9e954"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "PEACEKEEPER": {
+    "items": [
+      {
+        "_id": "8d2b479daf81a040da7e78a7",
+        "_tpl": "a885d565511eb39be5d9ee7e",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          },
+          "StackObjectsCount": 999999,
+          "UnlimitedCount": true,
+          "BuyRestrictionMax": 2
+        },
+        "parentId": "hideout",
+        "slotId": "hideout"
+      },
+      {
+        "_id": "93c2b42fa54174550b1e8b5b",
+        "_tpl": "665ae38202c6064011c73a4a",
+        "parentId": "8d2b479daf81a040da7e78a7",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "74a920cd01662743e9a0614b",
+        "_tpl": "404cd6ac317b73172b0fda02",
+        "parentId": "8d2b479daf81a040da7e78a7",
+        "slotId": "mod_magazine"
+      }
+    ],
+    "barter_scheme": {
+      "8d2b479daf81a040da7e78a7": [
+        [
+          {
+            "_tpl": "5696686a4bdc2da3298b456a",
+            "count": 1100
+          }
+        ]
+      ]
+    },
+    "loyal_level_items": {
+      "8d2b479daf81a040da7e78a7": 3
+    }
+  }
+}

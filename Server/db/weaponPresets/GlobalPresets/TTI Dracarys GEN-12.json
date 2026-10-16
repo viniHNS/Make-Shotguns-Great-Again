@@ -1,0 +1,213 @@
+{
+  "85f19fe8c65ba1fb0643d879": {
+    "_id": "85f19fe8c65ba1fb0643d879",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "TTI Dracarys GEN-12 Grey",
+    "_parent": "e92e0e0f581397ddc107a341",
+    "_items": [
+      {
+        "_id": "e92e0e0f581397ddc107a341",
+        "_tpl": "5db7c8f937454c211a9b6abf",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "a3ec6b2e1f45b3fc002f8eb1",
+        "_tpl": "c51219273cbdb3d240faf698",
+        "parentId": "e92e0e0f581397ddc107a341",
+        "slotId": "mod_pistol_grip"
+      },
+      {
+        "_id": "caa4c7b2af2d5d41c5f9699e",
+        "_tpl": "5649be884bdc2d79388b4577",
+        "parentId": "e92e0e0f581397ddc107a341",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "5f0455617c0e51dfb01b0f8e",
+        "_tpl": "5ea40da664d336517d40e641",
+        "parentId": "caa4c7b2af2d5d41c5f9699e",
+        "slotId": "mod_stock_000"
+      },
+      {
+        "_id": "b2ac344d14253d8b151d163b",
+        "_tpl": "3c893ca0df864892c4970258",
+        "parentId": "e92e0e0f581397ddc107a341",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "c7dbb452c2df0887571d9f1a",
+        "_tpl": "f00ba3722e268faae8e382a8",
+        "parentId": "e92e0e0f581397ddc107a341",
+        "slotId": "mod_reciever"
+      },
+      {
+        "_id": "35ed5e94ff7ae2366628f2c4",
+        "_tpl": "59826745f24ffdc4e68ce11f",
+        "parentId": "c7dbb452c2df0887571d9f1a",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "716f87f22bf21c73719e06f7",
+        "_tpl": "d3ae7dd7cb8a4ef4cf189925",
+        "parentId": "35ed5e94ff7ae2366628f2c4",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "53b795b6832cd822365eee74",
+        "_tpl": "6374b8ea6e2a1f031b8edb6f",
+        "parentId": "c7dbb452c2df0887571d9f1a",
+        "slotId": "mod_handguard"
+      }
+    ],
+    "_encyclopedia": "5db7c8f937454c211a9b6abf"
+  },
+  "7fc0502616b83467ac6b54c7": {
+    "_id": "7fc0502616b83467ac6b54c7",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "TTI Dracarys GEN-12 Black",
+    "_parent": "4228a7450c00730b35606f2f",
+    "_items": [
+      {
+        "_id": "4228a7450c00730b35606f2f",
+        "_tpl": "5db7c8f937454c211a9b6abf",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "bd7909de9f1f196f8c48556a",
+        "_tpl": "c51219273cbdb3d240faf698",
+        "parentId": "4228a7450c00730b35606f2f",
+        "slotId": "mod_pistol_grip"
+      },
+      {
+        "_id": "d3c32363e2950ec26f157f3b",
+        "_tpl": "5649be884bdc2d79388b4577",
+        "parentId": "4228a7450c00730b35606f2f",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "b9454ff4581da8af7650015c",
+        "_tpl": "5ea40da664d336517d40e641",
+        "parentId": "d3c32363e2950ec26f157f3b",
+        "slotId": "mod_stock_000"
+      },
+      {
+        "_id": "f2e0ac1a2679dd88e8be5f61",
+        "_tpl": "3c893ca0df864892c4970258",
+        "parentId": "4228a7450c00730b35606f2f",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "0786b9349688a060dd1d2a41",
+        "_tpl": "8194711ae34a9cd37c4a3033",
+        "parentId": "4228a7450c00730b35606f2f",
+        "slotId": "mod_reciever"
+      },
+      {
+        "_id": "ddf36416d3a960507a7d2f68",
+        "_tpl": "59826745f24ffdc4e68ce11f",
+        "parentId": "0786b9349688a060dd1d2a41",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "8d3436d9bb900daee2ff8983",
+        "_tpl": "d3ae7dd7cb8a4ef4cf189925",
+        "parentId": "ddf36416d3a960507a7d2f68",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "42afe42a17ee8127e161daa5",
+        "_tpl": "9bcbdc63c5362c0992b3609e",
+        "parentId": "0786b9349688a060dd1d2a41",
+        "slotId": "mod_handguard"
+      }
+    ]
+  },
+  "a9e3feeb475fa0841062b622": {
+    "_id": "a9e3feeb475fa0841062b622",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "TTI Dracarys GEN-12 FDE",
+    "_parent": "c1d1b2e42e7d2e3add8a7e74",
+    "_items": [
+      {
+        "_id": "c1d1b2e42e7d2e3add8a7e74",
+        "_tpl": "5db7c8f937454c211a9b6abf",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "960186477b2b0ca763f2a60e",
+        "_tpl": "c51219273cbdb3d240faf698",
+        "parentId": "c1d1b2e42e7d2e3add8a7e74",
+        "slotId": "mod_pistol_grip"
+      },
+      {
+        "_id": "ade79a14bbe36a6db42d6913",
+        "_tpl": "5649be884bdc2d79388b4577",
+        "parentId": "c1d1b2e42e7d2e3add8a7e74",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "eb858df4839bd2b203e4fcf8",
+        "_tpl": "5ea40da664d336517d40e641",
+        "parentId": "ade79a14bbe36a6db42d6913",
+        "slotId": "mod_stock_000"
+      },
+      {
+        "_id": "3eceb17dae8b9eb0f9e61042",
+        "_tpl": "3c893ca0df864892c4970258",
+        "parentId": "c1d1b2e42e7d2e3add8a7e74",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "6330a8efda412e885433d3b9",
+        "_tpl": "85577e55463212a89ca5864c",
+        "parentId": "c1d1b2e42e7d2e3add8a7e74",
+        "slotId": "mod_reciever"
+      },
+      {
+        "_id": "d977276cd2699beb4cb7f1a6",
+        "_tpl": "59826745f24ffdc4e68ce11f",
+        "parentId": "6330a8efda412e885433d3b9",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "a3c337ded0077e5b62d6b47e",
+        "_tpl": "d3ae7dd7cb8a4ef4cf189925",
+        "parentId": "d977276cd2699beb4cb7f1a6",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "38182008a228ac4414c75238",
+        "_tpl": "a5891b6421140c63068c27e9",
+        "parentId": "6330a8efda412e885433d3b9",
+        "slotId": "mod_handguard"
+      }
+    ]
+  }
+}

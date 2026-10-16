@@ -1,0 +1,109 @@
+{
+  "6305eaeb0e9d3573f7854132": {
+    "_id": "6305eaeb0e9d3573f7854132",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Panzer Arms SCR-XII",
+    "_parent": "e87c81f8ce021b365f99866e",
+    "_items": [
+      {
+        "_id": "e87c81f8ce021b365f99866e",
+        "_tpl": "942a7379f8a5005fb72aab36",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "53f3158821d26ef9625941df",
+        "_tpl": "55d4b9964bdc2d1d4e8b456e",
+        "parentId": "e87c81f8ce021b365f99866e",
+        "slotId": "mod_pistol_grip"
+      },
+      {
+        "_id": "b58921016433cafe22cb2468",
+        "_tpl": "1e70902e9924798d0fd0dd01",
+        "parentId": "e87c81f8ce021b365f99866e",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "9740e78ba92dddbc3ee75194",
+        "_tpl": "0d02a125c0f623e82561b4dd",
+        "parentId": "e87c81f8ce021b365f99866e",
+        "slotId": "mod_reciever"
+      },
+      {
+        "_id": "76f661b4c77f54d7e1c8da36",
+        "_tpl": "36d9e29e9e18cae29f415304",
+        "parentId": "9740e78ba92dddbc3ee75194",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "8c7cd36021e94c438f88d424",
+        "_tpl": "61816fcad92c473c770215cc",
+        "parentId": "76f661b4c77f54d7e1c8da36",
+        "slotId": "mod_sight_front"
+      },
+      {
+        "_id": "b456a2ad0f774a87afb0497a",
+        "_tpl": "61817865d3a39d50044c13a4",
+        "parentId": "9740e78ba92dddbc3ee75194",
+        "slotId": "mod_sight_rear"
+      },
+      {
+        "_id": "9500a21988f562c5c9f4b53b",
+        "_tpl": "61816df1d3a39d50044c139e",
+        "parentId": "9740e78ba92dddbc3ee75194",
+        "slotId": "mod_mount_000"
+      },
+      {
+        "_id": "ccdca3b14044a5191c12972e",
+        "_tpl": "61965d9058ef8c428c287e0d",
+        "parentId": "9500a21988f562c5c9f4b53b",
+        "slotId": "mod_mount"
+      },
+      {
+        "_id": "69ed615ca346c1913c217f79",
+        "_tpl": "61816dfa6ef05c2ce828f1ad",
+        "parentId": "9740e78ba92dddbc3ee75194",
+        "slotId": "mod_mount_001"
+      },
+      {
+        "_id": "5e419cb96f0e63d80b48036e",
+        "_tpl": "61825d06d92c473c770215de",
+        "parentId": "e87c81f8ce021b365f99866e",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "c83ca8b84909039fdbc243ad",
+        "_tpl": "61825d136ef05c2ce828f1cc",
+        "parentId": "5e419cb96f0e63d80b48036e",
+        "slotId": "mod_stock_001"
+      },
+      {
+        "_id": "48353dfec662e481f469a726",
+        "_tpl": "618167616ef05c2ce828f1a8",
+        "parentId": "c83ca8b84909039fdbc243ad",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "e28704f2150b33e724904f0d",
+        "_tpl": "61825d24d3a39d50044c13af",
+        "parentId": "5e419cb96f0e63d80b48036e",
+        "slotId": "mod_stock_002"
+      },
+      {
+        "_id": "a19b824cbe8bb5578cdeec94",
+        "_tpl": "6181688c6c780c1e710c9b04",
+        "parentId": "e87c81f8ce021b365f99866e",
+        "slotId": "mod_charge"
+      }
+    ],
+    "_encyclopedia": "942a7379f8a5005fb72aab36"
+  }
+}

@@ -12,6 +12,7 @@
       "Weight": 2.1,
       "RecoilForceBack": 1200,
       "RecoilForceUp": 2200,
+      "defAmmo": "6910e1cbbd20f63a9791742e",
       "ammoCaliber": "Caliber17.8x89",
       "Chambers": [
         {

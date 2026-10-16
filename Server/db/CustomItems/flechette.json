@@ -15,7 +15,7 @@
       "BulletDiameterMilimeters": 2,
       "ammoAccr": -13,
       "Damage": 23,
-      "AmmoRec": 15,
+      "ammoRec": 15,
       "HeatFactor": 2.3,
       "ProjectileCount": 10
     },

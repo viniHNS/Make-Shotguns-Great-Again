@@ -1,0 +1,801 @@
+{
+  "942a7379f8a5005fb72aab36": {
+    "itemTplToClone": "576165642459773c7a400233",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "weapon_panzer_scr12_12g_container.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.85,
+      "Ergonomics": 46,
+      "Width": 1,
+      "Height": 1,
+      "ExtraSizeLeft": 0,
+      "ExtraSizeRight": 0,
+      "ExtraSizeUp": 0,
+      "ExtraSizeDown": 0,
+      "ExtraSizeForceAdd": false,
+      "weapFireType": [
+        "single"
+      ],
+      "isBoltCatch": true,
+      "Foldable": true,
+      "FoldedSlot": "mod_stock",
+      "ReloadMode": "ExternalMagazine",
+      "defMagType": "1e70902e9924798d0fd0dd01",
+      "RecoilForceUp": 298,
+      "RecoilForceBack": 526,
+      "RecoilReturnSpeedHandRotation": 2.5,
+      "RecoilDampingHandRotation": 0.87,
+      "CameraSnap": 3.4,
+      "RecoilCamera": 0.05,
+      "RecolDispersion": 10,
+      "RecoilCategoryMultiplierHandRotation": 0.19,
+      "RotationCenter": {
+        "x": 0,
+        "y": -0.1,
+        "z": 0
+      },
+      "RotationCenterNoStock": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "RecoilCenter": {
+        "x": 0,
+        "y": -0.24,
+        "z": 0
+      },
+      "AimPlane": 0.16,
+      "IronSightRange": 50,
+      "Slots": [
+        {
+          "_id": "085259499097a0b5c89efedd",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_pistol_grip",
+          "_parent": "942a7379f8a5005fb72aab36",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "55d4b9964bdc2d1d4e8b456e",
+                  "571659bb2459771fb2755a12",
+                  "602e71bd53a60014f9705bfa",
+                  "6113c3586c780c1e710c90bc",
+                  "6113cc78d3a39d50044c065a",
+                  "6113cce3d92c473c770200c7",
+                  "5cc9bcaed7f00c011c04e179",
+                  "5bb20e18d4351e00320205d5",
+                  "5bb20e0ed4351e3bac1212dc",
+                  "6193dcd0f8ee7e52e4210a28",
+                  "5d025cc1d7ad1a53845279ef",
+                  "5c6d7b3d2e221600114c9b7d",
+                  "57c55efc2459772d2c6271e7",
+                  "57af48872459771f0b2ebf11",
+                  "57c55f092459772d291a8463",
+                  "57c55f112459772d28133310",
+                  "57c55f172459772d27602381",
+                  "5a339805c4a2826c6e06d73d",
+                  "55802f5d4bdc2dac148b458f",
+                  "5d15cf3bd7ad1a67e71518b2",
+                  "59db3a1d86f77429e05b4e92",
+                  "5fbcbd6c187fea44d52eda14",
+                  "59db3acc86f7742a2c4ab912",
+                  "59db3b0886f77429d72fb895",
+                  "615d8faecabb9b7ad90f4d5d",
+                  "5b07db875acfc40dc528a5f6",
+                  "63f5feead259b42f0b4d6d0f",
+                  "652911675ae2ae97b80fdf3c",
+                  "c51219273cbdb3d240faf698"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "5449697834beb2b2e26cdd85",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "942a7379f8a5005fb72aab36",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": -1,
+                "Filter": [
+                  "1e70902e9924798d0fd0dd01",
+                  "01cdd2822a8d2ff0e1090179"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": false
+        },
+        {
+          "_id": "94e65044e3f2c309e716dd22",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_reciever",
+          "_parent": "942a7379f8a5005fb72aab36",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "0d02a125c0f623e82561b4dd"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "f2bddb1ef6f97ca8badd33f1",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "942a7379f8a5005fb72aab36",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61816734d8e3106d9806c1f3",
+                  "61825d06d92c473c770215de",
+                  "66ffc20ba73a7bce3d0b45ab",
+                  "66ffbfb1a73a7bce3d0b45a8",
+                  "66ffc246a81a4f85e70d4d06"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "4014b09d10be137e06ec0aa5",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_charge",
+          "_parent": "942a7379f8a5005fb72aab36",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "6181688c6c780c1e710c9b04"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "cbcd0390691ab3f442f546db",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "942a7379f8a5005fb72aab36",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Panzer Arms SCR-XII 12ga shotgun",
+        "shortName": "SCR-XII",
+        "description": "A semi-automatic 12 gauge shotgun built by Panzer Arms of Turkey in the image of the FN SCAR: the same lower, folding stock, flip-up sights and modular rails, with a 12 gauge upper receiver, a 406mm barrel threaded for Saiga-12 pattern muzzle devices and dedicated Mk12 box magazines. Most FN SCAR stocks, rails and accessories fit it."
+      },
+      "po": {
+        "name": "Escopeta Panzer Arms SCR-XII 12ga",
+        "shortName": "SCR-XII",
+        "description": "Escopeta semiautomática calibre 12 da turca Panzer Arms, feita à imagem da FN SCAR: o mesmo lower, coronha dobrável, miras rebatíveis e trilhos modulares, com upper receiver de calibre 12, cano de 406 mm com rosca para bocais do padrão Saiga-12 e carregadores Mk12 próprios. Aceita a maioria das coronhas, trilhos e acessórios da FN SCAR."
+      }
+    },
+    "fleaPriceRoubles": 35000,
+    "handbookPriceRoubles": 28000,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  },
+  "0d02a125c0f623e82561b4dd": {
+    "itemTplToClone": "6165aeedfaa1272e431521e3",
+    "parentId": "55818a304bdc2db5418b457d",
+    "handbookParentId": "5b5f764186f77447ec5d7714",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "reciever_panzer_scr12_12g_fde.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.22,
+      "Ergonomics": 2,
+      "Recoil": -1,
+      "ConflictingItems": [],
+      "Slots": [
+        {
+          "_id": "633fb16fb593efa4fc39f634",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_scope",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "57ac965c24597706be5f975c",
+                  "57aca93d2459771f2c7e26db",
+                  "544a3f024bdc2d1d388b4568",
+                  "544a3a774bdc2d3a388b4567",
+                  "5d2dc3e548f035404a1a4798",
+                  "57adff4f24597737f373b6e6",
+                  "5c0517910db83400232ffee5",
+                  "591c4efa86f7741030027726",
+                  "570fd79bd2720bc7458b4583",
+                  "570fd6c2d2720bc6458b457f",
+                  "558022b54bdc2dac148b458d",
+                  "5c07dd120db834001c39092d",
+                  "5c0a2cec0db834001b7ce47d",
+                  "58491f3324597764bc48fa02",
+                  "584924ec24597768f12ae244",
+                  "5b30b0dc5acfc400153b7124",
+                  "6165ac8c290d254f5e6b2f6c",
+                  "60a23797a37c940de7062d02",
+                  "5d2da1e948f035477b1ce2ba",
+                  "5c0505e00db834001b735073",
+                  "609a63b6e2ff132951242d09",
+                  "584984812459776a704a82a6",
+                  "59f9d81586f7744c7506ee62",
+                  "570fd721d2720bc5458b4596",
+                  "57ae0171245977343c27bfcf",
+                  "5dfe6104585a0c3e995c7b82",
+                  "544a3d0a4bdc2d1b388b4567",
+                  "5d1b5e94d7ad1a2b865a96b0",
+                  "609bab8b455afd752b2e6138",
+                  "58d39d3d86f77445bb794ae7",
+                  "616554fe50224f204c1da2aa",
+                  "5c7d55f52e221644f31bff6a",
+                  "616584766ef05c2ce828ef57",
+                  "5b3b6dc75acfc47a8773fb1e",
+                  "615d8d878004cc50514c3233",
+                  "5b2389515acfc4771e1be0c0",
+                  "577d128124597739d65d0e56",
+                  "618b9643526131765025ab35",
+                  "618bab21526131765025ab3f",
+                  "5c86592b2e2216000e69e77c",
+                  "5a37ca54c4a282000d72296a",
+                  "5d0a29fed7ad1a002769ad08",
+                  "5c064c400db834001d23f468",
+                  "58d2664f86f7747fec5834f6",
+                  "57c69dd424597774c03b7bbc",
+                  "5b3b99265acfc4704b4a1afb",
+                  "5aa66a9be5b5b0214e506e89",
+                  "5aa66c72e5b5b00016327c93",
+                  "5c1cdd302e221602b3137250",
+                  "61714b2467085e45ef140b2c",
+                  "6171407e50224f204c1da3c5",
+                  "61713cc4d8e3106d9806c109",
+                  "5b31163c5acfc400153b71cb",
+                  "5a33b652c4a28232996e407c",
+                  "5a33b2c9c4a282000c5a9511",
+                  "59db7eed86f77461f8380365",
+                  "5a1ead28fcdbcb001912fa9f",
+                  "5dff77c759400025ea5150cf",
+                  "626bb8532c923541184624b4",
+                  "62811f461d5df4475f46a332",
+                  "63fc449f5bd61c6cf3784a88",
+                  "6477772ea8a38bb2050ed4db",
+                  "6478641c19d732620e045e17",
+                  "64785e7c19d732620e045e15",
+                  "653931da5db71d30ab1d6296",
+                  "65392f611406374f82152ba5",
+                  "655f13e0a246670fb0373245",
+                  "6567e751a715f85433025998",
+                  "67641a851b2899700609901a",
+                  "6761759e7ee06333f108bf86",
+                  "68a5ab09c44fa287ba0a97b5"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "8049cd59158ca2d1ae99fd9d",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "36d9e29e9e18cae29f415304"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "84d2cb192dc40e5ea7410340",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_sight_rear",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61817865d3a39d50044c13a4",
+                  "5bb20e49d4351e3bac1212de",
+                  "5ba26b17d4351e00367f9bdd",
+                  "5dfa3d7ac41b2312ea33362a",
+                  "5c1780312e221602b66cc189",
+                  "5fb6564947ce63734e3fa1da",
+                  "5bc09a18d4351e003562b68e",
+                  "5c18b9192e2216398b5a8104",
+                  "5fc0fa957283c4046c58147e",
+                  "5894a81786f77427140b8347",
+                  "55d5f46a4bdc2d1b198b4567",
+                  "5ae30bad5acfc400185c2dc4"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "187be9c40238681704903437",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_sight_front",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5ba26b01d4351e0085325a51",
+                  "5dfa3d950dee1b22f862eae0",
+                  "5c17804b2e2216152006c02f",
+                  "5fb6567747ce63734e3fa1dc",
+                  "5bc09a30d4351e00367fb7c8",
+                  "5c18b90d2e2216152142466b",
+                  "5fc0fa362770a0045c59c677",
+                  "5894a73486f77426d259076c"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "d3b637c8c692f57f37f79070",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_tactical_000",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "57fd23e32459772d0805bcf1",
+                  "544909bb4bdc2d6f028b4577",
+                  "5d10b49bd7ad1a1a560708b0",
+                  "5c06595c0db834001a66af6c",
+                  "5a7b483fe899ef0016170d15",
+                  "61605d88ffa6e502ac5e7eeb",
+                  "5c5952732e2216398b5abda2",
+                  "644a3df63b0b6f03e101e065"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "a3f33c5d1fbdf0d1da26c630",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_000",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61816df1d3a39d50044c139e",
+                  "619666f4af1f5202c57a952d",
+                  "66ffc6ceb7ff397142017c3a",
+                  "66ffc72082d36dec82030c1f",
+                  "66ffc903fe9b382596065304",
+                  "66ffe811f5d758d71101e89a",
+                  "66ffea06132225f0fe061394"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "1eff3c1005108ad8c0e1d219",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_001",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61816dfa6ef05c2ce828f1ad",
+                  "66ffe66a20771d839f0fb4a9",
+                  "66ffe6916f11538c7d0581e1",
+                  "66ffe6c36f11538c7d0581e3",
+                  "66ffe7bab8da88805e07a03e"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "f54beff7d49f63bb9b0f50f3",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_002",
+          "_parent": "0d02a125c0f623e82561b4dd",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5649a2464bdc2d91118b45a8"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Panzer Arms SCR-XII 12ga upper receiver (FDE)",
+        "shortName": "SCR-XII FDE",
+        "description": "The 12 gauge upper receiver of the Panzer Arms SCR-XII, based on the FN SCAR-H upper with an enlarged ejection port for shotgun shells. Takes the SCAR rails, sights and optics."
+      },
+      "po": {
+        "name": "Upper receiver Panzer Arms SCR-XII 12ga (FDE)",
+        "shortName": "SCR-XII FDE",
+        "description": "Upper receiver calibre 12 da Panzer Arms SCR-XII, baseado no upper da FN SCAR-H com a janela de ejeção alongada para cartuchos de escopeta. Aceita os trilhos, miras e ópticas da SCAR."
+      }
+    },
+    "fleaPriceRoubles": 15000,
+    "handbookPriceRoubles": 12000,
+    "addtoTraders": true,
+    "traders": {
+      "PEACEKEEPER": {
+        "9b2f29785e5b46de3d08c850": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999
+          },
+          "barters": [
+            {
+              "count": 65,
+              "_tpl": "MONEY_DOLLARS"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "36d9e29e9e18cae29f415304": {
+    "itemTplToClone": "670fced86a7e274b1a0964e8",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_panzer_scr12_406mm_12g.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.95,
+      "Ergonomics": -11,
+      "Recoil": -5,
+      "Velocity": 3.9,
+      "CenterOfImpact": 0.62,
+      "DeviationMax": 9,
+      "ShotgunDispersion": 1.45,
+      "Width": 4,
+      "Height": 1,
+      "ExtraSizeLeft": 2,
+      "ExtraSizeRight": 0,
+      "ExtraSizeForceAdd": true,
+      "ConflictingItems": [],
+      "Slots": [
+        {
+          "_id": "6e22a4b35ad0e142f112aaf7",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_muzzle",
+          "_parent": "36d9e29e9e18cae29f415304",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "d3ae7dd7cb8a4ef4cf189925",
+                  "58272d7f2459774f6311ddfd",
+                  "59fb137a86f7740adb646af1",
+                  "576167ab2459773cad038c43",
+                  "5b363e1b5acfc4771e1c5e80",
+                  "59c0ec5b86f77435b128bfca"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "748a24dd956993ff91b77299",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_sight_front",
+          "_parent": "36d9e29e9e18cae29f415304",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "61816fcad92c473c770215cc"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "SCR-XII 12ga 406mm barrel",
+        "shortName": "SCR-XII 406mm",
+        "description": "A 406mm (16\") 12 gauge barrel for the Panzer Arms SCR-XII, threaded for Saiga-12 pattern muzzle devices."
+      },
+      "po": {
+        "name": "Cano 406mm para SCR-XII 12ga",
+        "shortName": "SCR-XII 406mm",
+        "description": "Cano calibre 12 de 406 mm (16\") para a Panzer Arms SCR-XII, com rosca para bocais do padrão Saiga-12."
+      }
+    },
+    "fleaPriceRoubles": 27500,
+    "handbookPriceRoubles": 22000,
+    "addtoTraders": true,
+    "traders": {
+      "PEACEKEEPER": {
+        "171950f4b910cda2f3ea9694": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999
+          },
+          "barters": [
+            {
+              "count": 210,
+              "_tpl": "MONEY_DOLLARS"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "1e70902e9924798d0fd0dd01": {
+    "itemTplToClone": "57616a9e2459773c7a400234",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "mag_panzer_scr12_mk12_12g_5.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.24,
+      "Ergonomics": -2,
+      "magAnimationIndex": 0,
+      "Cartridges": [
+        {
+          "_id": "333a691e68d9ae0e4bac70e1",
+          "_max_count": 5,
+          "_name": "cartridges",
+          "_parent": "1e70902e9924798d0fd0dd01",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "SCR-XII 12ga Mk12 5-round magazine",
+        "shortName": "Mk12 5",
+        "description": "A 5-round Mk12 steel box magazine for the Panzer Arms SCR-XII."
+      },
+      "po": {
+        "name": "Carregador Mk12 de 5 munições para SCR-XII 12ga",
+        "shortName": "Mk12 5",
+        "description": "Carregador Mk12 de aço com capacidade para 5 munições, para a Panzer Arms SCR-XII."
+      }
+    },
+    "fleaPriceRoubles": 5625,
+    "handbookPriceRoubles": 4500,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "PEACEKEEPER": {
+        "18f0632a326b308db3e0d296": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 10
+          },
+          "barters": [
+            {
+              "count": 40,
+              "_tpl": "MONEY_DOLLARS"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "01cdd2822a8d2ff0e1090179": {
+    "itemTplToClone": "5a966f51a2750c00156aacf6",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "mag_panzer_scr12_mk12_12g_10.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.38,
+      "Ergonomics": -6,
+      "magAnimationIndex": 0,
+      "Cartridges": [
+        {
+          "_id": "1622c15b6cc03dd59eafc815",
+          "_max_count": 10,
+          "_name": "cartridges",
+          "_parent": "01cdd2822a8d2ff0e1090179",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "SCR-XII 12ga Mk12 10-round magazine",
+        "shortName": "Mk12 10",
+        "description": "A curved 10-round Mk12 steel box magazine for the Panzer Arms SCR-XII."
+      },
+      "po": {
+        "name": "Carregador Mk12 de 10 munições para SCR-XII 12ga",
+        "shortName": "Mk12 10",
+        "description": "Carregador Mk12 curvo de aço com capacidade para 10 munições, para a Panzer Arms SCR-XII."
+      }
+    },
+    "fleaPriceRoubles": 10000,
+    "handbookPriceRoubles": 8000,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "PEACEKEEPER": {
+        "381a74aec075f3f8894800de": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 10
+          },
+          "barters": [
+            {
+              "count": 70,
+              "_tpl": "MONEY_DOLLARS"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

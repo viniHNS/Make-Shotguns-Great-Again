@@ -1,0 +1,377 @@
+{
+  "bb588a5a9ed5cb07327eba77": {
+    "itemTplToClone": "5e870397991fd70db46995c8",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "weapon_mossberg_590m_12g_container.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 1.51,
+      "Ergonomics": 50,
+      "RecoilForceUp": 400,
+      "RecoilForceBack": 469,
+      "ReloadMode": "ExternalMagazine",
+      "isFastReload": true,
+      "isBoltCatch": false,
+      "defMagType": "acf7e1a5c0029dd024ba2cf4",
+      "Slots": [
+        {
+          "_id": "762eba238276520e2b6ec674",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "bb588a5a9ed5cb07327eba77",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "162b0d6a578295ec06b77318"
+                ],
+                "Shift": 0,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "ae0799dd20e3b77833a1bd1f",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_handguard",
+          "_parent": "bb588a5a9ed5cb07327eba77",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "606eedf13730da2369b2ca2e",
+                  "5eea21647547d6330471b3c9",
+                  "5e87076ce2db31558c75a11d"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "223950f4d9cc2f889d21c1d7",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "bb588a5a9ed5cb07327eba77",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": -1,
+                "Filter": [
+                  "acf7e1a5c0029dd024ba2cf4"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": false
+        },
+        {
+          "_id": "46d90b5b73814f7953f576a3",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "bb588a5a9ed5cb07327eba77",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "d7c4f475ae1508ebf78d05b9",
+                  "5eea217fc64c5d0dfc05712a",
+                  "5ef1b9f0c64c5d0dfc0571a1",
+                  "5e87116b81c4ed43e83cefdd"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "388599eb71a151b0d940c6bb",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount",
+          "_parent": "bb588a5a9ed5cb07327eba77",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e87114fe2db31558c75a120",
+                  "5eeb2ff5ea4f8b73c827350b",
+                  "55d48a634bdc2d8b2f8b456a"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "b11569d04410366939ded83a",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "bb588a5a9ed5cb07327eba77",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Mossberg 590M 12ga pump-action shotgun",
+        "shortName": "590M",
+        "description": "A magazine-fed derivative of the Mossberg 590 pump-action shotgun. It keeps the proven 590 action, heavy-walled 18.5\" barrel and standard furniture, but feeds from a detachable double-stack box magazine inserted in front of the trigger guard, making reloads much faster than with a tube."
+      },
+      "po": {
+        "name": "Escopeta de ação por bombeamento Mossberg 590M 12ga",
+        "shortName": "590M",
+        "description": "Derivada da escopeta de ação por bombeamento Mossberg 590 alimentada por carregador. Mantém o mecanismo consagrado da 590, o cano de parede grossa de 18,5\" e a mobília padrão, mas é alimentada por um carregador destacável de fila dupla inserido à frente do guarda-mato, o que deixa a recarga muito mais rápida do que com um tubo."
+      }
+    },
+    "fleaPriceRoubles": 58000,
+    "handbookPriceRoubles": 46500,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  },
+  "162b0d6a578295ec06b77318": {
+    "itemTplToClone": "5e87071478f43e51ca2de5e1",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_590m_mossberg_470mm_12g.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.75,
+      "Ergonomics": -7,
+      "Velocity": 4.2,
+      "ConflictingItems": [],
+      "Slots": [
+        {
+          "_id": "0a53df368eb9a4d317d7ef78",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_sight_front",
+          "_parent": "162b0d6a578295ec06b77318",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e8708d4ae379e67d22e0102"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Mossberg 590M 12ga 470mm barrel",
+        "shortName": "590M 470mm",
+        "description": "The heavy-walled 470mm (18.5\") barrel of the Mossberg 590M with its front bead sight. It is fixed to the weapon."
+      },
+      "po": {
+        "name": "Cano de 470 mm 12ga da Mossberg 590M",
+        "shortName": "590M 470mm",
+        "description": "Cano de parede grossa de 470 mm (18,5\") da Mossberg 590M, com maça de mira. É fixo na arma."
+      }
+    },
+    "fleaPriceRoubles": 12000,
+    "handbookPriceRoubles": 9800,
+    "addtoTraders": false
+  },
+  "606eedf13730da2369b2ca2e": {
+    "itemTplToClone": "5e87076ce2db31558c75a11d",
+    "parentId": "55818a104bdc2db9688b4569",
+    "handbookParentId": "5b5f75e486f77447ec5d7712",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "handguard_590m_mossberg_pump.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "ConflictingItems": []
+    },
+    "locales": {
+      "en": {
+        "name": "Mossberg 590M forend",
+        "shortName": "590M forend",
+        "description": "The standard ribbed polymer pump forend of the Mossberg 590M. Also fits the Mossberg 590A1."
+      },
+      "po": {
+        "name": "Telha da Mossberg 590M",
+        "shortName": "590M telha",
+        "description": "Telha padrão de polímero com nervuras da Mossberg 590M. Também serve na Mossberg 590A1."
+      }
+    },
+    "fleaPriceRoubles": 1900,
+    "handbookPriceRoubles": 1500,
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_handguard"
+    ],
+    "addtoTraders": false
+  },
+  "d7c4f475ae1508ebf78d05b9": {
+    "itemTplToClone": "5e87116b81c4ed43e83cefdd",
+    "parentId": "55818a594bdc2db9688b456a",
+    "handbookParentId": "5b5f757486f774093e6cb507",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "stock_590m_mossberg_std.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "ConflictingItems": []
+    },
+    "locales": {
+      "en": {
+        "name": "Mossberg 590M stock",
+        "shortName": "590M stock",
+        "description": "The standard synthetic stock of the Mossberg 590M. Also fits the Mossberg 590A1."
+      },
+      "po": {
+        "name": "Coronha da Mossberg 590M",
+        "shortName": "590M coronha",
+        "description": "Coronha sintética padrão da Mossberg 590M. Também serve na Mossberg 590A1."
+      }
+    },
+    "fleaPriceRoubles": 1900,
+    "handbookPriceRoubles": 1500,
+    "addtoModSlots": true,
+    "modSlot": [
+      "mod_stock"
+    ],
+    "addtoTraders": false
+  },
+  "acf7e1a5c0029dd024ba2cf4": {
+    "itemTplToClone": "5a966f51a2750c00156aacf6",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "mag_590m_mossberg_12g_10.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.3,
+      "Ergonomics": -5,
+      "Height": 2,
+      "ExtraSizeDown": 1,
+      "magAnimationIndex": 4,
+      "Cartridges": [
+        {
+          "_id": "35f4d49bfeefe355bb6f0a7d",
+          "_max_count": 10,
+          "_name": "cartridges",
+          "_parent": "acf7e1a5c0029dd024ba2cf4",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Mossberg 590M 12ga 10-round magazine",
+        "shortName": "590M 10",
+        "description": "A 10-round double-stack polymer magazine for the Mossberg 590M."
+      },
+      "po": {
+        "name": "Carregador de 10 munições Mossberg 590M 12ga",
+        "shortName": "590M 10",
+        "description": "Carregador de polímero de fila dupla com 10 munições para a Mossberg 590M."
+      }
+    },
+    "fleaPriceRoubles": 9000,
+    "handbookPriceRoubles": 7260,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "PEACEKEEPER": {
+        "aa80671228f3ff5116a28bf2": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 10
+          },
+          "barters": [
+            {
+              "count": 60,
+              "_tpl": "MONEY_DOLLARS"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

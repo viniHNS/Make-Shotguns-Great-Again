@@ -4,7 +4,7 @@
 
 Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachments and ammo, Dragon's Breath sparks, and a malfunction overhaul.
 
-![Version](https://img.shields.io/badge/version-1.17.0-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.18.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -12,7 +12,6 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 
 [Features](#features) · [Install](#install) · [New Guns](#new-guns) · [New Ammo](#new-ammo) · [Configuration](#configuration) · [Build](#build-from-source)
 
-**English** · [Português](README_BR.md)
 
 ![fire](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTZiZzdxeXJ0eTBxNWNtbHVxdzBweWkxbjhiNnJoc2ZiOTh4a3VzZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/u1aUNE2xRmk3xUaSAJ/giphy.gif)
 
@@ -42,10 +41,11 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 - **KS-23 optics fix**: optics on the KS-23 rail now hit where the reticle points.
 - **MP-18 suppressed sound**: a suppressed MP-18 now sounds suppressed. The game had the sound in the wrong slot of the weapon.
 - **Buckshot from any gun**: buckshot fired from non-shotguns (like the 5.45x39 Svalka from an AK) spreads its pellets instead of hitting a single point.
+- **Forced malfunction keys (debug)**: enable the option in the F12 menu and press Numpad 1–5 to force a misfire, jam, hard slide, soft slide or feed failure on your next shot. Off by default; press the same key again to cancel. Bots are never affected.
 
 **New content**
 
-- 5 [guns](#new-guns), 15 [attachments](#new-attachments) and 14 [ammo items](#new-ammo), available through traders and Workbench crafts.
+- 15 [guns](#new-guns), 45 [attachments](#new-attachments) and 17 [ammo items](#new-ammo), available through traders and Workbench crafts where applicable.
 - Six quests: three Skier jobs unlock the VR80 builds, and Jaeger's Hunter's Dream unlocks the new .700 Nitro loads.
 - Scavs can spawn with the MP-12 and MP-700 and load FRAG-12, Hellfire and .700 Nitro rounds. Tagilla can load Hellfire.
 
@@ -81,14 +81,18 @@ Both parts are required: the server adds the items and the client handles the ef
 | MP-700 Shorty .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (145,000 ₽). Full build at Jaeger LL3 (215,746 ₽) |
 | ZiD SP-81 23x75 pistol | 23x75 | Mechanic LL2 (65,321 ₽). A signal pistol rebuilt for 23x75 rounds; it can't fire flares |
 | Rock Island Armory VR80 12ga semi-automatic shotgun | 12/70 | Skier LL1 barter after Foreign Stock; LL2 purchase (110,000 ₽) after Repeat Business. Factory build with a 5-round magazine |
+| Taurus Raging Judge .410 revolver | .410/76 | Jaeger LL2 (65,000 ₽) |
+| Bailiff 410 revolver | .410/76 | Jaeger LL2 (48,000 ₽) |
+| Remington Model 7188 12ga select-fire shotgun | 12/70 | Peacekeeper LL3 ($785), or barter for an MP-153, 2 Gunpowder "Hawk" and 1 Weapon parts |
+| TTI JW4 Dracarys GEN-12 12ga semi-automatic shotgun | 12/70 | Peacekeeper LL3 ($1,100), in JW4 Grey, Black or FDE |
+| Mossberg 590M 12ga pump-action shotgun | 12/70 | Peacekeeper LL2 ($550) |
+| Saiga-12 "Spike" 12ga bullpup shotgun | 12/70 | Mechanic LL2 (80,000 ₽) |
+| KS-23K 23x75 bullpup shotgun | 23x75 | Prapor LL3 (78,000 ₽) |
+| Panzer Arms SCR-XII 12ga shotgun | 12/70 | Peacekeeper LL3 ($1,150) |
+| Monolith Arms P-12 12ga pump-action bullpup shotgun | 12/70 | Peacekeeper LL3 ($1,100) |
+| MTs 20-01 20ga bolt-action shotgun | 20/70 | Jaeger LL1 (12,000 ₽; limit 5); Flea Market (21,000 ₽) |
 
-The MP-700 Shorty is a sawed-off MP-700: no stock, short barrel, brutal recoil.
-
-The VR80 is a gas-operated semi-automatic shotgun with AR-style controls, a 508mm barrel and detachable 5- and 10-round box magazines. Its factory M-LOK handguard accepts compatible grips and accessory mounts; the top rail accepts optics. The factory stock includes the pistol grip. The factory build weighs 3.35 kg with an empty 5-round magazine.
-
-After **Foreign Stock**, Skier LL1 trades the factory VR80 for one Dan Jackiel whiskey, one Tarkovskaya vodka and two Wilston cigarettes (one weapon per restock). Complete **Repeat Business** at Skier LL2 to unlock the 110,000 ₽ cash purchase.
-
-Skier LL2 also trades the **VR80 Silent** build after the independent quest **Quiet Arrangement** (one per restock): the threaded barrel with a SilencerCo Salvo 12 suppressor, an EOTech XPS3-2 sight, a Magpul AFG grip and the 10-round magazine, for a Roler Submariner, a Wooden clock, a Golden neck chain and one Horse figurine.
+## Quests
 
 | Skier quest | Requirements and objectives | Unlock |
 | --- | --- | --- |
@@ -96,7 +100,17 @@ Skier LL2 also trades the **VR80 Silent** build after the independent quest **Qu
 | Repeat Business | LL2 and Foreign Stock completed; eliminate 10 Scavs on Customs with the VR80 | Factory VR80 cash purchase at LL2 |
 | Quiet Arrangement | LL2, independent of the other two; eliminate 8 Scavs on Customs and 3 PMCs anywhere with any suppressed 12ga shotgun | VR80 Silent barter at LL2 |
 
-Mechanic LL2 also sells the **MP-18 Tactical** build: an MP-18 with the threaded barrel, a SIG Sauer SRD762Ti suppressor and a Burris FullField TAC30 1-4x24 scope, for 4 Weapon parts and 2 Gunpowder "Eagle".
+---
+
+Jaeger's three-part questline starts at level 30 after **Acquaintance**. Each part requires completion of the previous one. Use either the **MP-700** or **MP-700 Shorty**, with any compatible ammunition; progress carries over between raids.
+
+| Quest | Objective | Purchase unlock |
+|---|---|---|
+| Hunter's Dream - Part 1 | Eliminate 15 Scavs on Woods from at least 40 meters away | Mammoth SP, Jaeger LL3 |
+| Hunter's Dream - Part 2 | Eliminate 8 PMCs from no more than 30 meters away, on any map | Cerberus, Jaeger LL3 |
+| Hunter's Dream - Part 3 | Eliminate Tagilla on Factory, day or night | Goliath AP, Jaeger LL4 |
+
+Completing a quest unlocks its purchase offer; the trader loyalty requirement still applies. Goliath purchases require LL4 (minimum player level 33), even if Part 3 is completed earlier. Each quest also awards experience, roubles, Jaeger reputation and a small supply of the unlocked ammunition. The published FMJ purchase and craft remain available as before.
 
 ### New Attachments
 
@@ -117,14 +131,23 @@ Mechanic LL2 also sells the **MP-18 Tactical** build: an MP-18 with the threaded
 | VR80 12ga 508mm barrel | Skier LL2 (14,000 ₽) |
 | VR80 12ga 508mm threaded barrel | Mechanic LL2 (15,500 ₽) |
 | VR80 M-LOK handguard | Skier LL2 (11,000 ₽) |
+| TTI Dracarys GEN-12 12ga receiver (JW4 Grey, Black, FDE) | Peacekeeper LL3 ($180 each) |
+| TTI Dracarys GEN-12 handguard (JW4 Grey, Black, FDE) | Peacekeeper LL3 ($110 each) |
+| Dracarys GEN-12 12ga 267mm barrel | Peacekeeper LL3 ($190) |
+| Dracarys GEN-12 12ga 457mm barrel | Peacekeeper LL3 ($260) |
+| TTI Dracarys 12ga compensator | Peacekeeper LL3 ($95) |
+| AR-15 BCM GUNFIGHTER Mod 0 stock | Peacekeeper LL3 ($85) |
+| AR-15 BCM GUNFIGHTER Mod 3 pistol grip | Peacekeeper LL3 ($50) |
+| Dracarys GEN-12 12ga 10-round magazine | Peacekeeper LL3 ($75) |
+| Dracarys GEN-12 12ga 15-round magazine | Peacekeeper LL3 ($130) |
+| Mossberg 590M 12ga 10-round magazine | Peacekeeper LL2 ($60) |
+| KS-23K 23x75 7-round magazine | Prapor LL3 (12,000 ₽) |
+| Panzer Arms SCR-XII 12ga upper receiver (FDE) | Peacekeeper LL3 ($65) |
+| SCR-XII 12ga 406mm barrel | Peacekeeper LL3 ($210) |
+| SCR-XII 12ga Mk12 5-round magazine | Peacekeeper LL3 ($40) |
+| SCR-XII 12ga Mk12 10-round magazine | Peacekeeper LL3 ($70) |
+| Monolith Arms P-12 12ga 20-round magazine | Peacekeeper LL3 ($85; limit 10) |
 
-The 590A1 threaded barrel takes the same muzzle devices as the MP-153.
-
-The Saiga's Alliance Armament 30-round magazine has new UVs and worn anodized-aluminum textures.
-
-The VR80 threaded barrel weighs 0.9 kg (ergonomics -10) and takes the same muzzle devices as the MP-153.
-
-The MP-18 threaded barrel weighs 1.45 kg (ergonomics -15) and takes the SV-98 muzzle devices (the thread adapter takes the SV-98 suppressor) and the 7.62x51 direct-thread muzzle devices and suppressors of the AR-10, SR-25 and SCAR-H.
 
 ---
 
@@ -144,20 +167,10 @@ The MP-18 threaded barrel weighs 1.45 kg (ergonomics -15) and takes the SV-98 mu
 | .700 Nitro Express AP "Goliath" | Jaeger LL4 (8,000 ₽), after Hunter's Dream - Part 3 | — |
 | .700 Nitro Express buckshot "Cerberus" | Jaeger LL3 (3,600 ₽), after Hunter's Dream - Part 2 | — |
 | 5.45x39mm 'Svalka' Anti-Drone Buckshot | — | Level 1 |
+| .410/76 lead birdshot | Jaeger LL1 (85 ₽) | — |
+| .410/76 000 buckshot | Jaeger LL2 (155 ₽) | — |
+| .410/76 lead slug | Jaeger LL2 (190 ₽) | — |
 
-The MP-700 and MP-700 Shorty also take three custom .700 Nitro Express loads: **Mammoth** soft-point (430 damage, 15 penetration), **Goliath** armor-piercing (220 damage, 60 penetration), and **Cerberus** buckshot (8 pellets with 65 damage and 8 penetration each). These are custom additions for the mod, with fictional experimental loads. The FMJ does not penetrate plates, but it wrecks their durability. Each has a distinct projectile shape and identification markings.
-
-### Hunter's Dream
-
-Jaeger's three-part questline starts at level 30 after **Acquaintance**. Each part requires completion of the previous one. Use either the **MP-700** or **MP-700 Shorty**, with any compatible ammunition; progress carries over between raids.
-
-| Quest | Objective | Purchase unlock |
-|---|---|---|
-| Hunter's Dream - Part 1 | Eliminate 15 Scavs on Woods from at least 40 meters away | Mammoth SP, Jaeger LL3 |
-| Hunter's Dream - Part 2 | Eliminate 8 PMCs from no more than 30 meters away, on any map | Cerberus, Jaeger LL3 |
-| Hunter's Dream - Part 3 | Eliminate Tagilla on Factory, day or night | Goliath AP, Jaeger LL4 |
-
-Completing a quest unlocks its purchase offer; the trader loyalty requirement still applies. Goliath purchases require LL4 (minimum player level 33), even if Part 3 is completed earlier. Each quest also awards experience, roubles, Jaeger reputation and a small supply of the unlocked ammunition. The published FMJ purchase and craft remain available as before.
 
 ### Workbench Crafts
 
@@ -198,8 +211,16 @@ Completing a quest unlocks its purchase offer; the trader loyalty requirement st
 | KS-23 Mount Calibration | Shot Pitch Correction | `0.311` | Vertical correction, in degrees |
 | KS-23 Mount Calibration | Shot Yaw Correction | `0.31` | Horizontal correction, in degrees |
 | KS-23 Mount Calibration | Debug Logging | `false` | Log each correction to the BepInEx console |
+| Debug | Enable Forced Malfunction Keys | `false` | Turn on the hotkeys below |
+| Debug | Force Misfire | `Keypad1` | Your next shot misfires |
+| Debug | Force Jam | `Keypad2` | Your next shot jams |
+| Debug | Force Hard Slide | `Keypad3` | Your next shot gets a hard slide |
+| Debug | Force Soft Slide | `Keypad4` | Your next shot gets a soft slide |
+| Debug | Force Feed Failure | `Keypad5` | Your next shot fails to feed |
 
 Turning off trails, collision or lights, or lowering the particle counts, makes the Dragon's Breath effect lighter on performance.
+
+A forced malfunction follows the game's rules: feed and slide malfunctions need a round in the magazine, and the key does nothing on guns without malfunctions. Bots are never affected.
 
 ### Server (`config/config.json`)
 
@@ -209,7 +230,7 @@ The file is in `SPT_Runtime/user/mods/makeshotgunsgreatagain/config/`. Restart t
 |---|---|---|
 | `enableBotsUseFrag12` | `true` | Bots can load FRAG-12 rounds |
 | `enableBotsUseDragonBreath` | `true` | Bots can load Hellfire (Dragon's Breath) rounds |
-| `enableDebugLogs` | `false` | Log the mod's changes to the server console |
+| `enableDebugLogs` | `false` | Log the mod's changes to the server console. Off, the mod writes nothing to the server log except errors |
 
 ---
 
@@ -240,7 +261,7 @@ Make-Shotguns-Great-Again/
 │       ├── CustomItems/                new guns, attachments and ammo
 │       ├── CustomAssortSchemes/        Peacekeeper ammo pack barters
 │       ├── CustomHideoutRecipes/       Workbench crafts
-│       ├── CustomLocales/              names of the weapon builds
+│       ├── CustomLocales/              names of the weapon builds and the .410/76 caliber
 │       ├── Quests/                     Skier VR80 quests and Hunter's Dream
 │       └── weaponPresets/
 │           ├── Assorts/                full builds sold by Jaeger, Mechanic and Skier
@@ -253,6 +274,7 @@ Make-Shotguns-Great-Again/
         ├── CanResolveMalfunctionsWithoutInspectionPatch.cs
         ├── DragonBreathMuzzlePatch.cs                     Dragon's Breath sparks
         ├── DragonBreathPatch.cs
+        ├── ForceMalfunctionPatch.cs                       forced malfunction hotkeys
         ├── KS23MountAlignmentPatch.cs                     KS-23 optics fix
         ├── MP18SilencedSoundPatch.cs                      MP-18 suppressed sound
         └── RemoveBossMalfunctionsPatch.cs
@@ -266,6 +288,15 @@ Make-Shotguns-Great-Again/
 - 12/70 Winchester Super-X 00 buckshot model: [Guy in a Poncho](https://sketchfab.com/ponchoguy)
 - 12/70 AP Slug SVAROG, Flechette Kinghunter and Magnum Express Kinghunter models: [Deadcomrade](https://sketchfab.com/deadcomrade)
 - Dragon's Breath particle effect: based on **jankytheclown**'s work in [HollywoodFX](https://github.com/SleepingPills/HollywoodFX)
+- Benelli M3 Keymod Handguard model: [zzzs570](https://sketchfab.com/zzzs570)
+- SOK-12 Alliance Armament 30-round magazine model: [HyHylie](https://modworkshop.net/user/hyhylie)
+- Remington 7188 model,  KS-23K, Monolith Arms P-12, Dracarys GEN-12 : Akinaro (CGTrader)
+- Saiga Spike: Warface.
+Bailiff 410: H3VR mod by SirPotatos, textures by Violet, Arpy and Muzzle.
+- Taurus Raging Judge model: Hired Ops. 
+- Mossberg 590M model: thred (CGTrader).
+- Bailiff 410: Rainbow Six Siege.
+- [Gcr357](https://sp-mod.com/user/105157/gcr357) for help with some models.
 
 ---
 

@@ -1,11 +1,18 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
 using BepInEx.Logging;
+using Comfort.Common;
+using EFT;
+using EFT.InventoryLogic;
 using makeshotgunsgreatagain.Patches;
+using TMPro;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.17.0")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.18.0")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
@@ -32,6 +39,11 @@ namespace makeshotgunsgreatagain
         public static ConfigEntry<float> DB_NoiseFrequency;
         public static ConfigEntry<float> DB_Dampen;
         public static ConfigEntry<float> DB_StartOffset;
+
+        // Debug: forced malfunction hotkeys
+        public static ConfigEntry<bool> Debug_ForceMalfunctionKeys;
+        private static (ConfigEntry<KeyboardShortcut> Key, Weapon.EMalfunctionState State)[] _forceMalfunctionKeys;
+        public static ConfigEntry<bool> Debug_LogPelletSpread;
 
         private void Awake()
         {
@@ -175,6 +187,31 @@ namespace makeshotgunsgreatagain
                 null,
                 new ConfigurationManagerAttributes { Order = 97 }));
 
+            Debug_ForceMalfunctionKeys = Config.Bind(
+                "Debug",
+                "Enable Forced Malfunction Keys",
+                false,
+                new ConfigDescription("Enable the hotkeys below. Each one forces that malfunction on your next shot; press it again to cancel. Revolvers, break-action and one-shot weapons have no malfunctions in the game.",
+                null,
+                new ConfigurationManagerAttributes { Order = 100 }));
+
+            _forceMalfunctionKeys = new[]
+            {
+                (BindForceMalfunctionKey("Force Misfire", KeyCode.Keypad1, 99), Weapon.EMalfunctionState.Misfire),
+                (BindForceMalfunctionKey("Force Jam", KeyCode.Keypad2, 98), Weapon.EMalfunctionState.Jam),
+                (BindForceMalfunctionKey("Force Hard Slide", KeyCode.Keypad3, 97), Weapon.EMalfunctionState.HardSlide),
+                (BindForceMalfunctionKey("Force Soft Slide", KeyCode.Keypad4, 96), Weapon.EMalfunctionState.SoftSlide),
+                (BindForceMalfunctionKey("Force Feed Failure", KeyCode.Keypad5, 95), Weapon.EMalfunctionState.Feed),
+            };
+
+            Debug_LogPelletSpread = Config.Bind(
+                "Debug",
+                "Log Pellet Spread",
+                false,
+                new ConfigDescription("Log the pellet spread of each of your multi-pellet shots to the BepInEx log: the value the game used and the cone measured on the pellets.",
+                null,
+                new ConfigurationManagerAttributes { Order = 90 }));
+
             // Rebuild prefab when any config changes
             DB_MaxParticles.SettingChanged += (_, __) => DragonBreathPatch.InvalidatePrefab();
             DB_ParticleCount.SettingChanged += (_, __) => DragonBreathPatch.InvalidatePrefab();
@@ -192,10 +229,58 @@ namespace makeshotgunsgreatagain
             new CanResolveMalfunctionsWithoutInspectionPatch().Enable();
             new RemoveBossMalfunctionsPatch().Enable();
             new BuckshotDispersionPatch().Enable();
+            new PelletSpreadLogPatch().Enable();
             new KS23MountAlignmentPatch().Enable();
             new MP18SilencedSoundPatch().Enable();
+            new ForceMalfunctionPatch().Enable();
 
             LogSource.LogInfo("plugin loaded!");
+        }
+
+        private ConfigEntry<KeyboardShortcut> BindForceMalfunctionKey(string name, KeyCode key, int order)
+        {
+            return Config.Bind(
+                "Debug",
+                name,
+                new KeyboardShortcut(key),
+                new ConfigDescription("Hotkey: the next shot gets this malfunction (needs \"Enable Forced Malfunction Keys\").",
+                null,
+                new ConfigurationManagerAttributes { Order = order }));
+        }
+
+        private void Update()
+        {
+            bool keysEnabled = Debug_ForceMalfunctionKeys.Value;
+            ForceMalfunctionPatch.Tick(keysEnabled);
+            if (!keysEnabled) return;
+
+            // Only in raid or hideout, and never while typing (flea, trader,
+            // split stack, chat), so the numpad keeps working as numbers.
+            GameWorld gameWorld = Singleton<GameWorld>.Instance;
+            if (gameWorld == null || gameWorld.MainPlayer == null || IsTypingInTextField()) return;
+
+            foreach (var (key, state) in _forceMalfunctionKeys)
+            {
+                if (key.Value.IsDown())
+                {
+                    ForceMalfunctionPatch.Toggle(state);
+                }
+            }
+        }
+
+        private static bool IsTypingInTextField()
+        {
+            EventSystem eventSystem = EventSystem.current;
+            if (eventSystem == null) return false;
+
+            GameObject selected = eventSystem.currentSelectedGameObject;
+            if (selected == null) return false;
+
+            TMP_InputField tmpField = selected.GetComponent<TMP_InputField>();
+            if (tmpField != null && tmpField.isFocused) return true;
+
+            InputField field = selected.GetComponent<InputField>();
+            return field != null && field.isFocused;
         }
     }
 

@@ -1,0 +1,133 @@
+{
+  "d74f3873e67437d9b93503b1": {
+    "itemTplToClone": "5a38e6bac4a2826c6e06d79b",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "weapon_mts_20-01_20g_container.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [
+        {
+          "_id": "35566c8f84ab3267df03ecf6",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "d74f3873e67437d9b93503b1",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": 0,
+                "Filter": [
+                  "5a38ee51c4a282000c5a955c",
+                  "5a38ed75c4a28232996e40c6",
+                  "5c6161fb2e221600113fbde5"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": false
+        },
+        {
+          "_id": "5cd7b3ef7563e2d79f3dae23",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "d74f3873e67437d9b93503b1",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5c99f3592e221644fc633070",
+                  "5adf23995acfc400185c2aeb",
+                  "5a38ef1fc4a282000b1521f6"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "833cdcf0daa9380d7cf6f3af",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount_000",
+          "_parent": "d74f3873e67437d9b93503b1",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5c6162682e22160010261a2b"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "6fe96bede72f183b19c1f423",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "d74f3873e67437d9b93503b1",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5a38ebd9c4a282000d722a5b",
+                  "5d6e695fa4b936359b35d852",
+                  "5d6e69b9a4b9361bc8618958",
+                  "5d6e69c7a4b9360b6c0d54e4",
+                  "5d6e6a5fa4b93614ec501745",
+                  "5d6e6a53a4b9361bd473feec",
+                  "5d6e6a42a4b9364f07165f52",
+                  "5d6e6a05a4b93618084f58d0",
+                  "6601380580e77cfd080e3418",
+                  "660137d8481cc6907a0c5cda",
+                  "660137ef76c1b56143052be8"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ],
+      "Weight": 1.7,
+      "Ergonomics": 49,
+      "RecoilForceUp": 636,
+      "RecoilForceBack": 562,
+      "Velocity": 11.5,
+      "CenterOfImpact": 0.57,
+      "ShotgunDispersion": 1,
+      "shotgunDispersion": 1,
+      "Width": 5,
+      "Height": 1
+    },
+    "locales": {
+      "en": {
+        "name": "MTs 20-01 20ga bolt-action shotgun",
+        "shortName": "MTs 20-01",
+        "description": "A 20 gauge bolt-action hunting shotgun with a detachable box magazine, made in Tula by TsKIB SOO since 1979. The TOZ-106 was developed from it as a compact version. The full-length 635mm barrel gives the shot more velocity and a tighter group than the TOZ-106, at the cost of weight and handling. Uses the same MTs 20-01 Sb.3 magazines, stocks and dovetail mount as the TOZ-106."
+      },
+      "po": {
+        "name": "Escopeta por ação de ferrolho MC 20-01",
+        "shortName": "MC 20-01",
+        "description": "Escopeta de caça calibre 20 por ação de ferrolho, com carregador destacável, fabricada em Tula pela TsKIB SOO desde 1979. A TOZ-106 foi desenvolvida a partir dela como versão compacta. O cano de 635 mm dá ao tiro mais velocidade e um grupo mais fechado que o da TOZ-106, em troca de peso e manejo. Usa os mesmos carregadores MC 20-01 Sb.3, coronhas e trilho de suporte da TOZ-106."
+      }
+    },
+    "fleaPriceRoubles": 21000,
+    "handbookPriceRoubles": 6000,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  }
+}

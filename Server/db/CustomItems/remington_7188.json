@@ -1,0 +1,242 @@
+{
+  "5e1b4ffbc020e40d245266be": {
+    "itemTplToClone": "56dee2bdd2720bc8328b4567",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "weapon_remington_7188_12g_container.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "298b33eebc1a985c20cebb98",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "5e1b4ffbc020e40d245266be",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "f5b9d1ae6e4c3a80eaa12c9d"
+                ],
+                "Shift": 0,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "b69cbbbac3212f0e7f1a295a",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "5e1b4ffbc020e40d245266be",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": -1,
+                "Filter": [
+                  "281afdffaac60e3e5fa128aa"
+                ],
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": true
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "4202e08f3ef2ed70d56cf5ca",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "5e1b4ffbc020e40d245266be",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ],
+      "Weight": 3.2,
+      "Ergonomics": 30,
+      "RecoilForceUp": 400,
+      "RecoilForceBack": 600,
+      "weapFireType": [
+        "single",
+        "fullauto"
+      ],
+      "bFirerate": 420,
+      "defMagType": "281afdffaac60e3e5fa128aa"
+    },
+    "locales": {
+      "en": {
+        "name": "Remington Model 7188 12ga select-fire shotgun",
+        "shortName": "7188",
+        "description": "A select-fire derivative of the Remington 1100 developed in the late 1960s for US Navy special warfare units. The gas-operated action fires in semi-automatic or fully automatic mode at about 420 rounds per minute, fed from an extended 8-round tube magazine. It has a 508mm barrel under a ventilated heat shield, a wooden stock and fixed sights. Only a small number were built."
+      },
+      "po": {
+        "name": "Escopeta Remington Modelo 7188 12ga de fogo seletivo",
+        "shortName": "7188",
+        "description": "Derivada de fogo seletivo da Remington 1100, desenvolvida no fim dos anos 1960 para as unidades de operações especiais da Marinha dos EUA. O mecanismo operado a gás dispara em modo semiautomático ou automático, a cerca de 420 disparos por minuto, alimentado por um tubo estendido de 8 cartuchos. Tem cano de 508 mm sob um protetor térmico ventilado, coronha de madeira e miras fixas. Poucas unidades foram produzidas."
+      }
+    },
+    "fleaPriceRoubles": 82000,
+    "handbookPriceRoubles": 82000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ]
+  },
+  "281afdffaac60e3e5fa128aa": {
+    "itemTplToClone": "56deee15d2720bee328b4567",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "mag_remington_7188_12g_8.bundle",
+        "rcid": ""
+      },
+      "Cartridges": [
+        {
+          "_id": "099c6d3e3607fa1aefa13785",
+          "_max_count": 8,
+          "_name": "cartridges",
+          "_parent": "281afdffaac60e3e5fa128aa",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ],
+      "Weight": 0.13,
+      "Ergonomics": 0
+    },
+    "locales": {
+      "en": {
+        "name": "Remington 7188 12ga 8-round tube magazine",
+        "shortName": "7188 8",
+        "description": "The extended 8-round tube magazine built into the Remington 7188. It is part of the weapon and cannot be removed."
+      },
+      "po": {
+        "name": "Tubo de 8 cartuchos da Remington 7188 12ga",
+        "shortName": "7188 8",
+        "description": "Tubo estendido de 8 cartuchos integrado à Remington 7188. Faz parte da arma e não pode ser removido."
+      }
+    },
+    "fleaPriceRoubles": 3000,
+    "handbookPriceRoubles": 3000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  },
+  "f5b9d1ae6e4c3a80eaa12c9d": {
+    "itemTplToClone": "588200af24597742fa221dfb",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "barrel_remington_7188_508mm_12g.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "2ac56e51bc7a579f6ae84459",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_muzzle",
+          "_parent": "f5b9d1ae6e4c3a80eaa12c9d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5c0111ab0db834001966914d",
+                  "560838c94bdc2d77798b4569",
+                  "5b363dea5acfc4771e1c5e7e"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "Weight": 0.75,
+      "Ergonomics": 0,
+      "Recoil": 0,
+      "Velocity": 5.2,
+      "CenterOfImpact": 0.52,
+      "ShotgunDispersion": 1.4,
+      "DurabilityBurnModificator": 1,
+      "HeatFactor": 0.92,
+      "CoolFactor": 0.96
+    },
+    "locales": {
+      "en": {
+        "name": "Remington 7188 508mm 12ga barrel",
+        "shortName": "7188 508mm",
+        "description": "The 508mm (20\") barrel of the Remington 7188, under its ventilated heat shield. It is fixed to the weapon and accepts 12ga chokes and suppressors."
+      },
+      "po": {
+        "name": "Cano de 508 mm 12ga da Remington 7188",
+        "shortName": "7188 508mm",
+        "description": "Cano de 508 mm (20\") da Remington 7188, sob o protetor térmico ventilado. É fixo na arma e aceita chokes e supressores 12ga."
+      }
+    },
+    "fleaPriceRoubles": 10000,
+    "handbookPriceRoubles": 10000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  }
+}

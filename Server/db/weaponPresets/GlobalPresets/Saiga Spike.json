@@ -1,0 +1,49 @@
+{
+  "3a24542ca757f7ca82ba8821": {
+    "_id": "3a24542ca757f7ca82ba8821",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Saiga Spike",
+    "_encyclopedia": "0efca72fbd6c5a42c5fd980f",
+    "_parent": "d7a076ce5968bcab9c5215f9",
+    "_items": [
+      {
+        "_id": "d7a076ce5968bcab9c5215f9",
+        "_tpl": "0efca72fbd6c5a42c5fd980f",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "97fa478b26949f4fed66b051",
+        "_tpl": "5a966f51a2750c00156aacf6",
+        "parentId": "d7a076ce5968bcab9c5215f9",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "d6ca8f8f0d7b31d99b10d369",
+        "_tpl": "576167ab2459773cad038c43",
+        "parentId": "d7a076ce5968bcab9c5215f9",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "fdefe0403d5a2ff4561f08e8",
+        "_tpl": "5bc09a18d4351e003562b68e",
+        "parentId": "d7a076ce5968bcab9c5215f9",
+        "slotId": "mod_sight_rear"
+      },
+      {
+        "_id": "9375cadd76009acbf5c015da",
+        "_tpl": "5bc09a30d4351e00367fb7c8",
+        "parentId": "d7a076ce5968bcab9c5215f9",
+        "slotId": "mod_sight_front"
+      }
+    ]
+  }
+}

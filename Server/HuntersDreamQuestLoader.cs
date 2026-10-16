@@ -66,7 +66,10 @@ public class HuntersDreamQuestLoader(
         foreach (var unlock in unlocks)
             successfulQuests[unlock.Offer.Id] = unlock.QuestId;
 
-        logger.Info("[MSGA] Hunter's Dream: registered 3 Jaeger quests and 3 purchase unlocks.");
+        if (ModConfig.Current.EnableDebugLogs)
+        {
+            logger.Info("[MSGA] Hunter's Dream: registered 3 Jaeger quests and 3 purchase unlocks.");
+        }
         return Task.CompletedTask;
     }
 }

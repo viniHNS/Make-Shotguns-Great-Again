@@ -1,0 +1,43 @@
+{
+  "d86485d05545f0c26e938e4b": {
+    "_id": "d86485d05545f0c26e938e4b",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "KS-23K",
+    "_encyclopedia": "4d68c8b0c0228345bad1e89d",
+    "_parent": "10c7ea1351218bda07647c42",
+    "_items": [
+      {
+        "_id": "10c7ea1351218bda07647c42",
+        "_tpl": "4d68c8b0c0228345bad1e89d",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "23299c604df0f51e3e7251c0",
+        "_tpl": "d77bca0a1c270326e6449445",
+        "parentId": "10c7ea1351218bda07647c42",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "9647604d30db2a1800877221",
+        "_tpl": "0f98d458a715ae5bb3ce7b72",
+        "parentId": "10c7ea1351218bda07647c42",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "66bca0131ab906c866d9df64",
+        "_tpl": "d00cd85e29bc4f793abc8a50",
+        "parentId": "10c7ea1351218bda07647c42",
+        "slotId": "mod_magazine"
+      }
+    ]
+  }
+}

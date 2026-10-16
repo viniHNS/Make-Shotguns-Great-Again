@@ -1,0 +1,61 @@
+{
+  "99cd4a1d9b881a4d0bc92a2f": {
+    "_id": "99cd4a1d9b881a4d0bc92a2f",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Mossberg 590M",
+    "_encyclopedia": "bb588a5a9ed5cb07327eba77",
+    "_parent": "ec486a9097d151a08b7b0add",
+    "_items": [
+      {
+        "_id": "ec486a9097d151a08b7b0add",
+        "_tpl": "bb588a5a9ed5cb07327eba77",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "807a7ff3323d16254ab1dbef",
+        "_tpl": "162b0d6a578295ec06b77318",
+        "parentId": "ec486a9097d151a08b7b0add",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "37509b8b0f9a53873dd08144",
+        "_tpl": "606eedf13730da2369b2ca2e",
+        "parentId": "ec486a9097d151a08b7b0add",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "c255cc30de9bb1f2fa640f00",
+        "_tpl": "acf7e1a5c0029dd024ba2cf4",
+        "parentId": "ec486a9097d151a08b7b0add",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "8de31b1f51e4fcfc3e783fe9",
+        "_tpl": "d7c4f475ae1508ebf78d05b9",
+        "parentId": "ec486a9097d151a08b7b0add",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "d3c4d785feb7afd434b07a53",
+        "_tpl": "5e87114fe2db31558c75a120",
+        "parentId": "ec486a9097d151a08b7b0add",
+        "slotId": "mod_mount"
+      },
+      {
+        "_id": "f9d29cf84236c50bcb87a6b8",
+        "_tpl": "5e8708d4ae379e67d22e0102",
+        "parentId": "807a7ff3323d16254ab1dbef",
+        "slotId": "mod_sight_front"
+      }
+    ]
+  }
+}

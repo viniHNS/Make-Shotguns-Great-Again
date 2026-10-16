@@ -1,0 +1,272 @@
+{
+  "4d68c8b0c0228345bad1e89d": {
+    "itemTplToClone": "5e848cc2988a8701445df1e8",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "weapon_toz_ks23k_23x75_container.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "CanSellOnRagfair": true,
+      "Weight": 3.2,
+      "Ergonomics": 38,
+      "RecoilForceUp": 360,
+      "RecoilForceBack": 460,
+      "RecoilCamera": 0.09,
+      "Width": 5,
+      "Height": 1,
+      "ReloadMode": "ExternalMagazine",
+      "isFastReload": true,
+      "isBoltCatch": false,
+      "defMagType": "d00cd85e29bc4f793abc8a50",
+      "Slots": [
+        {
+          "_id": "164b2ecd80b957c107cebec9",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "4d68c8b0c0228345bad1e89d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "d77bca0a1c270326e6449445"
+                ],
+                "Shift": 0,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "e8a5bbce0b9c2955b05d31c1",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_handguard",
+          "_parent": "4d68c8b0c0228345bad1e89d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "0f98d458a715ae5bb3ce7b72"
+                ],
+                "Shift": 0,
+                "locked": true
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "cb83c0793174e56d49e6ad88",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "4d68c8b0c0228345bad1e89d",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": -1,
+                "Filter": [
+                  "d00cd85e29bc4f793abc8a50"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": false
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "344c62cbd5240e4239d28c9a",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "4d68c8b0c0228345bad1e89d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e85aa1a988a8701445df1f5",
+                  "5e85aac65505fa48730d8af2",
+                  "5e85a9a6eacf8c039e4e2ac1",
+                  "5f647f31b6238e5dd066e196",
+                  "5e85a9f4add9fe03027d9bf1",
+                  "5f647fd3f6e4ab66c82faed6"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "KS-23K 23x75 bullpup shotgun",
+        "shortName": "KS-23K",
+        "description": "A bullpup development of the KS-23 special carbine made by the Tula Arms Plant for the Russian Ministry of Internal Affairs. It keeps the pump action and the 23mm barrel of the KS-23, but the 23x75mmR shells are fed from a detachable 7-round box magazine behind the pistol grip, which makes the weapon much shorter and faster to reload."
+      },
+      "po": {
+        "name": "Escopeta bullpup KS-23K 23x75",
+        "shortName": "KS-23K",
+        "description": "Desenvolvimento bullpup da carabina especial KS-23, feito pela Fábrica de Armas de Tula para o Ministério do Interior da Rússia. Mantém a ação por bombeamento e o cano de 23 mm da KS-23, mas os cartuchos 23x75mmR vêm de um carregador destacável de 7 munições atrás do punho, o que deixa a arma bem mais curta e rápida de recarregar."
+      }
+    },
+    "fleaPriceRoubles": 80000,
+    "handbookPriceRoubles": 55000,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  },
+  "d77bca0a1c270326e6449445": {
+    "itemTplToClone": "5e848d1c264f7c180b5e35a9",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_ks23k_toz_470mm_23x75.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.3,
+      "Ergonomics": 0,
+      "Recoil": 0,
+      "Width": 1,
+      "Height": 1,
+      "ExtraSizeLeft": 0,
+      "ConflictingItems": [],
+      "Slots": []
+    },
+    "locales": {
+      "en": {
+        "name": "KS-23K 23x75 barrel",
+        "shortName": "KS-23K barrel",
+        "description": "The 23mm barrel of the KS-23K. It is fixed to the weapon."
+      },
+      "po": {
+        "name": "Cano 23x75 da KS-23K",
+        "shortName": "KS-23K cano",
+        "description": "Cano de 23 mm da KS-23K. É fixo na arma."
+      }
+    },
+    "fleaPriceRoubles": 7000,
+    "handbookPriceRoubles": 6000,
+    "addtoTraders": false
+  },
+  "0f98d458a715ae5bb3ce7b72": {
+    "itemTplToClone": "5e848d51e4dbc5266a4ec63b",
+    "parentId": "55818a104bdc2db9688b4569",
+    "handbookParentId": "5b5f75e486f77447ec5d7712",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "handguard_ks23k_toz_pump.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.3,
+      "Ergonomics": 0,
+      "Recoil": 0,
+      "Width": 1,
+      "Height": 1,
+      "ConflictingItems": [],
+      "Slots": []
+    },
+    "locales": {
+      "en": {
+        "name": "KS-23K pump forend",
+        "shortName": "KS-23K pump",
+        "description": "The pump forend of the KS-23K. It is fixed to the weapon."
+      },
+      "po": {
+        "name": "Telha da KS-23K",
+        "shortName": "KS-23K telha",
+        "description": "Telha da ação por bombeamento da KS-23K. É fixa na arma."
+      }
+    },
+    "fleaPriceRoubles": 3500,
+    "handbookPriceRoubles": 3000,
+    "addtoTraders": false
+  },
+  "d00cd85e29bc4f793abc8a50": {
+    "itemTplToClone": "5a966f51a2750c00156aacf6",
+    "parentId": "5448bc234bdc2d3c308b4569",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "mag_ks23k_toz_23x75_7.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Weight": 0.35,
+      "Ergonomics": -3,
+      "Width": 1,
+      "Height": 2,
+      "ExtraSizeDown": 1,
+      "magAnimationIndex": 0,
+      "Cartridges": [
+        {
+          "_id": "7f0ee7aec48efc391a144c14",
+          "_max_count": 7,
+          "_name": "cartridges",
+          "_parent": "d00cd85e29bc4f793abc8a50",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e85aa1a988a8701445df1f5",
+                  "5e85aac65505fa48730d8af2",
+                  "5e85a9a6eacf8c039e4e2ac1",
+                  "5f647f31b6238e5dd066e196",
+                  "5e85a9f4add9fe03027d9bf1",
+                  "5f647fd3f6e4ab66c82faed6"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "KS-23K 23x75 7-round magazine",
+        "shortName": "KS-23K 7",
+        "description": "A 7-round steel box magazine for 23x75mmR shells, made for the KS-23K bullpup shotgun."
+      },
+      "po": {
+        "name": "Carregador de 7 munições 23x75 da KS-23K",
+        "shortName": "KS-23K 7",
+        "description": "Carregador de aço de 7 munições para cartuchos 23x75mmR, feito para a escopeta bullpup KS-23K."
+      }
+    },
+    "fleaPriceRoubles": 14000,
+    "handbookPriceRoubles": 12000,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "traders": {
+      "PRAPOR": {
+        "1a5064ab53f9526b5306e39d": {
+          "barterSettings": {
+            "loyalLevel": 3,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 5
+          },
+          "barters": [
+            {
+              "count": 12000,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

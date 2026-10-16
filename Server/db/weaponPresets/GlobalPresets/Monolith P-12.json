@@ -1,0 +1,37 @@
+{
+  "b616c054ffe3ceba42a485da": {
+    "_id": "b616c054ffe3ceba42a485da",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Monolith P-12",
+    "_encyclopedia": "a885d565511eb39be5d9ee7e",
+    "_parent": "3932bfa9593473c521c95bb0",
+    "_items": [
+      {
+        "_id": "3932bfa9593473c521c95bb0",
+        "_tpl": "a885d565511eb39be5d9ee7e",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "3710a4ab1699fdcc1a3abcf0",
+        "_tpl": "665ae38202c6064011c73a4a",
+        "parentId": "3932bfa9593473c521c95bb0",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "520a7f037e0e592c81836362",
+        "_tpl": "404cd6ac317b73172b0fda02",
+        "parentId": "3932bfa9593473c521c95bb0",
+        "slotId": "mod_magazine"
+      }
+    ]
+  }
+}

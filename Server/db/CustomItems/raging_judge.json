@@ -1,0 +1,382 @@
+{
+  "c5fa8b1bf60b412e8347d3c2": {
+    "itemTplToClone": "633ec7c2a6918cb895019c6c",
+    "parentId": "617f1ef5e8b54b0998387733",
+    "handbookParentId": "5b5f792486f77447ed5636b3",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "weapon_taurus_raging_judge_410_container.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "38ecc2bce63a430cb0f86cf0",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "c5fa8b1bf60b412e8347d3c2",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": 0,
+                "Filter": [
+                  "09780e809ecc4a3897fc87b2"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": true
+        }
+      ],
+      "Weight": 1.84,
+      "Ergonomics": 40,
+      "RecoilForceUp": 160,
+      "RecoilForceBack": 220,
+      "RecoilCamera": 0.075,
+      "RecolDispersion": 12,
+      "RecoilCategoryMultiplierHandRotation": 0.18,
+      "WeaponRecoilSettings": {
+        "Enable": true,
+        "Values": [
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "Y",
+              "CurveAimingValueMultiply": 0.973630831643002,
+              "CurveTimeMultiply": 1,
+              "CurveValueMultiply": 0.973630831643002,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsRotation"
+          },
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "X",
+              "CurveAimingValueMultiply": 1.9411764705882355,
+              "CurveTimeMultiply": 2,
+              "CurveValueMultiply": 2.588235294117647,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsRotation"
+          },
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "Z",
+              "CurveAimingValueMultiply": 0.06470588235294118,
+              "CurveTimeMultiply": 1,
+              "CurveValueMultiply": 0.6470588235294118,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsRotation"
+          },
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "Z",
+              "CurveAimingValueMultiply": 0.004,
+              "CurveTimeMultiply": 0.5,
+              "CurveValueMultiply": 0.005,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsPosition"
+          }
+        ]
+      },
+      "ShotgunDispersion": 2,
+      "shotgunDispersion": 2,
+      "DoubleActionAccuracyPenalty": 0.7,
+      "ammoCaliber": "Caliber410g",
+      "defAmmo": "3ed19bd544854f098ce5c2bb",
+      "defMagType": "09780e809ecc4a3897fc87b2",
+      "weapFireType": [
+        "single",
+        "doubleaction"
+      ],
+      "weapClass": "pistol",
+      "weapUseType": "secondary"
+    },
+    "locales": {
+      "en": {
+        "name": "Taurus Raging Judge .410 revolver",
+        "shortName": "Raging Judge",
+        "description": "A heavy-frame Taurus revolver adapted for .410/76 shotshells. This five-shot configuration has an integral rubber grip. It can fire in single-action or double-action mode."
+      },
+      "po": {
+        "name": "Revólver Taurus Raging Judge .410",
+        "shortName": "Raging Judge",
+        "description": "Revólver Taurus de armação pesada, adaptado para cartuchos .410/76. Esta configuração de cinco tiros tem empunhadura de borracha integral. Permite disparos em ação simples ou dupla."
+      }
+    },
+    "fleaPriceRoubles": 58600,
+    "handbookPriceRoubles": 58600,
+    "addtoTraders": false,
+    "addtoSecureFilters": false,
+    "addtoInventorySlots": [
+      "Holster"
+    ]
+  },
+  "09780e809ecc4a3897fc87b2": {
+    "itemTplToClone": "633ec6ee025b096d320a3b15",
+    "parentId": "610720f290b75a49ff2e5e25",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "mag_raging_judge_410_5.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "83bbbd4c207440febc360c15",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_000",
+          "_parent": "09780e809ecc4a3897fc87b2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "4b822170fd9f43cfada84185",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_001",
+          "_parent": "09780e809ecc4a3897fc87b2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "bd6ffdcd3e274976b9e26511",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_002",
+          "_parent": "09780e809ecc4a3897fc87b2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "caa4b732db504a4b935a8d7e",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_003",
+          "_parent": "09780e809ecc4a3897fc87b2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "0a30990746f84528ad48a141",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_004",
+          "_parent": "09780e809ecc4a3897fc87b2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ],
+      "Weight": 0.23,
+      "Ergonomics": 0,
+      "Recoil": 0,
+      "Cartridges": [
+        {
+          "_id": "bbb4eee4117d49428170711c",
+          "_max_count": 5,
+          "_name": "cartridges",
+          "_parent": "09780e809ecc4a3897fc87b2",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Raging Judge .410 5-round cylinder",
+        "shortName": "RJ cylinder",
+        "description": "A five-chamber .410/76 cylinder for the Raging Judge revolver."
+      },
+      "po": {
+        "name": "Tambor de 5 tiros .410 da Raging Judge",
+        "shortName": "Tambor RJ",
+        "description": "Tambor de cinco câmaras .410/76 para o revólver Raging Judge."
+      }
+    },
+    "fleaPriceRoubles": 6400,
+    "handbookPriceRoubles": 6400,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  }
+}

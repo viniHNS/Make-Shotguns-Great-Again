@@ -1,0 +1,28 @@
+{
+  "13b3c73b34cc3e35b5fc6e44": {
+    "_id": "13b3c73b34cc3e35b5fc6e44",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Remington 7188 default",
+    "_parent": "daaae8ea8b7a6a4b2c167420",
+    "_items": [
+      {
+        "_id": "daaae8ea8b7a6a4b2c167420",
+        "_tpl": "5e1b4ffbc020e40d245266be"
+      },
+      {
+        "_id": "e68f1ff29c527e0a02924b02",
+        "_tpl": "f5b9d1ae6e4c3a80eaa12c9d",
+        "parentId": "daaae8ea8b7a6a4b2c167420",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "99e33994aeb40ddae718a25d",
+        "_tpl": "281afdffaac60e3e5fa128aa",
+        "parentId": "daaae8ea8b7a6a4b2c167420",
+        "slotId": "mod_magazine"
+      }
+    ],
+    "_encyclopedia": "5e1b4ffbc020e40d245266be"
+  }
+}

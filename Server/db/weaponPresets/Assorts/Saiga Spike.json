@@ -1,0 +1,61 @@
+{
+  "MECHANIC": {
+    "items": [
+      {
+        "_id": "67d46d3fca6ca880273d43ea",
+        "_tpl": "0efca72fbd6c5a42c5fd980f",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          },
+          "StackObjectsCount": 999999,
+          "UnlimitedCount": true,
+          "BuyRestrictionMax": 2
+        },
+        "parentId": "hideout",
+        "slotId": "hideout"
+      },
+      {
+        "_id": "827fb0f3a13d347c4a805993",
+        "_tpl": "5a966f51a2750c00156aacf6",
+        "parentId": "67d46d3fca6ca880273d43ea",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "405a49f71bb43af10547ee27",
+        "_tpl": "576167ab2459773cad038c43",
+        "parentId": "67d46d3fca6ca880273d43ea",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "aa63579c82e6440a62836668",
+        "_tpl": "5bc09a18d4351e003562b68e",
+        "parentId": "67d46d3fca6ca880273d43ea",
+        "slotId": "mod_sight_rear"
+      },
+      {
+        "_id": "0dbc7cbd98661f317aa90fa2",
+        "_tpl": "5bc09a30d4351e00367fb7c8",
+        "parentId": "67d46d3fca6ca880273d43ea",
+        "slotId": "mod_sight_front"
+      }
+    ],
+    "barter_scheme": {
+      "67d46d3fca6ca880273d43ea": [
+        [
+          {
+            "_tpl": "5449016a4bdc2d6f028b456f",
+            "count": 80000
+          }
+        ]
+      ]
+    },
+    "loyal_level_items": {
+      "67d46d3fca6ca880273d43ea": 2
+    }
+  }
+}

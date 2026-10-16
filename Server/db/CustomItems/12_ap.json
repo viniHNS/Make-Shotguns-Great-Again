@@ -15,7 +15,7 @@
       "BulletDiameterMilimeters": 12.7,
       "ammoAccr": 65,
       "Damage": 155,
-      "AmmoRec": 70,
+      "ammoRec": 70,
       "HeatFactor": 2.5
     },
     "locales": {

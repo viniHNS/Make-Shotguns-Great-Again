@@ -68,7 +68,10 @@ public class Vr80QuestLoader(
         foreach (var unlock in unlocks)
             successfulQuests[unlock.Offer.Id] = unlock.QuestId;
 
-        logger.Info("[MSGA] VR80 Skier quests: registered 3 Skier quests and 3 purchase unlocks.");
+        if (ModConfig.Current.EnableDebugLogs)
+        {
+            logger.Info("[MSGA] VR80 Skier quests: registered 3 Skier quests and 3 purchase unlocks.");
+        }
         return Task.CompletedTask;
     }
 }

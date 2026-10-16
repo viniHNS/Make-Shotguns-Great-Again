@@ -12,4 +12,9 @@ public record ModConfig
 
     [JsonPropertyName("enableDebugLogs")]
     public bool EnableDebugLogs { get; init; } = false;
+
+    /// <summary>
+    /// The config read by the main mod class (Preload + 2); the quest loaders run after it.
+    /// </summary>
+    public static ModConfig Current { get; set; } = new();
 }

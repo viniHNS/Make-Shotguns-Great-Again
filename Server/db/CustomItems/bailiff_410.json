@@ -1,0 +1,384 @@
+{
+  "6e3dfcf763fec3ef30a9e954": {
+    "itemTplToClone": "633ec7c2a6918cb895019c6c",
+    "parentId": "617f1ef5e8b54b0998387733",
+    "handbookParentId": "5b5f792486f77447ed5636b3",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "weapon_bailiff_410_container.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "c02f954e08123ec4d0f73a59",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "6e3dfcf763fec3ef30a9e954",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": 0,
+                "Filter": [
+                  "f214da7cd7c34d27f8086a1d"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": true
+        }
+      ],
+      "Weight": 0.7,
+      "Ergonomics": 60,
+      "RecoilForceUp": 205,
+      "RecoilForceBack": 255,
+      "RecoilCamera": 0.085,
+      "RecolDispersion": 14,
+      "RecoilCategoryMultiplierHandRotation": 0.2,
+      "WeaponRecoilSettings": {
+        "Enable": true,
+        "Values": [
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "Y",
+              "CurveAimingValueMultiply": 1.1196754563894522,
+              "CurveTimeMultiply": 1,
+              "CurveValueMultiply": 1.1196754563894522,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsRotation"
+          },
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "X",
+              "CurveAimingValueMultiply": 2.2323529411764707,
+              "CurveTimeMultiply": 2,
+              "CurveValueMultiply": 2.976470588235294,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsRotation"
+          },
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "Z",
+              "CurveAimingValueMultiply": 0.07441176470588236,
+              "CurveTimeMultiply": 1,
+              "CurveValueMultiply": 0.7441176470588236,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsRotation"
+          },
+          {
+            "Enable": true,
+            "Process": {
+              "ComponentType": "Z",
+              "CurveAimingValueMultiply": 0.004,
+              "CurveTimeMultiply": 0.5,
+              "CurveValueMultiply": 0.005,
+              "TransformationCurve": {
+                "Keys": [
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0,
+                    "value": 0
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.1,
+                    "value": 2
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 0.3,
+                    "value": -0.75
+                  },
+                  {
+                    "inTangent": 0,
+                    "outTangent": 0,
+                    "time": 1,
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            "Target": "HandsPosition"
+          }
+        ]
+      },
+      "Velocity": -10,
+      "CenterOfImpact": 0.25,
+      "ShotgunDispersion": 2,
+      "shotgunDispersion": 2,
+      "DoubleActionAccuracyPenalty": 0.7,
+      "ammoCaliber": "Caliber410g",
+      "defAmmo": "36d2e4ec1ac64ab19d477d5b",
+      "defMagType": "f214da7cd7c34d27f8086a1d",
+      "weapFireType": [
+        "single",
+        "doubleaction"
+      ],
+      "weapClass": "pistol",
+      "weapUseType": "secondary"
+    },
+    "locales": {
+      "en": {
+        "name": "Bailiff 410 revolver",
+        "shortName": "Bailiff 410",
+        "description": "A compact five-shot revolver with a 2-inch barrel, built to fire .410/76 shotshells. Light and quick to handle, with fixed fiber-optic sights and no mounts for accessories. The short barrel costs muzzle velocity and makes it kick harder than the heavier Raging Judge. It can fire in single-action or double-action mode."
+      },
+      "po": {
+        "name": "Revólver Bailiff 410",
+        "shortName": "Bailiff 410",
+        "description": "Revólver compacto de cinco tiros com cano de 2 polegadas, feito para cartuchos .410/76. Leve e rápido de manejar, com miras fixas de fibra óptica e sem pontos para acessórios. O cano curto custa velocidade, e o coice é mais forte que o da Raging Judge, mais pesada. Permite disparos em ação simples ou dupla."
+      }
+    },
+    "fleaPriceRoubles": 43000,
+    "handbookPriceRoubles": 43000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false,
+    "addtoInventorySlots": [
+      "Holster"
+    ]
+  },
+  "f214da7cd7c34d27f8086a1d": {
+    "itemTplToClone": "633ec6ee025b096d320a3b15",
+    "parentId": "610720f290b75a49ff2e5e25",
+    "handbookParentId": "5b5f754a86f774094242f19b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "mag_bailiff_410_5.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "05bed773282157773907ca81",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_000",
+          "_parent": "f214da7cd7c34d27f8086a1d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "342938e3adece9be461b56ee",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_001",
+          "_parent": "f214da7cd7c34d27f8086a1d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "39cfaf3063b5c5a9c5bd278e",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_002",
+          "_parent": "f214da7cd7c34d27f8086a1d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "0468d49a9ca1214a837e7450",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_003",
+          "_parent": "f214da7cd7c34d27f8086a1d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        },
+        {
+          "_id": "c4714b08fb33bdbdbd4c8641",
+          "_mergeSlotWithChildren": false,
+          "_name": "camora_004",
+          "_parent": "f214da7cd7c34d27f8086a1d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ],
+                "MaxStackCount": 1
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ],
+      "Weight": 0.12,
+      "Ergonomics": 0,
+      "Recoil": 0,
+      "Cartridges": [
+        {
+          "_id": "6d4d6b015000bc3645b78d38",
+          "_max_count": 5,
+          "_name": "cartridges",
+          "_parent": "f214da7cd7c34d27f8086a1d",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "3ed19bd544854f098ce5c2bb",
+                  "36d2e4ec1ac64ab19d477d5b",
+                  "6aea74e19d394c03816fd104"
+                ]
+              }
+            ]
+          },
+          "_proto": "5748538b2459770af276a261"
+        }
+      ]
+    },
+    "locales": {
+      "en": {
+        "name": "Bailiff 410 5-round cylinder",
+        "shortName": "Bailiff cyl.",
+        "description": "A five-chamber .410/76 cylinder for the Bailiff 410 revolver."
+      },
+      "po": {
+        "name": "Tambor de 5 tiros .410 da Bailiff 410",
+        "shortName": "Tambor BF",
+        "description": "Tambor de cinco câmaras .410/76 para o revólver Bailiff 410."
+      }
+    },
+    "fleaPriceRoubles": 5000,
+    "handbookPriceRoubles": 5000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  }
+}

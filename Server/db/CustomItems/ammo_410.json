@@ -1,0 +1,212 @@
+{
+  "3ed19bd544854f098ce5c2bb": {
+    "itemTplToClone": "5a38ebd9c4a282000d722a5b",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "patron_410x76_birdshot.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber410g",
+      "Damage": 10,
+      "ArmorDamage": 2,
+      "PenetrationPower": 0,
+      "ProjectileCount": 20,
+      "buckshotBullets": 20,
+      "ammoType": "buckshot",
+      "InitialSpeed": 330,
+      "ammoRec": -10,
+      "Weight": 0.025,
+      "BulletMassGram": 0.16,
+      "BulletDiameterMilimeters": 3.0,
+      "BallisticCoeficient": 0.02,
+      "ammoAccr": 0,
+      "Tracer": false,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "casingName": ".410/76",
+      "casingMass": 7.0,
+      "casingSounds": "shotgun_small"
+    },
+    "locales": {
+      "en": {
+        "name": ".410/76 lead birdshot",
+        "shortName": ".410 birdshot",
+        "description": "A .410/76 shotshell loaded with fine lead shot for small game and unarmored targets at short range."
+      },
+      "po": {
+        "name": ".410/76 chumbo fino",
+        "shortName": ".410 fino",
+        "description": "Cartucho .410/76 com chumbo fino, destinado à caça de animais pequenos e a alvos sem proteção a curta distância."
+      }
+    },
+    "fleaPriceRoubles": 85,
+    "handbookPriceRoubles": 85,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "traders": {
+      "JAEGER": {
+        "8fc5d61514ca4cee9b39dcdd": {
+          "barterSettings": {
+            "loyalLevel": 1,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 200
+          },
+          "barters": [
+            {
+              "count": 85,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "36d2e4ec1ac64ab19d477d5b": {
+    "itemTplToClone": "5a38ebd9c4a282000d722a5b",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "patron_410x76_buckshot.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber410g",
+      "Damage": 35,
+      "ArmorDamage": 10,
+      "PenetrationPower": 3,
+      "ProjectileCount": 5,
+      "buckshotBullets": 5,
+      "ammoType": "buckshot",
+      "InitialSpeed": 330,
+      "ammoRec": 0,
+      "Weight": 0.03,
+      "BulletMassGram": 4.53,
+      "BulletDiameterMilimeters": 9.14,
+      "BallisticCoeficient": 0.035,
+      "ammoAccr": 0,
+      "Tracer": false,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "casingName": ".410/76",
+      "casingMass": 7.0,
+      "casingSounds": "shotgun_small"
+    },
+    "locales": {
+      "en": {
+        "name": ".410/76 000 buckshot",
+        "shortName": ".410 000",
+        "description": "A .410/76 shotshell loaded with five large lead pellets. It delivers a stronger impact per pellet than birdshot, with limited armor penetration."
+      },
+      "po": {
+        "name": ".410/76 chumbo grosso 000",
+        "shortName": ".410 000",
+        "description": "Cartucho .410/76 com cinco esferas grandes de chumbo. Cada bago causa mais dano que o chumbo fino, com pouca capacidade de atravessar blindagem."
+      }
+    },
+    "fleaPriceRoubles": 155,
+    "handbookPriceRoubles": 155,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "traders": {
+      "JAEGER": {
+        "ff38d4dc32444ed083c5d88a": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 200
+          },
+          "barters": [
+            {
+              "count": 155,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "6aea74e19d394c03816fd104": {
+    "itemTplToClone": "5d6e6a53a4b9361bd473feec",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "patron_410x76_slug.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber410g",
+      "Damage": 95,
+      "ArmorDamage": 30,
+      "PenetrationPower": 14,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "InitialSpeed": 420,
+      "ammoRec": 5,
+      "Weight": 0.019,
+      "BulletMassGram": 7.1,
+      "BulletDiameterMilimeters": 10.4,
+      "BallisticCoeficient": 0.085,
+      "ammoAccr": 50,
+      "Tracer": false,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "casingName": ".410/76",
+      "casingMass": 7.0,
+      "casingSounds": "shotgun_small"
+    },
+    "locales": {
+      "en": {
+        "name": ".410/76 lead slug",
+        "shortName": ".410 slug",
+        "description": "A .410/76 shotshell carrying a single lead slug. It provides a more focused impact than shot loads, with modest armor penetration."
+      },
+      "po": {
+        "name": ".410/76 projétil único de chumbo",
+        "shortName": ".410 slug",
+        "description": "Cartucho .410/76 com um projétil único de chumbo. Concentra o impacto em um único ponto e oferece penetração moderada de blindagem."
+      }
+    },
+    "fleaPriceRoubles": 190,
+    "handbookPriceRoubles": 190,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "traders": {
+      "JAEGER": {
+        "4af235b62ffe4a419428c6f3": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 200
+          },
+          "barters": [
+            {
+              "count": 190,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

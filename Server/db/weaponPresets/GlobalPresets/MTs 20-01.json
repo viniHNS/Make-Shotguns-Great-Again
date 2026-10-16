@@ -1,0 +1,37 @@
+{
+  "78f8d3f1355e4b4a32811e42": {
+    "_id": "78f8d3f1355e4b4a32811e42",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "MTs 20-01",
+    "_encyclopedia": "d74f3873e67437d9b93503b1",
+    "_parent": "0aba9b9c9161bf2a667cafb1",
+    "_items": [
+      {
+        "_id": "0aba9b9c9161bf2a667cafb1",
+        "_tpl": "d74f3873e67437d9b93503b1",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "1ffb4517a2e35669e9087456",
+        "_tpl": "5a38ee51c4a282000c5a955c",
+        "parentId": "0aba9b9c9161bf2a667cafb1",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "9a1c0742395fb9c9baaa12c7",
+        "_tpl": "5adf23995acfc400185c2aeb",
+        "parentId": "0aba9b9c9161bf2a667cafb1",
+        "slotId": "mod_stock"
+      }
+    ]
+  }
+}
