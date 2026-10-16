@@ -292,7 +292,7 @@ Make-Shotguns-Great-Again/
 - SOK-12 Alliance Armament 30-round magazine model: [HyHylie](https://modworkshop.net/user/hyhylie)
 - Remington 7188 model,  KS-23K, Monolith Arms P-12, Dracarys GEN-12 : Akinaro (CGTrader)
 - Saiga Spike: Warface.
-Bailiff 410: Rainbow Six Siege.
+- Bailiff 410: Rainbow Six Siege.
 - Taurus Raging Judge model: Hired Ops. 
 - Mossberg 590M model: thred (CGTrader).
 - Bailiff 410: Rainbow Six Siege.
