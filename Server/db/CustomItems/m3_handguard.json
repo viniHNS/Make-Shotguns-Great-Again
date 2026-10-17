@@ -118,7 +118,7 @@
     "addtoSecureFilters": true,
     "addtoTraders": true,
     "traders": {
-      "MECHANIC": {
+      "5a7c2eca46aef81a7ca2145d": {
         "6910f949a82869d94aeb0925": {
           "barterSettings": {
             "loyalLevel": 2,

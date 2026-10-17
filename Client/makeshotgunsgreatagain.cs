@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.18.0")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.18.1")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;

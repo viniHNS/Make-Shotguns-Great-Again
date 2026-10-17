@@ -51,7 +51,7 @@
     "addtoStaticAmmo": false,
     "addtoStaticLootContainers": false,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "8fc5d61514ca4cee9b39dcdd": {
           "barterSettings": {
             "loyalLevel": 1,
@@ -121,7 +121,7 @@
     "addtoStaticAmmo": false,
     "addtoStaticLootContainers": false,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "ff38d4dc32444ed083c5d88a": {
           "barterSettings": {
             "loyalLevel": 2,
@@ -191,7 +191,7 @@
     "addtoStaticAmmo": false,
     "addtoStaticLootContainers": false,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "4af235b62ffe4a419428c6f3": {
           "barterSettings": {
             "loyalLevel": 2,

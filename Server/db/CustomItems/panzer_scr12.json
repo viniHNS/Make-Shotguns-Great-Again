@@ -515,7 +515,7 @@
     "handbookPriceRoubles": 12000,
     "addtoTraders": true,
     "traders": {
-      "PEACEKEEPER": {
+      "5935c25fb3acc3127c3d8cd9": {
         "9b2f29785e5b46de3d08c850": {
           "barterSettings": {
             "loyalLevel": 3,
@@ -615,7 +615,7 @@
     "handbookPriceRoubles": 22000,
     "addtoTraders": true,
     "traders": {
-      "PEACEKEEPER": {
+      "5935c25fb3acc3127c3d8cd9": {
         "171950f4b910cda2f3ea9694": {
           "barterSettings": {
             "loyalLevel": 3,
@@ -697,7 +697,7 @@
     "addtoTraders": true,
     "addtoSecureFilters": true,
     "traders": {
-      "PEACEKEEPER": {
+      "5935c25fb3acc3127c3d8cd9": {
         "18f0632a326b308db3e0d296": {
           "barterSettings": {
             "loyalLevel": 3,
@@ -780,7 +780,7 @@
     "addtoTraders": true,
     "addtoSecureFilters": true,
     "traders": {
-      "PEACEKEEPER": {
+      "5935c25fb3acc3127c3d8cd9": {
         "381a74aec075f3f8894800de": {
           "barterSettings": {
             "loyalLevel": 3,

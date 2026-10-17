@@ -40,7 +40,7 @@
     "addtoSecureFilters": true,
     "addtoTraders": true,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "691120fd21a289d9b898cb35": {
           "barterSettings": {
             "loyalLevel": 2,

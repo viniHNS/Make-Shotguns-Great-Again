@@ -56,7 +56,7 @@
     "addtoSecureFilters": true,
     "addtoTraders": true,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "c048ee2278bc00f2e44ce811": {
           "barterSettings": {
             "loyalLevel": 3,
@@ -131,7 +131,7 @@
     "addtoSecureFilters": true,
     "addtoTraders": true,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "05e4b6124003b75ba1801e4a": {
           "barterSettings": {
             "loyalLevel": 4,
@@ -206,7 +206,7 @@
     "addtoSecureFilters": true,
     "addtoTraders": true,
     "traders": {
-      "JAEGER": {
+      "5c0647fdd443bc2504c2d371": {
         "323929c97632e28d580871f2": {
           "barterSettings": {
             "loyalLevel": 3,

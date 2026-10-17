@@ -356,7 +356,7 @@
     "addtoTraders": true,
     "addtoSecureFilters": true,
     "traders": {
-      "PEACEKEEPER": {
+      "5935c25fb3acc3127c3d8cd9": {
         "aa80671228f3ff5116a28bf2": {
           "barterSettings": {
             "loyalLevel": 2,

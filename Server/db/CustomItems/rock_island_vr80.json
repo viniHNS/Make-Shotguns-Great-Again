@@ -240,7 +240,7 @@
     "addtoTraders": true,
     "addtoSecureFilters": true,
     "traders": {
-      "SKIER": {
+      "58330581ace78e27b8b10cee": {
         "6ac0f1e2277937dd42ac877f": {
           "barterSettings": {
             "loyalLevel": 2,
@@ -288,7 +288,7 @@
     "addtoTraders": true,
     "addtoSecureFilters": true,
     "traders": {
-      "SKIER": {
+      "58330581ace78e27b8b10cee": {
         "6ac0f1e2277937dd42ac8780": {
           "barterSettings": {
             "loyalLevel": 2,
@@ -337,7 +337,7 @@
     "handbookPriceRoubles": 7000,
     "addtoTraders": true,
     "traders": {
-      "SKIER": {
+      "58330581ace78e27b8b10cee": {
         "7685bde5e6825be00b376803": {
           "barterSettings": {
             "loyalLevel": 2,
@@ -384,7 +384,7 @@
     "handbookPriceRoubles": 12000,
     "addtoTraders": true,
     "traders": {
-      "SKIER": {
+      "58330581ace78e27b8b10cee": {
         "e109920d08e8fd7d6cc6f1b1": {
           "barterSettings": {
             "loyalLevel": 2,
@@ -453,7 +453,7 @@
     "handbookPriceRoubles": 13300,
     "addtoTraders": true,
     "traders": {
-      "MECHANIC": {
+      "5a7c2eca46aef81a7ca2145d": {
         "6ac179391d36ab01d57ea09e": {
           "barterSettings": {
             "loyalLevel": 2,
@@ -661,7 +661,7 @@
     "handbookPriceRoubles": 9000,
     "addtoTraders": true,
     "traders": {
-      "SKIER": {
+      "58330581ace78e27b8b10cee": {
         "a178e97354e921a75e4d7f6c": {
           "barterSettings": {
             "loyalLevel": 2,
