@@ -44,6 +44,11 @@
         "name": "KS-23M 23x75 6-shell magazine",
         "shortName": "KS-23Mx6",
         "description": "A 6-shell KS-23M 23x75 magazine."
+      },
+      "ru": {
+        "name": "Магазин на 6 патронов 23x75 для КС-23М",
+        "shortName": "КС-23Мx6",
+        "description": "Магазин на 6 патронов 23x75 для КС-23М."
       }
     },
     

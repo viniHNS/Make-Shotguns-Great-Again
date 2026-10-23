@@ -190,6 +190,11 @@
         "name": "Escopeta semi-automática TTI JW4 Dracarys GEN-12 12ga",
         "shortName": "Dracarys",
         "description": "Escopeta semiautomática calibre 12 preparada para competição pela Taran Tactical Innovations sobre o Genesis Arms GEN-12, um upper de escopeta no padrão AR-10 com ação de recuo curto. Famosa por John Wick 4, mantém os comandos do AR, o manejo recíproco do lado direito e o trilho superior inteiro, e é alimentada por carregadores próprios. Modular como qualquer AR: empunhaduras, tubos, coronhas e guarda-mãos podem ser trocados."
+      },
+      "ru": {
+        "name": "Самозарядное ружье TTI JW4 Dracarys GEN-12 12к",
+        "shortName": "Dracarys",
+        "description": "Спортивно доведённое самозарядное ружьё 12 калибра, собранное Taran Tactical Innovations на базе Genesis Arms GEN-12 — ружейного верхнего ресивера формата AR-10 с автоматикой на коротком ходе ствола. Прославлено фильмом \"Джон Уик 4\"; сохраняет привычные органы управления AR, подвижную рукоятку взведения справа и сплошную верхнюю планку, питается из собственных коробчатых магазинов. Модульно, как любая AR: рукоятки, буферные трубы, приклады и цевья можно менять."
       }
     },
     "fleaPriceRoubles": 70000,
@@ -414,6 +419,11 @@
         "name": "Receiver TTI Dracarys GEN-12 12ga (Cinza JW4)",
         "shortName": "GEN-12 Cinza",
         "description": "Conjunto de upper e lower receiver da Dracarys GEN-12 na cor cinza JW4: upper calibre 12 de recuo curto da Genesis Arms sobre um lower padrão AR-10, com trilho superior inteiro."
+      },
+      "ru": {
+        "name": "Ресивер для TTI Dracarys GEN-12 12к (JW4 Grey)",
+        "shortName": "GEN-12 Grey",
+        "description": "Комплект верхнего и нижнего ресивера Dracarys GEN-12 в цвете JW4 Grey: верхний ресивер 12 калибра Genesis Arms с автоматикой на коротком ходе ствола на нижнем ресивере формата AR-10, со сплошной верхней планкой."
       }
     },
     "fleaPriceRoubles": 24000,
@@ -650,6 +660,11 @@
         "name": "Receiver TTI Dracarys GEN-12 12ga (Preta)",
         "shortName": "GEN-12 Preta",
         "description": "Conjunto de upper e lower receiver da Dracarys GEN-12 na cor preta: upper calibre 12 de recuo curto da Genesis Arms sobre um lower padrão AR-10, com trilho superior inteiro."
+      },
+      "ru": {
+        "name": "Ресивер для TTI Dracarys GEN-12 12к (Черный)",
+        "shortName": "GEN-12 Черный",
+        "description": "Комплект верхнего и нижнего ресивера Dracarys GEN-12 в чёрном цвете: верхний ресивер 12 калибра Genesis Arms с автоматикой на коротком ходе ствола на нижнем ресивере формата AR-10, со сплошной верхней планкой."
       }
     },
     "fleaPriceRoubles": 24000,
@@ -886,6 +901,11 @@
         "name": "Receiver TTI Dracarys GEN-12 12ga (Areia)",
         "shortName": "GEN-12 Areia",
         "description": "Conjunto de upper e lower receiver da Dracarys GEN-12 na cor areia: upper calibre 12 de recuo curto da Genesis Arms sobre um lower padrão AR-10, com trilho superior inteiro."
+      },
+      "ru": {
+        "name": "Ресивер для TTI Dracarys GEN-12 12к (FDE)",
+        "shortName": "GEN-12 FDE",
+        "description": "Комплект верхнего и нижнего ресивера Dracarys GEN-12 в цвете FDE: верхний ресивер 12 калибра Genesis Arms с автоматикой на коротком ходе ствола на нижнем ресивере формата AR-10, со сплошной верхней планкой."
       }
     },
     "fleaPriceRoubles": 24000,
@@ -1096,6 +1116,11 @@
         "name": "Guarda-mão TTI Dracarys GEN-12 (Cinza JW4)",
         "shortName": "GEN-12 Cinza",
         "description": "Guarda-mão de fábrica da Dracarys GEN-12 na cor cinza JW4, com trilho superior inteiro e pontos para acessórios."
+      },
+      "ru": {
+        "name": "Цевье для TTI Dracarys GEN-12 (JW4 Grey)",
+        "shortName": "GEN-12 Grey",
+        "description": "Заводское цевьё Dracarys GEN-12 в цвете JW4 Grey со сплошной верхней планкой и местами для крепления аксессуаров."
       }
     },
     "fleaPriceRoubles": 15000,
@@ -1306,6 +1331,11 @@
         "name": "Guarda-mão TTI Dracarys GEN-12 (Preta)",
         "shortName": "GEN-12 Preta",
         "description": "Guarda-mão de fábrica da Dracarys GEN-12 na cor preta, com trilho superior inteiro e pontos para acessórios."
+      },
+      "ru": {
+        "name": "Цевье для TTI Dracarys GEN-12 (Черное)",
+        "shortName": "GEN-12 Черное",
+        "description": "Заводское цевьё Dracarys GEN-12 в чёрном цвете со сплошной верхней планкой и местами для крепления аксессуаров."
       }
     },
     "fleaPriceRoubles": 15000,
@@ -1516,6 +1546,11 @@
         "name": "Guarda-mão TTI Dracarys GEN-12 (Areia)",
         "shortName": "GEN-12 Areia",
         "description": "Guarda-mão de fábrica da Dracarys GEN-12 na cor areia, com trilho superior inteiro e pontos para acessórios."
+      },
+      "ru": {
+        "name": "Цевье для TTI Dracarys GEN-12 (FDE)",
+        "shortName": "GEN-12 FDE",
+        "description": "Заводское цевьё Dracarys GEN-12 в цвете FDE со сплошной верхней планкой и местами для крепления аксессуаров."
       }
     },
     "fleaPriceRoubles": 15000,
@@ -1590,6 +1625,11 @@
         "name": "Cano 267mm para Dracarys GEN-12 12ga",
         "shortName": "GEN-12 267mm",
         "description": "Cano de 267 mm (10,5\") para a Dracarys GEN-12, com rosca para bocais do padrão Saiga-12. A versão de cano curto famosa em John Wick 4."
+      },
+      "ru": {
+        "name": "Ствол 267мм для Dracarys GEN-12 12к",
+        "shortName": "GEN-12 267мм",
+        "description": "Ствол 267мм (10,5\") для Dracarys GEN-12 с резьбой под дульные устройства стандарта Сайга-12. Короткоствольная версия, прославленная фильмом \"Джон Уик 4\"."
       }
     },
     "fleaPriceRoubles": 26250,
@@ -1664,6 +1704,11 @@
         "name": "Cano 457mm para Dracarys GEN-12 12ga",
         "shortName": "GEN-12 457mm",
         "description": "Cano de 457 mm (18\") para a Dracarys GEN-12, com rosca para bocais do padrão Saiga-12. Mais velocidade e um padrão mais fechado que o cano curto."
+      },
+      "ru": {
+        "name": "Ствол 457мм для Dracarys GEN-12 12к",
+        "shortName": "GEN-12 457мм",
+        "description": "Ствол 457мм (18\") для Dracarys GEN-12 с резьбой под дульные устройства стандарта Сайга-12. Выше начальная скорость и кучнее осыпь, чем у короткого ствола."
       }
     },
     "fleaPriceRoubles": 36250,
@@ -1712,6 +1757,11 @@
         "name": "Compensador TTI Dracarys 12ga",
         "shortName": "TTI comp",
         "description": "Compensador com saídas laterais da Taran Tactical Innovations para a Dracarys GEN-12. Compatível com roscas do padrão Saiga-12."
+      },
+      "ru": {
+        "name": "Компенсатор TTI Dracarys 12к",
+        "shortName": "TTI комп.",
+        "description": "Компенсатор с боковыми окнами производства Taran Tactical Innovations для Dracarys GEN-12. Подходит на резьбу стандарта Сайга-12."
       }
     },
     "fleaPriceRoubles": 13000,
@@ -1760,6 +1810,11 @@
         "name": "Coronha BCM GUNFIGHTER Mod 0",
         "shortName": "GF Mod 0",
         "description": "Coronha BCM GUNFIGHTER Mod 0 para tubos de AR-15, a coronha de fábrica da Dracarys GEN-12."
+      },
+      "ru": {
+        "name": "Приклад BCM \"GUNFIGHTER Mod 0\" для AR-15",
+        "shortName": "GF Mod 0",
+        "description": "Приклад BCM GUNFIGHTER Mod 0 для буферных труб AR-15, штатный приклад Dracarys GEN-12."
       }
     },
     "fleaPriceRoubles": 12000,
@@ -1812,6 +1867,11 @@
         "name": "Empunhadura BCM GUNFIGHTER Mod 3 para sistemas AR-15",
         "shortName": "GF Mod 3",
         "description": "Empunhadura BCM GUNFIGHTER Mod 3 para sistemas AR-15, a empunhadura de fábrica da Dracarys GEN-12."
+      },
+      "ru": {
+        "name": "Пистолетная рукоятка BCM \"GUNFIGHTER Mod 3\" для AR-15",
+        "shortName": "GF Mod 3",
+        "description": "Пистолетная рукоятка BCM GUNFIGHTER Mod 3 для систем на базе AR-15, штатная рукоятка Dracarys GEN-12."
       }
     },
     "fleaPriceRoubles": 7000,
@@ -1898,6 +1958,11 @@
         "name": "Carregador de 10 munições Dracarys GEN-12 12ga",
         "shortName": "GEN-12 10",
         "description": "Carregador de 10 munições para a Genesis Arms GEN-12 e a Dracarys."
+      },
+      "ru": {
+        "name": "Магазин на 10 патронов 12к для Dracarys GEN-12",
+        "shortName": "GEN-12 10",
+        "description": "Магазин на 10 патронов для Genesis Arms GEN-12 и Dracarys."
       }
     },
     "fleaPriceRoubles": 10000,
@@ -1981,6 +2046,11 @@
         "name": "Carregador de 15 munições Dracarys GEN-12 12ga",
         "shortName": "GEN-12 15",
         "description": "Carregador estendido de 15 munições para a Genesis Arms GEN-12 e a Dracarys."
+      },
+      "ru": {
+        "name": "Магазин на 15 патронов 12к для Dracarys GEN-12",
+        "shortName": "GEN-12 15",
+        "description": "Удлинённый магазин на 15 патронов для Genesis Arms GEN-12 и Dracarys."
       }
     },
     "fleaPriceRoubles": 17500,

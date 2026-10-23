@@ -382,6 +382,11 @@
         "name": "Escopeta bullpup Saiga-12 \"Spike\" 12ga",
         "shortName": "Saiga Spike",
         "description": "Escopeta semiautomática Saiga-12 reconstruída num chassi bullpup da Spike's Tactical. Com o mecanismo e o carregador atrás do punho, ela mantém o cano longo e fica bem mais curta e equilibrada que a Saiga original. O chassi tem trilhos Picatinny para miras, miras de ferro, dispositivos táticos e empunhadura, e o cano mantém a rosca da Saiga para bocais. Usa os carregadores padrão da Saiga-12."
+      },
+      "ru": {
+        "name": "Самозарядный карабин-буллпап Сайга-12 \"Spike\" 12к",
+        "shortName": "Сайга Spike",
+        "description": "Самозарядный карабин Сайга-12, перестроенный в шасси-буллпап компанией Spike's Tactical. Перенос механизма и магазина за пистолетную рукоятку сохраняет полноразмерный ствол, но делает оружие намного короче и сбалансированнее штатной Сайги. На шасси есть планки Пикатинни под оптику, механические прицельные приспособления, тактические устройства и переднюю рукоятку, а ствол сохраняет резьбу Сайги под дульные устройства. Питается из стандартных магазинов Сайга-12."
       }
     },
     "fleaPriceRoubles": 80000,

@@ -41,6 +41,11 @@
         "name": ".410/76 chumbo fino",
         "shortName": ".410 fino",
         "description": "Cartucho .410/76 com chumbo fino, destinado à caça de animais pequenos e a alvos sem proteção a curta distância."
+      },
+      "ru": {
+        "name": ".410/76 свинцовая дробь",
+        "shortName": ".410 дробь",
+        "description": "Патрон .410/76 с мелкой свинцовой дробью для охоты на мелкую дичь и стрельбы по незащищённым целям на короткой дистанции."
       }
     },
     "fleaPriceRoubles": 85,
@@ -111,6 +116,11 @@
         "name": ".410/76 chumbo grosso 000",
         "shortName": ".410 000",
         "description": "Cartucho .410/76 com cinco esferas grandes de chumbo. Cada bago causa mais dano que o chumbo fino, com pouca capacidade de atravessar blindagem."
+      },
+      "ru": {
+        "name": ".410/76 картечь 000",
+        "shortName": ".410 000",
+        "description": "Патрон .410/76 с пятью крупными свинцовыми картечинами. Каждая картечина бьёт сильнее дроби, бронепробитие ограниченное."
       }
     },
     "fleaPriceRoubles": 155,
@@ -181,6 +191,11 @@
         "name": ".410/76 projétil único de chumbo",
         "shortName": ".410 slug",
         "description": "Cartucho .410/76 com um projétil único de chumbo. Concentra o impacto em um único ponto e oferece penetração moderada de blindagem."
+      },
+      "ru": {
+        "name": ".410/76 свинцовая пуля",
+        "shortName": ".410 пуля",
+        "description": "Патрон .410/76 с одной свинцовой пулей. Даёт более сосредоточенное поражение, чем дробовые снаряды, при умеренном бронепробитии."
       }
     },
     "fleaPriceRoubles": 190,

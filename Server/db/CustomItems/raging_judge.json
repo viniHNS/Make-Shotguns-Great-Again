@@ -216,6 +216,11 @@
         "name": "Revólver Taurus Raging Judge .410",
         "shortName": "Raging Judge",
         "description": "Revólver Taurus de armação pesada, adaptado para cartuchos .410/76. Esta configuração de cinco tiros tem empunhadura de borracha integral. Permite disparos em ação simples ou dupla."
+      },
+      "ru": {
+        "name": "Револьвер Taurus Raging Judge .410",
+        "shortName": "Raging Judge",
+        "description": "Револьвер Taurus на тяжёлой рамке, переделанный под патроны .410/76. Эта пятизарядная версия имеет неразборную резиновую рукоятку. Стреляет как самовзводом, так и с предварительным взведением курка."
       }
     },
     "fleaPriceRoubles": 58600,
@@ -372,6 +377,11 @@
         "name": "Tambor de 5 tiros .410 da Raging Judge",
         "shortName": "Tambor RJ",
         "description": "Tambor de cinco câmaras .410/76 para o revólver Raging Judge."
+      },
+      "ru": {
+        "name": "Барабан для Raging Judge .410",
+        "shortName": "Барабан RJ",
+        "description": "Пятикаморный барабан .410/76 для револьвера Raging Judge."
       }
     },
     "fleaPriceRoubles": 6400,

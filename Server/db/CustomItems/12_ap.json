@@ -23,6 +23,11 @@
         "name": "12/70 armor-piercing Slug “SVAROG”",
         "shortName": "12/70 SVAROG",
         "description": "A 12-gauge armor-piercing Slug shell developed by SVAROG. The shell is designed to penetrate armor, stopping vehicles and penetrating targets behind cover."
+      },
+      "ru": {
+        "name": "12/70 бронебойная пуля \"СВАРОГ\"",
+        "shortName": "12/70 СВАРОГ",
+        "description": "Бронебойный пулевой патрон 12 калибра, разработанный компанией \"СВАРОГ\". Пуля рассчитана на пробитие бронезащиты, остановку транспорта и поражение целей за укрытиями."
       }
     },
     "addCaliberToAllCloneLocations": true,

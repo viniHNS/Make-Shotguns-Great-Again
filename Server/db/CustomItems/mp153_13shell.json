@@ -60,6 +60,11 @@
         "name": "MP-153 12ga competition 13-shell magazine",
         "shortName": "MP153x13",
         "description": "A custom made carbon fiber 13-shell magazine for the MP-153 12ga shotgun."
+      },
+      "ru": {
+        "name": "Магазин спортивный на 13 патронов 12к для MP-153",
+        "shortName": "MP153x13",
+        "description": "Кастомный карбоновый магазин на 13 патронов для ружья MP-153 12 калибра."
       }
     },
     

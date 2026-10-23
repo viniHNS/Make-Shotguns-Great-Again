@@ -1,0 +1,185 @@
+{
+  "d6f4775ed6deafe2706de0d7": {
+    "itemTplToClone": "5e848cc2988a8701445df1e8",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "weapon_toz_ks23a_23x75_container.bundle",
+        "rcid": ""
+      },
+      "Slots": [
+        {
+          "_id": "2cbf9b19c861700cba0beef5",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e848d2eea0a7c419c2f9bfd"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "86dc6b415b889fd10ee2ac2c",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_handguard",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e848d51e4dbc5266a4ec63b"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "b50ffef2cd09d3fc1414ea34",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_magazine",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "AnimationIndex": 0,
+                "Filter": [
+                  "5f647d9f8499b57dc40ddb93",
+                  "6910ebc01b0a1cfdd5877581"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d30c394bdc2dae468b4577",
+          "_required": true
+        },
+        {
+          "_id": "ccd3ea277be2ffcd238d70bd",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e848db4681bea2ada00daa9",
+                  "5e848d99865c0f329958c83b"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "a4564b9247a7cc15ee30e960",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_scope",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "65f05b9d39dab9e9ec049cfd"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        },
+        {
+          "_id": "c0df4641317a3d76e084b1e9",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_mount",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "55d48a634bdc2d8b2f8b456a"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": false
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "1c40b894fa1adb208333e36d",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon",
+          "_parent": "d6f4775ed6deafe2706de0d7",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "5e85aa1a988a8701445df1f5",
+                  "5e85aac65505fa48730d8af2",
+                  "5e85a9a6eacf8c039e4e2ac1",
+                  "5f647f31b6238e5dd066e196",
+                  "5e85a9f4add9fe03027d9bf1",
+                  "5f647fd3f6e4ab66c82faed6"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ],
+      "Weight": 1.9,
+      "Ergonomics": 34,
+      "RecoilForceUp": 504,
+      "RecoilForceBack": 649,
+      "RecoilCamera": 0.097,
+      "weapFireType": [
+        "single"
+      ],
+      "bFirerate": 40,
+      "defMagType": "6910ebc01b0a1cfdd5877581"
+    },
+    "locales": {
+      "en": {
+        "name": "TOZ KS-23S 23x75 semi-automatic shotgun",
+        "shortName": "KS-23S",
+        "description": "A semi-automatic conversion of the TOZ KS-23 special carbine. The pump action gave way to a gas-operated bolt with a charging handle on the right side of a reworked receiver, and the magazine tube was extended to hold six 23x75mm shells. It keeps the 700mm barrel, forend, wooden stock and sights of the KS-23M, and accepts the same stocks and the Rusak sight on its dovetail rail."
+      },
+      "po": {
+        "name": "Escopeta semiautomática TOZ KS-23S 23x75",
+        "shortName": "KS-23S",
+        "description": "Conversão semiautomática da carabina especial TOZ KS-23. A ação por bombeamento deu lugar a um ferrolho a gás com alavanca de manejo no lado direito de um receptor retrabalhado, e o tubo do carregador foi estendido para seis cartuchos 23x75 mm. Mantém o cano de 700 mm, a telha, a coronha de madeira e as miras da KS-23M, e aceita as mesmas coronhas e a mira Rusak no trilho dovetail."
+      },
+      "ru": {
+        "name": "Самозарядный карабин ТОЗ КС-23С 23x75мм",
+        "shortName": "КС-23С",
+        "description": "Самозарядная переделка специального карабина ТОЗ КС-23. Помповый механизм уступил место газоотводной автоматике с рукояткой взведения справа на переработанной ствольной коробке, а трубчатый магазин удлинён до шести патронов 23x75мм. Сохраняет ствол 700мм, цевьё, деревянный приклад и прицельные приспособления КС-23М, принимает те же приклады и прицел \"Русак\" на крепление \"ласточкин хвост\"."
+      }
+    },
+    "fleaPriceRoubles": 95000,
+    "handbookPriceRoubles": 62000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ]
+  }
+}

@@ -56,6 +56,11 @@
         "name": "Mossberg 590A1 12ga 508mm threaded barrel",
         "shortName": "590A1 508mm thr.",
         "description": "A 20 inch (508mm) barrel for Mossberg 590A1 12 gauge pump-action shotgun, machined with muzzle threading at the front."
+      },
+      "ru": {
+        "name": "Ствол 508мм с резьбой для Mossberg 590A1 12к",
+        "shortName": "590A1 508мм резьб.",
+        "description": "Ствол длиной 20 дюймов (508мм) для помпового ружья Mossberg 590A1 12 калибра с нарезанной на дульном срезе резьбой."
       }
     },
 

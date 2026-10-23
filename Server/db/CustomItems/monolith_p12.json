@@ -191,6 +191,11 @@
         "name": "Escopeta de ação por bombeamento Monolith Arms P-12 12ga",
         "shortName": "P-12",
         "description": "Escopeta bullpup americana de ação por bombeamento 12ga, projetada por volta de 2005 por Brian F. Abbott, da Monolith Arms. É alimentada por um carregador destacável de 20 munições deitado sobre o receptor, à maneira da FN P90, e acionada por um pump com punho vertical integrado. Segundo o projetista, o protótipo misturava peças impressas em 3D com componentes comprados prontos, para facilitar os reparos, e teria peso de gatilho ajustável. Foi apresentada em 2008 num vídeo promocional que nunca a mostrou atirando e não chegou à produção: o único protótipo teria sido vendido a um fabricante que desistiu de produzi-la."
+      },
+      "ru": {
+        "name": "Помповое ружье Monolith Arms P-12 12к",
+        "shortName": "P-12",
+        "description": "Американское помповое ружьё-буллпап 12 калибра, спроектированное около 2005 года Брайаном Ф. Эбботтом из Monolith Arms. Питается из отъёмного магазина на 20 патронов, лежащего плашмя поверх ствольной коробки на манер FN P90, а перезаряжается цевьём со встроенной вертикальной рукояткой. По словам конструктора, прототип сочетал напечатанные на 3D-принтере детали с готовыми покупными, чтобы упростить ремонт, и должен был получить регулируемое усилие спуска. Его показали в рекламном ролике 2008 года, в котором он так ни разу и не выстрелил, и до производства он не дошёл: единственный прототип, как говорят, продали производителю, который отказался его выпускать."
       }
     },
     "fleaPriceRoubles": 127000,
@@ -235,6 +240,11 @@
         "name": "Cano de 445 mm 12ga da Monolith Arms P-12",
         "shortName": "P-12 445mm",
         "description": "Cano liso de 445 mm da Monolith Arms P-12, sem rosca na boca. É fixo na arma."
+      },
+      "ru": {
+        "name": "Ствол 445мм для Monolith Arms P-12 12к",
+        "shortName": "P-12 445мм",
+        "description": "Гладкий ствол 445мм ружья Monolith Arms P-12 без дульной резьбы. Несъёмный."
       }
     },
     "fleaPriceRoubles": 26000,
@@ -304,6 +314,11 @@
         "name": "Carregador de 20 munições Monolith Arms P-12 12ga",
         "shortName": "P-12 20",
         "description": "Carregador de polímero translúcido com 20 munições para a Monolith Arms P-12. Fica deitado sobre o receptor e guarda os cartuchos na transversal, em fila dupla escalonada; o de cima gira para o alinhamento do cano ao alimentar."
+      },
+      "ru": {
+        "name": "Магазин на 20 патронов 12к для Monolith Arms P-12",
+        "shortName": "P-12 20",
+        "description": "Полупрозрачный полимерный магазин на 20 патронов для Monolith Arms P-12. Лежит плашмя поверх ствольной коробки и держит патроны поперёк, в два ряда в шахматном порядке; верхний патрон при подаче разворачивается вдоль канала ствола."
       }
     },
     "fleaPriceRoubles": 13000,

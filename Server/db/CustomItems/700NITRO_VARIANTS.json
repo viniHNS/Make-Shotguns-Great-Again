@@ -46,6 +46,11 @@
         "name": ".700 Nitro Express SP \"Mammoth\"",
         "shortName": ".700 SP",
         "description": "Carga expansiva personalizada .700 Nitro Express, apelidada de \"Mammoth\". O projétil mais curto tem uma ponta de chumbo exposta e prioriza dano elevado a alvos sem proteção, com menor capacidade de atravessar placas de blindagem."
+      },
+      "ru": {
+        "name": ".700 Nitro Express SP \"Мамонт\"",
+        "shortName": ".700 SP",
+        "description": "Самодельный полуоболочечный патрон .700 Nitro Express, прозванный \"Мамонт\". Укороченная пуля с открытым свинцовым носиком рассчитана на тяжёлые ранения незащищённых целей в ущерб пробитию бронепластин."
       }
     },
     "addCaliberToAllCloneLocations": false,
@@ -121,6 +126,11 @@
         "name": ".700 Nitro Express AP \"Goliath\"",
         "shortName": ".700 AP",
         "description": "Cartucho experimental perfurante .700 Nitro Express, apelidado de \"Goliath\". Um penetrador fino, afilado e endurecido é sustentado por um sabot de polímero dividido em quatro segmentos, em um estojo de latão. Esta carga especial de alto custo troca parte do dano devastador a alvos sem proteção por uma capacidade muito maior de atravessar blindagem."
+      },
+      "ru": {
+        "name": ".700 Nitro Express AP \"Голиаф\"",
+        "shortName": ".700 AP",
+        "description": "Экспериментальный бронебойный патрон .700 Nitro Express, прозванный \"Голиаф\". Узкий заострённый закалённый сердечник удерживается четырёхсегментным полимерным поддоном в латунной гильзе. Дорогая кустарная сборка жертвует частью сокрушительного урона по мягким целям ради заметно лучшего пробития брони."
       }
     },
     "addCaliberToAllCloneLocations": false,
@@ -196,6 +206,11 @@
         "name": ".700 Nitro Express chumbo grosso \"Cerberus\"",
         "shortName": ".700 CB",
         "description": "Carga especial de múltiplos projéteis .700 Nitro Express, apelidada de \"Cerberus\". O projétil único é substituído por oito esferas pesadas, produzindo uma dispersão devastadora a curta distância, com menor precisão e penetração de blindagem. A tampa curta de polímero vermelho e a faixa vermelha no estojo identificam a carga."
+      },
+      "ru": {
+        "name": ".700 Nitro Express картечь \"Цербер\"",
+        "shortName": ".700 CB",
+        "description": "Самодельный многопульный патрон .700 Nitro Express, прозванный \"Цербер\". Восемь тяжёлых картечин заменяют единственную винтовочную пулю и дают сокрушительную осыпь на ближней дистанции ценой точности и бронепробития. Патрон узнаётся по короткой красной полимерной заглушке и красной полосе на гильзе."
       }
     },
     "addCaliberToAllCloneLocations": false,

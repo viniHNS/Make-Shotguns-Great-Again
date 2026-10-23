@@ -82,6 +82,11 @@
         "name": "MP-700 Shorty .700 Nitro Express Double Rifle",
         "shortName": "MP-700 Shorty",
         "description": "A sawed-off variant of the MP-700 double-barreled rifle, re-chambered for .700 Nitro Express. Losing the stock and most of the barrel length trades accuracy for a devastatingly concealable hand cannon. Recoil is, unsurprisingly, brutal."
+      },
+      "ru": {
+        "name": "Обрез двуствольного штуцера MP-700 Shorty .700 Nitro Express",
+        "shortName": "MP-700 Shorty",
+        "description": "Обрез двуствольного штуцера MP-700 под патрон .700 Nitro Express. Без приклада и большей части ствола он теряет в точности, зато превращается в сокрушительную и легко скрываемую ручную пушку. Отдача, как нетрудно догадаться, зверская."
       }
     },
     "fleaPriceRoubles": 145000,

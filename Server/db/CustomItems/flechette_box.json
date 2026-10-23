@@ -36,6 +36,11 @@
         "name": "12/70 Flechette Kinghunter ammo pack (25 pcs)",
         "shortName": "12/70 Flechette pack",
         "description": "A box of 12/70 Flechette Kinghunter shells, 25 pieces."
+      },
+      "ru": {
+        "name": "Пачка патронов 12/70 флешетта Kinghunter (25 штук)",
+        "shortName": "12/70 флешетта пачка",
+        "description": "Пачка патронов 12/70 флешетта Kinghunter, 25 штук."
       }
     },
     

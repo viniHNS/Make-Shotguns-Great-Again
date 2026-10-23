@@ -100,6 +100,11 @@
         "name": "MP-700 .700 Nitro Express Double Rifle",
         "shortName": "MP-700",
         "description": "The MP-700 is a double-barreled rifle chambered in .700 Nitro Express. It is a break-action rifle with two barrels. The rifle is equipped with open sights. The rifle is intended for hunting dangerous animals."
+      },
+      "ru": {
+        "name": "Двуствольный штуцер MP-700 .700 Nitro Express",
+        "shortName": "MP-700",
+        "description": "MP-700 — двуствольный штуцер под патрон .700 Nitro Express. Переломное оружие с двумя стволами и открытыми прицельными приспособлениями. Предназначен для охоты на опасных зверей."
       }
     },
     "fleaPriceRoubles": 130245,

@@ -1,0 +1,63 @@
+{
+  "5c0647fdd443bc2504c2d371": {
+    "items": [
+      {
+        "_id": "8c6caedabac8ae573e21d617",
+        "_tpl": "f68e9b5e505b6ac446e28fbb",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "StackObjectsCount": 999999,
+          "UnlimitedCount": true,
+          "BuyRestrictionMax": 2,
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "17d4a46e5fc179a7635f2a17",
+        "_tpl": "bb4361711417c939a40c540d",
+        "parentId": "8c6caedabac8ae573e21d617",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "aee0dbbb4d0273c9cfc71e76",
+        "_tpl": "bb4361711417c939a40c540d",
+        "parentId": "hideout",
+        "slotId": "hideout",
+        "upd": {
+          "StackObjectsCount": 999999,
+          "UnlimitedCount": true,
+          "BuyRestrictionMax": 2
+        }
+      }
+    ],
+    "barter_scheme": {
+      "8c6caedabac8ae573e21d617": [
+        [
+          {
+            "_tpl": "5449016a4bdc2d6f028b456f",
+            "count": 42000
+          }
+        ]
+      ],
+      "aee0dbbb4d0273c9cfc71e76": [
+        [
+          {
+            "_tpl": "5449016a4bdc2d6f028b456f",
+            "count": 18000
+          }
+        ]
+      ]
+    },
+    "loyal_level_items": {
+      "8c6caedabac8ae573e21d617": 2,
+      "aee0dbbb4d0273c9cfc71e76": 2
+    }
+  }
+}

@@ -222,6 +222,11 @@
         "name": "Escopeta Panzer Arms SCR-XII 12ga",
         "shortName": "SCR-XII",
         "description": "Escopeta semiautomática calibre 12 da turca Panzer Arms, feita à imagem da FN SCAR: o mesmo lower, coronha dobrável, miras rebatíveis e trilhos modulares, com upper receiver de calibre 12, cano de 406 mm com rosca para bocais do padrão Saiga-12 e carregadores Mk12 próprios. Aceita a maioria das coronhas, trilhos e acessórios da FN SCAR."
+      },
+      "ru": {
+        "name": "Самозарядное ружье Panzer Arms SCR-XII 12к",
+        "shortName": "SCR-XII",
+        "description": "Самозарядное ружьё 12 калибра турецкой Panzer Arms, выполненное по образу FN SCAR: тот же нижний ресивер, складной приклад, откидные прицельные приспособления и модульные планки, но с верхним ресивером под 12 калибр, стволом 406мм с резьбой под дульные устройства стандарта Сайга-12 и собственными коробчатыми магазинами Mk12. Подходит большинство прикладов, планок и аксессуаров FN SCAR."
       }
     },
     "fleaPriceRoubles": 35000,
@@ -509,6 +514,11 @@
         "name": "Upper receiver Panzer Arms SCR-XII 12ga (FDE)",
         "shortName": "SCR-XII FDE",
         "description": "Upper receiver calibre 12 da Panzer Arms SCR-XII, baseado no upper da FN SCAR-H com a janela de ejeção alongada para cartuchos de escopeta. Aceita os trilhos, miras e ópticas da SCAR."
+      },
+      "ru": {
+        "name": "Верхний ресивер для Panzer Arms SCR-XII 12к (FDE)",
+        "shortName": "SCR-XII FDE",
+        "description": "Верхний ресивер 12 калибра ружья Panzer Arms SCR-XII на базе верхнего ресивера FN SCAR-H с увеличенным окном выброса под ружейные гильзы. Принимает планки, прицельные приспособления и оптику SCAR."
       }
     },
     "fleaPriceRoubles": 15000,
@@ -609,6 +619,11 @@
         "name": "Cano 406mm para SCR-XII 12ga",
         "shortName": "SCR-XII 406mm",
         "description": "Cano calibre 12 de 406 mm (16\") para a Panzer Arms SCR-XII, com rosca para bocais do padrão Saiga-12."
+      },
+      "ru": {
+        "name": "Ствол 406мм для SCR-XII 12к",
+        "shortName": "SCR-XII 406мм",
+        "description": "Ствол 406мм (16\") 12 калибра для Panzer Arms SCR-XII с резьбой под дульные устройства стандарта Сайга-12."
       }
     },
     "fleaPriceRoubles": 27500,
@@ -690,6 +705,11 @@
         "name": "Carregador Mk12 de 5 munições para SCR-XII 12ga",
         "shortName": "Mk12 5",
         "description": "Carregador Mk12 de aço com capacidade para 5 munições, para a Panzer Arms SCR-XII."
+      },
+      "ru": {
+        "name": "Магазин Mk12 на 5 патронов 12к для SCR-XII",
+        "shortName": "Mk12 5",
+        "description": "Стальной коробчатый магазин Mk12 на 5 патронов для Panzer Arms SCR-XII."
       }
     },
     "fleaPriceRoubles": 5625,
@@ -773,6 +793,11 @@
         "name": "Carregador Mk12 de 10 munições para SCR-XII 12ga",
         "shortName": "Mk12 10",
         "description": "Carregador Mk12 curvo de aço com capacidade para 10 munições, para a Panzer Arms SCR-XII."
+      },
+      "ru": {
+        "name": "Магазин Mk12 на 10 патронов 12к для SCR-XII",
+        "shortName": "Mk12 10",
+        "description": "Изогнутый стальной коробчатый магазин Mk12 на 10 патронов для Panzer Arms SCR-XII."
       }
     },
     "fleaPriceRoubles": 10000,

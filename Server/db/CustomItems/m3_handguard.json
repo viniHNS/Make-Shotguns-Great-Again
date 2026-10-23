@@ -111,6 +111,11 @@
         "name": "Benelli M3 Keymod Handguard",
         "shortName": "M3 Keymod",
         "description": "A Keymod handguard for the Benelli M3 shotgun, manufactured by Toni System."
+      },
+      "ru": {
+        "name": "Цевье Toni System \"KeyMod\" для Benelli M3",
+        "shortName": "M3 KeyMod",
+        "description": "Цевьё KeyMod для ружья Benelli M3 производства Toni System."
       }
     },
     "fleaPriceRoubles": 8325,

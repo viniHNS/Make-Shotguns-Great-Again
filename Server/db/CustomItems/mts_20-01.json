@@ -119,6 +119,11 @@
         "name": "Escopeta por ação de ferrolho MC 20-01",
         "shortName": "MC 20-01",
         "description": "Escopeta de caça calibre 20 por ação de ferrolho, com carregador destacável, fabricada em Tula pela TsKIB SOO desde 1979. A TOZ-106 foi desenvolvida a partir dela como versão compacta. O cano de 635 mm dá ao tiro mais velocidade e um grupo mais fechado que o da TOZ-106, em troca de peso e manejo. Usa os mesmos carregadores MC 20-01 Sb.3, coronhas e trilho de suporte da TOZ-106."
+      },
+      "ru": {
+        "name": "Болтовое ружье МЦ 20-01 20к",
+        "shortName": "МЦ 20-01",
+        "description": "Охотничье болтовое ружьё 20 калибра с отъёмным коробчатым магазином, выпускаемое в Туле ЦКИБ СОО с 1979 года. ТОЗ-106 был создан на его основе как компактная версия. Полноразмерный ствол 635мм даёт выстрелу большую скорость и более кучную осыпь, чем у ТОЗ-106, ценой веса и удобства обращения. Использует те же магазины МЦ 20-01 Сб.3, ложа и крепление \"ласточкин хвост\", что и ТОЗ-106."
       }
     },
     "fleaPriceRoubles": 21000,

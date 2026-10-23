@@ -1,0 +1,31 @@
+{
+  "16e3b076a7c98f4142aad12f": {
+    "_id": "16e3b076a7c98f4142aad12f",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Chiappa Triple Crown",
+    "_encyclopedia": "f68e9b5e505b6ac446e28fbb",
+    "_parent": "afafc2b9429b1d3f061cc0a1",
+    "_items": [
+      {
+        "_id": "afafc2b9429b1d3f061cc0a1",
+        "_tpl": "f68e9b5e505b6ac446e28fbb",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "b6bbffd2ad4108d1a09c1ca1",
+        "_tpl": "bb4361711417c939a40c540d",
+        "parentId": "afafc2b9429b1d3f061cc0a1",
+        "slotId": "mod_barrel"
+      }
+    ]
+  }
+}

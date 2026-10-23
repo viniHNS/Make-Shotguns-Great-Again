@@ -23,6 +23,11 @@
         "name": "12/70 7mm Buckshot Brass Case",
         "shortName": "12/70 Brass",
         "description": "A 12/70 buckshot with a brass case and a brass head. The brass case is reloadable and offers better corrosion resistance than steel cases. The brass head ensures reliable extraction and feeding in shotguns."
+      },
+      "ru": {
+        "name": "12/70 7мм картечь в латунной гильзе",
+        "shortName": "12/70 латунь",
+        "description": "Картечный патрон 12/70 в латунной гильзе с латунным донцем. Латунная гильза пригодна для переснаряжения и лучше стальной противостоит коррозии, а латунное донце обеспечивает надёжное извлечение и подачу в дробовиках."
       }
     },
     "addCaliberToAllCloneLocations": true,

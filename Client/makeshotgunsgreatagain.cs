@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.18.1")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.19.0")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
@@ -233,6 +233,7 @@ namespace makeshotgunsgreatagain
             new KS23MountAlignmentPatch().Enable();
             new MP18SilencedSoundPatch().Enable();
             new ForceMalfunctionPatch().Enable();
+            new MultiBarrelFireportsPatch().Enable();
 
             LogSource.LogInfo("plugin loaded!");
         }

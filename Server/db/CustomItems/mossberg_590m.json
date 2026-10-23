@@ -163,6 +163,11 @@
         "name": "Escopeta de ação por bombeamento Mossberg 590M 12ga",
         "shortName": "590M",
         "description": "Derivada da escopeta de ação por bombeamento Mossberg 590 alimentada por carregador. Mantém o mecanismo consagrado da 590, o cano de parede grossa de 18,5\" e a mobília padrão, mas é alimentada por um carregador destacável de fila dupla inserido à frente do guarda-mato, o que deixa a recarga muito mais rápida do que com um tubo."
+      },
+      "ru": {
+        "name": "Помповое ружье Mossberg 590M 12к",
+        "shortName": "590M",
+        "description": "Вариант помпового ружья Mossberg 590 с магазинным питанием. Сохраняет проверенный механизм 590, толстостенный ствол 18,5\" и штатную фурнитуру, но питается из отъёмного двухрядного коробчатого магазина, вставляемого перед спусковой скобой, что делает перезарядку куда быстрее, чем с трубчатым магазином."
       }
     },
     "fleaPriceRoubles": 58000,
@@ -219,6 +224,11 @@
         "name": "Cano de 470 mm 12ga da Mossberg 590M",
         "shortName": "590M 470mm",
         "description": "Cano de parede grossa de 470 mm (18,5\") da Mossberg 590M, com maça de mira. É fixo na arma."
+      },
+      "ru": {
+        "name": "Ствол 470мм для Mossberg 590M 12к",
+        "shortName": "590M 470мм",
+        "description": "Толстостенный ствол 470мм (18,5\") ружья Mossberg 590M с мушкой-шариком. Несъёмный."
       }
     },
     "fleaPriceRoubles": 12000,
@@ -247,6 +257,11 @@
         "name": "Telha da Mossberg 590M",
         "shortName": "590M telha",
         "description": "Telha padrão de polímero com nervuras da Mossberg 590M. Também serve na Mossberg 590A1."
+      },
+      "ru": {
+        "name": "Цевье для Mossberg 590M",
+        "shortName": "590M цевье",
+        "description": "Штатное ребристое полимерное цевьё ружья Mossberg 590M. Подходит и к Mossberg 590A1."
       }
     },
     "fleaPriceRoubles": 1900,
@@ -279,6 +294,11 @@
         "name": "Coronha da Mossberg 590M",
         "shortName": "590M coronha",
         "description": "Coronha sintética padrão da Mossberg 590M. Também serve na Mossberg 590A1."
+      },
+      "ru": {
+        "name": "Приклад для Mossberg 590M",
+        "shortName": "590M приклад",
+        "description": "Штатный пластиковый приклад ружья Mossberg 590M. Подходит и к Mossberg 590A1."
       }
     },
     "fleaPriceRoubles": 1900,
@@ -349,6 +369,11 @@
         "name": "Carregador de 10 munições Mossberg 590M 12ga",
         "shortName": "590M 10",
         "description": "Carregador de polímero de fila dupla com 10 munições para a Mossberg 590M."
+      },
+      "ru": {
+        "name": "Магазин на 10 патронов 12к для Mossberg 590M",
+        "shortName": "590M 10",
+        "description": "Двухрядный полимерный магазин на 10 патронов для Mossberg 590M."
       }
     },
     "fleaPriceRoubles": 9000,

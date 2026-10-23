@@ -114,6 +114,11 @@
         "name": "Escopeta bullpup KS-23K 23x75",
         "shortName": "KS-23K",
         "description": "Desenvolvimento bullpup da carabina especial KS-23, feito pela Fábrica de Armas de Tula para o Ministério do Interior da Rússia. Mantém a ação por bombeamento e o cano de 23 mm da KS-23, mas os cartuchos 23x75mmR vêm de um carregador destacável de 7 munições atrás do punho, o que deixa a arma bem mais curta e rápida de recarregar."
+      },
+      "ru": {
+        "name": "Помповый карабин-буллпап КС-23К 23x75мм",
+        "shortName": "КС-23К",
+        "description": "Буллпап-развитие специального карабина КС-23, созданное Тульским оружейным заводом для МВД России. Сохраняет помповый механизм и 23мм ствол КС-23, но патроны 23x75мм R подаются из отъёмного коробчатого магазина на 7 патронов, расположенного за пистолетной рукояткой, что делает оружие намного короче и быстрее в перезарядке."
       }
     },
     "fleaPriceRoubles": 80000,
@@ -154,6 +159,11 @@
         "name": "Cano 23x75 da KS-23K",
         "shortName": "KS-23K cano",
         "description": "Cano de 23 mm da KS-23K. É fixo na arma."
+      },
+      "ru": {
+        "name": "Ствол для КС-23К 23x75",
+        "shortName": "КС-23К ствол",
+        "description": "Ствол 23мм карабина КС-23К. Несъёмный."
       }
     },
     "fleaPriceRoubles": 7000,
@@ -188,6 +198,11 @@
         "name": "Telha da KS-23K",
         "shortName": "KS-23K telha",
         "description": "Telha da ação por bombeamento da KS-23K. É fixa na arma."
+      },
+      "ru": {
+        "name": "Цевье для КС-23К",
+        "shortName": "КС-23К цевье",
+        "description": "Цевьё помпового механизма карабина КС-23К. Несъёмное."
       }
     },
     "fleaPriceRoubles": 3500,
@@ -244,6 +259,11 @@
         "name": "Carregador de 7 munições 23x75 da KS-23K",
         "shortName": "KS-23K 7",
         "description": "Carregador de aço de 7 munições para cartuchos 23x75mmR, feito para a escopeta bullpup KS-23K."
+      },
+      "ru": {
+        "name": "Магазин на 7 патронов 23x75 для КС-23К",
+        "shortName": "КС-23К 7",
+        "description": "Стальной коробчатый магазин на 7 патронов 23x75мм R, созданный для карабина-буллпапа КС-23К."
       }
     },
     "fleaPriceRoubles": 14000,

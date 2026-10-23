@@ -102,6 +102,11 @@
         "name": "MP-18 7.62x54R 600mm threaded barrel",
         "shortName": "MP-18 600mm thr.",
         "description": "A 600mm barrel for the MP-18 7.62x54R single-shot rifle, machined with muzzle threading at the front. Takes the SV-98 muzzle devices and the modern 7.62x51 direct-thread muzzle devices."
+      },
+      "ru": {
+        "name": "Ствол 600мм с резьбой для MP-18 7.62x54R",
+        "shortName": "MP18 600мм резьб.",
+        "description": "Ствол 600мм для однозарядного ружья MP-18 7.62x54R с нарезанной на дульном срезе резьбой. Принимает дульные устройства СВ-98 и современные дульные устройства 7.62x51 с прямой резьбой."
       }
     },
     "fleaPriceRoubles": 12000,

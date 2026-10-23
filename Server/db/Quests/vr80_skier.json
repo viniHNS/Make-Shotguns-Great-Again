@@ -292,6 +292,20 @@
         "fd1b683d79e097d49bacc63b successMessageText": "Meus rapazes disseram que a estrada ficou mais tranquila. E os cigarros estão novos. Bom. Traga uma garrafa de Dan Jackiel, uma de Tarkovskaya e dois maços de Wilston, e pode levar uma VR80 com o carregador de cinco. Uma por remessa. Não saia contando por aí que sou um desgraçado generoso.",
         "feccff94081e678bc3cfaaa4": "Elimine Scavs na Customs usando qualquer escopeta calibre 12",
         "ba9a4e20e62ba12ae40a791b": "Entregue cigarros Wilston encontrados em raid"
+      },
+      "ru": {
+        "fd1b683d79e097d49bacc63b acceptPlayerMessage": "",
+        "fd1b683d79e097d49bacc63b changeQuestMessageText": "",
+        "fd1b683d79e097d49bacc63b completePlayerMessage": "",
+        "fd1b683d79e097d49bacc63b declinePlayerMessage": "",
+        "fd1b683d79e097d49bacc63b failMessageText": "",
+        "fd1b683d79e097d49bacc63b note": "",
+        "fd1b683d79e097d49bacc63b name": "Импортный товар",
+        "fd1b683d79e097d49bacc63b description": "Здравствуйте, наёмник. Ко мне попала небольшая партия, которой никто не ждал. VR80, Rock Island Armory. На коробке американское имя, сделано в Турции. Вам, оперативникам, оно покажется знакомым, только кормится оно патронами двенадцатого калибра. До блокады такие штуки шли в стрелковые клубы. Теперь же оно может отработать своё и здесь. Несколько идиотов на Таможне мешают моим ребятам. Разберитесь с ними из двенадцатого калибра и принесите пару пачек свежего Wilston, что найдёте там. Тогда позволю вам выменять один из этих импортных стволов. Бутылки и сигареты всё ещё в ходу, даже когда банки не работают. Честная сделка, верно?",
+        "fd1b683d79e097d49bacc63b startedMessageText": "Пятеро смутьянов на Таможне, из двенадцатого калибра. И две пачки Wilston из рейда. Возвращайтесь, когда закончите, и поговорим о той партии.",
+        "fd1b683d79e097d49bacc63b successMessageText": "Мои ребята говорят, что на дороге стало поспокойнее. И сигареты свежие. Хорошо. Принесите бутылку Dan Jackiel, одну \"Тарковскую\" и две пачки Wilston — и заберёте VR80 с пятизарядным магазином. Один на партию. И не рассказывайте всем, какой я щедрый мерзавец.",
+        "feccff94081e678bc3cfaaa4": "Убить Диких, используя любые дробовики 12 калибра на локации Таможня",
+        "ba9a4e20e62ba12ae40a791b": "Передать найденные в рейде сигареты Wilston"
       }
     }
   },
@@ -563,6 +577,19 @@
         "35e933725dd8e5e778e3ad71 startedMessageText": "Dez Scavs na Customs, com a VR80. Use a munição e os acessórios que quiser. Vamos ver o que essa importada faz fora do estande de tiro.",
         "35e933725dd8e5e778e3ad71 successMessageText": "A notícia correu. Parece que a importada sabe trabalhar. Vou deixar a configuração de fábrica no balcão para você: carregador de cinco, tudo montado, cento e dez mil. A troca pelas bebidas também continua de pé. Você faz sua parte, eu faço a minha.",
         "2204eb7e747aa1600e8f0f60": "Elimine Scavs na Customs usando uma Rock Island Armory VR80"
+      },
+      "ru": {
+        "35e933725dd8e5e778e3ad71 acceptPlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 changeQuestMessageText": "",
+        "35e933725dd8e5e778e3ad71 completePlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 declinePlayerMessage": "",
+        "35e933725dd8e5e778e3ad71 failMessageText": "",
+        "35e933725dd8e5e778e3ad71 note": "",
+        "35e933725dd8e5e778e3ad71 name": "Постоянный клиент",
+        "35e933725dd8e5e778e3ad71 description": "А вот и вы. Помните те VR80? Пара постоянных клиентов на них глаз положила. Красивая форма, отъёмные магазины, всё такое. Но я продаю оружие, которое работает, а не красивые коробки. Возьмите одно на Таможню и дайте ему настоящую работу. Там всё ещё ошиваются ублюдки, трясущие тех, кто ведёт дела со мной. Десятка из них хватит, чтобы до остальных дошло. Если ружьё выдержит и вы вернётесь с результатом, буду держать для вас несколько собранных. Не придётся каждый раз гоняться за бутылками. Рубли сгодятся. Так обращаются с постоянными клиентами.",
+        "35e933725dd8e5e778e3ad71 startedMessageText": "Десять Диких на Таможне, из VR80. Патроны и обвес на ваш вкус. Посмотрим, на что способен этот импорт за пределами стрельбища.",
+        "35e933725dd8e5e778e3ad71 successMessageText": "Слухи разошлись. Похоже, импорт умеет зарабатывать на жизнь. Буду держать для вас заводскую сборку на прилавке: пятизарядный магазин, всё установлено, сто десять тысяч. Сделка с бутылками тоже остаётся в силе. Вы делаете своё дело, я — своё.",
+        "2204eb7e747aa1600e8f0f60": "Убить Диких, используя Rock Island Armory VR80 на локации Таможня"
       }
     }
   },
@@ -948,6 +975,20 @@
         "dd5168501c5131632cca3e2a successMessageText": "Ninguém apareceu na minha porta perguntando o que aconteceu. Gostei disso. Sua VR80 Silenciosa está pronta: Salvo 12, EOTech, AFG, carregador de dez. Um Roler, um relógio de madeira, uma corrente de ouro e uma estatueta de cavalo. Uma montagem por remessa. O preço inclui deixar seu nome fora da conversa.",
         "da796281fbc359177d438d0e": "Elimine Scavs na Customs usando qualquer escopeta calibre 12 com supressor",
         "27be1893a93f03116800fddc": "Elimine PMCs usando qualquer escopeta calibre 12 com supressor"
+      },
+      "ru": {
+        "dd5168501c5131632cca3e2a acceptPlayerMessage": "",
+        "dd5168501c5131632cca3e2a changeQuestMessageText": "",
+        "dd5168501c5131632cca3e2a completePlayerMessage": "",
+        "dd5168501c5131632cca3e2a declinePlayerMessage": "",
+        "dd5168501c5131632cca3e2a failMessageText": "",
+        "dd5168501c5131632cca3e2a note": "",
+        "dd5168501c5131632cca3e2a name": "Тихая договорённость",
+        "dd5168501c5131632cca3e2a description": "Есть для вас ещё кое-что. Отдельное дело, другие заказы не трогаем. Кое-кому на Таможне пора перестать задавать вопросы, а несколько ваших друзей-наёмников слишком заинтересовались моими делами. Хочу, чтобы это уладили, не превращая всё вокруг в стрельбище. Возьмите двенадцатый калибр с глушителем. Восемь Диких на Таможне и три оперативника, где поймаете. Подойдёт любой дробовик, который отвечает условиям. А я тем временем собираю VR80 с Salvo, EOTech и магазином побольше. Небольшая договорённость для клиентов, умеющих держать рот на замке. Принесите потом кое-какие ценности, и он ваш.",
+        "dd5168501c5131632cca3e2a startedMessageText": "Восемь Диких на Таможне, трое бойцов ЧВК, где найдёте. Двенадцатый калибр, с глушителем. У этой работы свои условия.",
+        "dd5168501c5131632cca3e2a successMessageText": "Никакой толпы у моих дверей с вопросами, что случилось. Мне это нравится. Ваш VR80 \"Бесшумный\" готов: Salvo 12, EOTech, AFG, магазин на десять. Одни часы Roler, деревянные часы, золотая цепочка и статуэтка коня. Одна сборка на партию. В цену входит и то, что ваше имя в разговорах не всплывёт.",
+        "da796281fbc359177d438d0e": "Убить Диких, используя любые дробовики 12 калибра с глушителем на локации Таможня",
+        "27be1893a93f03116800fddc": "Убить бойцов ЧВК, используя любые дробовики 12 калибра с глушителем"
       }
     }
   }

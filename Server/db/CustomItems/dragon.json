@@ -29,6 +29,11 @@
         "name": "12/70 'Hellfire' hybrid buckshot",
         "shortName": "12/70 Hellfire",
         "description": "A vicious custom load mixing standard lead buckshot with zirconium-magnesium charges. Unlike traditional Dragon's Breath, the added lead weight allows this round to reliably cycle in semi-automatic shotguns. It offers the stopping power of buckshot with the psychological terror of a flamethrower. Warning: The burning magnesium will still rapidly destroy your barrel."
+      },
+      "ru": {
+        "name": "12/70 гибридная картечь \"Hellfire\"",
+        "shortName": "12/70 Hellfire",
+        "description": "Злобная самодельная сборка, в которой обычная свинцовая картечь смешана с циркониево-магниевыми зарядами. В отличие от классического \"Dragon's Breath\", добавленный вес свинца позволяет патрону надёжно перезаряжать самозарядные дробовики. Останавливающее действие картечи плюс ужас огнемёта. Внимание: горящий магний по-прежнему быстро уничтожает ствол."
       }
     },
     "addCaliberToAllCloneLocations": true,

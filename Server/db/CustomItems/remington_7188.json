@@ -105,6 +105,11 @@
         "name": "Escopeta Remington Modelo 7188 12ga de fogo seletivo",
         "shortName": "7188",
         "description": "Derivada de fogo seletivo da Remington 1100, desenvolvida no fim dos anos 1960 para as unidades de operações especiais da Marinha dos EUA. O mecanismo operado a gás dispara em modo semiautomático ou automático, a cerca de 420 disparos por minuto, alimentado por um tubo estendido de 8 cartuchos. Tem cano de 508 mm sob um protetor térmico ventilado, coronha de madeira e miras fixas. Poucas unidades foram produzidas."
+      },
+      "ru": {
+        "name": "Автоматический дробовик Remington Model 7188 12к",
+        "shortName": "7188",
+        "description": "Вариант Remington 1100 с переводчиком огня, разработанный в конце 1960-х для подразделений специальных операций ВМС США. Газоотводная автоматика ведёт огонь одиночными или очередями с темпом около 420 выстрелов в минуту; питание из удлинённого трубчатого магазина на 8 патронов. Ствол 508мм под вентилируемым теплозащитным кожухом, деревянный приклад и несъёмные прицельные приспособления. Выпущено лишь небольшое количество."
       }
     },
     "fleaPriceRoubles": 82000,
@@ -173,6 +178,11 @@
         "name": "Tubo de 8 cartuchos da Remington 7188 12ga",
         "shortName": "7188 8",
         "description": "Tubo estendido de 8 cartuchos integrado à Remington 7188. Faz parte da arma e não pode ser removido."
+      },
+      "ru": {
+        "name": "Магазин трубчатый на 8 патронов 12к для Remington 7188",
+        "shortName": "7188 8",
+        "description": "Удлинённый трубчатый магазин на 8 патронов, встроенный в Remington 7188. Является частью оружия и не снимается."
       }
     },
     "fleaPriceRoubles": 3000,
@@ -232,6 +242,11 @@
         "name": "Cano de 508 mm 12ga da Remington 7188",
         "shortName": "7188 508mm",
         "description": "Cano de 508 mm (20\") da Remington 7188, sob o protetor térmico ventilado. É fixo na arma e aceita chokes e supressores 12ga."
+      },
+      "ru": {
+        "name": "Ствол 508мм для Remington 7188 12к",
+        "shortName": "7188 508мм",
+        "description": "Ствол 508мм (20\") ружья Remington 7188 под вентилируемым теплозащитным кожухом. Несъёмный; принимает чоки и глушители 12 калибра."
       }
     },
     "fleaPriceRoubles": 10000,

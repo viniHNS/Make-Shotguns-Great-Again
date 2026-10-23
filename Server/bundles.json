@@ -12,9 +12,11 @@
         {
             "key": "6shellks23.bundle",
             "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
                 "cubemaps",
                 "shaders",
-                "assets/commonassets/physics/physicsmaterials.bundle"
+                "assets/content/weapons/ks23/textures/client_assets.bundle",
+                "assets/content/items/mods/magazines/mag_ks23_toz_ks23_std_23x75_3.bundle"
             ]
         },
         {
@@ -981,6 +983,93 @@
         {
             "key": "mts_20-01_assets.bundle",
             "dependencyKeys": []
+        },
+        {
+            "key": "ks23a_assets.bundle",
+            "dependencyKeys": [
+                "assets/content/weapons/ks23/textures/client_assets.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "weapon_toz_ks23a_23x75_container.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/audio/banks/mr133.bundle",
+                "assets/content/audio/banks/mr153.bundle",
+                "assets/content/audio/blendoptions/assets.bundle",
+                "assets/content/audio/weapons/generic",
+                "assets/content/audio/weapons/items.bundle",
+                "assets/content/audio/weapons/kedr.bundle",
+                "assets/content/audio/weapons/mr133.bundle",
+                "assets/content/audio/weapons/mr153.bundle",
+                "assets/content/audio/weapons/saiga12.bundle",
+                "assets/content/weapons/additional_hands/client_assets.bundle",
+                "assets/content/weapons/animations/simple_animations.bundle",
+                "assets/content/weapons/animations/spirit_animations.bundle",
+                "ks23a_assets.bundle",
+                "assets/content/weapons/ks23/textures/client_assets.bundle",
+                "assets/content/weapons/weapon_root_anim_fix.bundle",
+                "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+                "assets/systems/effects/heathaze/defaultheathaze.bundle",
+                "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "weapon_chiappa_triple_crown_12g_container.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/audio/banks/mr133.bundle",
+                "assets/content/audio/banks/mr43.bundle",
+                "assets/content/audio/blendoptions/assets.bundle",
+                "assets/content/audio/weapons/generic",
+                "assets/content/audio/weapons/kedr.bundle",
+                "assets/content/audio/weapons/mr133.bundle",
+                "assets/content/audio/weapons/mr43.bundle",
+                "assets/content/audio/weapons/saiga12.bundle",
+                "assets/content/audio/weapons/sv98.bundle",
+                "assets/content/items/mods/magazines/mag_mr133_izhmeh_12g_6_.textures.bundle",
+                "assets/content/weapons/additional_hands/client_assets.bundle",
+                "assets/content/weapons/animations/spirit_animations.bundle",
+                "assets/content/weapons/mr133/client_assets.bundle",
+                "assets/content/weapons/mr133/textures/client_assets.bundle",
+                "assets/content/weapons/mr133/weapon_izhmeh_mr133_12g_container.bundle",
+                "assets/content/weapons/weapon_root_anim_fix.bundle",
+                "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+                "assets/systems/effects/heathaze/defaultheathaze.bundle",
+                "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "chiappa_triple_crown_assets.bundle",
+                "chiappa_triple_crown_textures.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "chiappa_triple_crown_assets.bundle",
+            "dependencyKeys": [
+                "chiappa_triple_crown_textures.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "chiappa_triple_crown_textures.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "barrel_chiappa_triple_crown_711mm_12g.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "chiappa_triple_crown_textures.bundle",
+                "cubemaps",
+                "shaders"
+            ]
         }
     ]
 }

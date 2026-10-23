@@ -18,6 +18,11 @@
         "name": "MP-700 .700 Nitro Express Double Rifle 725mm Barrel",
         "shortName": "MP-700 725mm",
         "description": "A 725mm long .700 Nitro Express barrel for MP-700 double-barreled rifle. Because of the pressure of the .700 Nitro Express cartridge, the barrel is extremely heavy. Manufactured by Holland & Holland."
+      },
+      "ru": {
+        "name": "Ствол 725мм для MP-700 .700 Nitro Express",
+        "shortName": "MP-700 725мм",
+        "description": "Ствол длиной 725мм под .700 Nitro Express для двуствольного штуцера MP-700. Из-за давления патрона .700 Nitro Express ствол чрезвычайно тяжёлый. Изготовлен Holland & Holland."
       }
     },
     

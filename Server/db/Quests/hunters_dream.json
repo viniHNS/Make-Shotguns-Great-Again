@@ -247,6 +247,19 @@
         "fc669d6e8d3ccdbc735fff53 startedMessageText": "Woods, garoto. Mantenha distância e faça esses dois tiros valerem. A MP-700 ou a versão Shorty servem. Vou esperar notícias.",
         "fc669d6e8d3ccdbc735fff53 successMessageText": "O estrondo não faz o caçador. Parece que você entende isso. Aqui está a Mammoth: ponta de chumbo exposta, feita para alvos sem blindagem. Escolha bem onde atirar. Vou manter algumas no estoque para você.",
         "e2cdfba3a26ea4697ce6ac8b": "Elimine Scavs em Woods a pelo menos 40 metros usando uma MP-700 ou MP-700 Shorty"
+      },
+      "ru": {
+        "fc669d6e8d3ccdbc735fff53 acceptPlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 changeQuestMessageText": "",
+        "fc669d6e8d3ccdbc735fff53 completePlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 declinePlayerMessage": "",
+        "fc669d6e8d3ccdbc735fff53 failMessageText": "",
+        "fc669d6e8d3ccdbc735fff53 note": "",
+        "fc669d6e8d3ccdbc735fff53 name": "Мечта охотника. Часть 1",
+        "fc669d6e8d3ccdbc735fff53 description": "Заходи, парень. До всего этого я хранил охотничьи журналы и мечтал однажды уехать с двуствольным штуцером куда-нибудь далеко, где звери крупнее машины. Два ствола, два патрона и никакого права на небрежность. Так и не съездил. А теперь беда пришла сюда, в мой собственный лес. Бери свой .700 и разберись с мародёрами с приличной дистанции. Хочу посмотреть, умеешь ли ты обращаться с этим штуцером или тебе просто нравится, как он грохочет. Знакомый Механика помог мне собрать полуоболочечный патрон. Покажи, что понимаешь, что делаешь, и я отложу немного для тебя.",
+        "fc669d6e8d3ccdbc735fff53 startedMessageText": "Лес, парень. Держи дистанцию, и пусть оба выстрела будут в цель. MP-700 или его укороченная версия Shorty подойдут. Буду ждать.",
+        "fc669d6e8d3ccdbc735fff53 successMessageText": "Не грохот делает охотника. Похоже, ты это понял. Вот \"Мамонт\": открытый свинцовый носик, для целей без брони. Выбирай выстрел с умом. Буду держать его для тебя на прилавке.",
+        "e2cdfba3a26ea4697ce6ac8b": "Убить Диких с расстояния не менее 40 метров, используя MP-700 или MP-700 Shorty на локации Лес"
       }
     }
   },
@@ -490,6 +503,19 @@
         "93fca392a75ac1e0b05cfd10 startedMessageText": "Não deixe os mercenários manterem você à distância. Chegue perto, escolha o momento e tenha um lugar para recarregar.",
         "93fca392a75ac1e0b05cfd10 successMessageText": "Você voltou. Isso vale mais que qualquer história de bravura. Vou separar a Cerberus para você. Guarde para distâncias curtas e não espere que as esferas resolvam o problema de uma placa de blindagem.",
         "8e9ceed846121ff2897c9d00": "Elimine PMCs a no máximo 30 metros usando uma MP-700 ou MP-700 Shorty"
+      },
+      "ru": {
+        "93fca392a75ac1e0b05cfd10 acceptPlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 changeQuestMessageText": "",
+        "93fca392a75ac1e0b05cfd10 completePlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 declinePlayerMessage": "",
+        "93fca392a75ac1e0b05cfd10 failMessageText": "",
+        "93fca392a75ac1e0b05cfd10 note": "",
+        "93fca392a75ac1e0b05cfd10 name": "Мечта охотника. Часть 2",
+        "93fca392a75ac1e0b05cfd10 description": "В лесу ты сам выбираешь, откуда наблюдать. Среди стен дистанцию может выбрать тот, кто идёт за тобой. Я видел, как людей убивали, потому что мощная винтовка придавала им больше уверенности, чем ума. Бери свой .700 и разберись с наёмниками вплотную. Научись понимать, когда двигаться, а когда искать укрытие для перезарядки. Помни: у тебя всего два выстрела, прежде чем придётся переламывать стволы. Я приготовил ещё один патрон: восемь тяжёлых картечин вместо одной пули. Назвал его \"Цербер\". Подходящее имя для того, что должно сторожить проход, не находишь?",
+        "93fca392a75ac1e0b05cfd10 startedMessageText": "Не позволяй наёмникам держать тебя на расстоянии. Подходи ближе, выбирай момент и оставляй себе место для перезарядки.",
+        "93fca392a75ac1e0b05cfd10 successMessageText": "Ты вернулся. Это важнее любых историй о храбрости. Отложу для тебя \"Цербер\". Береги его для ближнего боя и не жди, что эти картечины решат проблему бронепластины.",
+        "8e9ceed846121ff2897c9d00": "Убить бойцов ЧВК с расстояния не более 30 метров, используя MP-700 или MP-700 Shorty"
       }
     }
   },
@@ -745,6 +771,19 @@
         "8bf7e85422290ecae416b1d8 startedMessageText": "Tagilla, na fábrica. Leve a MP-700 ou a Shorty. Blindagem tem suas fraquezas, garoto. Use a cabeça antes de usar esses dois cartuchos.",
         "8bf7e85422290ecae416b1d8 successMessageText": "Quando sonhava com aquela viagem, nunca imaginei que as piores feras estariam aqui. Você sabe usar a arma e conhece seus limites. Aqui estão alguns cartuchos Goliath. Quando tivermos feito negócios suficientes, vou fornecer mais. Espero que ajudem alguém a voltar para casa.",
         "ca79c8d5854e28b3a3235f73": "Elimine Tagilla na Factory usando uma MP-700 ou MP-700 Shorty"
+      },
+      "ru": {
+        "8bf7e85422290ecae416b1d8 acceptPlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 changeQuestMessageText": "",
+        "8bf7e85422290ecae416b1d8 completePlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 declinePlayerMessage": "",
+        "8bf7e85422290ecae416b1d8 failMessageText": "",
+        "8bf7e85422290ecae416b1d8 note": "",
+        "8bf7e85422290ecae416b1d8 name": "Мечта охотника. Часть 3",
+        "8bf7e85422290ecae416b1d8 description": "До того как всё полетело к чертям, я работал в охране на том заводе. А теперь какой-то ублюдок в маске и с кувалдой решил, что это место принадлежит ему. Тагилла. Надевает сталь и обращается с людьми как с добычей. Там и будет твоё последнее испытание. Бери .700 и завали его теми патронами, что у тебя уже есть. Знакомый Механика собрал закалённый сердечник в полимерном поддоне из четырёх частей. Я назвал его \"Голиаф\". Он дорогой, и я не отдам его тому, кто считает, что мощь заменяет рассудок. Штуцер ты уже знаешь. Покажи, что знаешь и его пределы.",
+        "8bf7e85422290ecae416b1d8 startedMessageText": "Тагилла, на заводе. Бери MP-700 или Shorty. У брони есть слабые места, парень. Думай головой, прежде чем тратить эти два патрона.",
+        "8bf7e85422290ecae416b1d8 successMessageText": "Когда я мечтал о той поездке, то и подумать не мог, что худшие звери окажутся прямо здесь. Со штуцером ты управляешься и знаешь, что он может, а чего нет. Вот несколько патронов \"Голиаф\". Наторгуем достаточно — буду поставлять тебе ещё. Надеюсь, они помогут кому-то вернуться домой.",
+        "ca79c8d5854e28b3a3235f73": "Убить Тагиллу, используя MP-700 или MP-700 Shorty на локации Завод"
       }
     }
   }

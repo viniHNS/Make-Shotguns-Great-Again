@@ -37,6 +37,11 @@
         "name": "5.45x39mm 'Svalka' Anti-Drone Buckshot",
         "shortName": "5.45 AD",
         "description": "A field-expedient 5.45x39mm cartridge, handcrafted by frontline troops to counter small UAVs. The standard projectile has been replaced with a crimped plastic container holding lead buckshot. While effective against fragile electronics at point-blank range, it generates insufficient gas pressure to reliably cycle the bolt and rapidly fouls the barrel. High malfunction risk."
+      },
+      "ru": {
+        "name": "5.45x39 противодроновая картечь \"Свалка\"",
+        "shortName": "5.45 Свалка",
+        "description": "Самодельный патрон 5.45x39, собранный бойцами на передовой для борьбы с малыми беспилотниками. Штатная пуля заменена обжатым пластиковым контейнером со свинцовой картечью. В упор эффективен против хрупкой электроники, но даёт слишком малое давление газов для надёжной работы затвора и быстро загрязняет ствол. Высокий риск задержек."
       }
     },
     "addCaliberToAllCloneLocations": false,

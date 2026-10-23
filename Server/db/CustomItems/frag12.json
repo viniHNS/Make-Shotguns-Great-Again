@@ -49,6 +49,11 @@
         "name": "12/70 'FRAG-12'",
         "shortName": "FRAG-12",
         "description": "An experimental military-grade 12-gauge shell containing a High-Explosive (HE) warhead. Designed for urban warfare to breach barricades and disable light vehicles. Upon impact, the warhead detonates, dealing massive explosive trauma and shredding armor plates. Due to its fin-stabilized flight, it is highly accurate at range. Warning: Firing at point-blank range may result in lethal splash damage to the operator."
+      },
+      "ru": {
+        "name": "12/70 \"FRAG-12\"",
+        "shortName": "FRAG-12",
+        "description": "Экспериментальный армейский патрон 12 калибра с осколочно-фугасной боевой частью. Создан для городских боёв: проламывать баррикады и выводить из строя лёгкую технику. При попадании боевая часть детонирует, нанося тяжёлые взрывные ранения и кромсая бронепластины. Благодаря стабилизации оперением очень точен на дистанции. Внимание: выстрел в упор может смертельно ранить самого стрелка."
       }
     },
     "addCaliberToAllCloneLocations": true,

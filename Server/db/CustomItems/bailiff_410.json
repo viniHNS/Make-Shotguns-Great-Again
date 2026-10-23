@@ -218,6 +218,11 @@
         "name": "Revólver Bailiff 410",
         "shortName": "Bailiff 410",
         "description": "Revólver compacto de cinco tiros com cano de 2 polegadas, feito para cartuchos .410/76. Leve e rápido de manejar, com miras fixas de fibra óptica e sem pontos para acessórios. O cano curto custa velocidade, e o coice é mais forte que o da Raging Judge, mais pesada. Permite disparos em ação simples ou dupla."
+      },
+      "ru": {
+        "name": "Револьвер Bailiff 410",
+        "shortName": "Bailiff 410",
+        "description": "Компактный пятизарядный револьвер с 2-дюймовым стволом под патроны .410/76. Лёгкий и быстрый в обращении, с несъёмными оптоволоконными прицельными приспособлениями и без креплений под аксессуары. Короткий ствол отнимает начальную скорость, а отдача ощутимо сильнее, чем у более тяжёлого Raging Judge. Стреляет как самовзводом, так и с предварительным взведением курка."
       }
     },
     "fleaPriceRoubles": 43000,
@@ -374,6 +379,11 @@
         "name": "Tambor de 5 tiros .410 da Bailiff 410",
         "shortName": "Tambor BF",
         "description": "Tambor de cinco câmaras .410/76 para o revólver Bailiff 410."
+      },
+      "ru": {
+        "name": "Барабан для Bailiff 410",
+        "shortName": "Барабан Bailiff",
+        "description": "Пятикаморный барабан .410/76 для револьвера Bailiff 410."
       }
     },
     "fleaPriceRoubles": 5000,

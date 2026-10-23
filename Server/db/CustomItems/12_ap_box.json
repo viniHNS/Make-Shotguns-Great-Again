@@ -39,6 +39,11 @@
         "name": "12/70 armor-piercing Slug “SVAROG” ammo pack (5 pcs)",
         "shortName": "12/70 SVAROG pack",
         "description": "A box of 12/70 armor-piercing Slug “SVAROG” shells, 5 pieces."
+      },
+      "ru": {
+        "name": "Пачка патронов 12/70 бронебойная пуля \"СВАРОГ\" (5 штук)",
+        "shortName": "12/70 СВАРОГ пачка",
+        "description": "Пачка бронебойных пулевых патронов 12/70 \"СВАРОГ\", 5 штук."
       }
     },
     

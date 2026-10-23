@@ -17,6 +17,11 @@
         "name": "MP-12 12ga 600mm barrel",
         "shortName": "MP-12 600mm",
         "description": "A standard factory-produced 600mm barrel with a front sight for MP-12 12ga hunting rifles."
+      },
+      "ru": {
+        "name": "Ствол 600мм для MP-12 12к",
+        "shortName": "MP12 600мм",
+        "description": "Штатный заводской ствол 600мм с мушкой для охотничьих ружей MP-12 12 калибра."
       }
     },
     

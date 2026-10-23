@@ -1,0 +1,42 @@
+{
+  "bb4361711417c939a40c540d": {
+    "itemTplToClone": "55d447bb4bdc2d892f8b456f",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_chiappa_triple_crown_711mm_12g.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [],
+      "Weight": 1.9,
+      "Ergonomics": -11,
+      "CenterOfImpact": 0.36,
+      "Velocity": 15,
+      "Width": 5,
+      "Height": 1
+    },
+    "locales": {
+      "en": {
+        "name": "Chiappa Triple Crown 12ga 711mm triple barrel",
+        "shortName": "TC 711mm",
+        "description": "A set of three 711mm long 12 gauge barrels for the Chiappa Triple Crown shotgun, with a bead front sight."
+      },
+      "po": {
+        "name": "Cano triplo de 711 mm 12ga da Chiappa Triple Crown",
+        "shortName": "TC 711mm",
+        "description": "Jogo de três canos de 711 mm de comprimento, calibre 12, para a espingarda Chiappa Triple Crown, com massa de mira na ponta."
+      },
+      "ru": {
+        "name": "Блок стволов 711мм для Chiappa Triple Crown 12к",
+        "shortName": "TC 711мм",
+        "description": "Блок из трёх стволов длиной 711мм под патрон 12 калибра для ружья Chiappa Triple Crown, с мушкой на дульном срезе."
+      }
+    },
+    "fleaPriceRoubles": 32000,
+    "handbookPriceRoubles": 12000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  }
+}

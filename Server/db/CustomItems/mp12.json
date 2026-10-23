@@ -94,6 +94,11 @@
         "name": "MP-12 12g single-shot rifle",
         "shortName": "MP-12",
         "description": "MP-12 is the legendary Soviet single-barreled rifle. This gun behaves perfectly in all weather conditions, no breakdowns or failures have ever been identified."
+      },
+      "ru": {
+        "name": "Однозарядное ружье MP-12 12к",
+        "shortName": "MP-12",
+        "description": "MP-12 — легендарное советское одноствольное ружьё. Безотказно работает в любую погоду: ни поломок, ни отказов за ним не замечено."
       }
     },
     "fleaPriceRoubles": 6324,

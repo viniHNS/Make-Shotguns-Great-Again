@@ -199,6 +199,11 @@
         "name": "Escopeta semi-automática Rock Island Armory VR80 12ga",
         "shortName": "VR80",
         "description": "A VR80 é uma escopeta semiautomática calibre 12, operada a gás e alimentada por carregadores, comercializada pela Rock Island Armory. O formato inspirado no AR combina comandos familiares com um trilho superior para miras. Os carregadores destacáveis facilitam as recargas, enquanto o guarda-mão M-LOK permite instalar acessórios. Esta configuração de fábrica utiliza um cano de 508 mm e uma coronha com punho integrado."
+      },
+      "ru": {
+        "name": "Самозарядное ружье Rock Island Armory VR80 12к",
+        "shortName": "VR80",
+        "description": "VR80 — газоотводное самозарядное ружьё 12 калибра с магазинным питанием, продаваемое под маркой Rock Island Armory. Компоновка в стиле AR даёт привычные органы управления и верхнюю планку под оптику на ружейной платформе. Отъёмные коробчатые магазины упрощают перезарядку, а цевьё M-LOK предоставляет места для крепления аксессуаров. Заводская конфигурация включает ствол 508мм и приклад со встроенной пистолетной рукояткой."
       }
     },
     "fleaPriceRoubles": 60000,
@@ -233,6 +238,11 @@
         "name": "Carregador de 5 munições VR80 12ga",
         "shortName": "VR80 5",
         "description": "Carregador destacável de 5 cartuchos para a escopeta Rock Island Armory VR80 calibre 12. A capacidade padrão de fábrica mantém a arma relativamente compacta. Aceita munição 12/70."
+      },
+      "ru": {
+        "name": "Магазин на 5 патронов 12к для VR80",
+        "shortName": "VR80 5",
+        "description": "Отъёмный коробчатый магазин на 5 патронов для ружья Rock Island Armory VR80 12 калибра. Заводская ёмкость сохраняет оружие относительно компактным. Принимает патроны 12/70."
       }
     },
     "fleaPriceRoubles": 6000,
@@ -281,6 +291,11 @@
         "name": "Carregador de 10 munições VR80 12ga",
         "shortName": "VR80 10",
         "description": "Carregador estendido de 10 cartuchos para a escopeta Rock Island Armory VR80 calibre 12. Oferece o dobro da capacidade do carregador padrão de 5 cartuchos, com um corpo mais comprido."
+      },
+      "ru": {
+        "name": "Магазин на 10 патронов 12к для VR80",
+        "shortName": "VR80 10",
+        "description": "Удлинённый коробчатый магазин на 10 патронов для ружья Rock Island Armory VR80 12 калибра. Вдвое больше заводского 5-зарядного ценой более длинного корпуса."
       }
     },
     "fleaPriceRoubles": 9000,
@@ -331,6 +346,11 @@
         "name": "Coronha VR80 com punho",
         "shortName": "VR80",
         "description": "Conjunto de coronha de polímero original da escopeta Rock Island Armory VR80. A coronha e o punho formam uma peça única, com uma soleira de borracha para apoio no ombro."
+      },
+      "ru": {
+        "name": "Приклад с пистолетной рукояткой для VR80",
+        "shortName": "VR80",
+        "description": "Заводской полимерный приклад ружья Rock Island Armory VR80. Приклад и пистолетная рукоятка составляют единое целое, на затыльнике — резиновая накладка."
       }
     },
     "fleaPriceRoubles": 9000,
@@ -378,6 +398,11 @@
         "name": "Cano 508mm para VR80 12ga",
         "shortName": "VR80 508mm",
         "description": "Cano de 508 mm (20 polegadas), com perfil de fábrica, para a escopeta semiautomática Rock Island Armory VR80 calibre 12."
+      },
+      "ru": {
+        "name": "Ствол 508мм для VR80 12к",
+        "shortName": "VR80 508мм",
+        "description": "Ствол 508мм (20 дюймов) заводского профиля для самозарядного ружья Rock Island Armory VR80 12 калибра."
       }
     },
     "fleaPriceRoubles": 15000,
@@ -447,6 +472,11 @@
         "name": "Cano 508mm rosqueado para VR80 12ga",
         "shortName": "VR80 508mm ros.",
         "description": "Cano de 508 mm (20 polegadas), com perfil de fábrica, para a escopeta semiautomática Rock Island Armory VR80 calibre 12, com rosca interna na boca para chokes e adaptadores de bocal."
+      },
+      "ru": {
+        "name": "Ствол 508мм с резьбой для VR80 12к",
+        "shortName": "VR80 508мм резьб.",
+        "description": "Ствол 508мм (20 дюймов) заводского профиля для самозарядного ружья Rock Island Armory VR80 12 калибра с внутренней резьбой на дульном срезе под сменные чоки и дульные переходники."
       }
     },
     "fleaPriceRoubles": 16600,
@@ -655,6 +685,11 @@
         "name": "Guarda-mão VR80 M-LOK",
         "shortName": "VR80 M-LOK",
         "description": "Guarda-mão de alumínio M-LOK original da escopeta Rock Island Armory VR80. O trilho superior permite instalar miras, e os encaixes M-LOK aceitam punhos e suportes de acessórios compatíveis."
+      },
+      "ru": {
+        "name": "Цевье M-LOK для VR80",
+        "shortName": "VR80 M-LOK",
+        "description": "Заводское алюминиевое цевьё M-LOK ружья Rock Island Armory VR80. Верхняя планка принимает прицельные приспособления, а слоты M-LOK — совместимые рукоятки и крепления для аксессуаров."
       }
     },
     "fleaPriceRoubles": 12000,

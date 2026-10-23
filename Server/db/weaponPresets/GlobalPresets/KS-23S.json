@@ -1,0 +1,40 @@
+{
+  "c8c6e24a87e5ad769f9a21eb": {
+    "_id": "c8c6e24a87e5ad769f9a21eb",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "KS-23S default",
+    "_parent": "508e5c3a65f3e6a4fffae53e",
+    "_items": [
+      {
+        "_id": "508e5c3a65f3e6a4fffae53e",
+        "_tpl": "d6f4775ed6deafe2706de0d7"
+      },
+      {
+        "_id": "0f402430a5d821ce8bc4a6c0",
+        "_tpl": "5e848d2eea0a7c419c2f9bfd",
+        "parentId": "508e5c3a65f3e6a4fffae53e",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "0325eee3867cf2477a96b11c",
+        "_tpl": "5e848d51e4dbc5266a4ec63b",
+        "parentId": "508e5c3a65f3e6a4fffae53e",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "ace48b94d871ffdcc2389b08",
+        "_tpl": "5e848db4681bea2ada00daa9",
+        "parentId": "508e5c3a65f3e6a4fffae53e",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "c46e4fd195a513d4a0280840",
+        "_tpl": "6910ebc01b0a1cfdd5877581",
+        "parentId": "508e5c3a65f3e6a4fffae53e",
+        "slotId": "mod_magazine"
+      }
+    ],
+    "_encyclopedia": "d6f4775ed6deafe2706de0d7"
+  }
+}

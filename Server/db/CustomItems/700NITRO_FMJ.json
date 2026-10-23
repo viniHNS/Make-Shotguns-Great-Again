@@ -43,6 +43,11 @@
         "name": ".700 Nitro Express FMJ",
         "shortName": ".700 FMJ",
         "description": "The .700 Nitro Express (17.8×89mmR) is a big game rifle cartridge made by Holland & Holland, London, England. It was developed in 1988 by Jim Bell and William Feldstein and built by H&H. The recoil is substantial, and the rifle is only available from H&H as a bespoke item. The .700 Nitro Express is a straight rimmed cartridge designed for use in single-shot and double rifles."
+      },
+      "ru": {
+        "name": ".700 Nitro Express FMJ",
+        "shortName": ".700 FMJ",
+        "description": ".700 Nitro Express (17.8×89мм R) — патрон для охоты на крупную дичь, выпускаемый лондонской фирмой Holland & Holland. Разработан в 1988 году Джимом Беллом и Уильямом Фельдстейном и запущен в производство H&H. Отдача огромна, а винтовки под него H&H делает только на заказ. Это прямой патрон с закраиной, предназначенный для однозарядных винтовок и двуствольных штуцеров."
       }
     },
     "addCaliberToAllCloneLocations": false,

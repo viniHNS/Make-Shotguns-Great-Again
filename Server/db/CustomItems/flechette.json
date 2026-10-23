@@ -26,6 +26,11 @@
         "name": "12/70 Flechette Kinghunter",
         "shortName": "12/70 Flechette",
         "description": "A 12-gauge Flechette Kinghunter shell made in USA. The shell contains 10 flechettes made of tungsten alloy. You definitely don't want to be on the receiving end of the weapon loaded with it."
+      },
+      "ru": {
+        "name": "12/70 флешетта Kinghunter",
+        "shortName": "12/70 флешетта",
+        "description": "Патрон 12 калибра Flechette Kinghunter американского производства. Снаряжён 10 флешеттами из вольфрамового сплава. Оказаться на другом конце заряженного им ствола точно не захочется."
       }
     },
     "addCaliberToAllCloneLocations": true,

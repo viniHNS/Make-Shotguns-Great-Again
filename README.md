@@ -4,7 +4,7 @@
 
 Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachments and ammo, Dragon's Breath sparks, and a malfunction overhaul.
 
-![Version](https://img.shields.io/badge/version-1.18.1-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.19.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -42,10 +42,12 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 - **MP-18 suppressed sound**: a suppressed MP-18 now sounds suppressed. The game had the sound in the wrong slot of the weapon.
 - **Buckshot from any gun**: buckshot fired from non-shotguns (like the 5.45x39 Svalka from an AK) spreads its pellets instead of hitting a single point.
 - **Forced malfunction keys (debug)**: enable the option in the F12 menu and press Numpad 1–5 to force a misfire, jam, hard slide, soft slide or feed failure on your next shot. Off by default; press the same key again to cancel. Bots are never affected.
+- **Three-barrel support**: guns with three barrels fire each chamber in turn, with the shot and the muzzle flash coming out of the barrel that fired (used by the Chiappa Triple Crown).
 
 **New content**
 
-- 15 [guns](#new-guns), 45 [attachments](#new-attachments) and 17 [ammo items](#new-ammo), available through traders and Workbench crafts where applicable.
+- 17 [guns](#new-guns), 46 [attachments](#new-attachments) and 17 [ammo items](#new-ammo), available through traders and Workbench crafts where applicable.
+- Names and descriptions in English, Portuguese and Russian.
 - Six quests: three Skier jobs unlock the VR80 builds, and Jaeger's Hunter's Dream unlocks the new .700 Nitro loads.
 - Scavs can spawn with the MP-12 and MP-700 and load FRAG-12, Hellfire and .700 Nitro rounds. Tagilla can load Hellfire.
 
@@ -91,6 +93,8 @@ Both parts are required: the server adds the items and the client handles the ef
 | Panzer Arms SCR-XII 12ga shotgun | 12/70 | Peacekeeper LL3 ($1,150) |
 | Monolith Arms P-12 12ga pump-action bullpup shotgun | 12/70 | Peacekeeper LL3 ($1,100) |
 | MTs 20-01 20ga bolt-action shotgun | 20/70 | Jaeger LL1 (12,000 ₽; limit 5); Flea Market (21,000 ₽) |
+| Chiappa Triple Crown 12ga triple-barrel shotgun | 12/70 | Jaeger LL2 (42,000 ₽; limit 2). 
+| TOZ KS-23S 23x75 semi-automatic shotgun | 23x75 | Prapor LL4 (88,000 ₽; limit 2). 
 
 ## Quests
 
@@ -117,7 +121,7 @@ Completing a quest unlocks its purchase offer; the trader loyalty requirement st
 | Attachment | Sold by |
 |---|---|
 | Mossberg 590A1 12ga 508mm threaded barrel | Mechanic LL2 (15,500 ₽) |
-| KS-23M 23x75 6-shell magazine | Mechanic LL2 (4,600 ₽) |
+| KS-23M 23x75 6-shell magazine (fits the KS-23M and the KS-23S) | Mechanic LL2 (4,600 ₽) |
 | Benelli M3 Keymod Handguard | Mechanic LL2 (8,013 ₽) |
 | MP-153 12ga competition 13-shell magazine | Mechanic LL3 (6,003 ₽) |
 | SOK-12 12/76 Alliance Armament 30-round magazine | Mechanic LL3 (27,996 ₽) |
@@ -147,6 +151,7 @@ Completing a quest unlocks its purchase offer; the trader loyalty requirement st
 | SCR-XII 12ga Mk12 5-round magazine | Peacekeeper LL3 ($40) |
 | SCR-XII 12ga Mk12 10-round magazine | Peacekeeper LL3 ($70) |
 | Monolith Arms P-12 12ga 20-round magazine | Peacekeeper LL3 ($85; limit 10) |
+| Chiappa Triple Crown 12ga 711mm triple barrel | Jaeger LL2 (18,000 ₽; limit 2) |
 
 
 ---
@@ -253,6 +258,8 @@ Make-Shotguns-Great-Again/
 ├── makeshotgunsgreatagain.sln
 ├── Server/                             .NET 10 server mod
 │   ├── makeshotgunsgreatagain.cs       metadata, WTT loading and changes to vanilla items
+│   ├── HuntersDreamQuestLoader.cs      Hunter's Dream quests
+│   ├── Vr80QuestLoader.cs              Skier VR80 quests
 │   ├── ModConfig.cs                    config.json model
 │   ├── config/config.json
 │   ├── bundles.json                    bundle list for the new items
@@ -261,7 +268,7 @@ Make-Shotguns-Great-Again/
 │       ├── CustomItems/                new guns, attachments and ammo
 │       ├── CustomAssortSchemes/        Peacekeeper ammo pack barters
 │       ├── CustomHideoutRecipes/       Workbench crafts
-│       ├── CustomLocales/              names of the weapon builds and the .410/76 caliber
+│       ├── CustomLocales/              names of the weapon builds and the .410/76 caliber (EN, PO, RU)
 │       ├── Quests/                     Skier VR80 quests and Hunter's Dream
 │       └── weaponPresets/
 │           ├── Assorts/                full builds sold by Jaeger, Mechanic and Skier
@@ -277,6 +284,7 @@ Make-Shotguns-Great-Again/
         ├── ForceMalfunctionPatch.cs                       forced malfunction hotkeys
         ├── KS23MountAlignmentPatch.cs                     KS-23 optics fix
         ├── MP18SilencedSoundPatch.cs                      MP-18 suppressed sound
+        ├── MultiBarrelFireportsPatch.cs                   three-barrel guns
         └── RemoveBossMalfunctionsPatch.cs
 ```
 
@@ -295,7 +303,6 @@ Make-Shotguns-Great-Again/
 - Bailiff 410: Rainbow Six Siege.
 - Taurus Raging Judge model: Hired Ops. 
 - Mossberg 590M model: thred (CGTrader).
-- Bailiff 410: Rainbow Six Siege.
 - [Gcr357](https://sp-mod.com/user/105157/gcr357) for help with some models.
 
 ---

@@ -17,7 +17,7 @@ public record ModMetadata : IModMetadata
     public string ModGuid { get; init; } = "com.vinihns.makeshotgunsgreatagain";
     public string Name { get; init; } = "Make Shotguns Great Again";
     public string Author { get; init; } = "ViniHNS";
-    public SemanticVersioning.Version Version { get; init; } = new("1.18.1");
+    public SemanticVersioning.Version Version { get; init; } = new("1.19.0");
     public Range SptVersion { get; init; } = new("~4.1.6");
     public string License { get; init; } = "MIT";
     public bool HasPrepatcher { get; init; } = false;
@@ -69,6 +69,7 @@ public class Mod(
     private const string MP43_TPL = "5580223e4bdc2d1c128b457f";
     private const string MP43_SAWED_OFF_TPL = "64748cb8de82c85eaf0a273a";
     private const string MP43_SAWED_OFF_BARREL_TPL = "64748d02d1c009260702b526";
+    private const string TRIPLE_CROWN_TPL = "f68e9b5e505b6ac446e28fbb"; // Chiappa Triple Crown: MP43 clone with three chambers
     private const string MTS_255_CYLINDER_TPL = "60dc519adf4c47305f6d410d";
     private const string MTS_255_TPL = "60db29ce99594040e04c4a27";
 
@@ -514,13 +515,13 @@ public class Mod(
     {
         var newCartridgeMongoIds = NEW_CARTRIDGE_IDS.Select(id => new MongoId(id));
 
-        // MP43 variants (double barrel)
-        var mp43Ids = new[] { MP43_TPL, MP43_SAWED_OFF_TPL };
+        // MP43 variants (double barrel) and the Chiappa Triple Crown (three chambers)
+        var mp43Ids = new[] { MP43_TPL, MP43_SAWED_OFF_TPL, TRIPLE_CROWN_TPL };
         foreach (var weaponId in mp43Ids)
         {
             if (!itemsDb.TryGetValue(new MongoId(weaponId), out var weapon)) continue;
 
-            // Iterate through both chambers (0 and 1)
+            // Iterate through every chamber (the generic pass only fills the first one)
             foreach (var chamber in weapon.Properties?.Chambers ?? Enumerable.Empty<Slot>())
             {
                 var filter = chamber.Properties?.Filters?.FirstOrDefault()?.Filter;

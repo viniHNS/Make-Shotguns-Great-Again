@@ -22,6 +22,11 @@
         "name": "12/70 Winchester Super-X 00 buckshot",
         "shortName": "12/70 00",
         "description": "A 12-gauge 00 buckshot shell by Winchester. The 00 buckshot is a 6-pellet shell, with each pellet being 8.4mm in diameter. The shell is designed for hunting and self-defense."
+      },
+      "ru": {
+        "name": "12/70 картечь 00 Winchester Super-X",
+        "shortName": "12/70 00",
+        "description": "Патрон 12 калибра с картечью 00 производства Winchester. Снаряжён 6 картечинами диаметром 8,4мм. Предназначен для охоты и самообороны."
       }
     },
     "addCaliberToAllCloneLocations": true,

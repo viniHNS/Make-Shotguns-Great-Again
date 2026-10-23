@@ -46,6 +46,11 @@
         "name": "ZiD SP-81 23x75 pistol",
         "shortName": "SP-81 DIY",
         "description": "A modified version of the SP-81 signal pistol, re-chambered and reinforced to fire 23x75mm rounds. Originally designed by the V.A. Degtyarev Plant. Incompatible with flares and other signal ammunition."
+      },
+      "ru": {
+        "name": "Пистолет ЗиД СП-81 23x75",
+        "shortName": "СП-81 кустарный",
+        "description": "Переделанный сигнальный пистолет СП-81, перестволенный и усиленный под патроны 23x75мм. Исходная конструкция — завода имени В.А. Дегтярёва. Несовместим с ракетами и другими сигнальными боеприпасами."
       }
     },
     
