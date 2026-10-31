@@ -1070,6 +1070,200 @@
                 "cubemaps",
                 "shaders"
             ]
+        },
+        {
+            "key": "weapon_iver_johnson_champion_12g_container.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/audio/banks/m1a.bundle",
+                "assets/content/audio/banks/mr133.bundle",
+                "assets/content/audio/blendoptions/assets.bundle",
+                "assets/content/audio/weapons/generic",
+                "assets/content/audio/weapons/kedr.bundle",
+                "assets/content/audio/weapons/mr133.bundle",
+                "assets/content/audio/weapons/pm.bundle",
+                "assets/content/audio/weapons/saiga12.bundle",
+                "assets/content/audio/weapons/sv98.bundle",
+                "assets/content/items/mods/magazines/mag_mr133_izhmeh_12g_6_.textures.bundle",
+                "assets/content/weapons/additional_hands/client_assets.bundle",
+                "assets/content/weapons/animations/spirit_animations.bundle",
+                "iver_johnson_champion_assets.bundle",
+                "iver_johnson_champion_textures.bundle",
+                "assets/content/weapons/mr133/client_assets.bundle",
+                "assets/content/weapons/mr133/textures/client_assets.bundle",
+                "assets/content/weapons/mr133/weapon_izhmeh_mr133_12g_container.bundle",
+                "assets/content/weapons/weapon_root_anim_fix.bundle",
+                "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+                "assets/systems/effects/heathaze/defaultheathaze.bundle",
+                "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders",
+                "assets/content/audio/banks/mr43.bundle",
+                "assets/content/audio/weapons/mr43.bundle"
+            ]
+        },
+        {
+            "key": "iver_johnson_champion_assets.bundle",
+            "dependencyKeys": [
+                "cubemaps",
+                "shaders",
+                "iver_johnson_champion_textures.bundle"
+            ]
+        },
+        {
+            "key": "iver_johnson_champion_textures.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "barrel_iver_johnson_champion_706mm_12g.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "iver_johnson_champion_assets.bundle",
+                "iver_johnson_champion_textures.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "barrel_iver_johnson_champion_316mm_12g.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "iver_johnson_champion_assets.bundle",
+                "iver_johnson_champion_textures.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "stock_iver_johnson_champion_wood.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders",
+                "iver_johnson_champion_textures.bundle"
+            ]
+        },
+        {
+            "key": "stock_iver_johnson_champion_grip.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders",
+                "iver_johnson_champion_textures.bundle"
+            ]
+        },
+        {
+            "key": "weapon_ati_omni_410_container.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/audio/banks/m4a1.bundle",
+                "assets/content/audio/blendoptions/assets.bundle",
+                "assets/content/audio/weapons/ak74.bundle",
+                "assets/content/audio/weapons/generic",
+                "assets/content/audio/weapons/saiga12.bundle",
+                "assets/content/audio/weapons/m4a1.bundle",
+                "assets/content/weapons/additional_hands/client_assets.bundle",
+                "assets/content/weapons/animations/simple_animations.bundle",
+                "assets/content/weapons/animations/spirit_animations.bundle",
+                "assets/content/weapons/m4a1/client_assets.bundle",
+                "assets/content/weapons/m4a1/textures/client_assets.bundle",
+                "assets/content/weapons/weapon_root_anim_fix.bundle",
+                "assets/content/weapons/wip/kibas tuning prefabs/muzzlejets_templates/default_assets.bundle",
+                "assets/systems/effects/heathaze/defaultheathaze.bundle",
+                "assets/systems/effects/muzzleflash/muzzleflash.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders",
+                "ati_omni_410_assets.bundle",
+                "ati_omni_410_textures.bundle",
+                "ati_omni_410_animations.bundle"
+            ]
+        },
+        {
+            "key": "ati_omni_410_assets.bundle",
+            "dependencyKeys": [
+                "shaders",
+                "cubemaps",
+                "ati_omni_410_textures.bundle"
+            ]
+        },
+        {
+            "key": "ati_omni_410_textures.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "ati_omni_410_animations.bundle",
+            "dependencyKeys": []
+        },
+        {
+            "key": "barrel_ati_omni_470mm_410.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/content/items/mods/barrels/barrel_ar15_adar_406mm_textures",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "muzzle_ati_omni_birdcage_410.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "assets/systems/effects/smoke.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "handguard_ati_omni_keymod_13.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "mag_ati_omni_410_5.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "mag_ati_omni_410_15.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "patron_410x65_birdshot.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "patron_410x65_buckshot.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders"
+            ]
+        },
+        {
+            "key": "patron_410x65_slug.bundle",
+            "dependencyKeys": [
+                "assets/commonassets/physics/physicsmaterials.bundle",
+                "cubemaps",
+                "shaders"
+            ]
         }
     ]
 }

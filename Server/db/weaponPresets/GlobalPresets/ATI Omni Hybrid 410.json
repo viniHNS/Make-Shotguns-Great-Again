@@ -1,0 +1,173 @@
+{
+  "66e055e08511fa6b2d82c55a": {
+    "_id": "66e055e08511fa6b2d82c55a",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "ATI Omni Hybrid 410",
+    "_encyclopedia": "e4aff4a6ed02435103317634",
+    "_parent": "e26cbc4dffcba437a5f6eb86",
+    "_items": [
+      {
+        "_id": "e26cbc4dffcba437a5f6eb86",
+        "_tpl": "e4aff4a6ed02435103317634",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "83ee780f34df9ec9de7b8adf",
+        "_tpl": "55d4b9964bdc2d1d4e8b456e",
+        "parentId": "e26cbc4dffcba437a5f6eb86",
+        "slotId": "mod_pistol_grip"
+      },
+      {
+        "_id": "752604437cdea81a249beda4",
+        "_tpl": "c7f783cb3866db96458ca10c",
+        "parentId": "e26cbc4dffcba437a5f6eb86",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "170d787cb09760256a6f6b27",
+        "_tpl": "ef21d7b5a73d86a57987cfa6",
+        "parentId": "e26cbc4dffcba437a5f6eb86",
+        "slotId": "mod_reciever"
+      },
+      {
+        "_id": "1f232e6f17756021c6b0a062",
+        "_tpl": "0a962b9a65639d5ada026e55",
+        "parentId": "170d787cb09760256a6f6b27",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "8c023526c9109816778d8938",
+        "_tpl": "327d19b939bc4232f1f8c7c2",
+        "parentId": "1f232e6f17756021c6b0a062",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "21e7ba9c4b40ea6bc06be193",
+        "_tpl": "56eabcd4d2720b66698b4574",
+        "parentId": "1f232e6f17756021c6b0a062",
+        "slotId": "mod_gas_block"
+      },
+      {
+        "_id": "d585dd10ec6ac1035b7187c8",
+        "_tpl": "54534b29cf19897b371f1875",
+        "parentId": "170d787cb09760256a6f6b27",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "b90af47f6d92f5183b15613b",
+        "_tpl": "5649be884bdc2d79388b4577",
+        "parentId": "e26cbc4dffcba437a5f6eb86",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "b0100b9796b6561a5ecf8b39",
+        "_tpl": "55d4ae6c4bdc2d8b2f8b456e",
+        "parentId": "b90af47f6d92f5183b15613b",
+        "slotId": "mod_stock_000"
+      },
+      {
+        "_id": "111bb8ecd361185f95825ec5",
+        "_tpl": "55d44fd14bdc2d962f8b456e",
+        "parentId": "e26cbc4dffcba437a5f6eb86",
+        "slotId": "mod_charge"
+      }
+    ]
+  },
+  "d997ce9c5395eae8f545bcc5": {
+    "_id": "d997ce9c5395eae8f545bcc5",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "ATI Omni Hybrid 410 15",
+    "_parent": "9770ec6ec345ed6a4c2bc655",
+    "_items": [
+      {
+        "_id": "9770ec6ec345ed6a4c2bc655",
+        "_tpl": "e4aff4a6ed02435103317634",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "a07ea5aaf5059658bbcf1a38",
+        "_tpl": "55d4b9964bdc2d1d4e8b456e",
+        "parentId": "9770ec6ec345ed6a4c2bc655",
+        "slotId": "mod_pistol_grip"
+      },
+      {
+        "_id": "418e48539182cee1b533867c",
+        "_tpl": "f65d2aefab923f285c028532",
+        "parentId": "9770ec6ec345ed6a4c2bc655",
+        "slotId": "mod_magazine"
+      },
+      {
+        "_id": "8097572514eb9da9797724e8",
+        "_tpl": "ef21d7b5a73d86a57987cfa6",
+        "parentId": "9770ec6ec345ed6a4c2bc655",
+        "slotId": "mod_reciever"
+      },
+      {
+        "_id": "423cfab1f93c9aff9e0f05e9",
+        "_tpl": "0a962b9a65639d5ada026e55",
+        "parentId": "8097572514eb9da9797724e8",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "566041b0e48b3c1daa8687c4",
+        "_tpl": "327d19b939bc4232f1f8c7c2",
+        "parentId": "423cfab1f93c9aff9e0f05e9",
+        "slotId": "mod_muzzle"
+      },
+      {
+        "_id": "79e27c300c00e376c87cc184",
+        "_tpl": "56eabcd4d2720b66698b4574",
+        "parentId": "423cfab1f93c9aff9e0f05e9",
+        "slotId": "mod_gas_block"
+      },
+      {
+        "_id": "a6ffc13d1f2dfb2854d40f39",
+        "_tpl": "54534b29cf19897b371f1875",
+        "parentId": "8097572514eb9da9797724e8",
+        "slotId": "mod_handguard"
+      },
+      {
+        "_id": "2c7f02195345f7d0fdee3e72",
+        "_tpl": "5649be884bdc2d79388b4577",
+        "parentId": "9770ec6ec345ed6a4c2bc655",
+        "slotId": "mod_stock"
+      },
+      {
+        "_id": "784fe0f11fb95ff3b1f15ea5",
+        "_tpl": "55d4ae6c4bdc2d8b2f8b456e",
+        "parentId": "2c7f02195345f7d0fdee3e72",
+        "slotId": "mod_stock_000"
+      },
+      {
+        "_id": "8dd8f9e3dc12628c26e0ec9a",
+        "_tpl": "55d44fd14bdc2d962f8b456e",
+        "parentId": "9770ec6ec345ed6a4c2bc655",
+        "slotId": "mod_charge"
+      },
+      {
+        "_id": "c3321f7c130109f129c59177",
+        "_tpl": "570fd721d2720bc5458b4596",
+        "parentId": "8097572514eb9da9797724e8",
+        "slotId": "mod_scope"
+      }
+    ]
+  }
+}

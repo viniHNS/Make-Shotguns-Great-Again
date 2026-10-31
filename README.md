@@ -4,7 +4,7 @@
 
 Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachments and ammo, Dragon's Breath sparks, and a malfunction overhaul.
 
-![Version](https://img.shields.io/badge/version-1.19.1-orange?style=flat)
+![Version](https://img.shields.io/badge/version-1.20.0-orange?style=flat)
 ![SPT](https://img.shields.io/badge/SPT-4.1.6-blue?style=flat)
 ![WTT-CommonLib](https://img.shields.io/badge/WTT--CommonLib-3.0.6-purple?style=flat)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4?style=flat&logo=dotnet)
@@ -36,7 +36,7 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 **Client**
 
 - **Skip inspection before clearing**: clear a malfunction right away with the clear key, without inspecting the weapon first.
-- **No forced boss malfunctions**: bosses like Kollontay can't force a jam on your weapon. Jams only come from weapon condition and ammo.
+- **No forced boss malfunctions**: Kollontay's melee hits, the Halloween event Zryachiy and scripted map triggers can't force a misfire on your weapon. Normal malfunctions from weapon condition, ammo and overheating still happen.
 - **Dragon's Breath effect**: firing 12/70 'Hellfire' spawns incendiary sparks at the muzzle.
 - **KS-23 optics fix**: optics on the KS-23 rail now hit where the reticle points.
 - **MP-18 suppressed sound**: a suppressed MP-18 now sounds suppressed. The game had the sound in the wrong slot of the weapon.
@@ -46,7 +46,7 @@ Shotguns done right for SPT 4.1.6: better vanilla shotguns, new guns, attachment
 
 **New content**
 
-- 17 [guns](#new-guns), 46 [attachments](#new-attachments) and 17 [ammo items](#new-ammo), available through traders and Workbench crafts where applicable.
+- 19 [guns](#new-guns), 56 [attachments](#new-attachments) and 20 [ammo items](#new-ammo), available through traders and Workbench crafts where applicable.
 - Names and descriptions in English, Portuguese and Russian.
 - Six quests: three Skier jobs unlock the VR80 builds, and Jaeger's Hunter's Dream unlocks the new .700 Nitro loads.
 - Scavs can spawn with the MP-12 and MP-700 and load FRAG-12, Hellfire and .700 Nitro rounds. Tagilla can load Hellfire.
@@ -83,8 +83,8 @@ Both parts are required: the server adds the items and the client handles the ef
 | MP-700 Shorty .700 Nitro Express Double Rifle | .700 Nitro Express | Jaeger LL3 (145,000 ₽). Full build at Jaeger LL3 (215,746 ₽) |
 | ZiD SP-81 23x75 pistol | 23x75 | Mechanic LL2 (65,321 ₽). A signal pistol rebuilt for 23x75 rounds; it can't fire flares |
 | Rock Island Armory VR80 12ga semi-automatic shotgun | 12/70 | Skier LL1 barter after Foreign Stock; LL2 purchase (110,000 ₽) after Repeat Business. Factory build with a 5-round magazine |
-| Taurus Raging Judge .410 revolver | .410/76 | Jaeger LL2 (65,000 ₽) |
-| Bailiff 410 revolver | .410/76 | Jaeger LL2 (48,000 ₽) |
+| Taurus Raging Judge .410 revolver | .410/76, .410/65 | Jaeger LL2 (65,000 ₽) |
+| Bailiff 410 revolver | .410/76, .410/65 | Jaeger LL2 (48,000 ₽) |
 | Remington Model 7188 12ga select-fire shotgun | 12/70 | Peacekeeper LL3 ($785), or barter for an MP-153, 2 Gunpowder "Hawk" and 1 Weapon parts |
 | TTI JW4 Dracarys GEN-12 12ga semi-automatic shotgun | 12/70 | Peacekeeper LL3 ($1,100), in JW4 Grey, Black or FDE |
 | Mossberg 590M 12ga pump-action shotgun | 12/70 | Peacekeeper LL2 ($550) |
@@ -95,6 +95,8 @@ Both parts are required: the server adds the items and the client handles the ef
 | MTs 20-01 20ga bolt-action shotgun | 20/70 | Jaeger LL1 (12,000 ₽; limit 5); Flea Market (21,000 ₽) |
 | Chiappa Triple Crown 12ga triple-barrel shotgun | 12/70 | Jaeger LL2 (42,000 ₽; limit 2). 
 | TOZ KS-23S 23x75 semi-automatic shotgun | 23x75 | Prapor LL4 (88,000 ₽; limit 2). 
+| Iver Johnson Champion 12ga single-barrel shotgun | 12/70 | Jaeger LL1 (14,000 ₽; limit 2).
+| ATI Omni Hybrid Maxx .410 semi-automatic shotgun | .410/65 | Jaeger LL2 (52,000 ₽; limit 2). 
 
 ## Quests
 
@@ -152,6 +154,16 @@ Completing a quest unlocks its purchase offer; the trader loyalty requirement st
 | SCR-XII 12ga Mk12 10-round magazine | Peacekeeper LL3 ($70) |
 | Monolith Arms P-12 12ga 20-round magazine | Peacekeeper LL3 ($85; limit 10) |
 | Chiappa Triple Crown 12ga 711mm triple barrel | Jaeger LL2 (18,000 ₽; limit 2) |
+| Iver Johnson Champion 12ga 706mm barrel | Jaeger LL1 (6,000 ₽; limit 5) |
+| Iver Johnson Champion 12ga 316mm barrel | Jaeger LL1 (4,500 ₽; limit 5) |
+| Iver Johnson Champion wooden stock | Jaeger LL1 (4,000 ₽; limit 5) |
+| Iver Johnson Champion cut-down grip | Jaeger LL1 (3,000 ₽; limit 5) |
+| ATI Omni Hybrid .410 upper receiver | Jaeger LL2 (9,000 ₽; limit 5) |
+| ATI Omni Hybrid .410 470mm barrel | Jaeger LL2 (12,000 ₽; limit 5) |
+| ATI Omni Hybrid .410 birdcage muzzle device | Jaeger LL2 (2,500 ₽; limit 5) |
+| ATI Omni Hybrid 13-inch KeyMod handguard (one rail section per side, no foregrip) | Jaeger LL2 (9,000 ₽; limit 5) |
+| ATI Omni Hybrid .410 5-round magazine | Jaeger LL2 (4,000 ₽; limit 10) |
+| ATI Omni Hybrid .410 15-round magazine | Jaeger LL2 (9,000 ₽; limit 10) |
 
 
 ---
@@ -175,6 +187,11 @@ Completing a quest unlocks its purchase offer; the trader loyalty requirement st
 | .410/76 lead birdshot | Jaeger LL1 (85 ₽) | — |
 | .410/76 000 buckshot | Jaeger LL2 (155 ₽) | — |
 | .410/76 lead slug | Jaeger LL2 (190 ₽) | — |
+| .410/65 lead birdshot | Jaeger LL1 (70 ₽) | — |
+| .410/65 000 buckshot | Jaeger LL2 (125 ₽) | — |
+| .410/65 lead slug | Jaeger LL2 (155 ₽) | — |
+
+The .410/65 shells fit the ATI Omni, the Raging Judge and the Bailiff. The longer .410/76 shells fit only the two revolvers.
 
 
 ### Workbench Crafts
@@ -200,7 +217,7 @@ Completing a quest unlocks its purchase offer; the trader loyalty requirement st
 | Section | Setting | Default | Description |
 |---|---|---|---|
 | Malfunctions | Skip Inspection Before Clearing | `true` | Clear malfunctions without inspecting the weapon first |
-| Malfunctions | Remove Boss Forced Malfunctions | `true` | Stop bosses from forcing a malfunction on your weapon |
+| Malfunctions | Remove Boss Forced Malfunctions | `true` | Stop Kollontay, the Halloween event Zryachiy and map triggers from forcing a malfunction on your weapon |
 | Dragon Breath | Trails Enabled | `true` | Burning streaks behind the sparks |
 | Dragon Breath | Collision Enabled | `true` | Sparks bounce off walls |
 | Dragon Breath | Lights Enabled | `true` | Sparks light up their surroundings |
@@ -268,7 +285,7 @@ Make-Shotguns-Great-Again/
 │       ├── CustomItems/                new guns, attachments and ammo
 │       ├── CustomAssortSchemes/        Peacekeeper ammo pack barters
 │       ├── CustomHideoutRecipes/       Workbench crafts
-│       ├── CustomLocales/              names of the weapon builds and the .410/76 caliber (EN, PO, RU)
+│       ├── CustomLocales/              names of the weapon builds and the .410 caliber (EN, PO, RU)
 │       ├── Quests/                     Skier VR80 quests and Hunter's Dream
 │       └── weaponPresets/
 │           ├── Assorts/                full builds sold by Jaeger, Mechanic and Skier
@@ -285,7 +302,7 @@ Make-Shotguns-Great-Again/
         ├── KS23MountAlignmentPatch.cs                     KS-23 optics fix
         ├── MP18SilencedSoundPatch.cs                      MP-18 suppressed sound
         ├── MultiBarrelFireportsPatch.cs                   three-barrel guns
-        └── RemoveBossMalfunctionsPatch.cs
+        └── RemoveBossMalfunctionsPatch.cs                 forced boss and event malfunctions
 ```
 
 ---

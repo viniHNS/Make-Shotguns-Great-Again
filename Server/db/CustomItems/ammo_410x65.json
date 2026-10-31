@@ -1,0 +1,227 @@
+{
+  "ccec315b9227caf97592e926": {
+    "itemTplToClone": "5a38ebd9c4a282000d722a5b",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "patron_410x65_birdshot.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber410g",
+      "Damage": 10,
+      "ArmorDamage": 2,
+      "PenetrationPower": 0,
+      "ProjectileCount": 15,
+      "buckshotBullets": 15,
+      "ammoType": "buckshot",
+      "InitialSpeed": 350,
+      "ammoRec": -15,
+      "Weight": 0.022,
+      "BulletMassGram": 0.16,
+      "BulletDiameterMilimeters": 3.0,
+      "BallisticCoeficient": 0.02,
+      "ammoAccr": 0,
+      "Tracer": false,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "casingName": ".410/65",
+      "casingMass": 6.0,
+      "casingSounds": "shotgun_small"
+    },
+    "locales": {
+      "en": {
+        "name": ".410/65 lead birdshot",
+        "shortName": ".410/65 birdshot",
+        "description": "A .410/65 (2.5 inch) shotshell loaded with 15 fine lead pellets for small game and unarmored targets at short range."
+      },
+      "po": {
+        "name": ".410/65 chumbo fino",
+        "shortName": ".410/65 fino",
+        "description": "Cartucho .410/65 (2,5 pol) com 15 chumbos finos, destinado à caça de animais pequenos e a alvos sem proteção a curta distância."
+      },
+      "ru": {
+        "name": ".410/65 свинцовая дробь",
+        "shortName": ".410/65 дробь",
+        "description": "Патрон .410/65 (2,5 дюйма) с 15 мелкими свинцовыми дробинами для охоты на мелкую дичь и стрельбы по незащищённым целям на короткой дистанции."
+      }
+    },
+    "fleaPriceRoubles": 70,
+    "handbookPriceRoubles": 70,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "traders": {
+      "5c0647fdd443bc2504c2d371": {
+        "5c6f33eefb2940f4f6dad462": {
+          "barterSettings": {
+            "loyalLevel": 1,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 200
+          },
+          "barters": [
+            {
+              "count": 70,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "225fd87e0b4eadfdee2697b2": {
+    "itemTplToClone": "5a38ebd9c4a282000d722a5b",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "patron_410x65_buckshot.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber410g",
+      "Damage": 35,
+      "ArmorDamage": 10,
+      "PenetrationPower": 3,
+      "ProjectileCount": 3,
+      "buckshotBullets": 3,
+      "ammoType": "buckshot",
+      "InitialSpeed": 330,
+      "ammoRec": -5,
+      "Weight": 0.027,
+      "BulletMassGram": 4.53,
+      "BulletDiameterMilimeters": 9.14,
+      "BallisticCoeficient": 0.035,
+      "ammoAccr": 0,
+      "Tracer": false,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "casingName": ".410/65",
+      "casingMass": 6.0,
+      "casingSounds": "shotgun_small"
+    },
+    "locales": {
+      "en": {
+        "name": ".410/65 000 buckshot",
+        "shortName": ".410/65 000",
+        "description": "A .410/65 (2.5 inch) shotshell loaded with three large lead pellets. Each pellet hits hard, with limited armor penetration."
+      },
+      "po": {
+        "name": ".410/65 chumbo grosso 000",
+        "shortName": ".410/65 000",
+        "description": "Cartucho .410/65 (2,5 pol) com três esferas grandes de chumbo. Cada bago causa muito dano, com pouca capacidade de atravessar blindagem."
+      },
+      "ru": {
+        "name": ".410/65 картечь 000",
+        "shortName": ".410/65 000",
+        "description": "Патрон .410/65 (2,5 дюйма) с тремя крупными свинцовыми картечинами. Каждая картечина бьёт сильно, бронепробитие ограниченное."
+      }
+    },
+    "fleaPriceRoubles": 125,
+    "handbookPriceRoubles": 125,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "traders": {
+      "5c0647fdd443bc2504c2d371": {
+        "1c187907598ba049c0d5b515": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 200
+          },
+          "barters": [
+            {
+              "count": 125,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "85a2114be976cd2e1cf0ebe7": {
+    "itemTplToClone": "5d6e6a53a4b9361bd473feec",
+    "parentId": "5485a8684bdc2da71d8b4567",
+    "handbookParentId": "5b47574386f77428ca22b33b",
+    "overrideProperties": {
+      "ExaminedByDefault": true,
+      "Prefab": {
+        "path": "patron_410x65_slug.bundle",
+        "rcid": ""
+      },
+      "Caliber": "Caliber410g",
+      "Damage": 80,
+      "ArmorDamage": 25,
+      "PenetrationPower": 12,
+      "ProjectileCount": 1,
+      "buckshotBullets": 0,
+      "ammoType": "bullet",
+      "InitialSpeed": 425,
+      "ammoRec": 0,
+      "Weight": 0.017,
+      "BulletMassGram": 5.7,
+      "BulletDiameterMilimeters": 10.4,
+      "BallisticCoeficient": 0.085,
+      "ammoAccr": 50,
+      "Tracer": false,
+      "FragmentationChance": 0,
+      "MinFragmentsCount": 0,
+      "MaxFragmentsCount": 0,
+      "casingName": ".410/65",
+      "casingMass": 6.0,
+      "casingSounds": "shotgun_small"
+    },
+    "locales": {
+      "en": {
+        "name": ".410/65 lead slug",
+        "shortName": ".410/65 slug",
+        "description": "A .410/65 (2.5 inch) shotshell carrying a single lead slug. It provides a more focused impact than shot loads, with modest armor penetration."
+      },
+      "po": {
+        "name": ".410/65 projétil único de chumbo",
+        "shortName": ".410/65 slug",
+        "description": "Cartucho .410/65 (2,5 pol) com um projétil único de chumbo. Concentra o impacto em um único ponto e oferece penetração moderada de blindagem."
+      },
+      "ru": {
+        "name": ".410/65 свинцовая пуля",
+        "shortName": ".410/65 пуля",
+        "description": "Патрон .410/65 (2,5 дюйма) с одной свинцовой пулей. Даёт более сосредоточенное поражение, чем дробовые снаряды, при умеренном бронепробитии."
+      }
+    },
+    "fleaPriceRoubles": 155,
+    "handbookPriceRoubles": 155,
+    "addtoTraders": true,
+    "addtoSecureFilters": true,
+    "addCaliberToAllCloneLocations": false,
+    "addtoStaticAmmo": false,
+    "addtoStaticLootContainers": false,
+    "traders": {
+      "5c0647fdd443bc2504c2d371": {
+        "4891986b7383765cd770d2f3": {
+          "barterSettings": {
+            "loyalLevel": 2,
+            "unlimitedCount": true,
+            "stackObjectsCount": 999999,
+            "buyRestrictionMax": 200
+          },
+          "barters": [
+            {
+              "count": 155,
+              "_tpl": "MONEY_ROUBLES"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

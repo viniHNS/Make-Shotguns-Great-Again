@@ -12,7 +12,7 @@ using UnityEngine.UI;
 
 namespace makeshotgunsgreatagain
 {
-    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.19.1")]
+    [BepInPlugin("com.vinihns.makeshotgunsgreatagain", "makeshotgunsgreatagain", "1.20.0")]
     public class Plugin : BaseUnityPlugin
     {
         public static ManualLogSource LogSource;
@@ -59,7 +59,7 @@ namespace makeshotgunsgreatagain
                 "Malfunctions",
                 "Remove Boss Forced Malfunctions",
                 true,
-                "Prevent bosses from forcing a weapon malfunction on the player.");
+                "Prevent bosses (Kollontay, the Halloween Zryachiy event) and scripted map triggers from forcing a weapon malfunction on the player.");
 
            
             // 1. Toggles (Buttons/Checkboxes)
@@ -228,6 +228,7 @@ namespace makeshotgunsgreatagain
             new DragonBreathMuzzlePatch().Enable();
             new CanResolveMalfunctionsWithoutInspectionPatch().Enable();
             new RemoveBossMalfunctionsPatch().Enable();
+            new RemoveEventMalfunctionsPatch().Enable();
             new BuckshotDispersionPatch().Enable();
             new PelletSpreadLogPatch().Enable();
             new KS23MountAlignmentPatch().Enable();

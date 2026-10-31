@@ -1,0 +1,128 @@
+{
+  "266ec98c200331dfdeb0a47c": {
+    "itemTplToClone": "61f7c9e189e6fb1a5e3ea78d",
+    "parentId": "5447b6094bdc2dc3278b4567",
+    "handbookParentId": "5b5f794b86f77409407a7f92",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "weapon_iver_johnson_champion_12g_container.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [
+        {
+          "_id": "3b760029b6189f0de68ec526",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_barrel",
+          "_parent": "266ec98c200331dfdeb0a47c",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "d1c053a77e552938ec42f21f",
+                  "9ac02387dd66dc9cef4f801d"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        },
+        {
+          "_id": "de363050b138d394b39dcd9c",
+          "_mergeSlotWithChildren": false,
+          "_name": "mod_stock",
+          "_parent": "266ec98c200331dfdeb0a47c",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "ab59cea7510db6eb760f2553",
+                  "9e62ca0c6d66c29b4609c5e9"
+                ],
+                "Shift": 0
+              }
+            ]
+          },
+          "_proto": "55d30c4c4bdc2db4468b457e",
+          "_required": true
+        }
+      ],
+      "Chambers": [
+        {
+          "_id": "9fee2b9753b300a0ef404999",
+          "_mergeSlotWithChildren": false,
+          "_name": "patron_in_weapon_000",
+          "_parent": "266ec98c200331dfdeb0a47c",
+          "_props": {
+            "filters": [
+              {
+                "Filter": [
+                  "560d5e524bdc2d25448b4571",
+                  "5d6e6772a4b936088465b17c",
+                  "5d6e67fba4b9361bc73bc779",
+                  "5d6e6806a4b936088465b17e",
+                  "5d6e68dea4b9361bcc29e659",
+                  "5d6e6911a4b9361bd5780d52",
+                  "5c0d591486f7744c505b416f",
+                  "58820d1224597753c90aeb13",
+                  "5d6e68c4a4b9361b93413f79",
+                  "5d6e68a8a4b9360b6c0d54e2",
+                  "5d6e68e6a4b9361c140bcfe0",
+                  "5d6e6869a4b9361c140bcfde",
+                  "5d6e68b3a4b9361bca7e50b5",
+                  "5d6e6891a4b9361bd473feea",
+                  "5d6e689ca4b9361bc8618956",
+                  "5d6e68d1a4b93622fe60e845",
+                  "64b8ee384b75259c590fa89b"
+                ]
+              }
+            ]
+          },
+          "_proto": "55d4af244bdc2d962f8b4571",
+          "_required": false
+        }
+      ],
+      "ammoCaliber": "Caliber12g",
+      "defAmmo": "560d5e524bdc2d25448b4571",
+      "weapClass": "shotgun",
+      "weapFireType": [
+        "single"
+      ],
+      "ShotgunDispersion": 1,
+      "shotgunDispersion": 1,
+      "Weight": 0.9,
+      "Ergonomics": 45,
+      "RecoilForceUp": 330,
+      "RecoilForceBack": 520,
+      "Width": 2,
+      "Height": 1
+    },
+    "locales": {
+      "en": {
+        "name": "Iver Johnson Champion 12ga single-barrel shotgun",
+        "shortName": "Champion",
+        "description": "An American single-barrel break-action shotgun made by Iver Johnson's Arms & Cycle Works. A top lever opens the action, the external hammer has to be cocked by hand before each shot, and an automatic ejector throws the spent shell out when the barrel is opened. Fed with 12 gauge shells."
+      },
+      "po": {
+        "name": "Espingarda de cano único Iver Johnson Champion 12ga",
+        "shortName": "Champion",
+        "description": "Espingarda americana de cano único e ação basculante, fabricada pela Iver Johnson's Arms & Cycle Works. A alavanca em cima abre a arma, o cão externo precisa ser armado à mão antes de cada tiro e o ejetor automático joga fora o estojo vazio quando o cano é aberto. Alimentada com cartuchos 12ga."
+      },
+      "ru": {
+        "name": "Одноствольное ружье Iver Johnson Champion 12к",
+        "shortName": "Champion",
+        "description": "Американское одноствольное переломное ружьё производства Iver Johnson's Arms & Cycle Works. Открывается верхним рычагом, внешний курок перед каждым выстрелом взводится вручную, а автоматический эжектор выбрасывает стреляную гильзу при открывании ствола. Заряжается патронами 12 калибра."
+      }
+    },
+    "fleaPriceRoubles": 25000,
+    "handbookPriceRoubles": 9000,
+    "addtoTraders": false,
+    "addtoInventorySlots": [
+      "FirstPrimaryWeapon",
+      "SecondPrimaryWeapon"
+    ],
+    "addtoSecureFilters": false
+  }
+}

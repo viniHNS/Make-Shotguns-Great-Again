@@ -25,4 +25,28 @@ namespace makeshotgunsgreatagain.Patches
             return !Plugin.RemoveBossMalfunctions.Value;
         }
     }
+
+    /// <summary>
+    /// Covers the forced malfunction that skips AddMisfireEffect:
+    /// ActiveHealthController.DoEventEffect (Halloween Zryachiy event and panic map triggers)
+    /// adds the misfire effect with no time limit. Removes only the misfire and keeps the panic effect.
+    /// </summary>
+    internal class RemoveEventMalfunctionsPatch : ModulePatch
+    {
+        protected override MethodBase GetTargetMethod()
+        {
+            return AccessTools.Method(
+                typeof(ActiveHealthController),
+                nameof(ActiveHealthController.DoEventEffect));
+        }
+
+        [PatchPostfix]
+        private static void Postfix(ActiveHealthController __instance)
+        {
+            if (Plugin.RemoveBossMalfunctions.Value)
+            {
+                __instance.RemoveMisfireEffect();
+            }
+        }
+    }
 }

@@ -1,0 +1,139 @@
+{
+  "80627918337855254c63e2aa": {
+    "_id": "80627918337855254c63e2aa",
+    "_type": "Preset",
+    "_changeWeaponName": false,
+    "_name": "Iver Johnson Champion",
+    "_encyclopedia": "266ec98c200331dfdeb0a47c",
+    "_parent": "28cfddc80cfe894d9400ac87",
+    "_items": [
+      {
+        "_id": "28cfddc80cfe894d9400ac87",
+        "_tpl": "266ec98c200331dfdeb0a47c",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "e3fdfa7e700efe9a4476f7a2",
+        "_tpl": "d1c053a77e552938ec42f21f",
+        "parentId": "28cfddc80cfe894d9400ac87",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "0a5d9cfc560ea1262629c3e6",
+        "_tpl": "ab59cea7510db6eb760f2553",
+        "parentId": "28cfddc80cfe894d9400ac87",
+        "slotId": "mod_stock"
+      }
+    ]
+  },
+  "de686d276fd5ffe7cbdaa4fa": {
+    "_id": "de686d276fd5ffe7cbdaa4fa",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "Iver Johnson Champion Shorty",
+    "_parent": "b5dca625a99fec486a8866de",
+    "_items": [
+      {
+        "_id": "b5dca625a99fec486a8866de",
+        "_tpl": "266ec98c200331dfdeb0a47c",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "f2ffb6bf4ab8cea17597f518",
+        "_tpl": "9ac02387dd66dc9cef4f801d",
+        "parentId": "b5dca625a99fec486a8866de",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "d6b7f39550eb01bc90d0669c",
+        "_tpl": "ab59cea7510db6eb760f2553",
+        "parentId": "b5dca625a99fec486a8866de",
+        "slotId": "mod_stock"
+      }
+    ]
+  },
+  "55bb7ef9a9ff2af8eae58403": {
+    "_id": "55bb7ef9a9ff2af8eae58403",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "Iver Johnson Champion Stockless",
+    "_parent": "d3cf5026e94530085d8fe4b4",
+    "_items": [
+      {
+        "_id": "d3cf5026e94530085d8fe4b4",
+        "_tpl": "266ec98c200331dfdeb0a47c",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "cc45165a49d492cb8ed31493",
+        "_tpl": "d1c053a77e552938ec42f21f",
+        "parentId": "d3cf5026e94530085d8fe4b4",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "b997fa3fb04394c4af610bca",
+        "_tpl": "9e62ca0c6d66c29b4609c5e9",
+        "parentId": "d3cf5026e94530085d8fe4b4",
+        "slotId": "mod_stock"
+      }
+    ]
+  },
+  "3d294f0cf0b199c1835a1075": {
+    "_id": "3d294f0cf0b199c1835a1075",
+    "_type": "Preset",
+    "_changeWeaponName": true,
+    "_name": "Iver Johnson Champion Chop Shop",
+    "_parent": "9f7b99fdfe3f0f5574e99f15",
+    "_items": [
+      {
+        "_id": "9f7b99fdfe3f0f5574e99f15",
+        "_tpl": "266ec98c200331dfdeb0a47c",
+        "upd": {
+          "Repairable": {
+            "Durability": 100,
+            "MaxDurability": 100
+          },
+          "FireMode": {
+            "FireMode": "single"
+          }
+        }
+      },
+      {
+        "_id": "c87d175f0f1550164ac017c2",
+        "_tpl": "9ac02387dd66dc9cef4f801d",
+        "parentId": "9f7b99fdfe3f0f5574e99f15",
+        "slotId": "mod_barrel"
+      },
+      {
+        "_id": "a592e7982f343f640209353d",
+        "_tpl": "9e62ca0c6d66c29b4609c5e9",
+        "parentId": "9f7b99fdfe3f0f5574e99f15",
+        "slotId": "mod_stock"
+      }
+    ]
+  }
+}

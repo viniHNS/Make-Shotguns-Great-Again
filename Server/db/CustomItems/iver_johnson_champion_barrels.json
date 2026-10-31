@@ -1,0 +1,88 @@
+{
+  "d1c053a77e552938ec42f21f": {
+    "itemTplToClone": "61f4012adfc9f01a816adda1",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_iver_johnson_champion_706mm_12g.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [],
+      "Weight": 1.3,
+      "Ergonomics": -10,
+      "CenterOfImpact": 0.544,
+      "Velocity": 0,
+      "ShotgunDispersion": 1.35,
+      "Recoil": -8,
+      "Width": 4,
+      "Height": 1,
+      "ExtraSizeLeft": 2
+    },
+    "locales": {
+      "en": {
+        "name": "Iver Johnson Champion 12ga 706mm barrel",
+        "shortName": "IJ 706mm",
+        "description": "A factory 706mm 12 gauge barrel for the Iver Johnson Champion shotgun, with the wooden forend attached."
+      },
+      "po": {
+        "name": "Cano de 706 mm 12ga da Iver Johnson Champion",
+        "shortName": "IJ 706mm",
+        "description": "Cano de fábrica de 706 mm, calibre 12, para a espingarda Iver Johnson Champion, com a telha de madeira presa a ele."
+      },
+      "ru": {
+        "name": "Ствол 706мм для Iver Johnson Champion 12к",
+        "shortName": "IJ 706мм",
+        "description": "Штатный ствол длиной 706мм под патрон 12 калибра для ружья Iver Johnson Champion, с деревянным цевьём."
+      }
+    },
+    "fleaPriceRoubles": 10500,
+    "handbookPriceRoubles": 5000,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  },
+  "9ac02387dd66dc9cef4f801d": {
+    "itemTplToClone": "61f4012adfc9f01a816adda1",
+    "parentId": "555ef6e44bdc2de9068b457e",
+    "handbookParentId": "5b5f75c686f774094242f19f",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "barrel_iver_johnson_champion_316mm_12g.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [],
+      "Weight": 0.62,
+      "Ergonomics": -3,
+      "CenterOfImpact": 0.68,
+      "Velocity": -12,
+      "ShotgunDispersion": 1.65,
+      "Recoil": 0,
+      "Width": 2,
+      "Height": 1,
+      "ExtraSizeLeft": 1
+    },
+    "locales": {
+      "en": {
+        "name": "Iver Johnson Champion 12ga 316mm barrel",
+        "shortName": "IJ 316mm",
+        "description": "An Iver Johnson Champion 12 gauge barrel sawn off at home to 316mm, with the wooden forend attached. Shorter and lighter than the factory barrel, with a wider shot spread and a lower muzzle velocity."
+      },
+      "po": {
+        "name": "Cano de 316 mm 12ga da Iver Johnson Champion",
+        "shortName": "IJ 316mm",
+        "description": "Cano 12ga da Iver Johnson Champion serrado em casa para 316 mm, com a telha de madeira presa a ele. Mais curto e mais leve que o de fábrica, espalha mais o chumbo e tem menor velocidade na boca."
+      },
+      "ru": {
+        "name": "Ствол 316мм обрезанный для Iver Johnson Champion 12к",
+        "shortName": "IJ 316мм",
+        "description": "Ствол ружья Iver Johnson Champion 12 калибра, кустарно укороченный до 316мм, с деревянным цевьём. Короче и легче штатного, но даёт более широкий разлёт дроби и меньшую начальную скорость."
+      }
+    },
+    "fleaPriceRoubles": 8000,
+    "handbookPriceRoubles": 3800,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  }
+}

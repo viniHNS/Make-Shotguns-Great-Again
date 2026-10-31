@@ -1,0 +1,84 @@
+{
+  "ab59cea7510db6eb760f2553": {
+    "itemTplToClone": "61f7b234ea4ab34f2f59c3ec",
+    "parentId": "55818a594bdc2db9688b456a",
+    "handbookParentId": "5b5f757486f774093e6cb507",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "stock_iver_johnson_champion_wood.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [],
+      "Weight": 0.55,
+      "Ergonomics": 6,
+      "Recoil": -22,
+      "Width": 2,
+      "Height": 1,
+      "ExtraSizeRight": 1,
+      "HasShoulderContact": true
+    },
+    "locales": {
+      "en": {
+        "name": "Iver Johnson Champion wooden stock",
+        "shortName": "IJ wood",
+        "description": "The standard wooden stock of the Iver Johnson Champion shotgun."
+      },
+      "po": {
+        "name": "Coronha de madeira da Iver Johnson Champion",
+        "shortName": "IJ madeira",
+        "description": "Coronha de madeira original da espingarda Iver Johnson Champion."
+      },
+      "ru": {
+        "name": "Приклад деревянный для Iver Johnson Champion",
+        "shortName": "IJ дер.",
+        "description": "Штатный деревянный приклад ружья Iver Johnson Champion."
+      }
+    },
+    "fleaPriceRoubles": 7000,
+    "handbookPriceRoubles": 3500,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  },
+  "9e62ca0c6d66c29b4609c5e9": {
+    "itemTplToClone": "61f7b234ea4ab34f2f59c3ec",
+    "parentId": "55818a594bdc2db9688b456a",
+    "handbookParentId": "5b5f757486f774093e6cb507",
+    "overrideProperties": {
+      "Prefab": {
+        "path": "stock_iver_johnson_champion_grip.bundle",
+        "rcid": ""
+      },
+      "ExaminedByDefault": true,
+      "Slots": [],
+      "Weight": 0.15,
+      "Ergonomics": 10,
+      "Recoil": -6,
+      "Width": 1,
+      "Height": 1,
+      "ExtraSizeRight": 0,
+      "HasShoulderContact": false
+    },
+    "locales": {
+      "en": {
+        "name": "Iver Johnson Champion cut-down grip",
+        "shortName": "IJ grip",
+        "description": "An Iver Johnson Champion stock sawn off just behind the wrist, leaving only a pistol-style grip. A homemade modification: the shotgun becomes much more compact, but it can no longer be shouldered."
+      },
+      "po": {
+        "name": "Punho cortado da Iver Johnson Champion",
+        "shortName": "IJ punho",
+        "description": "Coronha da Iver Johnson Champion serrada logo atrás do delgado, deixando só um punho de pistola. Modificação caseira: a espingarda fica bem mais compacta, mas não dá mais para apoiá-la no ombro."
+      },
+      "ru": {
+        "name": "Рукоять из обрезанного приклада для Iver Johnson Champion",
+        "shortName": "IJ рукоять",
+        "description": "Приклад ружья Iver Johnson Champion, кустарно спиленный сразу за шейкой, так что остаётся только пистолетная рукоять. Ружьё становится намного компактнее, но упереть его в плечо уже нельзя."
+      }
+    },
+    "fleaPriceRoubles": 5500,
+    "handbookPriceRoubles": 2500,
+    "addtoTraders": false,
+    "addtoSecureFilters": false
+  }
+}
